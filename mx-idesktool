@@ -477,7 +477,7 @@ echo "  Command[0]: ${command}" >> "${HOME}/.idesktop/${modcaption}.lnk"
 #echo "  Command[1]: ${rightclick}" >> "${HOME}/.idesktop/${modcaption}.lnk"
 echo "end" >> "${HOME}/.idesktop/${modcaption}.lnk"
 
-$DIALOG --no-buttons --width 500 --title="$TEXT21" \
+$DIALOG --no-buttons --width 500 --center --title="$TEXT21" \
         --text="$TEXT22"  --timeout=3
 refresh
 
