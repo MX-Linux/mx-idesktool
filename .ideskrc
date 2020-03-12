@@ -7,7 +7,7 @@ table Config
   ToolTip.ForeColor: #0000FF
   ToolTip.BackColor: #000000
   ToolTip.CaptionOnHover: true
-  ToolTip.CaptionPlacement: Right
+  ToolTip.CaptionPlacement: 
   Locked: false
   Transparency: 100
   Shadow: true
@@ -22,7 +22,7 @@ table Config
   SnapOrigin: BottomRight
   SnapShadow: false
   SnapShadowTrans: 200
-  CaptionOnHover: false
+  CaptionOnHover: true
   CaptionPlacement: bottom
   FillStyle: fillinvert
   Background.Delay: 0
@@ -40,4 +40,3 @@ table Actions
   Execute[0]: left singleClk
   Execute[1]: middle singleClk
 end
-
