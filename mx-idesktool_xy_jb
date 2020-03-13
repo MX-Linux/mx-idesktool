@@ -1,0 +1,812 @@
+#! /bin/bash
+
+#mx-idesktool v1.0, released January 2020. 
+#A script by the MX Linux Dev Team, user spidermouse and others to configure the idesk app. Based on mx-mx-idesktool v1.36 released August 2004 by John Murray john@jmurray.id.au
+
+TEXTDOMAINDIR=/usr/share/locale
+export TEXTDOMAIN="mx-fluxbox"
+
+TEXT1=$"ERROR: Yad not installed or not in path."
+TEXT2=$"Yad found. So far so good.."
+TEXT3=$"ERROR: idesk not installed or not in path. Try http://sourceforge.net/projects/idesk/"
+TEXT4=$"idesk found - we're on a roll :)"
+TEXT5=$"Icon Management Tool"
+TEXT6=$"Icon Caption:\n(Leave blank for no caption)"
+TEXT7=$"Back"
+TEXT8=$"Cancel"
+TEXT9=$"Next"
+TEXT10=$"Caption"
+TEXT11=$"NOTE: The default middle-click command \n
+   runs this configuration tool (recommended)."
+TEXT12=$"Left-Click Command:"
+TEXT13=$"Middle-Click Command:"
+TEXT14=$"Current icon" 
+TEXT15=$"Oops!"
+TEXT16=$"Error: Icon Image File Not Found."
+TEXT17=$"Quit"
+TEXT18=$"Error: Unknown Filetype. The icon should be a png image."
+TEXT19=$"Please choose a file"
+TEXT20=$"Error: You need to select a valid file"
+TEXT21=$"Finished!" 
+TEXT22=$"All done. Restarting idesk now..."
+TEXT23=$"Choose a .png icon image"
+TEXT24=$"View or Edit an Icon"
+TEXT25=$"Remove an Icon"
+TEXT26=$"Add a New Icon"
+TEXT27=$"Reload the Desktop"
+TEXT28=$"Edit iDesk's config file"
+TEXT29=$"MX-idesktool Help"
+TEXT30=$"USE: double-click entry to select a management action"
+TEXT31=$"iDesk Configuration"
+TEXT32=$"Config. file  found - excellent!"
+TEXT33=$"WARNING: No ideskrc file was found.\nWould you like to have this file\nadded now?"
+TEXT34=$"No!"
+TEXT35=$"Yes!"
+TEXT36=$"\tThe configuration file has been written. \n
+                Drag any icons you create to the
+                desired locations and they will
+                be remembered between sessions \n\n 
+                Would you like to run the icon wizard now?"
+#TEXT37=$"Open"
+#TEXT38=$"Delete"
+#TEXT39=$"Open"
+#TEXT40=$"Refresh"
+#TEXT41=$"Configure"
+#CAS=$"Help"
+OPEN=$"Open"
+DELETE=$"Delete"
+CREATE=$"Create"
+POSITION=$"Locate"
+REFRESH=$"Refresh"
+CONFIGURE=$"Configure"
+HELP=$"Help"
+TEXT43=$"ACTION"
+TEXT44=$"DESCRIPTION"
+TEXT45=$"Choose a .png icon image"
+TEXT46=$"Left-Click Command:"
+TEXT47=$"Middle-Click Command"
+TEXT48=$"Set a presise position for an icon"
+LOCK=$"Lock"
+LOCK_TEXT=$"Permit/prevent icon movement"
+
+# Ensure only one instance of this script is running
+me="$(basename "$0")";
+running=$(ps h -C "${me}" | grep -wv $$ | wc -l);
+[[ $running > 1 ]] && exit;
+
+#First make sure yad is available
+if ! hash yad > /dev/null ; then
+    echo "$TEXT1"
+    exit
+else
+    echo "$TEXT2"
+fi
+
+
+#make sure idesk is available
+if ! hash idesk > /dev/null ; then
+    echo "$TEXT3"
+    exit
+else
+	echo "$TEXT4" "$TEXT45"
+fi
+
+#make sure the .idesktop folder exists and if not make it now, so idesk can start
+mkdir -p ~/.idesktop
+
+#find out whether an argument was used
+
+if [ "$#" -ne 1 ]; then
+        argy=nope
+else
+        argy=yup
+fi
+
+argu="$*"
+
+#set this icon directory because it has most available
+icondir=/usr/share/icons/Moka/48x48/apps/
+
+DIALOG="yad --window-icon=/usr/share/icons/mxflux.png"
+
+###############################################
+############Declare some Functions#############
+writeconf()
+{
+echo -e "table Config
+  FontName: gothic
+  FontSize: 11
+  FontColor: #37CFA6
+  ToolTip.FontSize: 11
+  ToolTip.FontName: gothic
+  ToolTip.ForeColor: #0000FF
+  ToolTip.BackColor: #000000
+  ToolTip.CaptionOnHover: true
+  ToolTip.CaptionPlacement: 
+  Locked: false
+  Transparency: 100
+  Shadow: true
+  ShadowColor: #000000
+  ShadowX: 1
+  ShadowY: 1 
+  Bold: true
+  ClickDelay: 200
+  IconSnap: false
+  SnapWidth: 0
+  SnapHeight: 10
+  SnapOrigin: BottomRight
+  SnapShadow: false
+  SnapShadowTrans: 200
+  CaptionOnHover: true
+  CaptionPlacement: bottom
+  FillStyle: fillinvert
+  Background.Delay: 0
+  Background.Source: None
+  Background.File: None 
+  Background.Mode: Center 
+  Background.Color: #C2CCFF
+end
+
+table Actions
+  Lock: control right doubleClk
+  Reload: control left singleClk
+  Drag: right hold
+  EndDrag: right singleClk
+  Execute[0]: left singleClk
+  Execute[1]: middle singleClk
+end" > "${HOME}/.ideskrc"
+}
+################################################
+################################################
+newcaption()
+{
+new_caption="$($DIALOG --title "$TEXT5" \
+                       --form --center --text="$TEXT6" \
+                       --separator="" \
+                       --button="$TEXT7":3 \
+                       --button="$TEXT8":1 \
+                       --button="$TEXT9":0 \
+		       --field="$TEXT10" "$cap" 2>/dev/null)"
+retval=$?
+
+case $retval in
+        0) cap="${new_caption}"
+           caption="$(echo "${new_caption}" | sed 's/\$/\\$/g')"
+	   ;;
+        3) if [ "$firstwindow" = "argynope" ]; then
+                argynope
+           else
+                argyyep
+           fi
+	   ;;
+        *) argynope
+           ;;
+esac
+
+newcommands
+}
+
+##########################################################
+##########################################################
+
+newcommands()
+
+{
+
+#We replace troublesome characters with underscores so as to avoid problems writing the file
+modcaption="$(echo "${caption}" | sed "s/[\ \$\/\*\&\|\?\^\"\']/_/g")"
+
+#if the icon has no caption (ie. empty string) we need to make a unique filename for it,
+#otherwise we just use the caption for the filename
+
+if [ "${modcaption}" = "" ]; then
+        modcaption="NoCaption$$"
+fi
+
+
+new_commands="$($DIALOG --form --separator="\n" --title "$TEXT5" \
+                        --text="$TEXT11"\
+                        --button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
+	                --field="$TEXT46": "$command" \
+                        --field="$TEXT47": "mx-idesktool ${modcaption}.lnk" )"
+                        
+#new_commands="$($DIALOG --form --center --separator="\n" --title "$TEXT5" \
+        #--button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
+        #--field="$TEXT46": "$command")"
+        
+retval=$?
+
+case $retval in
+        0) command="$(echo "${new_commands}" | sed -n "1p")"
+	       mclick="$(echo "${new_commands}"  | sed -n "2p")"
+           geticon
+           ;;
+        3) newcaption
+           ;;
+        *) argynope
+	;;
+esac
+
+}
+
+###########################################################
+###########################################################
+
+getcurrentvalues()
+
+{
+echo "getting current values"
+#get the caption
+	currentcaption=`cat "${currentlnkfile}" | grep "Caption:" | sed "s/Caption://" | sed "s/^[ \t]*//"`
+#get the icon
+	currenticon=`cat "${currentlnkfile}" | grep "Icon:" | sed "s/Icon:\ //" | sed "s/^[ \t]*//"`
+#get the left click command
+	command=`cat "${currentlnkfile}" | grep "Command\[0\]:" | sed "s/Command\[0\]:\ //" | sed "s/^[ \t]*//"`
+#get the middle click command
+    mclick=`cat "${currentlnkfile}" | grep "Command\[1\]:" | sed "s/Command\[1\]:\ //" | sed "s/^[ \t]*//"`
+#get the X value
+	currentxvalue=`cat "${currentlnkfile}" | grep "X:" | sed "s/X://" | sed "s/^[ \t]*//"`
+#get the Y value
+	currentyvalue=`cat "${currentlnkfile}" | grep "Y:" | sed "s/Y://" | sed "s/^[ \t]*//"`
+
+echo "got current values"
+modifycaption
+
+}
+
+#################################################################
+#################################################################
+
+modifycaption()
+{
+
+inputbox="$($DIALOG --title "$TEXT5" \
+                    --form --center --text="$TEXT10" --separator="" \
+                    --button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
+                    --field="$TEXT10" "$currentcaption" )"
+retval=$?
+
+case $retval in
+     0) cap="${inputbox}"
+	caption="$(echo "${inputbox}" | sed 's/\$/\\$/g')"
+	;;
+     3) if [ "$firstwindow" = "argyyep" ]; then
+                argyyep
+        else
+                getlnkfile
+	fi
+        ;;
+     *) argynope
+        ;;
+esac
+
+modifycommands
+
+}
+
+##############################################################
+##############################################################
+
+modifycommands()
+
+{
+
+comefrom=modif
+
+#We replace troublesome characters with underscores using sed here, so as to avoid problems writing the file
+modcaption=`echo $caption | sed "s/[\ \$\/\*\&\|\?\^\"\']/_/g"`
+
+#if the icon has no caption (ie. empty string) we need to make a unique filename for it,
+#otherwise we just use the caption for the filename
+if [ "$modcaption" = "" ]; then
+   modcaption="NoCaption$$"
+fi
+
+
+#mod_commands="$($DIALOG --form --separator="\n" --title "$TEXT5" \
+                    #--text="$TEXT11" \
+                        #--button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
+	                #--field="$TEXT12" "$command" \
+                        #--field="$TEXT13" "mx-idesktool $modcaption.lnk")"
+
+mod_commands="$($DIALOG --form --center --separator="\n" --title "$TEXT5" \
+                        --button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
+	                --field="$TEXT12" "$command" \
+	                --field="$TEXT13" "${mclick:-mx-idesktool ${modcaption}.lnk}")"
+                        
+retval=$?
+
+case $retval in
+        0) command="$(echo "${mod_commands}" | sed -n "1p")"
+	       mclick="$(echo "${mod_commands}"  | sed -n "2p")"
+           geticon
+           ;;
+        3) currentcaption="${cap}"
+           modifycaption
+           ;;
+        *) argynope
+	;;
+esac
+
+}
+
+###########################################################
+###########################################################
+
+geticon()
+{
+if [ "$comefrom" = "modif" ]; then
+        iconplaceholder="${currenticon}"
+else
+        iconplaceholder="${icondir}"
+fi
+
+cd "${iconplaceholder%/*}"
+
+icon="$($DIALOG --width=500 --height=500 --center \
+                --button="$TEXT7":3 --button="$TEXT8":1 \
+                --button="$TEXT9":0 --title "$TEXT23" \
+                --text="$TEXT14": \
+                --file-selection "${iconplaceholder}" \
+                --file-filter="png | *.png *.PNG" \
+                --filename="${iconplaceholder}" 
+       )"
+
+retval=$?
+
+icon="$(echo "${icon}"  | cut -d '|' -f 2)"
+
+case ${retval} in
+        0) iconvalidate
+           ;;
+        3) if [ "${comefrom}" = "modif" ]; then
+                   modifycommands
+	   else
+                   newcommands
+           fi
+           ;;
+        *) argynope
+           ;;
+esac
+}
+
+###########################################################
+###########################################################
+
+iconvalidate()
+{
+if [ -e "${icon}" ]; then
+        iconexists=yep
+else
+        $DIALOG --title="$TEXT15"  \
+                --center \
+                --icon "./warning.xpm" \
+                --text="$TEXT16" \
+                --button="$TEXT17":1 \
+                --button="$TEXT7":0
+        case $? in
+                0) geticon
+                   ;;
+                *) argynope
+                   ;;
+        esac
+fi
+
+iconcheck="$(echo "${icon}" | grep -i "\.png")"
+
+if [ "${iconcheck}" = "$icon" ]; then
+        writefile
+else
+        $DIALOG --title= \
+                --icon ./warning.xpm \
+                --text="$TEXT18" \
+                --center
+        case $? in
+                0) geticon
+                   ;;
+                *) argynope
+                   ;;
+        esac
+fi
+
+}
+
+###########################################################
+
+deleteandrefresh()
+{
+rm -f "${currentlnkfile}"
+killall idesk
+exec idesk &
+argynope
+}
+
+#############################################################
+#############################################################
+
+getlnkfile()
+{
+
+cd "${HOME}/.idesktop"
+currentlnkfile="$($DIALOG --width 500 --height 500 --center \
+                          --button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
+                          --title="$TEXT19"  \
+                          --file-selection --file-filter="lnk | *.lnk")"
+retval=$?
+
+case $retval in
+        0) fileselectedyet=yes
+           filecheck="$(echo "${currentlnkfile}" | grep -i "\.lnk")"
+           if [ "${filecheck}" = "${currentlnkfile}" ] && [ -e "${currentlnkfile}" ]; then
+                  if [ "${choice}" = "Open" ]; then
+                          getcurrentvalues
+                  else
+                          deleteandrefresh
+                  fi
+           else
+                  $DIALOG --title=$TEXT15 \
+                          --icon ./warning.xpm \
+                          --text=$TEXT20 \
+                          --center
+                  case $? in
+                       0) fileselectedyet=no
+                          getlnkfile
+                          ;;
+                       *) argynope
+                          ;;
+                  esac
+           fi
+           ;;
+        3) argynope
+           ;;
+        *) argynope
+           ;;
+esac
+
+}
+
+##############################################################
+##############################################################
+
+refresh()
+{
+killall idesk
+exec idesk &
+argynope
+}
+
+##############################################################
+##############################################################
+
+modifyXY()
+{
+if [ "${currentlnkfile}" == "" ]; then
+   cd "${HOME}/.idesktop"
+   currentlnkfile="$($DIALOG --width 500 --height 500 --center \
+                          --button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
+                          --title="$TEXT19"  \
+                          --file-selection --file-filter="lnk | *.lnk")"
+retval=$?
+
+case $retval in
+        0) fileselectedyet=yes
+           filecheck="$(echo "${currentlnkfile}" | grep -i "\.lnk")"
+           if [ "${filecheck}" = "${currentlnkfile}" ] && [ -e "${currentlnkfile}" ]; then
+               :
+           else
+                  $DIALOG --title=$TEXT15 \
+                          --icon ./warning.xpm \
+                          --text=$TEXT20 \
+                          --center
+                  case $? in
+                       0) fileselectedyet=no
+                          getlnkfile
+                          ;;
+                       *) argynope
+                          ;;
+                  esac
+           fi
+           ;;
+        3) if [ "${fileselectedyet}" == "yes" ]; then
+                  argynope
+           else
+                  modifyXY
+           fi
+           ;;
+        *) argynope
+           ;;
+esac
+fi
+#get the X value
+	currentxvalue="$(cat "${currentlnkfile}" | grep "X:" | sed "s/X://" | sed "s/^[ \t]*//")"
+#get the Y value
+	currentyvalue="$(cat "${currentlnkfile}" | grep "Y:" | sed "s/Y://" | sed "s/^[ \t]*//")"
+
+# max screen dimensions
+Xaxis=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f1 | grep "[0-9]\+")
+
+Yaxis=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f2 | grep "[0-9]\+")
+
+
+inputbox="$($DIALOG --title="$TEXT48" --center \
+                    --form --text="$TEXT48\n${currentlnkfile##*/}" --separator=" " \
+                    --button="$TEXT7":3 --button="$TEXT8":1 --button="Set":0 \
+                    --field="X":NUM "${currentxvalue}!0..${Xaxis:-5500}!10!0" \
+                    --field="Y":NUM "${currentyvalue}!0..${Yaxis:-3500}!10!0" )"
+retval=$?
+
+case $retval in
+     0) cap="${inputbox}"
+	    X="$(echo "${inputbox}" | cut -d' ' -f1 | sed 's/\$/\\$/g')"
+	    Y="$(echo "${inputbox}" | cut -d' ' -f2 | sed 's/\$/\\$/g')"
+        sed -i 's/^[[:space:]]\+X\:[[:space:]]\+[0-9]\+/  X\: '"${X}"'/g' "${currentlnkfile}"
+        sed -i 's/^[[:space:]]\+Y\:[[:space:]]\+[0-9]\+/  Y\: '"${Y}"'/g' ${currentlnkfile} "${currentlnkfile}"
+        refresh
+	;;
+     3) if [ "${fileselectedyet}" == "yes" ]; then
+           unset currentlnkfile
+           modifyXY
+        fi
+        if [ "$firstwindow" = "argyyep" ]; then
+                argyyep
+        else
+                argynope
+	    fi
+        ;;
+     *) unset currentlnkfile
+        argynope
+        ;;
+esac
+
+
+modifyXY
+
+}
+
+###################################################################
+###################################################################
+
+writefile()
+{
+
+if [ "${choice}" = "Open" ]; then
+        rm -f "${currentlnkfile}"
+else
+        currentxvalue=400
+        currentyvalue=500
+fi
+
+touch "${HOME}/.idesktop/${modcaption}.lnk"
+echo "table Icon" > "${HOME}/.idesktop/${modcaption}.lnk"
+echo "  Caption: ${caption}" | sed 's/.\$/\$/g' >> "${HOME}/.idesktop/${modcaption}.lnk"
+echo "  Icon: ${icon}" >> "${HOME}/.idesktop/${modcaption}.lnk"
+echo "  X: ${currentxvalue}" >> "${HOME}/.idesktop/${modcaption}.lnk"
+echo "  Y: ${currentyvalue}" >> "${HOME}/.idesktop/${modcaption}.lnk"
+echo "  Command[0]: ${command}" >> "${HOME}/.idesktop/${modcaption}.lnk"
+echo "  Command[1]: ${mclick}" >> "${HOME}/.idesktop/${modcaption}.lnk"
+echo "end" >> "${HOME}/.idesktop/${modcaption}.lnk"
+
+$DIALOG --no-buttons --width 500 --title="$TEXT21" \
+        --text="$TEXT22"  --timeout=3 --center
+refresh
+
+}
+
+####################################################################
+####################################################################
+
+argyyep()
+{
+
+firstwindow=argyyep
+
+choice=$($DIALOG  --title  "$TEXT5" --width 450 --height 350 --center \
+					--window-icon=/usr/share/icons/mxflux.png \
+                    --list \
+                   --column "$TEXT43" --column "$TEXT44"\
+                   --text="$TEXT30" \
+                   --button="$TEXT17":1 \
+                "$OPEN" "$TEXT24"  \
+                "$DELETE" "$TEXT25"  \
+                "$CREATE" "$TEXT26"  \
+                "$POSITION" "$TEXT48" \
+                "$LOCK"  "$LOCK_TEXT" \
+                "$REFRESH" "$TEXT27"  \
+				"$CONFIGURE" "$TEXT28" \
+				" "   " " \
+				"$HELP" "$TEXT29" 2>/dev/null) 
+
+retval=$?
+
+choice="$(echo ${choice} | cut -d '|' -f1)"
+
+echo $retval $choice
+
+case $retval in
+        0) case ${choice} in
+                "$DELETE")	     deleteandrefresh
+                ;;
+                "$OPEN")  getcurrentvalues
+                             modifycaption
+                ;;
+	        "$REFRESH")     refresh
+                ;;
+	        "$CREATE")         cap=""
+                             command=""
+	                     newcaption
+                ;;
+                "$LOCK")  unlock_icons
+                ;;
+                "$CONFIGURE")   editconfig
+                ;;
+                "$POSITION") modifyXY
+                ;;
+                "$HELP") mxidesktool_help
+                ;;
+           esac
+           ;;
+        *)      exit
+                ;;
+esac
+}
+
+##################################################################
+###################################################################
+
+argynope()
+{
+
+firstwindow=argynope
+
+choice=$($DIALOG  --title "$TEXT5" --width 450 --height 350 --center \
+                   --list \
+                   --column "$TEXT43" --column "$TEXT44" \
+                   --text "$TEXT30" \
+                   --button="$TEXT17":1 \
+                "$OPEN" "$TEXT24"  \
+                "$DELETE" "$TEXT25"  \
+                "$CREATE" "$TEXT26"  \
+                "$POSITION" "$TEXT48" \
+                "$LOCK"  "$LOCK_TEXT" \
+                "$REFRESH" "$TEXT27"  \
+				"$CONFIGURE" "$TEXT28" \
+				" "   " " \
+				"$HELP" "$TEXT29" 2>/dev/null)
+				
+retval=$?
+
+choice="$(echo "${choice}" | cut -d '|' -f1)"
+
+echo $retval $choice
+
+case $retval in
+        0) case ${choice} in 
+                "$DELETE")	     getlnkfile
+                             deleteandrefresh
+                ;;
+                "$OPEN")  getlnkfile
+                             getcurrentvalues
+                             modifycaption
+                             ;;
+                View)  getlnkfile
+                ;;
+                "$REFRESH")     refresh
+                ;;
+                "$CREATE")         cap=""
+                             command=""
+	                     newcaption
+                ;;
+                "$LOCK")  unlock_icons
+                ;;
+                "$CONFIGURE")   editconfig
+                ;;
+                "$HELP") mxidesktool_help
+                ;;
+                "$POSITION") modifyXY
+                ;;
+           esac
+           ;;
+        *)      exit
+                ;;
+esac
+}
+
+##########################################################
+##########################################################
+editconfig()
+{
+yad --title="$TEXT31" --width 500 --height 600 --center \
+	--text-info --editable < <(cat "${HOME}/.ideskrc") 2>/dev/null > /tmp/editbox.txt.$$
+
+case $? in
+      0) cat "/tmp/editbox.txt.$$" > "${HOME}/.ideskrc"
+         rm -f "/tmp/editbox.txt.$$"
+         refresh
+         argynope
+         ;;
+      *) rm -f "/tmp/editbox.txt.$$"
+         argynope
+         ;;
+esac
+
+}
+
+##########################################################
+##########################################################
+
+mxidesktool_help()
+{
+
+local browser url
+
+url="https://mxlinux.org/wiki/help-files/help-mx-idesktool"
+
+##If an mx-viewer is present, use mx-viewer, otherwise use generic xdg-open 
+if [ -e "/usr/bin/mx-viewer" ]; then
+    browser="mx-viewer"
+else
+    browser="xdg-open"
+fi
+$browser $url &
+
+argynope
+
+}
+
+unlock_icons()
+{
+#grep for Locked: true and if present change to Locked: false
+
+local test toggle
+
+test="$(grep Locked: "${HOME}/.ideskrc" |grep true)"
+
+if [ -n "$test" ]; then
+    sed -i s/Locked.*/'Locked: false'/ "${HOME}/.ideskrc"
+    else
+    sed -i s/Locked.*/'Locked: true'/ "${HOME}/.ideskrc"
+fi
+
+$DIALOG  --title "$TEXT5" --width 250 --height 30 --center \
+		 --text="$TEXT22"	\
+		 --button="OK"
+
+refresh
+
+}
+
+##########################################################
+##########################################################
+
+#now let's see whether the configuration files are present
+if [ -e "${HOME}/.ideskrc" ]; then
+        echo "$TEXT32"
+else
+        $DIALOG --center --title $TEXT31 \
+                --text $TEXT33 \
+                --button="$TEXT34!gtk-no":1 --button="$TEXT35!gtk-yes":0
+case $? in
+        0) writeconf
+           $DIALOG --center --title $TEXT31 \
+                --button=$TEXT34:1 --button=$TEXT35:0 \
+                --text="$TEXT36" 2>/dev/null
+           case $? in
+                   0) argynope
+                      ;;
+                   *) exit
+                      ;;
+           esac
+           ;;
+        *) exit
+           ;;
+esac
+fi
+
+echo $argy
+if [ "${argy}" = "nope" ]; then
+        argynope
+else
+        currentlnkfile="${HOME}/.idesktop/${argu}"
+        echo "current link file is " $currentlnkfile
+        argyyep
+fi
