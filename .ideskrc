@@ -1,34 +1,34 @@
 table Config
-  FontName: gothic
+  FontName: sans
   FontSize: 11
-  FontColor: #37CFA6
-  ToolTip.FontSize: 11
+  FontColor: green
+  ToolTip.FontSize: 9
   ToolTip.FontName: gothic
   ToolTip.ForeColor: #0000FF
-  ToolTip.BackColor: #000000
-  ToolTip.CaptionOnHover: true
-  ToolTip.CaptionPlacement: 
+  ToolTip.BackColor: #FFFFFF
+  ToolTip.CaptionOnHover: false
+  ToolTip.CaptionPlacement: right
   Locked: false
   Transparency: 100
   Shadow: true
   ShadowColor: #000000
   ShadowX: 1
-  ShadowY: 1 
+  ShadowY: 2
   Bold: true
-  ClickDelay: 200
-  IconSnap: false
-  SnapWidth: 0
-  SnapHeight: 10
+  ClickDelay: 300
+  IconSnap: true
+  SnapWidth: 55
+  SnapHeight: 100
   SnapOrigin: BottomRight
-  SnapShadow: false
+  SnapShadow: true
   SnapShadowTrans: 200
   CaptionOnHover: true
   CaptionPlacement: bottom
-  FillStyle: fillinvert
-  Background.Delay: 0
-  Background.Source: None
-  Background.File: None 
-  Background.Mode: Center 
+  FillStyle: FillHLine
+  Background.File: image.jpg
+  Background.Delay: 1
+  Background.Source: ~/.idesktop/icons
+  Background.Mode: Mirror
   Background.Color: #C2CCFF
 end
 
