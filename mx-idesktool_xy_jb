@@ -65,7 +65,7 @@ TEXT44=$"DESCRIPTION"
 TEXT45=$"Choose a .png icon image"
 TEXT46=$"Left-Click Command:"
 TEXT47=$"Middle-Click Command"
-TEXT48=$"Set a presise position for an icon"
+TEXT48=$"Set a precise position for an icon"
 LOCK=$"Lock"
 LOCK_TEXT=$"Permit/prevent icon movement"
 
