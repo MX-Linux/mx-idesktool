@@ -158,6 +158,48 @@ end" > "${HOME}/.ideskrc"
 }
 ################################################
 ################################################
+
+link_name()
+{
+local linkstart
+echo "$currentlnkfile"
+
+if [ -n "$currentlnkfile" ]; then
+	linkstart=$(basename -s .lnk "$currentlnkfile")
+else
+	linkstart="$cap"
+fi
+
+linkname="$($DIALOG --title $"Link Filename" \
+                       --form --center --text=$"Enter Link Filename" \
+                       --separator="" \
+                       --button="$TEXT7":3 \
+                       --button="$TEXT8":1 \
+                       --button="$TEXT9":0 \
+		       --field=$"Link Filename" "$linkstart" 2>/dev/null)"
+retval=$?
+
+case $retval in
+        0)linkname="$(echo "$(basename -s .lnk ${linkname})" | sed 's/\$/\\$/g')"
+          echo "new linkname is " "$linkname"
+	   ;;
+        3) if [ "$firstwindow" = "argynope" ]; then
+                argynope
+           else
+                argyyep
+           fi
+	   ;;
+        *) argynope
+           ;;
+esac
+
+if [ "$comefrom" = "modif" ]; then
+modifycommands
+else
+newcommands
+fi
+}
+
 newcaption()
 {
 new_caption="$($DIALOG --title "$TEXT5" \
@@ -183,7 +225,7 @@ case $retval in
            ;;
 esac
 
-newcommands
+link_name
 }
 
 ##########################################################
@@ -195,12 +237,13 @@ newcommands()
 
 #We replace troublesome characters with underscores so as to avoid problems writing the file
 modcaption="$(echo "${caption}" | sed "s/[\ \$\/\*\&\|\?\^\"\']/_/g")"
+linkname="$(echo "${linkname}" | sed "s/[\ \$\/\*\&\|\?\^\"\']/_/g")"
 
 #if the icon has no caption (ie. empty string) we need to make a unique filename for it,
 #otherwise we just use the caption for the filename
 
-if [ "${modcaption}" = "" ]; then
-        modcaption="NoCaption$$"
+if [ "${linkname}" = "" ]; then
+        modcaption="NoLinknameProvided$$"
 fi
 
 
@@ -208,7 +251,7 @@ new_commands="$($DIALOG --form --separator="\n" --title "$TEXT5" \
                         --text="$TEXT11"\
                         --button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
 	                --field="$TEXT46": "$command" \
-                        --field="$TEXT47": "mx-idesktool ${modcaption}.lnk" )"
+                        --field="$TEXT47": "mx-idesktool ${linkname}.lnk" )"
                         
 #new_commands="$($DIALOG --form --center --separator="\n" --title "$TEXT5" \
         #--button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
@@ -241,7 +284,11 @@ echo "getting current values"
 #get the icon
 	currenticon=`cat "${currentlnkfile}" | grep "Icon:" | sed "s/Icon:\ //" | sed "s/^[ \t]*//"`
 #get the left click command
-	command=`cat "${currentlnkfile}" | grep "Command\[0\]:" | sed "s/Command\[0\]:\ //" | sed "s/^[ \t]*//"`
+    command=`cat "${currentlnkfile}" | grep "Command:" | sed "s/Command:\ //" | sed "s/^[ \t]*//"`
+    if [ -z "$command" ]; then
+		command=`cat "${currentlnkfile}" | grep "Command\[0\]:" | sed "s/Command\[0\]:\ //" | sed "s/^[ \t]*//"`
+	fi
+	echo "command is " $command
 #get the middle click command
     mclick=`cat "${currentlnkfile}" | grep "Command\[1\]:" | sed "s/Command\[1\]:\ //" | sed "s/^[ \t]*//"`
 #get the X value
@@ -279,9 +326,8 @@ case $retval in
      *) argynope
         ;;
 esac
-
-modifycommands
-
+comefrom=modif
+link_name
 }
 
 ##############################################################
@@ -295,11 +341,13 @@ comefrom=modif
 
 #We replace troublesome characters with underscores using sed here, so as to avoid problems writing the file
 modcaption=`echo $caption | sed "s/[\ \$\/\*\&\|\?\^\"\']/_/g"`
+linkname=`echo $linkname | sed "s/[\ \$\/\*\&\|\?\^\"\']/_/g"`
+
 
 #if the icon has no caption (ie. empty string) we need to make a unique filename for it,
 #otherwise we just use the caption for the filename
-if [ "$modcaption" = "" ]; then
-   modcaption="NoCaption$$"
+if [ "$linkname" = "" ]; then
+   modcaption="NoLinkNameProvided$$"
 fi
 
 
@@ -312,7 +360,7 @@ fi
 mod_commands="$($DIALOG --form --center --separator="\n" --title "$TEXT5" \
                         --button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
 	                --field="$TEXT12" "$command" \
-	                --field="$TEXT13" "${mclick:-mx-idesktool ${modcaption}.lnk}")"
+	                --field="$TEXT13" "${mclick:-mx-idesktool ${linkname}.lnk}")"
                         
 retval=$?
 
@@ -340,6 +388,7 @@ if [ "$comefrom" = "modif" ]; then
 else
         iconplaceholder="${icondir}"
 fi
+echo "current icon is " "${iconplaceholder}"
 
 cd "${iconplaceholder%/*}"
 
@@ -349,8 +398,7 @@ icon="$($DIALOG --width=500 --height=500 --center \
                 --text="$TEXT14": \
                 --file-selection "${iconplaceholder}" \
                 --file-filter="png | *.png *.PNG" \
-                --filename="${iconplaceholder}" 
-       )"
+                --filename="${iconplaceholder}")"
 
 retval=$?
 
@@ -576,15 +624,15 @@ else
         currentyvalue=500
 fi
 
-touch "${HOME}/.idesktop/${modcaption}.lnk"
-echo "table Icon" > "${HOME}/.idesktop/${modcaption}.lnk"
-echo "  Caption: ${caption}" | sed 's/.\$/\$/g' >> "${HOME}/.idesktop/${modcaption}.lnk"
-echo "  Icon: ${icon}" >> "${HOME}/.idesktop/${modcaption}.lnk"
-echo "  X: ${currentxvalue}" >> "${HOME}/.idesktop/${modcaption}.lnk"
-echo "  Y: ${currentyvalue}" >> "${HOME}/.idesktop/${modcaption}.lnk"
-echo "  Command[0]: ${command}" >> "${HOME}/.idesktop/${modcaption}.lnk"
-echo "  Command[1]: ${mclick}" >> "${HOME}/.idesktop/${modcaption}.lnk"
-echo "end" >> "${HOME}/.idesktop/${modcaption}.lnk"
+touch "${HOME}/.idesktop/${linkname}.lnk"
+echo "table Icon" > "${HOME}/.idesktop/${linkname}.lnk"
+echo "  Caption: ${caption}" | sed 's/.\$/\$/g' >> "${HOME}/.idesktop/${linkname}.lnk"
+echo "  Icon: ${icon}" >> "${HOME}/.idesktop/${linkname}.lnk"
+echo "  X: ${currentxvalue}" >> "${HOME}/.idesktop/${linkname}.lnk"
+echo "  Y: ${currentyvalue}" >> "${HOME}/.idesktop/${linkname}.lnk"
+echo "  Command[0]: ${command}" >> "${HOME}/.idesktop/${linkname}.lnk"
+echo "  Command[1]: ${mclick}" >> "${HOME}/.idesktop/${linkname}.lnk"
+echo "end" >> "${HOME}/.idesktop/${linkname}.lnk"
 
 $DIALOG --no-buttons --width 500 --title="$TEXT21" \
         --text="$TEXT22"  --timeout=3 --center
