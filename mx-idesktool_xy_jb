@@ -817,7 +817,8 @@ fi
 
 $DIALOG  --title "$TEXT5" --width 250 --height 30 --center \
 		 --text="$TEXT22"	\
-		 --button="OK"
+		 --no-buttons \
+		 --timeout=2
 
 refresh
 
