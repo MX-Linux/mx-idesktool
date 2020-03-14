@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Pierluigi Mario <pierluigimariomail@gmail.com>, 2020
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-08 07:54-0600\n"
+"PO-Revision-Date: 2019-12-18 03:57+0000\n"
+"Last-Translator: Pierluigi Mario <pierluigimariomail@gmail.com>, 2020\n"
+"Language-Team: Italian (https://www.transifex.com/anticapitalista/teams/10162/it/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: bin/mxflux_install.sh:14
+#, sh-format
+msgid ""
+"This will install into your Home folder components that MX-flux requires in "
+"order to run.  Any existing fluxbox configuration will be backed up as "
+"<i>$HOME/.restore/fluxbox/fluxbox_BAK</i>."
+msgstr ""
+" Ciò installerà all'interno della tua directory Home i componenti necessari "
+"a MX-flux per funzionare. Verrà fatto il backup delle configurazioni "
+"esistenti di fluxbox salvandole in "
+"<i>$HOME/.restore/fluxbox/fluxbox_BAK</i>."
+
+#: bin/mxflux_install.sh:15
+msgid ""
+"To start a fluxbox session: log out, select <i>fluxbox</i> from the pull-"
+"down menu in the upper right corner, and log back in."
+msgstr ""
+"Per avviare una sessione di fluxbox: uscire, selezionare <i>fluxbox</i>dal "
+"menu a discesa nell'angolo in alto a destra, quindi fare nuovamente il Log-"
+"in."
+
+#: bin/mxflux_install.sh:21 scripts/toolbar-legacy:12
+#: scripts/toolbar-userlast:10
+msgid "OK to proceed?"
+msgstr "OK a procedere?"
+
+#: bin/mxflux_install.sh:66 scripts/toolbar-legacy:14
+#: scripts/toolbar-legacy:56 scripts/toolbar-userlast:12
+msgid "All done!"
+msgstr "Tutto fatto!"
+
+#: scripts/toolbar-legacy:13
+msgid ""
+"This will make changes required for a legacy toolbar layout. Your current "
+"settings will be backed up and can be restored by clicking Menu > Settings >"
+" Toolbar > Userlast"
+msgstr ""
+"Ciò comporterà l'esecuzione delle modifiche necessarie per un layout "
+"tradizionale della barra degli strumenti. Verrà eseguito il backup delle "
+"impostazioni correnti che potranno essere ripristinate cliccando su Menu> "
+"Impostazioni> Barra degli strumenti> Ultimoutente"
+
+#: scripts/toolbar-legacy:15 scripts/toolbar-userlast:13
+msgid "Log out and back in to complete the change."
+msgstr "Esci e fai nuovamente il Login per completare le modifiche."
+
+#: scripts/toolbar-userlast:11
+msgid ""
+"This will restore the settings that were in place when you selected a legacy"
+" toolbar layout."
+msgstr ""
+"Questo ripristinerà le impostazioni presenti prima che tu scegliessi un "
+"layout tradizionale per la barra degli strumenti."

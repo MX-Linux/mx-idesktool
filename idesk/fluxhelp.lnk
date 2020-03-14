@@ -1,0 +1,7 @@
+table Icon
+  Caption: 
+  Icon: /usr/share/icons/Moka/48x48/apps/winhelp.png
+  X: 100
+  Y: 60
+  Command[0]: thunar /usr/share/mxflux/help
+end

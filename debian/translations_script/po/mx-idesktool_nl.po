@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# darknet matrix, 2019
+# Eadwine Rose, 2020
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-08 07:54-0600\n"
+"PO-Revision-Date: 2019-12-18 03:57+0000\n"
+"Last-Translator: Eadwine Rose, 2020\n"
+"Language-Team: Dutch (https://www.transifex.com/anticapitalista/teams/10162/nl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: bin/mxflux_install.sh:14
+#, sh-format
+msgid ""
+"This will install into your Home folder components that MX-flux requires in "
+"order to run.  Any existing fluxbox configuration will be backed up as "
+"<i>$HOME/.restore/fluxbox/fluxbox_BAK</i>."
+msgstr ""
+"Dit wordt geïnstalleerd in uw Home map componenten die MX-flux nodig heeft "
+"om te worden uitgevoerd. Elke bestaande fluxbox configuratie wordt geback-"
+"upt als <i>$HOME/.restore/fluxbox/fluxbox_BAK</i>."
+
+#: bin/mxflux_install.sh:15
+msgid ""
+"To start a fluxbox session: log out, select <i>fluxbox</i> from the pull-"
+"down menu in the upper right corner, and log back in."
+msgstr ""
+"Om een fluxbox-sessie te starten: log uit, selecteer <i>fluxbox</i> in het "
+"vervolgkeuzemenu in de rechterbovenhoek en log opnieuw in."
+
+#: bin/mxflux_install.sh:21 scripts/toolbar-legacy:12
+#: scripts/toolbar-userlast:10
+msgid "OK to proceed?"
+msgstr "OK om door te gaan?"
+
+#: bin/mxflux_install.sh:66 scripts/toolbar-legacy:14
+#: scripts/toolbar-legacy:56 scripts/toolbar-userlast:12
+msgid "All done!"
+msgstr "Helemaal klaar!"
+
+#: scripts/toolbar-legacy:13
+msgid ""
+"This will make changes required for a legacy toolbar layout. Your current "
+"settings will be backed up and can be restored by clicking Menu > Settings >"
+" Toolbar > Userlast"
+msgstr ""
+"Dit zal wijzigingen aanbrengen die nodig zijn voor een legacy werkbalk "
+"layout. Er wordt een back-up gemaakt van uw huidige instellingen en deze "
+"kunnen worden hersteld door te klikken op Menu > Instellingen > Werkbalk > "
+"Gebruikervorige"
+
+#: scripts/toolbar-legacy:15 scripts/toolbar-userlast:13
+msgid "Log out and back in to complete the change."
+msgstr "Log uit en weer in om de verandering af te ronden."
+
+#: scripts/toolbar-userlast:11
+msgid ""
+"This will restore the settings that were in place when you selected a legacy"
+" toolbar layout."
+msgstr ""
+"Hiermee worden de instellingen hersteld die golden toen u een oude werkbalk "
+"layout selecteerde."

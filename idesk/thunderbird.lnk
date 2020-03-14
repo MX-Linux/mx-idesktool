@@ -1,0 +1,7 @@
+table Icon
+  Caption: 
+  Icon: /usr/share/icons/Moka/48x48/apps/thunderbird.png
+  X: 100
+  Y: 260
+  Command[0]: thunderbird
+end

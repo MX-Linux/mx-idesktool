@@ -1,0 +1,14 @@
+Source: mx-idesktool
+Section: system
+Priority: optional
+Maintainer: dolphinoracle <dolphinoracle@gmail.com>
+Build-Depends: debhelper (>= 9.20120115)
+Standards-Version: 3.9.4
+Homepage: https://mxlinux.org
+
+Package: mx-idesktool
+Depends: idesk
+Conflicts: mx-fluxbox (<20.02.03)
+Architecture: all
+Description: mx-idesktool
+	configuation tool for idesk icons

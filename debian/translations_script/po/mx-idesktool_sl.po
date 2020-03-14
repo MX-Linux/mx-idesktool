@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Mario <al.manja@gmx.com>, 2019
+# Arnold Marko <arnold.marko@gmail.com>, 2020
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-08 07:54-0600\n"
+"PO-Revision-Date: 2019-12-18 03:57+0000\n"
+"Last-Translator: Arnold Marko <arnold.marko@gmail.com>, 2020\n"
+"Language-Team: Slovenian (https://www.transifex.com/anticapitalista/teams/10162/sl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sl\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
+
+#: bin/mxflux_install.sh:14
+#, sh-format
+msgid ""
+"This will install into your Home folder components that MX-flux requires in "
+"order to run.  Any existing fluxbox configuration will be backed up as "
+"<i>$HOME/.restore/fluxbox/fluxbox_BAK</i>."
+msgstr ""
+"To bo v vaš domači home imenik namestilo komponente, ki so potrebne za "
+"delovanje MX-flux-a. Obstoječa fluxbox konfiguracija se bo shranila ko "
+"<i>$HOME/.restore/fluxbox/fluxbox_BAK1</i>."
+
+#: bin/mxflux_install.sh:15
+msgid ""
+"To start a fluxbox session: log out, select <i>fluxbox</i> from the pull-"
+"down menu in the upper right corner, and log back in."
+msgstr ""
+"Za začetek fluxbox seje: odjavite se, iz padajočega menija desno zgoraj "
+"izberite <i>fluxbox</i> nato se prijavite nazaj."
+
+#: bin/mxflux_install.sh:21 scripts/toolbar-legacy:12
+#: scripts/toolbar-userlast:10
+msgid "OK to proceed?"
+msgstr "OK za nadaljevanje?"
+
+#: bin/mxflux_install.sh:66 scripts/toolbar-legacy:14
+#: scripts/toolbar-legacy:56 scripts/toolbar-userlast:12
+msgid "All done!"
+msgstr "Vse opravljeno!"
+
+#: scripts/toolbar-legacy:13
+msgid ""
+"This will make changes required for a legacy toolbar layout. Your current "
+"settings will be backed up and can be restored by clicking Menu > Settings >"
+" Toolbar > Userlast"
+msgstr ""
+"To bo izvršilo spremembe, ki so potrebne za tovarniški izgled orodne "
+"vrstice. Vaše trenutne nastavitve bodo shranjene in jih je mogoče obnoviti s"
+" klikom na Meni > Nastavitve > Orodja > Zadnje uporabniške"
+
+#: scripts/toolbar-legacy:15 scripts/toolbar-userlast:13
+msgid "Log out and back in to complete the change."
+msgstr "Odjavite se in ponovno prijavite za dokončanje sprememb."
+
+#: scripts/toolbar-userlast:11
+msgid ""
+"This will restore the settings that were in place when you selected a legacy"
+" toolbar layout."
+msgstr ""
+"To bo obnovilo nastavitve, ki so veljale, ko ste izbrali tovarniški izgled "
+"orodne vrstice."
