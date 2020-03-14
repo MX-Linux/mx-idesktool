@@ -4,7 +4,7 @@
 #A script by the MX Linux Dev Team, user spidermouse and others to configure the idesk app. Based on mx-mx-idesktool v1.36 released August 2004 by John Murray john@jmurray.id.au
 
 TEXTDOMAINDIR=/usr/share/locale
-export TEXTDOMAIN="mx-idesktool"
+export TEXTDOMAIN="mx-fluxbox"
 
 TEXT1=$"ERROR: Yad not installed or not in path."
 TEXT2=$"Yad found. So far so good.."
@@ -213,7 +213,7 @@ retval=$?
 
 case $retval in
         0) cap="${new_caption}"
-           caption="$(echo "${new_caption}" | sed 's/\$/\\$/g')"
+           caption="${new_caption/\$/\\$}"
 	   ;;
         3) if [ "$firstwindow" = "argynope" ]; then
                 argynope
@@ -280,21 +280,25 @@ getcurrentvalues()
 {
 echo "getting current values"
 #get the caption
-	currentcaption=`cat "${currentlnkfile}" | grep "Caption:" | sed "s/Caption://" | sed "s/^[ \t]*//"`
+	currentcaption=`sed -n '/^[ \t]\+Icon\(\[0\]\|\)\:/s/^[ \t]\+Icon\:[ \t]\+//p' "${currentlnkfile}"`
 #get the icon
-	currenticon=`cat "${currentlnkfile}" | grep "Icon:" | sed "s/Icon:\ //" | sed "s/^[ \t]*//"`
+	currenticon=`sed -n '/^[ \t]\+Icon\(\[0\]\|\)\:/s/^[ \t]\+Icon\:[ \t]\+//p' "${currentlnkfile}"`
 #get the left click command
-    command=`cat "${currentlnkfile}" | grep "Command:" | sed "s/Command:\ //" | sed "s/^[ \t]*//"`
-    if [ -z "$command" ]; then
-		command=`cat "${currentlnkfile}" | grep "Command\[0\]:" | sed "s/Command\[0\]:\ //" | sed "s/^[ \t]*//"`
-	fi
+    command=`sed -n  '/^[ \t]\+Command\(\[0\]\|\)\:/s/^[ \t]\+Command\(\[0\]\|\)\:[ \t]\+//p' "${currentlnkfile}"`
 	echo "command is " $command
 #get the middle click command
-    mclick=`cat "${currentlnkfile}" | grep "Command\[1\]:" | sed "s/Command\[1\]:\ //" | sed "s/^[ \t]*//"`
+    mclick=`sed -n '/^[ \t]\+Command\[1\]\:/s/^[ \t]\+Command\[1\]\:[ \t]\+//p' "${currentlnkfile}"`
 #get the X value
-	currentxvalue=`cat "${currentlnkfile}" | grep "X:" | sed "s/X://" | sed "s/^[ \t]*//"`
+	currentxvalue=`sed -n '/^[ \t]\+X\:/s/^[ \t]\+X\:[ \t]\+//p' "${currentlnkfile}"`
 #get the Y value
-	currentyvalue=`cat "${currentlnkfile}" | grep "Y:" | sed "s/Y://" | sed "s/^[ \t]*//"`
+	currentyvalue=`sed -n '/^[ \t]\+Y\:/s/^[ \t]\+Y\:[ \t]\+//p' "${currentlnkfile}"`
+# Regular expression explained
+# sed -n '/^[ \t]\+Command\(\[0\]\|\)\:/s/^[ \t]\+Command\(\[0\]\|\)\:[ \t]\+//p'
+# sed -n includes only matching lines
+# Search for the pattern /^[ \t]\+Command\(\[0\]\|\)\:/
+#        ^[ \t]\+ begins with multiple spaces or tabs
+#         \(\[0\]\|\)\: search for matching string '[0]:' or 'empty:' aka (first|second) ([0]|):
+# Replace and print s/^[ \t]\+Command\(\[0\]\|\)\:[ \t]\+//p
 
 echo "got current values"
 modifycaption
@@ -315,7 +319,7 @@ retval=$?
 
 case $retval in
      0) cap="${inputbox}"
-	caption="$(echo "${inputbox}" | sed 's/\$/\\$/g')"
+	caption="${inputbox/\$/\\$}"
 	;;
      3) if [ "$firstwindow" = "argyyep" ]; then
                 argyyep
@@ -340,8 +344,8 @@ modifycommands()
 comefrom=modif
 
 #We replace troublesome characters with underscores using sed here, so as to avoid problems writing the file
-modcaption=`echo $caption | sed "s/[\ \$\/\*\&\|\?\^\"\']/_/g"`
-linkname=`echo $linkname | sed "s/[\ \$\/\*\&\|\?\^\"\']/_/g"`
+modcaption=`echo "$caption" | sed "s/[\ \$\/\*\&\|\?\^\"\']/_/g"`
+linkname=`echo "$linkname" | sed "s/[\ \$\/\*\&\|\?\^\"\']/_/g"`
 
 
 #if the icon has no caption (ie. empty string) we need to make a unique filename for it,
@@ -566,9 +570,9 @@ case $retval in
 esac
 fi
 #get the X value
-	currentxvalue="$(cat "${currentlnkfile}" | grep "X:" | sed "s/X://" | sed "s/^[ \t]*//")"
+	currentxvalue="$(sed -n '/^[ \t]\+X\:/s/^[ \t]\+X\:[ \t]\+//p' "${currentlnkfile}")"
 #get the Y value
-	currentyvalue="$(cat "${currentlnkfile}" | grep "Y:" | sed "s/Y://" | sed "s/^[ \t]*//")"
+	currentyvalue="$(sed -n '/^[ \t]\+Y\:/s/^[ \t]\+Y\:[ \t]\+//p' "${currentlnkfile}")"
 
 # max screen dimensions
 Xaxis=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f1 | grep "[0-9]\+")
@@ -588,7 +592,7 @@ case $retval in
 	    X="$(echo "${inputbox}" | cut -d' ' -f1 | sed 's/\$/\\$/g')"
 	    Y="$(echo "${inputbox}" | cut -d' ' -f2 | sed 's/\$/\\$/g')"
         sed -i 's/^[[:space:]]\+X\:[[:space:]]\+[0-9]\+/  X\: '"${X}"'/g' "${currentlnkfile}"
-        sed -i 's/^[[:space:]]\+Y\:[[:space:]]\+[0-9]\+/  Y\: '"${Y}"'/g' ${currentlnkfile} "${currentlnkfile}"
+        sed -i 's/^[[:space:]]\+Y\:[[:space:]]\+[0-9]\+/  Y\: '"${Y}"'/g' "${currentlnkfile}"
         refresh
 	;;
      3) if [ "${fileselectedyet}" == "yes" ]; then
