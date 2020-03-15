@@ -1,7 +1,7 @@
 #! /bin/bash
 
-#mx-idesktool v1.0, released January 2020. 
-#A script by the MX Linux Dev Team, user spidermouse and others to configure the idesk app. Based on mx-mx-idesktool v1.36 released August 2004 by John Murray john@jmurray.id.au
+#mx-idesktool v1.5, released March 2020. 
+#A script by the MX Linux Dev Team, user Misko_2083 and others to configure the idesk app. Based on idesktool v1.36 released August 2004 by John Murray john@jmurray.id.au
 
 TEXTDOMAINDIR=/usr/share/locale
 export TEXTDOMAIN="mx-idesktool"
