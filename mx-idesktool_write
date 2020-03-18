@@ -839,11 +839,11 @@ icon_file ()
 {
 cd "${HOME}/.idesktop"
 
-CFG_FILE="$(yad --file-selection --title='Select a File')"
+CFG_FILE="$(yad --file-selection --title="$TEXT19")"
 
 TMP_FILE="/tmp/editbox.txt.$$"  # Made unique by appending PID of executor ($$)
 
-yad --title="Text Editing" --width=500 --height=600 --center \
+yad --title=$"Text Editing" --width=500 --height=600 --center \
     --text-info --editable < <(cat ${CFG_FILE}) > $TMP_FILE
 
 #  < <(cat ${CFG_FILE})   # Load text of config file into editbox thru stdin
@@ -854,14 +854,14 @@ STS=$?  # Status of last command
 
 case $STS in
     0)  # OK button
-        echo "Saving..."
+        echo $"Saving..."
         cat $TMP_FILE > $CFG_FILE   # save tmp file to config
         rm -f $TMP_FILE
         refresh
         argynope
         ;;
     *)  # Cancel button, Window Close, etc
-        echo "Discarding..."
+        echo $"Discarding..."
         rm -f $TMP_FILE
         argynope
         ;;
