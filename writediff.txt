@@ -1,0 +1,52 @@
+61a62
+> WRITE=$"Write"
+68a70
+> TEXT49=$"Directly edit an icon file"
+663a666
+> 				"$WRITE" "$TEXT49" \
+691a695,696
+>                 "$WRITE") icon_file
+>                 ;;
+720a726
+> 				"$WRITE" "$TEXT49" \
+752a759,760
+>                 "$WRITE") icon_file
+>                 ;;
+825a834,870
+> 
+> ##########################################################
+> ##########################################################
+> icon_file ()
+> 
+> {
+> cd "${HOME}/.idesktop"
+> 
+> CFG_FILE="$(yad --file-selection --title='Select a File')"
+> 
+> TMP_FILE="/tmp/editbox.txt.$$"  # Made unique by appending PID of executor ($$)
+> 
+> yad --title="Text Editing" --width=500 --height=600 --center \
+>     --text-info --editable < <(cat ${CFG_FILE}) > $TMP_FILE
+> 
+> #  < <(cat ${CFG_FILE})   # Load text of config file into editbox thru stdin
+> #  > $TMP_FILE            # Save stdout (contents of editbox) to tmp file
+> #  2>/dev/null		  # This was dropped because it's already applied by /usr/local/bin/yad
+> 
+> STS=$?  # Status of last command
+> 
+> case $STS in
+>     0)  # OK button
+>         echo "Saving..."
+>         cat $TMP_FILE > $CFG_FILE   # save tmp file to config
+>         rm -f $TMP_FILE
+>         refresh
+>         argynope
+>         ;;
+>     *)  # Cancel button, Window Close, etc
+>         echo "Discarding..."
+>         rm -f $TMP_FILE
+>         argynope
+>         ;;
+> esac
+> }
+> 
