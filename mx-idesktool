@@ -650,7 +650,7 @@ argyyep()
 
 firstwindow=argyyep
 
-choice=$($DIALOG  --title  "$TEXT5" --width 450 --height 350 --center \
+choice=$($DIALOG  --title  "$TEXT5" --width 450 --height 380 --center \
 					--window-icon=/usr/share/icons/mxflux.png \
                     --list \
                    --column "$TEXT43" --column "$TEXT44"\
@@ -711,7 +711,7 @@ argynope()
 
 firstwindow=argynope
 
-choice=$($DIALOG  --title "$TEXT5" --width 450 --height 350 --center \
+choice=$($DIALOG  --title "$TEXT5" --width 450 --height 380 --center \
                    --list \
                    --column "$TEXT43" --column "$TEXT44" \
                    --text "$TEXT30" \
