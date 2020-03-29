@@ -59,6 +59,7 @@ CREATE=$"Create"
 POSITION=$"Locate"
 REFRESH=$"Refresh"
 CONFIGURE=$"Configure"
+WRITE=$"Write"
 HELP=$"Help"
 TEXT43=$"ACTION"
 TEXT44=$"DESCRIPTION"
@@ -66,6 +67,7 @@ TEXT45=$"Choose a .png icon image"
 TEXT46=$"Left-Click Command:"
 TEXT47=$"Middle-Click Command"
 TEXT48=$"Set a precise position for an icon"
+TEXT49=$"Directly edit an icon file"
 LOCK=$"Lock"
 LOCK_TEXT=$"Permit/prevent icon movement"
 
@@ -648,7 +650,7 @@ argyyep()
 
 firstwindow=argyyep
 
-choice=$($DIALOG  --title  "$TEXT5" --width 450 --height 350 --center \
+choice=$($DIALOG  --title  "$TEXT5" --width 450 --height 380 --center \
 					--window-icon=/usr/share/icons/mxflux.png \
                     --list \
                    --column "$TEXT43" --column "$TEXT44"\
@@ -661,6 +663,7 @@ choice=$($DIALOG  --title  "$TEXT5" --width 450 --height 350 --center \
                 "$LOCK"  "$LOCK_TEXT" \
                 "$REFRESH" "$TEXT27"  \
 				"$CONFIGURE" "$TEXT28" \
+				"$WRITE" "$TEXT49" \
 				" "   " " \
 				"$HELP" "$TEXT29" 2>/dev/null) 
 
@@ -689,6 +692,8 @@ case $retval in
                 ;;
                 "$POSITION") modifyXY
                 ;;
+                "$WRITE") icon_file
+                ;;
                 "$HELP") mxidesktool_help
                 ;;
            esac
@@ -706,7 +711,7 @@ argynope()
 
 firstwindow=argynope
 
-choice=$($DIALOG  --title "$TEXT5" --width 450 --height 350 --center \
+choice=$($DIALOG  --title "$TEXT5" --width 450 --height 380 --center \
                    --list \
                    --column "$TEXT43" --column "$TEXT44" \
                    --text "$TEXT30" \
@@ -718,6 +723,7 @@ choice=$($DIALOG  --title "$TEXT5" --width 450 --height 350 --center \
                 "$LOCK"  "$LOCK_TEXT" \
                 "$REFRESH" "$TEXT27"  \
 				"$CONFIGURE" "$TEXT28" \
+				"$WRITE" "$TEXT49" \
 				" "   " " \
 				"$HELP" "$TEXT29" 2>/dev/null)
 				
@@ -749,6 +755,8 @@ case $retval in
                 "$CONFIGURE")   editconfig
                 ;;
                 "$HELP") mxidesktool_help
+                ;;
+                "$WRITE") icon_file
                 ;;
                 "$POSITION") modifyXY
                 ;;
@@ -815,14 +823,46 @@ if [ -n "$test" ]; then
     sed -i s/Locked.*/'Locked: true'/ "${HOME}/.ideskrc"
 fi
 
-$DIALOG  --title "$TEXT5" --width 250 --height 30 --center \
-		 --text="$TEXT22"	\
-		 --no-buttons \
-		 --timeout=2
-
 refresh
 
 }
+
+##########################################################
+##########################################################
+icon_file ()
+
+{
+cd "${HOME}/.idesktop"
+
+CFG_FILE="$(yad --file-selection --title="$TEXT19")"
+
+TMP_FILE="/tmp/editbox.txt.$$"  # Made unique by appending PID of executor ($$)
+
+yad --title=$"Text Editing" --width=500 --height=600 --center \
+    --text-info --editable < <(cat ${CFG_FILE}) > $TMP_FILE
+
+#  < <(cat ${CFG_FILE})   # Load text of config file into editbox thru stdin
+#  > $TMP_FILE            # Save stdout (contents of editbox) to tmp file
+#  2>/dev/null		  # This was dropped because it's already applied by /usr/local/bin/yad
+
+STS=$?  # Status of last command
+
+case $STS in
+    0)  # OK button
+        echo $"Saving..."
+        cat $TMP_FILE > $CFG_FILE   # save tmp file to config
+        rm -f $TMP_FILE
+        refresh
+        argynope
+        ;;
+    *)  # Cancel button, Window Close, etc
+        echo $"Discarding..."
+        rm -f $TMP_FILE
+        argynope
+        ;;
+esac
+}
+
 
 ##########################################################
 ##########################################################
