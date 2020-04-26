@@ -1,6 +1,6 @@
 #! /bin/bash
 
-#mx-idesktool v1.5, released March 2020. 
+#mx-idesktool v1.6, released April 2020. 
 #A script by the MX Linux Dev Team, user Misko_2083 and others to configure the idesk app. Based on idesktool v1.36 released August 2004 by John Murray john@jmurray.id.au
 
 TEXTDOMAINDIR=/usr/share/locale
@@ -70,6 +70,7 @@ TEXT48=$"Set a precise position for an icon"
 TEXT49=$"Directly edit an icon file"
 LOCK=$"Lock"
 LOCK_TEXT=$"Permit/prevent icon movement"
+TEXT50=$"Right-Click Command"
 
 # Ensure only one instance of this script is running
 me="$(basename "$0")";
@@ -156,6 +157,7 @@ table Actions
   EndDrag: right singleClk
   Execute[0]: left singleClk
   Execute[1]: middle singleClk
+  Execute[2]: right doubleClk
 end" > "${HOME}/.ideskrc"
 }
 ################################################
@@ -252,8 +254,9 @@ fi
 new_commands="$($DIALOG --form --separator="\n" --title "$TEXT5" \
                         --text="$TEXT11"\
                         --button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
-	                --field="$TEXT46": "$command" \
-                        --field="$TEXT47": "mx-idesktool ${linkname}.lnk" )"
+	                    --field="$TEXT46": "$command" \
+                        --field="$TEXT47": "mx-idesktool ${linkname}.lnk" \
+                        --field="$TEXT50": "$command")"
                         
 #new_commands="$($DIALOG --form --center --separator="\n" --title "$TEXT5" \
         #--button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
@@ -264,6 +267,7 @@ retval=$?
 case $retval in
         0) command="$(echo "${new_commands}" | sed -n "1p")"
 	       mclick="$(echo "${new_commands}"  | sed -n "2p")"
+	       rclick="$(echo "${new_commands}"  | sed -n "3p")"
            geticon
            ;;
         3) newcaption
@@ -293,6 +297,8 @@ echo "getting current values"
 	echo "command is " $command
 #get the middle click command
     mclick=`cat "${currentlnkfile}" | grep "Command\[1\]:" | sed "s/Command\[1\]:\ //" | sed "s/^[ \t]*//"`
+#get the right click command
+	rclick=`cat "${currentlnkfile}" | grep "Command\[2\]:" | sed "s/Command\[2\]:\ //" | sed "s/^[ \t]*//"`
 #get the X value
 	currentxvalue=`cat "${currentlnkfile}" | grep "X:" | sed "s/X://" | sed "s/^[ \t]*//"`
 #get the Y value
@@ -352,7 +358,6 @@ if [ "$linkname" = "" ]; then
    modcaption="NoLinkNameProvided$$"
 fi
 
-
 #mod_commands="$($DIALOG --form --separator="\n" --title "$TEXT5" \
                     #--text="$TEXT11" \
                         #--button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
@@ -362,13 +367,14 @@ fi
 mod_commands="$($DIALOG --form --center --separator="\n" --title "$TEXT5" \
                         --button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
 	                --field="$TEXT12" "$command" \
-	                --field="$TEXT13" "${mclick:-mx-idesktool ${linkname}.lnk}")"
-                        
+	                --field="$TEXT13" "${mclick:-mx-idesktool ${linkname}.lnk}" \
+                    --field="$TEXT50" "${rclick:-mx-idesktool ${linkname}.lnk}")"
 retval=$?
 
 case $retval in
         0) command="$(echo "${mod_commands}" | sed -n "1p")"
 	       mclick="$(echo "${mod_commands}"  | sed -n "2p")"
+	       rclick="$(echo "${mod_commands}"  | sed -n "3p")"
            geticon
            ;;
         3) currentcaption="${cap}"
@@ -634,6 +640,7 @@ echo "  X: ${currentxvalue}" >> "${HOME}/.idesktop/${linkname}.lnk"
 echo "  Y: ${currentyvalue}" >> "${HOME}/.idesktop/${linkname}.lnk"
 echo "  Command[0]: ${command}" >> "${HOME}/.idesktop/${linkname}.lnk"
 echo "  Command[1]: ${mclick}" >> "${HOME}/.idesktop/${linkname}.lnk"
+echo "  Command[2]: ${rclick}" >> "${HOME}/.idesktop/${linkname}.lnk"
 echo "end" >> "${HOME}/.idesktop/${linkname}.lnk"
 
 $DIALOG --no-buttons --width 500 --title="$TEXT21" \
