@@ -666,12 +666,13 @@ choice=$($DIALOG  --title  "$TEXT5" --width 450 --height 380 --center \
                 "$OPEN" "$TEXT24"  \
                 "$DELETE" "$TEXT25"  \
                 "$CREATE" "$TEXT26"  \
+                " "   " " \
                 "$POSITION" "$TEXT48" \
                 "$LOCK"  "$LOCK_TEXT" \
                 "$REFRESH" "$TEXT27"  \
+                " "   " " \
 				"$CONFIGURE" "$TEXT28" \
 				"$WRITE" "$TEXT49" \
-				" "   " " \
 				"$HELP" "$TEXT29" 2>/dev/null) 
 
 retval=$?
@@ -726,12 +727,13 @@ choice=$($DIALOG  --title "$TEXT5" --width 450 --height 380 --center \
                 "$OPEN" "$TEXT24"  \
                 "$DELETE" "$TEXT25"  \
                 "$CREATE" "$TEXT26"  \
+                " "   " " \
                 "$POSITION" "$TEXT48" \
                 "$LOCK"  "$LOCK_TEXT" \
                 "$REFRESH" "$TEXT27"  \
+                " "   " " \
 				"$CONFIGURE" "$TEXT28" \
 				"$WRITE" "$TEXT49" \
-				" "   " " \
 				"$HELP" "$TEXT29" 2>/dev/null)
 				
 retval=$?
