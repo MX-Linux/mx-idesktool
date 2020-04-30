@@ -1,0 +1,50 @@
+#!/bin/bash
+
+# ideskrun - helper script to allow idesk move and run with single clicks
+
+# exclusive run  
+LOCK=${XDG_RUNTIME_DIR:-/tmp}/ideskrun.lock.$USER
+
+# clear old hanging lock older than 30 seconds
+if [ -f $LOCK ]; then
+	CT=$(stat -c %Y $LOCK)
+	DT=$(date +%s)
+	if [ $(( $DT - ${CT} )) -gt 30 ]; then
+		rm $LOCK
+	fi
+fi
+
+exec 200>$LOCK
+flock -n 200 || exit 1
+
+# get latest change time of idesk desktop entries in milli seconds
+CT=$(stat -c %.3Y $(ls -1t  ~/.idesktop/*.lnk  ~/.ideskrc 2>/dev/null \
+	 | head -1) 2>/dev/null) || exit 1
+
+# get time in milli seconds since Epoch (1.1.1070)
+DT=$(date +%s%3N)
+
+# a resonable delay in milli seconds
+DL=300
+
+if [ $(( $DT - ${CT/.} )) -lt $DL ]; then
+	# last change time to short, e.g. due to drag-move
+	# will not run and return with exit 1
+	exit 1
+fi
+
+case $# in
+	# no argument given 
+	0) exit 0 
+	;;
+	*)
+	# run given arguments 
+	"${@}" & disown
+	sleep 0.3
+	flock -u 200
+	exit 0
+	;;
+esac
+# shall never come here, so will exit with 1
+flock -u 200
+exit 1
