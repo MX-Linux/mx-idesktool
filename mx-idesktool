@@ -166,7 +166,7 @@ table Config
   SnapShadowTrans: 200
 end
 
-$USAGE_URL
+help: $USAGE_URL
 
 table Actions
   Lock: control right singleClk
@@ -271,7 +271,7 @@ fi
 
 
 new_commands="$($DIALOG --form --center --width=500 \
-						--separator="\n" --title "$TEXT5" \
+                        --separator="\n" --title "$TEXT5" \
                         --text="$TEXT11"\
                         --button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
                         --field="$TEXT46": "$command" \
@@ -306,11 +306,11 @@ getcurrentvalues()
 {
 echo "getting current values"
 #get the caption
-	currentcaption=$(sed -rn '/^[[:space:]]*(#)?Caption:[[:space:]]*/{s///; s/[[:space:]]*$//;p}' "${currentlnkfile}")
+    currentcaption=$(sed -rn '/^[[:space:]]*(#)?Caption:[[:space:]]*/{s///; s/[[:space:]]*$//;p}' "${currentlnkfile}")
 #get the icon
-	currenticon=$(sed -rn '/^[[:space:]]*Icon:[[:space:]]*/{s///; s/[[:space:]]*$//;p}' ${currentlnkfile})
+    currenticon=$(sed -rn '/^[[:space:]]*Icon:[[:space:]]*/{s///; s/[[:space:]]*$//;p}' ${currentlnkfile})
 #get the left click command
-	command=$(sed -rn '/^[[:space:]]*(#)?Command(\[0\])?:[[:space:]]*/{s///; s/[[:space:]]*$//;p}' "${currentlnkfile}")
+    command=$(sed -rn '/^[[:space:]]*(#)?Command(\[0\])?:[[:space:]]*/{s///; s/[[:space:]]*$//;p}' "${currentlnkfile}")
     echo "command is " $command
 #get the middle click command
     mclick=$(sed -rn '/^[[:space:]]*Command\[1\]:[[:space:]]*/{s///; s/[[:space:]]*$//;p}' "${currentlnkfile}")
@@ -377,13 +377,13 @@ fi
 
 #mod_commands="$($DIALOG --form --separator="\n" --title "$TEXT5" \
                     #--text="$TEXT11" \
-                        #--button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
+                    #--button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
                     #--field="$TEXT12" "$command" \
-                        #--field="$TEXT13" "mx-idesktool $modcaption.lnk")"
+                    #--field="$TEXT13" "mx-idesktool $modcaption.lnk")"
 
 mod_commands="$($DIALOG --form --center --width=500 \
-					--separator="\n" --title "$TEXT5" \
-                        --button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
+                    --separator="\n" --title "$TEXT5" \
+                    --button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
                     --field="$TEXT12" "$command" \
                     --field="$TEXT13" "${mclick:-mx-idesktool ${linkname}.lnk}" \
                     --field="$TEXT50" "${rclick:-mx-idesktool ${linkname}.lnk}")"
@@ -419,7 +419,7 @@ echo "current icon is " "${iconplaceholder}"
 cd "${iconplaceholder%/*}"
 
 icon="$($DIALOG --title="Commands" \
-				--width=500 --height=500 --center \
+                --width=500 --height=500 --center \
                 --button="$TEXT7":3 --button="$TEXT8":1 \
                 --button="$TEXT9":0 --title "$TEXT23" \
                 --text="$TEXT14": \
@@ -435,9 +435,9 @@ case ${retval} in
         0) iconvalidate
            ;;
         3) if [ "${comefrom}" = "modif" ]; then
-                   modifycommands
-       else
-                   newcommands
+                modifycommands
+           else
+                newcommands
            fi
            ;;
         *) argynope
@@ -696,8 +696,8 @@ while [  "${choice// }" == "x" ]; do
                     "$LOCK"       "   ""$LOCK_TEXT"             \
                     "$REFRESH"    "   ""$TEXT27"                \
                     "x"           "<b><big>$CONFIG</big></b>"   \
-                    "editstyle"   "   "$"iDesk's style config"  \
-                    "editactions" "   "$"iDesk's mouse actions" \
+                    "editstyle"   "   ""$EDITSTYLE"             \
+                    "editactions" "   ""$EDITACTIONS"           \
                     "x"           "<b><big>$HELP</big></b>"     \
                     "$HELP"       "   ""$TEXT29" 2>/dev/null)
    retval=$?
@@ -709,18 +709,18 @@ echo $retval $choice
 
 case $retval in
         0) case ${choice} in
-                "$DELETE")       deleteandrefresh
+                "$DELETE")     deleteandrefresh
                 ;;
-                "$OPEN")  getcurrentvalues
-                             modifycaption
+                "$OPEN")       getcurrentvalues
+                               modifycaption
                 ;;
-            "$REFRESH")     refresh
+                "$REFRESH")    refresh
                 ;;
-            "$CREATE")         cap=""
-                             command=""
-                         newcaption
+                "$CREATE")     cap=""
+                               command=""
+                               newcaption
                 ;;
-                "$LOCK")  unlock_icons
+                "$LOCK")       unlock_icons
                 ;;
                 "$CONFIGURE")  editconfig
                 ;;           
@@ -728,11 +728,11 @@ case $retval in
                 ;;
                 "editactions") editactions
                 ;;
-                "$POSITION") modifyXY
+                "$POSITION")   modifyXY
                 ;;
-                "$WRITE") icon_file
+                "$WRITE")      icon_file
                 ;;
-                "$HELP") mxidesktool_help
+                "$HELP")       mxidesktool_help
                 ;;
            esac
            ;;
@@ -809,7 +809,7 @@ case $retval in
                 ;;
                 "$WRITE")      icon_file
                 ;;
-                "$POSITION")    modifyXY
+                "$POSITION")   modifyXY
                 ;;
            esac
            ;;
@@ -822,14 +822,14 @@ esac
 ##########################################################
 editconfig()
 {
-	
+    
 TMP_FILE=$(mktemp --tmpdir=${XDG_RUNTIME_DIR:-/tmp} editbox.txt.XXXXXXXX)
-	
+    
 $DIALOG --title="$TEXT31" --width 500 --height 600 --center \
-		--text-info \
-		--editable < <(
-		cat "${HOME}/.ideskrc"
-		) 2>/dev/null > $TMP_FILE
+        --text-info \
+        --editable < <(
+        cat "${HOME}/.ideskrc"
+        ) 2>/dev/null > $TMP_FILE
 
 case $? in
       0) cat $TMP_FILE > "${HOME}/.ideskrc"
@@ -850,25 +850,25 @@ editactions()
 
 TMP_FILE=$(mktemp --tmpdir=${XDG_RUNTIME_DIR:-/tmp} editbox.txt.XXXXXXXX)
 IDESKRC="${HOME}/.ideskrc"
-	
+    
 $DIALOG --title="$EDITACTIONS" --width 400 --height 330 --center \
-		--text-info \
-		--editable < <(	
-				sed -rn '/^table Actions/,/^end/{
-				        /^table Actions|^end/d
-						s/^[[:space:]]*//
-						s/[[:space:]]+/ /; p}' $IDESKRC | \
-				awk -F:  '{ printf("%-14s%s\n", $1":", $2)}'
-				) 2>/dev/null > $TMP_FILE
+        --text-info \
+        --editable < <( 
+                sed -rn '/^table Actions/,/^end/{
+                        /^table Actions|^end/d
+                        s/^[[:space:]]*//
+                        s/[[:space:]]+/ /; p}' $IDESKRC | \
+                awk -F:  '{ printf("%-14s%s\n", $1":", $2)}'
+                ) 2>/dev/null > $TMP_FILE
 
 case $? in
       0) # OK button
          echo $"Saving..."
-		 sed -i '/^table Actions/,/^end/d' $IDESKRC
-  		 printf 'table Actions\n' >>  $IDESKRC
-		 sed -ri 's/^[[:space:]]*//; s/[[:space:]]+/ /g; s/^/  /' $TMP_FILE
-		 cat $TMP_FILE  >> $IDESKRC
-  		 printf 'end\n' >> $IDESKRC
+         sed -i '/^table Actions/,/^end/d' $IDESKRC
+         printf 'table Actions\n' >>  $IDESKRC
+         sed -ri 's/^[[:space:]]*//; s/[[:space:]]+/ /g; s/^/  /' $TMP_FILE
+         cat $TMP_FILE  >> $IDESKRC
+         printf 'end\n' >> $IDESKRC
          rm -f $TMP_FILE
          refresh
          argynope
@@ -882,30 +882,30 @@ esac
 
 editstyle()
 {
-	
+    
 TMP_FILE=$(mktemp --tmpdir=${XDG_RUNTIME_DIR:-/tmp} editbox.txt.XXXXXXXX)
 IDESKRC="${HOME}/.ideskrc"
-	
+    
 $DIALOG --title="$EDITSTYLE" --width 500 --height 680 --center \
-		--show-uri  \
-		--text-info \
-		--editable < <(	
-			sed -rn '/^table Config/,/^end/{
-				     /^table Config|^end/d
-						s/^[[:space:]]*//; s/[[:space:]]+/ /; p}' $IDESKRC | \
-			awk -F:  '{ printf("%-28s%s\n", $1":", $2)}'
-			printf "\niDesk Configuration:\n$USAGE_URL\n"
-		) 2>/dev/null > $TMP_FILE
+        --show-uri  \
+        --text-info \
+        --editable < <( 
+            sed -rn '/^table Config/,/^end/{
+                     /^table Config|^end/d
+                        s/^[[:space:]]*//; s/[[:space:]]+/ /; p}' $IDESKRC | \
+            awk -F:  '{ printf("%-28s%s\n", $1":", $2)}'
+            printf "\niDesk Configuration:\n$USAGE_URL\n"
+        ) 2>/dev/null > $TMP_FILE
 
 case $? in
       0) # OK button
          echo $"Saving..."
-		 sed -ri 's/^[[:space:]]*//; /^[[:space:]]*$/d; s/[[:space:]]+/ /g; s/^/  /' $TMP_FILE
-		 sed -i '1itable Config' $TMP_FILE
-		 sed -i '/iDesk Configuration/d; /http/d' $TMP_FILE
-  		 printf 'end\n\n' >> $TMP_FILE
-		 printf "$USAGE_URL\n\n" >> $TMP_FILE
-  		 sed -n '/^table Actions/,/^end/p' $IDESKRC >> $TMP_FILE
+         sed -ri 's/^[[:space:]]*//; /^[[:space:]]*$/d; s/[[:space:]]+/ /g; s/^/  /' $TMP_FILE
+         sed -i '1itable Config' $TMP_FILE
+         sed -i '/iDesk Configuration/d; /http/d' $TMP_FILE
+         printf 'end\n\n' >> $TMP_FILE
+         printf "help: $USAGE_URL\n\n" >> $TMP_FILE
+         sed -n '/^table Actions/,/^end/p' $IDESKRC >> $TMP_FILE
          cat  $TMP_FILE > $IDESKRC
          rm -f $TMP_FILE
          refresh
@@ -965,19 +965,32 @@ icon_file ()
 {
 cd "${HOME}/.idesktop"
 
-CFG_FILE="$($DIALOG --file-selection --title="$TEXT19")"
+#CFG_FILE="$($DIALOG --file-selection --title="$TEXT19")"
 
-# TMP_FILE="/tmp/editbox.txt.$$"  # Made unique by appending PID of executor ($$)
-TMP_FILE=$(mktemp --tmpdir=${XDG_RUNTIME_DIR:-/tmp} editbox.txt.XXXXXXXX)
 
-$DIALOG --title=$"Text Editing" --width=500 --height=600 --center \
-    --text-info --editable < <(cat ${CFG_FILE}) > $TMP_FILE
+cd "${HOME}/.idesktop"
+CFG_FILE="$($DIALOG --width 500 --height 500 --center \
+                    --button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
+                    --title="$TEXT19"  \
+                    --file-selection --file-filter="lnk | *.lnk")"
 
-#  < <(cat ${CFG_FILE})   # Load text of config file into editbox thru stdin
-#  > $TMP_FILE            # Save stdout (contents of editbox) to tmp file
-#  2>/dev/null        # This was dropped because it's already applied by /usr/local/bin/yad
+STS=$?
+if [ $STS = 0 ] && [ ! -f "${CFG_FILE}" ]; then
+	STS = 1
+fi
 
-STS=$?  # Status of last command
+if [ $STS = 0 ]; then
+
+	TMP_FILE=$(mktemp --tmpdir=${XDG_RUNTIME_DIR:-/tmp} editbox.txt.XXXXXXXX)
+	$DIALOG --title=$"Text Editing" --width=500 --height=600 --center \
+	    --text-info --editable < <(cat "${CFG_FILE}") > $TMP_FILE
+	
+	#  < <(cat ${CFG_FILE})   # Load text of config file into editbox thru stdin
+	#  > $TMP_FILE            # Save stdout (contents of editbox) to tmp file
+	#  2>/dev/null        # This was dropped because it's already applied by /usr/local/bin/yad
+
+	STS=$?  # Status of last command
+fi
 
 case $STS in
     0)  # OK button
@@ -989,7 +1002,7 @@ case $STS in
         ;;
     *)  # Cancel button, Window Close, etc
         echo $"Discarding..."
-        rm -f $TMP_FILE
+        [ -f $TMP_FILE ] && rm -f $TMP_FILE
         argynope
         ;;
 esac
@@ -1028,7 +1041,15 @@ echo $argy
 if [ "${argy}" = "nope" ]; then
         argynope
 else
-        currentlnkfile="${HOME}/.idesktop/${argu}"
+        # fix for basename only 
+        argu="${argu##*/}"
+        # fix missing .lnk extension
+        if [ "${argu%.lnk}" =  "${argu}" ]; then
+           currentlnkfile="${HOME}/.idesktop/${argu}.lnk"
+        else
+           currentlnkfile="${HOME}/.idesktop/${argu}"
+        fi
+        
         echo "current link file is " $currentlnkfile
         argyyep
 fi
