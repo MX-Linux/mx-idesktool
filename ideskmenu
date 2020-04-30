@@ -1,0 +1,146 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+use Data::Dumper;
+use List::Util qw( any none pairmap reduce );
+use Time::HiRes qw( stat time usleep );
+$Data::Dumper::Indent = 1; $Data::Dumper::Sortkeys = 1; $Data::Dumper::Purity = 1;
+#-------------------
+my $debug =  "$ENV{IDEBUG}" if defined $ENV{IDEBUG} ;
+my $iconsize = 48;
+my $offset = $iconsize / 2;
+my $elapsed = 300; # time elapsed in milliseconds
+my $since = time - $elapsed / 1000;
+
+usleep(50000); 
+my $ideskdir = "$ENV{HOME}/.idesktop";
+
+chdir $ideskdir  or die "Can't change dir:$!";
+
+my $cursor = { split /[:\s]/, uc(qx(xdotool getmouselocation)) } ;
+$cursor->{pos} = [ $cursor->{X}, $cursor->{Y} ];
+print Data::Dumper->Dump([\$cursor],[qw(cursor)]) if defined $debug;
+
+my @grep=qx( grep -d skip -H -E "[XY]:" *.lnk ); chomp(@grep);
+
+my @positions = pairmap {{
+    my $h = {('file',(split (/\s*:\s*/, $a)),
+              (split (/\s*:\s*/, $b))[1,2] )}; $h
+            }} @grep;
+
+print Data::Dumper->Dump([\@positions],[qw(positions)]) if defined $debug;
+
+# get "neighbour" icons of cursor position within icons size distance
+my $cx = $cursor->{X};  my $cy = $cursor->{Y};
+my @neighbour = grep {
+    my ($px, $py) = ($_->{X} , $_->{Y});
+    my ($bx, $by) = ($px + $iconsize, $py + $iconsize);
+    $_->{pos} = [ $px + $offset , $py + $offset ];
+    if ( $px < $cursor->{X} and $bx > $cursor->{X} and
+         $py < $cursor->{Y} and $by > $cursor->{Y} )
+    {
+        $_->{pos} = [ $px + $offset , $py + $offset ];
+        1;
+    } else {
+        0
+    } ;
+} @positions;
+
+
+# get mtime of first neighbour
+if ( @neighbour) {
+    my $file = $neighbour[0]->{file};
+    my ( $mtime ) = ( stat $file )[9];
+    $neighbour[0]->{mtime} = $mtime;
+}
+# get oldest "on-top" icon from neighbour icons
+my $top = reduce {
+    my $afile = $a->{file};
+    my $bfile = $b->{file};
+    my ( $amtime ) = ( $a->{mtime} );
+    my ( $bmtime ) = ( stat $bfile )[9];
+    $b->{mtime} = $bmtime;
+    $amtime < $bmtime ? $a : $b;
+} @neighbour;
+
+print "\n";
+
+print Data::Dumper->Dump([\@neighbour], [qw(neighbour)]) if defined $debug;
+print Data::Dumper->Dump([$cursor], [qw(cursor)])        if defined $debug;
+print Data::Dumper->Dump([$top], [qw(top)])              if defined $debug;
+
+my $file = $top->{file};
+
+exit 1 unless defined $file;
+
+use File::Temp qw /tempfile/;
+my $tempdir = defined $ENV{XDG_RUNTIME_DIR} ? $ENV{XDG_RUNTIME_DIR}  : "/tmp";
+
+my $temp = File::Temp->new(
+           DIR => $tempdir,
+           TEMPLATE => 'ideskmenu_' . 'X' x 10 );
+
+my $ideskmenu = $temp->filename;
+
+print $ideskmenu if $debug;
+
+-r $file or  die "Can't read file '$file':$!";
+
+
+my $hash = { file => $file, map { 
+            my ($k, $v ) =  map { s/^\s+//; s/\s+$//; $_} 
+                            split(":",$_,2); 
+                            $k = 'Command[0]' if $k eq 'Command';
+                            ($k => $v)  
+            } grep {/:/} do { local (@ARGV ) = $file; <>} }; 
+
+print Data::Dumper->Dump([\$hash], [qw(hash)]) if defined $debug;
+        
+my $template = << 'END_OF_TEMPLATE';
+[begin] (Title)
+  [exec] (Run) {%C}
+  [exec] (Open)       { exec xdg-open %F } 
+  [exec] (Text-Edit)  { exec fpad %F }
+  [exec] (iDesktool)  { exec mx-idesktool $(basename "%F") }
+  [exec] (Caption On/Off)  { grep -sq '^[[:blank:]]*#Caption:' "%F" && sed -i -r '/^([[:space:]]*)#(Caption:.*)/s//\1\2/' "%F" || sed -i -r '/^([[:space:]]*)(Caption:.*)/s//\1#\2/' "%F"; pkill -u $USER -x idesk; ( idesk & disown) >/dev/null 2>&1 }
+  [exec] (iDeskToggle)   { idesktoggle  >/dev/null 2>&1 }
+  [exec] (Reload)      {pkill -u $USER -x idesk; idesk }
+  [restart] (Refresh)
+  [exec] (Idesk Off)   {pkill -u $USER -x idesk}
+[end]
+END_OF_TEMPLATE
+
+my $ideskmenu_template = "BUILD_IN_TEMPLATE";
+
+foreach my $idir ( $ideskdir , "/etc/ideskmenu" ) {
+    if (-r $idir . "/" . "ideskmenu.template" ) {
+        $ideskmenu_template = $idir . "/" . "ideskmenu.template";   
+        $template = do { local(@ARGV,$/) = $ideskmenu_template; <>};
+        last;
+    }
+}
+print "template: $ideskmenu_template  \n" if defined $debug;
+print "$template"   if defined $debug;
+
+my $title;
+$title = $hash->{'Caption'} if defined $hash->{'Caption'};
+$title = $hash->{'#Caption'} if defined $hash->{'#Caption'};
+my $command = $hash->{'Command[0]'} if defined $hash->{'Command[0]'};
+my $filepath = "$ideskdir/" . $file;
+ 
+$template =~ s/Title/$title/;
+$template =~ s/%C/$command/g;
+$template =~ s/%F/$filepath/g;
+
+open(my $fh, '>:encoding(UTF-8)', $ideskmenu)  or die "Could not open file '$ideskmenu'";
+print $fh $template;
+close $fh;
+
+print "ideskmenu: $ideskmenu\n" if defined $debug;
+system("cat  $ideskmenu")     if defined $debug;
+
+my $exec = "fluxbox-remote 'custommenu $ideskmenu'; rm $ideskmenu";
+print "exec( $exec )" if $debug;
+exec( $exec )
