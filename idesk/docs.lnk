@@ -1,0 +1,9 @@
+table Icon
+  Caption: 2x Docs
+  Icon: /usr/share/icons/Moka/48x48/apps/wine-help.png
+  X: 131
+  Y: 131
+  Command[0]: ideskrun thunar /usr/share/mxflux/help
+  Command[1]: mx-idesktool Documentation.lnk
+  Command[2]: mx-manual
+end
