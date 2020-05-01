@@ -1,4 +1,5 @@
 mx-idesktool	usr/bin
+scripts/* /usr/bin
 idesk/*.lnk etc/skel/.idesktop
 idesk/.ideskrc etc/skel/
 translations_script/mo/am/mx-idesktool.mo     /usr/share/locale/am/LC_MESSAGES
