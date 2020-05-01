@@ -4,7 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# darknet matrix, 2019
+# anticapitalista <anticapitalista@riseup.net>, 2020
 # Eadwine Rose, 2020
 # 
 #, fuzzy
@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 07:54-0600\n"
-"PO-Revision-Date: 2019-12-18 03:57+0000\n"
+"POT-Creation-Date: 2020-04-26 18:03-0500\n"
+"PO-Revision-Date: 2020-03-26 13:48+0000\n"
 "Last-Translator: Eadwine Rose, 2020\n"
 "Language-Team: Dutch (https://www.transifex.com/anticapitalista/teams/10162/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -22,54 +22,252 @@ msgstr ""
 "Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: bin/mxflux_install.sh:14
-#, sh-format
+#: mx-idesktool:9
+msgid "ERROR: Yad not installed or not in path."
+msgstr "FOUT: Yad niet geïnstalleerd of niet in het pad."
+
+#: mx-idesktool:10
+msgid "Yad found. So far so good.."
+msgstr "Yad gevonden. Tot zover goed..."
+
+#: mx-idesktool:11
 msgid ""
-"This will install into your Home folder components that MX-flux requires in "
-"order to run.  Any existing fluxbox configuration will be backed up as "
-"<i>$HOME/.restore/fluxbox/fluxbox_BAK</i>."
+"ERROR: idesk not installed or not in path. Try "
+"http://sourceforge.net/projects/idesk/"
 msgstr ""
-"Dit wordt geïnstalleerd in uw Home map componenten die MX-flux nodig heeft "
-"om te worden uitgevoerd. Elke bestaande fluxbox configuratie wordt geback-"
-"upt als <i>$HOME/.restore/fluxbox/fluxbox_BAK</i>."
+"FOUT: Yad niet geïnstalleerd of niet in het pad. Probeer "
+"http://sourceforge.net/projects/idesk/"
 
-#: bin/mxflux_install.sh:15
+#: mx-idesktool:12
+msgid "idesk found - we're on a roll :)"
+msgstr "idesk gevonden - het gaat goed :)"
+
+#: mx-idesktool:13
+msgid "Icon Management Tool"
+msgstr "Icoon Management Gereedschap"
+
+#: mx-idesktool:14
+msgid "Icon Caption:\\n(Leave blank for no caption)"
+msgstr "Icoon Bijschrift:\\n(Laat blanco voor geen bijschrift)"
+
+#: mx-idesktool:15
+msgid "Back"
+msgstr "Terug"
+
+#: mx-idesktool:16
+msgid "Cancel"
+msgstr "Ongedaan maken"
+
+#: mx-idesktool:17
+msgid "Next"
+msgstr "Volgende"
+
+#: mx-idesktool:18
+msgid "Caption"
+msgstr "Bijschrift"
+
+#: mx-idesktool:19
 msgid ""
-"To start a fluxbox session: log out, select <i>fluxbox</i> from the pull-"
-"down menu in the upper right corner, and log back in."
+"NOTE: The default middle-click command \\n\n"
+"   runs this configuration tool (recommended)."
 msgstr ""
-"Om een fluxbox-sessie te starten: log uit, selecteer <i>fluxbox</i> in het "
-"vervolgkeuzemenu in de rechterbovenhoek en log opnieuw in."
+"OPMERKING: Het standaard middel-klik commando \\n\n"
+"  voert dit configuratiegereedschap uit (aanbevolen)."
 
-#: bin/mxflux_install.sh:21 scripts/toolbar-legacy:12
-#: scripts/toolbar-userlast:10
-msgid "OK to proceed?"
-msgstr "OK om door te gaan?"
+#: mx-idesktool:21 mx-idesktool:67
+msgid "Left-Click Command:"
+msgstr "Links-Klik Commando:"
 
-#: bin/mxflux_install.sh:66 scripts/toolbar-legacy:14
-#: scripts/toolbar-legacy:56 scripts/toolbar-userlast:12
-msgid "All done!"
-msgstr "Helemaal klaar!"
+#: mx-idesktool:22
+msgid "Middle-Click Command:"
+msgstr "Middel-Klik Commando:"
 
-#: scripts/toolbar-legacy:13
+#: mx-idesktool:23
+msgid "Current icon"
+msgstr "Huidig icoon"
+
+#: mx-idesktool:24
+msgid "Oops!"
+msgstr "Oeps!"
+
+#: mx-idesktool:25
+msgid "Error: Icon Image File Not Found."
+msgstr "Fout: Icoon Beeldbestand Niet Gevonden."
+
+#: mx-idesktool:26
+msgid "Quit"
+msgstr "Stop"
+
+#: mx-idesktool:27
+msgid "Error: Unknown Filetype. The icon should be a png image."
+msgstr "Fout: Onbekend Filetype. Het icoon moet een png-beeld zijn."
+
+#: mx-idesktool:28
+msgid "Please choose a file"
+msgstr "Aub bestand selecteren"
+
+#: mx-idesktool:29
+msgid "Error: You need to select a valid file"
+msgstr "Fout: U dient een geldig bestand te selecteren"
+
+#: mx-idesktool:30
+msgid "Finished!"
+msgstr "Voltooid!"
+
+#: mx-idesktool:31
+msgid "All done. Restarting idesk now..."
+msgstr "Alles klaar. Herstarten idesk..."
+
+#: mx-idesktool:32 mx-idesktool:66
+msgid "Choose a .png icon image"
+msgstr "Kies een .png icoon afbeelding"
+
+#: mx-idesktool:33
+msgid "View or Edit an Icon"
+msgstr "Icoon Bekijken of Bewerken"
+
+#: mx-idesktool:34
+msgid "Remove an Icon"
+msgstr "Verwijder een Icoon"
+
+#: mx-idesktool:35
+msgid "Add a New Icon"
+msgstr "Voeg een Nieuw Icoon toe"
+
+#: mx-idesktool:36
+msgid "Reload the Desktop"
+msgstr "Herlaad de Desktop"
+
+#: mx-idesktool:37
+msgid "Edit iDesk's config file"
+msgstr "Bewerk iDesk's configuratiebestand"
+
+#: mx-idesktool:38
+msgid "MX-idesktool Help"
+msgstr "MX-ideskgereedschap Hulp"
+
+#: mx-idesktool:39
+msgid "USE: double-click entry to select a management action"
+msgstr "GEBRUIK: dubbelklik op invoer om een beheeractie te selecteren"
+
+#: mx-idesktool:40
+msgid "iDesk Configuration"
+msgstr "iDesk Configuratie"
+
+#: mx-idesktool:41
+msgid "Config. file  found - excellent!"
+msgstr "Config. bestand gevonden - perfect!"
+
+#: mx-idesktool:42
 msgid ""
-"This will make changes required for a legacy toolbar layout. Your current "
-"settings will be backed up and can be restored by clicking Menu > Settings >"
-" Toolbar > Userlast"
+"WARNING: No ideskrc file was found.\\nWould you like to have this "
+"file\\nadded now?"
 msgstr ""
-"Dit zal wijzigingen aanbrengen die nodig zijn voor een legacy werkbalk "
-"layout. Er wordt een back-up gemaakt van uw huidige instellingen en deze "
-"kunnen worden hersteld door te klikken op Menu > Instellingen > Werkbalk > "
-"Gebruikervorige"
+"WAARSCHUWING: Geen ideskrc bestand gevonden.\\nWilt u dit bestand\\nnu "
+"toevoegen?"
 
-#: scripts/toolbar-legacy:15 scripts/toolbar-userlast:13
-msgid "Log out and back in to complete the change."
-msgstr "Log uit en weer in om de verandering af te ronden."
+#: mx-idesktool:43
+msgid "No!"
+msgstr "Nee!"
 
-#: scripts/toolbar-userlast:11
+#: mx-idesktool:44
+msgid "Yes!"
+msgstr "Ja!"
+
+#: mx-idesktool:45
 msgid ""
-"This will restore the settings that were in place when you selected a legacy"
-" toolbar layout."
+"\\tThe configuration file has been written. \\n\n"
+"                Drag any icons you create to the\n"
+"                desired locations and they will\n"
+"                be remembered between sessions \\n\\n \n"
+"                Would you like to run the icon wizard now?"
 msgstr ""
-"Hiermee worden de instellingen hersteld die golden toen u een oude werkbalk "
-"layout selecteerde."
+"\\tHet configuratiebestand is geschreven. \\n\n"
+"Sleep eventuele pictogrammen die u maakt naar de\n"
+"gewenste plaatsen en zij zullen\n"
+"worden herinnerd tussen de sessies door \\n\\n \n"
+"Wil je nu de icoon wizard uitvoeren?"
+
+#: mx-idesktool:56
+msgid "Open"
+msgstr "Openen"
+
+#: mx-idesktool:57
+msgid "Delete"
+msgstr "Verwijder"
+
+#: mx-idesktool:58
+msgid "Create"
+msgstr "Aanmaken"
+
+#: mx-idesktool:59
+msgid "Locate"
+msgstr "Locatie"
+
+#: mx-idesktool:60
+msgid "Refresh"
+msgstr "Verversen"
+
+#: mx-idesktool:61
+msgid "Configure"
+msgstr "Configureer"
+
+#: mx-idesktool:62
+msgid "Write"
+msgstr "Schrijf"
+
+#: mx-idesktool:63
+msgid "Help"
+msgstr "Hulp"
+
+#: mx-idesktool:64
+msgid "ACTION"
+msgstr "ACTIE"
+
+#: mx-idesktool:65
+msgid "DESCRIPTION"
+msgstr "BESCHRIJVING"
+
+#: mx-idesktool:68
+msgid "Middle-Click Command"
+msgstr "Middel-Klik Commando"
+
+#: mx-idesktool:69
+msgid "Set a precise position for an icon"
+msgstr "Stel exacte positie van een icoon in"
+
+#: mx-idesktool:70
+msgid "Directly edit an icon file"
+msgstr "Rechtstreeks een icoonbestand aanpassen"
+
+#: mx-idesktool:71
+msgid "Lock"
+msgstr "Sluiten"
+
+#: mx-idesktool:72
+msgid "Permit/prevent icon movement"
+msgstr "Sta toe/voorkom icoon beweging"
+
+#: mx-idesktool:73
+msgid "Right-Click Command"
+msgstr "Rechts-Klik Commando"
+
+#: mx-idesktool:177 mx-idesktool:183
+msgid "Link Filename"
+msgstr "Link Bestandsnaam"
+
+#: mx-idesktool:178
+msgid "Enter Link Filename"
+msgstr "Voer Link Bestandsnaam In"
+
+#: mx-idesktool:848
+msgid "Text Editing"
+msgstr "Teskt Aanpassing"
+
+#: mx-idesktool:859
+msgid "Saving..."
+msgstr "Opslaan..."
+
+#: mx-idesktool:866
+msgid "Discarding..."
+msgstr "Weggooien..."
