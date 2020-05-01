@@ -3,13 +3,22 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# anticapitalista <anticapitalista@riseup.net>, 2020
+# James Bowlin <BitJam@gmail.com>, 2020
+# ふうせん Fu-sen. | BALLOON a.k.a. Fu-sen., 2020
+# Geoff Gigg <geoffgigg@hotmail.com>, 2020
+# night1ynx <night1ynxd@gmail.com>, 2020
+# user green, 2020
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 07:54-0600\n"
-"PO-Revision-Date: 2019-12-18 03:57+0000\n"
+"POT-Creation-Date: 2020-04-26 18:03-0500\n"
+"PO-Revision-Date: 2020-03-26 13:48+0000\n"
+"Last-Translator: user green, 2020\n"
 "Language-Team: Japanese (https://www.transifex.com/anticapitalista/teams/10162/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,43 +26,244 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: bin/mxflux_install.sh:14
-#, sh-format
+#: mx-idesktool:9
+msgid "ERROR: Yad not installed or not in path."
+msgstr "エラー: Yad がインストールされていないか、パスにありません。"
+
+#: mx-idesktool:10
+msgid "Yad found. So far so good.."
+msgstr "Yad が見つかろました。今のところ順調です..."
+
+#: mx-idesktool:11
 msgid ""
-"This will install into your Home folder components that MX-flux requires in "
-"order to run.  Any existing fluxbox configuration will be backed up as "
-"<i>$HOME/.restore/fluxbox/fluxbox_BAK</i>."
+"ERROR: idesk not installed or not in path. Try "
+"http://sourceforge.net/projects/idesk/"
 msgstr ""
+"エラー:idesk がインストールされていないか、パスにありません。http://sourceforge.net/projects/idesk/ "
+"を試してください。"
 
-#: bin/mxflux_install.sh:15
+#: mx-idesktool:12
+msgid "idesk found - we're on a roll :)"
+msgstr "idesk が見つかりました - 順調です :)"
+
+#: mx-idesktool:13
+msgid "Icon Management Tool"
+msgstr "アイコン管理ツール"
+
+#: mx-idesktool:14
+msgid "Icon Caption:\\n(Leave blank for no caption)"
+msgstr "アイコンのキャプション:\\n（キャプションがない場合は空欄にしてください）"
+
+#: mx-idesktool:15
+msgid "Back"
+msgstr "戻る"
+
+#: mx-idesktool:16
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: mx-idesktool:17
+msgid "Next"
+msgstr "次へ"
+
+#: mx-idesktool:18
+msgid "Caption"
+msgstr "キャプション"
+
+#: mx-idesktool:19
 msgid ""
-"To start a fluxbox session: log out, select <i>fluxbox</i> from the pull-"
-"down menu in the upper right corner, and log back in."
-msgstr ""
+"NOTE: The default middle-click command \\n\n"
+"   runs this configuration tool (recommended)."
+msgstr "注意: 既定の中クリックコマンドはこの設定ツールを実行します(推奨)。"
 
-#: bin/mxflux_install.sh:21 scripts/toolbar-legacy:12
-#: scripts/toolbar-userlast:10
-msgid "OK to proceed?"
-msgstr ""
+#: mx-idesktool:21 mx-idesktool:67
+msgid "Left-Click Command:"
+msgstr "左クリックのコマンド："
 
-#: bin/mxflux_install.sh:66 scripts/toolbar-legacy:14
-#: scripts/toolbar-legacy:56 scripts/toolbar-userlast:12
-msgid "All done!"
-msgstr ""
+#: mx-idesktool:22
+msgid "Middle-Click Command:"
+msgstr "中クリックコマンド："
 
-#: scripts/toolbar-legacy:13
+#: mx-idesktool:23
+msgid "Current icon"
+msgstr "現在のアイコン"
+
+#: mx-idesktool:24
+msgid "Oops!"
+msgstr "しまった！"
+
+#: mx-idesktool:25
+msgid "Error: Icon Image File Not Found."
+msgstr "エラー：アイコンの画像ファイルが見つかりません。"
+
+#: mx-idesktool:26
+msgid "Quit"
+msgstr "終了"
+
+#: mx-idesktool:27
+msgid "Error: Unknown Filetype. The icon should be a png image."
+msgstr "エラー：不明なファイルタイプです。アイコンは png 形式でなくてはなりません。"
+
+#: mx-idesktool:28
+msgid "Please choose a file"
+msgstr "ファイルを選択してください"
+
+#: mx-idesktool:29
+msgid "Error: You need to select a valid file"
+msgstr "エラー：有効なファイルを選択する必要があります"
+
+#: mx-idesktool:30
+msgid "Finished!"
+msgstr "完了！"
+
+#: mx-idesktool:31
+msgid "All done. Restarting idesk now..."
+msgstr "全て完了。今、ideskを再起動しています..."
+
+#: mx-idesktool:32 mx-idesktool:66
+msgid "Choose a .png icon image"
+msgstr ".pngアイコンの画像を選択します"
+
+#: mx-idesktool:33
+msgid "View or Edit an Icon"
+msgstr "アイコンの表示または編集"
+
+#: mx-idesktool:34
+msgid "Remove an Icon"
+msgstr "アイコンの削除"
+
+#: mx-idesktool:35
+msgid "Add a New Icon"
+msgstr "新しいアイコンの追加"
+
+#: mx-idesktool:36
+msgid "Reload the Desktop"
+msgstr "デスクトップの再読み込み"
+
+#: mx-idesktool:37
+msgid "Edit iDesk's config file"
+msgstr "iDesk 設定ファイの編集e"
+
+#: mx-idesktool:38
+msgid "MX-idesktool Help"
+msgstr "MX-idesktool ヘルプ"
+
+#: mx-idesktool:39
+msgid "USE: double-click entry to select a management action"
+msgstr "DesktopUSEのリロード：ダブルクリックして管理アクションを選択"
+
+#: mx-idesktool:40
+msgid "iDesk Configuration"
+msgstr "iDesk の設定"
+
+#: mx-idesktool:41
+msgid "Config. file  found - excellent!"
+msgstr "Config. ファイル発見 - すばらしい！"
+
+#: mx-idesktool:42
 msgid ""
-"This will make changes required for a legacy toolbar layout. Your current "
-"settings will be backed up and can be restored by clicking Menu > Settings >"
-" Toolbar > Userlast"
-msgstr ""
+"WARNING: No ideskrc file was found.\\nWould you like to have this "
+"file\\nadded now?"
+msgstr "警告：ideskrcファイルが見つかりません。\\n今すぐこのファイルを追加しますか？"
 
-#: scripts/toolbar-legacy:15 scripts/toolbar-userlast:13
-msgid "Log out and back in to complete the change."
-msgstr ""
+#: mx-idesktool:43
+msgid "No!"
+msgstr "はい！"
 
-#: scripts/toolbar-userlast:11
+#: mx-idesktool:44
+msgid "Yes!"
+msgstr "いいえ！"
+
+#: mx-idesktool:45
 msgid ""
-"This will restore the settings that were in place when you selected a legacy"
-" toolbar layout."
+"\\tThe configuration file has been written. \\n\n"
+"                Drag any icons you create to the\n"
+"                desired locations and they will\n"
+"                be remembered between sessions \\n\\n \n"
+"                Would you like to run the icon wizard now?"
 msgstr ""
+"\\t設定ファイルが書き込まれました。\\n作成したアイコンを任意の場所にドラッグすると、セッション間で記憶されます。\\n\\n今すぐアイコンウィザードを実行しますか？"
+
+#: mx-idesktool:56
+msgid "Open"
+msgstr "開く"
+
+#: mx-idesktool:57
+msgid "Delete"
+msgstr "削除"
+
+#: mx-idesktool:58
+msgid "Create"
+msgstr "作成"
+
+#: mx-idesktool:59
+msgid "Locate"
+msgstr "位置を指定"
+
+#: mx-idesktool:60
+msgid "Refresh"
+msgstr "リフレッシュ"
+
+#: mx-idesktool:61
+msgid "Configure"
+msgstr "設定"
+
+#: mx-idesktool:62
+msgid "Write"
+msgstr "書き込み"
+
+#: mx-idesktool:63
+msgid "Help"
+msgstr "ヘルプ"
+
+#: mx-idesktool:64
+msgid "ACTION"
+msgstr "アクション"
+
+#: mx-idesktool:65
+msgid "DESCRIPTION"
+msgstr "ディスクリプション"
+
+#: mx-idesktool:68
+msgid "Middle-Click Command"
+msgstr "中クリックのコマンド"
+
+#: mx-idesktool:69
+msgid "Set a precise position for an icon"
+msgstr "アイコンの正確な位置を設定"
+
+#: mx-idesktool:70
+msgid "Directly edit an icon file"
+msgstr "アイコンファイルを直接編集"
+
+#: mx-idesktool:71
+msgid "Lock"
+msgstr "ロック"
+
+#: mx-idesktool:72
+msgid "Permit/prevent icon movement"
+msgstr "アイコンの移動を許可/禁止"
+
+#: mx-idesktool:73
+msgid "Right-Click Command"
+msgstr ""
+
+#: mx-idesktool:177 mx-idesktool:183
+msgid "Link Filename"
+msgstr "リンク先のファイル名"
+
+#: mx-idesktool:178
+msgid "Enter Link Filename"
+msgstr "リンク先のファイル名を入力"
+
+#: mx-idesktool:848
+msgid "Text Editing"
+msgstr "テキストの編集"
+
+#: mx-idesktool:859
+msgid "Saving..."
+msgstr "保存中..."
+
+#: mx-idesktool:866
+msgid "Discarding..."
+msgstr "廃棄中..."

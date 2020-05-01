@@ -4,16 +4,20 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# mahmut özcan <mahmutozcan@protonmail.com>, 2019
+# anticapitalista <anticapitalista@riseup.net>, 2020
+# Caner Başaran <basaran.caner@protonmail.com>, 2020
+# Geoff Gigg <geoffgigg@hotmail.com>, 2020
+# e0360fc3c0afcd70e5aed1cfc885bac6, 2020
+# mahmut özcan <mahmutozcan@protonmail.com>, 2020
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 07:54-0600\n"
-"PO-Revision-Date: 2019-12-18 03:57+0000\n"
-"Last-Translator: mahmut özcan <mahmutozcan@protonmail.com>, 2019\n"
+"POT-Creation-Date: 2020-04-26 18:03-0500\n"
+"PO-Revision-Date: 2020-03-26 13:48+0000\n"
+"Last-Translator: mahmut özcan <mahmutozcan@protonmail.com>, 2020\n"
 "Language-Team: Turkish (https://www.transifex.com/anticapitalista/teams/10162/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,45 +25,245 @@ msgstr ""
 "Language: tr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: bin/mxflux_install.sh:14
-#, sh-format
+#: mx-idesktool:9
+msgid "ERROR: Yad not installed or not in path."
+msgstr "HATA: Yad kurulu değil veya yolu yok."
+
+#: mx-idesktool:10
+msgid "Yad found. So far so good.."
+msgstr "Yad bulundu. Şimdiye kadar iyi..."
+
+#: mx-idesktool:11
 msgid ""
-"This will install into your Home folder components that MX-flux requires in "
-"order to run.  Any existing fluxbox configuration will be backed up as "
-"<i>$HOME/.restore/fluxbox/fluxbox_BAK</i>."
+"ERROR: idesk not installed or not in path. Try "
+"http://sourceforge.net/projects/idesk/"
 msgstr ""
+"HATA: idesk kurulu değil veya yolu yok. "
+"http://sourceforge.net/projects/idesk/ adresini deneyin"
 
-#: bin/mxflux_install.sh:15
+#: mx-idesktool:12
+msgid "idesk found - we're on a roll :)"
+msgstr "idesk bulundu - sevinç turu atıyoruz :)"
+
+#: mx-idesktool:13
+msgid "Icon Management Tool"
+msgstr "Simge Yönetim Aracı"
+
+#: mx-idesktool:14
+msgid "Icon Caption:\\n(Leave blank for no caption)"
+msgstr "Simge Altyazısı:\\n(Resim yazısı için boş bırakın)"
+
+#: mx-idesktool:15
+msgid "Back"
+msgstr "Geri"
+
+#: mx-idesktool:16
+msgid "Cancel"
+msgstr "İptal"
+
+#: mx-idesktool:17
+msgid "Next"
+msgstr "Sonraki"
+
+#: mx-idesktool:18
+msgid "Caption"
+msgstr "Altyazı"
+
+#: mx-idesktool:19
 msgid ""
-"To start a fluxbox session: log out, select <i>fluxbox</i> from the pull-"
-"down menu in the upper right corner, and log back in."
+"NOTE: The default middle-click command \\n\n"
+"   runs this configuration tool (recommended)."
 msgstr ""
-"Fluxbox oturumunu başlatmak için: oturumu kapatın,  sağ üst köşedeki açılır "
-"menüden tekrar giriş yapın, <i>fluxbox</i> seçin."
 
-#: bin/mxflux_install.sh:21 scripts/toolbar-legacy:12
-#: scripts/toolbar-userlast:10
-msgid "OK to proceed?"
-msgstr "Devam etmek için hazır mısınız?"
+#: mx-idesktool:21 mx-idesktool:67
+msgid "Left-Click Command:"
+msgstr "Sol Tıklama Komutu:"
 
-#: bin/mxflux_install.sh:66 scripts/toolbar-legacy:14
-#: scripts/toolbar-legacy:56 scripts/toolbar-userlast:12
-msgid "All done!"
-msgstr "Hepsi tamam!"
+#: mx-idesktool:22
+msgid "Middle-Click Command:"
+msgstr "Orta Düğme Tıklama Komutu:"
 
-#: scripts/toolbar-legacy:13
+#: mx-idesktool:23
+msgid "Current icon"
+msgstr "Mevcut simge"
+
+#: mx-idesktool:24
+msgid "Oops!"
+msgstr "Eyvah!"
+
+#: mx-idesktool:25
+msgid "Error: Icon Image File Not Found."
+msgstr "Hata: Simge Resim Dosyası Bulunamadı."
+
+#: mx-idesktool:26
+msgid "Quit"
+msgstr "Vazgeç"
+
+#: mx-idesktool:27
+msgid "Error: Unknown Filetype. The icon should be a png image."
+msgstr "Hata: Bilinmeyen Dosya Türü. Simge bir png resmi olmalı."
+
+#: mx-idesktool:28
+msgid "Please choose a file"
+msgstr "Lütfen bir dosya seçin"
+
+#: mx-idesktool:29
+msgid "Error: You need to select a valid file"
+msgstr "Hata: Geçerli bir dosya seçmeniz gerekir"
+
+#: mx-idesktool:30
+msgid "Finished!"
+msgstr "Tamamlandı!"
+
+#: mx-idesktool:31
+msgid "All done. Restarting idesk now..."
+msgstr "Hepsi tamam. Idesk şimdi yeniden başlatılıyor ..."
+
+#: mx-idesktool:32 mx-idesktool:66
+msgid "Choose a .png icon image"
+msgstr "Bir .png simge resmi seçin"
+
+#: mx-idesktool:33
+msgid "View or Edit an Icon"
+msgstr "Bir Simgeyi Görüntüleme veya Düzenleme"
+
+#: mx-idesktool:34
+msgid "Remove an Icon"
+msgstr "Bir Simgeyi Kaldırma"
+
+#: mx-idesktool:35
+msgid "Add a New Icon"
+msgstr "Yeni Bir Simge Ekleme"
+
+#: mx-idesktool:36
+msgid "Reload the Desktop"
+msgstr "Masaüstünü Yeniden Yükle"
+
+#: mx-idesktool:37
+msgid "Edit iDesk's config file"
+msgstr "iDesk yapılandırma dosyasını düzenle"
+
+#: mx-idesktool:38
+msgid "MX-idesktool Help"
+msgstr "MX-idesktool Yardımı"
+
+#: mx-idesktool:39
+msgid "USE: double-click entry to select a management action"
+msgstr "KULLANIM: bir yönetim eylemi seçmek için girişi çift tıklayın"
+
+#: mx-idesktool:40
+msgid "iDesk Configuration"
+msgstr "iDesk Yapılandırma"
+
+#: mx-idesktool:41
+msgid "Config. file  found - excellent!"
+msgstr "Config. dosyası bulundu - mükemmel!"
+
+#: mx-idesktool:42
 msgid ""
-"This will make changes required for a legacy toolbar layout. Your current "
-"settings will be backed up and can be restored by clicking Menu > Settings >"
-" Toolbar > Userlast"
+"WARNING: No ideskrc file was found.\\nWould you like to have this "
+"file\\nadded now?"
 msgstr ""
+"UYARI: Bulunan bir ideskrc dosyası yok. Bu dosyanın şimdi eklenmesini ister "
+"misiniz?"
 
-#: scripts/toolbar-legacy:15 scripts/toolbar-userlast:13
-msgid "Log out and back in to complete the change."
-msgstr ""
+#: mx-idesktool:43
+msgid "No!"
+msgstr "Hayır!"
 
-#: scripts/toolbar-userlast:11
+#: mx-idesktool:44
+msgid "Yes!"
+msgstr "Evet!"
+
+#: mx-idesktool:45
 msgid ""
-"This will restore the settings that were in place when you selected a legacy"
-" toolbar layout."
+"\\tThe configuration file has been written. \\n\n"
+"                Drag any icons you create to the\n"
+"                desired locations and they will\n"
+"                be remembered between sessions \\n\\n \n"
+"                Would you like to run the icon wizard now?"
 msgstr ""
+
+#: mx-idesktool:56
+msgid "Open"
+msgstr "Aç"
+
+#: mx-idesktool:57
+msgid "Delete"
+msgstr "Sil"
+
+#: mx-idesktool:58
+msgid "Create"
+msgstr "Oluştur"
+
+#: mx-idesktool:59
+msgid "Locate"
+msgstr "Konumlandır"
+
+#: mx-idesktool:60
+msgid "Refresh"
+msgstr "Yenile"
+
+#: mx-idesktool:61
+msgid "Configure"
+msgstr "Yapılandır"
+
+#: mx-idesktool:62
+msgid "Write"
+msgstr "Yaz"
+
+#: mx-idesktool:63
+msgid "Help"
+msgstr "Yardım"
+
+#: mx-idesktool:64
+msgid "ACTION"
+msgstr "EYLEM"
+
+#: mx-idesktool:65
+msgid "DESCRIPTION"
+msgstr "AÇIKLAMA"
+
+#: mx-idesktool:68
+msgid "Middle-Click Command"
+msgstr "Orta Düğme Tıklama Komutu"
+
+#: mx-idesktool:69
+msgid "Set a precise position for an icon"
+msgstr "Bir simge için kesin bir konum ayarlama"
+
+#: mx-idesktool:70
+msgid "Directly edit an icon file"
+msgstr "Bir simge dosyasını doğrudan düzenleme"
+
+#: mx-idesktool:71
+msgid "Lock"
+msgstr "Kilit"
+
+#: mx-idesktool:72
+msgid "Permit/prevent icon movement"
+msgstr "Simge taşınmasına izin ver/engelle"
+
+#: mx-idesktool:73
+msgid "Right-Click Command"
+msgstr ""
+
+#: mx-idesktool:177 mx-idesktool:183
+msgid "Link Filename"
+msgstr "Bağlantı Dosya Adı"
+
+#: mx-idesktool:178
+msgid "Enter Link Filename"
+msgstr "Bağlantı Dosya Adını Girin"
+
+#: mx-idesktool:848
+msgid "Text Editing"
+msgstr "Metin Düzenleme"
+
+#: mx-idesktool:859
+msgid "Saving..."
+msgstr "Kaydediliyor..."
+
+#: mx-idesktool:866
+msgid "Discarding..."
+msgstr "Çöpe Atılıyor..."

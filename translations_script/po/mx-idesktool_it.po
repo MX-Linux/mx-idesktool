@@ -4,6 +4,9 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
+# anticapitalista <anticapitalista@riseup.net>, 2020
+# Guybrush88 <erpizzo@alice.it>, 2020
+# Davide Carli <dede.carli.drums@gmail.com>, 2020
 # Pierluigi Mario <pierluigimariomail@gmail.com>, 2020
 # 
 #, fuzzy
@@ -11,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 07:54-0600\n"
-"PO-Revision-Date: 2019-12-18 03:57+0000\n"
+"POT-Creation-Date: 2020-04-26 18:03-0500\n"
+"PO-Revision-Date: 2020-03-26 13:48+0000\n"
 "Last-Translator: Pierluigi Mario <pierluigimariomail@gmail.com>, 2020\n"
 "Language-Team: Italian (https://www.transifex.com/anticapitalista/teams/10162/it/)\n"
 "MIME-Version: 1.0\n"
@@ -21,56 +24,253 @@ msgstr ""
 "Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: bin/mxflux_install.sh:14
-#, sh-format
+#: mx-idesktool:9
+msgid "ERROR: Yad not installed or not in path."
+msgstr "ERROR: Yad non installato o non corretto il collegamento ad esso."
+
+#: mx-idesktool:10
+msgid "Yad found. So far so good.."
+msgstr "Yad trovato. Fin qui tutto bene.."
+
+#: mx-idesktool:11
 msgid ""
-"This will install into your Home folder components that MX-flux requires in "
-"order to run.  Any existing fluxbox configuration will be backed up as "
-"<i>$HOME/.restore/fluxbox/fluxbox_BAK</i>."
+"ERROR: idesk not installed or not in path. Try "
+"http://sourceforge.net/projects/idesk/"
 msgstr ""
-" Ciò installerà all'interno della tua directory Home i componenti necessari "
-"a MX-flux per funzionare. Verrà fatto il backup delle configurazioni "
-"esistenti di fluxbox salvandole in "
-"<i>$HOME/.restore/fluxbox/fluxbox_BAK</i>."
+"ERROR: idesk non installato o non corretto il collegamento ad esso. Prova "
+"http://sourceforge.net/projects/idesk/"
 
-#: bin/mxflux_install.sh:15
+#: mx-idesktool:12
+msgid "idesk found - we're on a roll :)"
+msgstr "idesk trovato - butta bene :)"
+
+#: mx-idesktool:13
+msgid "Icon Management Tool"
+msgstr "Strumento di Gestione Icone"
+
+#: mx-idesktool:14
+msgid "Icon Caption:\\n(Leave blank for no caption)"
+msgstr "Didascalia dell'icona:\\n(Lascia vuoto per nessuna didascalia)"
+
+#: mx-idesktool:15
+msgid "Back"
+msgstr "Indietro"
+
+#: mx-idesktool:16
+msgid "Cancel"
+msgstr "Annulla"
+
+#: mx-idesktool:17
+msgid "Next"
+msgstr "Successivo"
+
+#: mx-idesktool:18
+msgid "Caption"
+msgstr "Didascalia"
+
+#: mx-idesktool:19
 msgid ""
-"To start a fluxbox session: log out, select <i>fluxbox</i> from the pull-"
-"down menu in the upper right corner, and log back in."
+"NOTE: The default middle-click command \\n\n"
+"   runs this configuration tool (recommended)."
 msgstr ""
-"Per avviare una sessione di fluxbox: uscire, selezionare <i>fluxbox</i>dal "
-"menu a discesa nell'angolo in alto a destra, quindi fare nuovamente il Log-"
-"in."
+"NOTA: il comando predefinito con il tasto centrale del mouse\n"
+"usa questo strumento di configurazione (raccomandato)."
 
-#: bin/mxflux_install.sh:21 scripts/toolbar-legacy:12
-#: scripts/toolbar-userlast:10
-msgid "OK to proceed?"
-msgstr "OK a procedere?"
+#: mx-idesktool:21 mx-idesktool:67
+msgid "Left-Click Command:"
+msgstr "Comando con pulsante sinistro:"
 
-#: bin/mxflux_install.sh:66 scripts/toolbar-legacy:14
-#: scripts/toolbar-legacy:56 scripts/toolbar-userlast:12
-msgid "All done!"
-msgstr "Tutto fatto!"
+#: mx-idesktool:22
+msgid "Middle-Click Command:"
+msgstr "Comando del tasto centrale del mouse:"
 
-#: scripts/toolbar-legacy:13
+#: mx-idesktool:23
+msgid "Current icon"
+msgstr "Icona attuale"
+
+#: mx-idesktool:24
+msgid "Oops!"
+msgstr "Oops!"
+
+#: mx-idesktool:25
+msgid "Error: Icon Image File Not Found."
+msgstr "Errore: Non è stato trovato alcun file immagine dell'icona."
+
+#: mx-idesktool:26
+msgid "Quit"
+msgstr "Esci"
+
+#: mx-idesktool:27
+msgid "Error: Unknown Filetype. The icon should be a png image."
+msgstr ""
+"Errore: Tipo di file sconosciuto. L'icona dovrebbe essere un'immagine .png."
+
+#: mx-idesktool:28
+msgid "Please choose a file"
+msgstr "Scegli un file"
+
+#: mx-idesktool:29
+msgid "Error: You need to select a valid file"
+msgstr "Errore: Devi selezionare un file valido"
+
+#: mx-idesktool:30
+msgid "Finished!"
+msgstr "Finito!"
+
+#: mx-idesktool:31
+msgid "All done. Restarting idesk now..."
+msgstr "Fatto. Riavvia idesk ora..."
+
+#: mx-idesktool:32 mx-idesktool:66
+msgid "Choose a .png icon image"
+msgstr "Scegli un'immagine .png  per l'icona"
+
+#: mx-idesktool:33
+msgid "View or Edit an Icon"
+msgstr "Visualizza o modifica un'icona"
+
+#: mx-idesktool:34
+msgid "Remove an Icon"
+msgstr "Rimuovi un'icona"
+
+#: mx-idesktool:35
+msgid "Add a New Icon"
+msgstr "Aggiungi una nuova icona"
+
+#: mx-idesktool:36
+msgid "Reload the Desktop"
+msgstr "Ricarica il Desktop"
+
+#: mx-idesktool:37
+msgid "Edit iDesk's config file"
+msgstr "Modifica il file config di iDesk"
+
+#: mx-idesktool:38
+msgid "MX-idesktool Help"
+msgstr "Guida MX-idesktool"
+
+#: mx-idesktool:39
+msgid "USE: double-click entry to select a management action"
+msgstr "USO: doppio-click per selezionare una azione di gestione"
+
+#: mx-idesktool:40
+msgid "iDesk Configuration"
+msgstr "Configurazione di iDesk"
+
+#: mx-idesktool:41
+msgid "Config. file  found - excellent!"
+msgstr "File config. trovato - eccellente!"
+
+#: mx-idesktool:42
 msgid ""
-"This will make changes required for a legacy toolbar layout. Your current "
-"settings will be backed up and can be restored by clicking Menu > Settings >"
-" Toolbar > Userlast"
+"WARNING: No ideskrc file was found.\\nWould you like to have this "
+"file\\nadded now?"
 msgstr ""
-"Ciò comporterà l'esecuzione delle modifiche necessarie per un layout "
-"tradizionale della barra degli strumenti. Verrà eseguito il backup delle "
-"impostazioni correnti che potranno essere ripristinate cliccando su Menu> "
-"Impostazioni> Barra degli strumenti> Ultimoutente"
+"ATTENZIONE: non è stato trovato alcun file ideskrc.\\nDesideri aggiungere "
+"questo file\\nora?"
 
-#: scripts/toolbar-legacy:15 scripts/toolbar-userlast:13
-msgid "Log out and back in to complete the change."
-msgstr "Esci e fai nuovamente il Login per completare le modifiche."
+#: mx-idesktool:43
+msgid "No!"
+msgstr "No!"
 
-#: scripts/toolbar-userlast:11
+#: mx-idesktool:44
+msgid "Yes!"
+msgstr "Si!"
+
+#: mx-idesktool:45
 msgid ""
-"This will restore the settings that were in place when you selected a legacy"
-" toolbar layout."
+"\\tThe configuration file has been written. \\n\n"
+"                Drag any icons you create to the\n"
+"                desired locations and they will\n"
+"                be remembered between sessions \\n\\n \n"
+"                Would you like to run the icon wizard now?"
 msgstr ""
-"Questo ripristinerà le impostazioni presenti prima che tu scegliessi un "
-"layout tradizionale per la barra degli strumenti."
+"\\tIl file di configurazione è stato scritto. \\n\n"
+"                Trascina tutte le icone che crei\n"
+"                nelle posizioni desiderate e\n"
+"                verranno ricordate tra le sessioni \\n\\n \n"
+"                Desideri avviare ora la procedura guidata per le icone?"
+
+#: mx-idesktool:56
+msgid "Open"
+msgstr "Apri"
+
+#: mx-idesktool:57
+msgid "Delete"
+msgstr "Elimina"
+
+#: mx-idesktool:58
+msgid "Create"
+msgstr "Crea"
+
+#: mx-idesktool:59
+msgid "Locate"
+msgstr "Posiziona"
+
+#: mx-idesktool:60
+msgid "Refresh"
+msgstr "Aggiorna"
+
+#: mx-idesktool:61
+msgid "Configure"
+msgstr "Configura"
+
+#: mx-idesktool:62
+msgid "Write"
+msgstr "Scrivi"
+
+#: mx-idesktool:63
+msgid "Help"
+msgstr "Aiuto"
+
+#: mx-idesktool:64
+msgid "ACTION"
+msgstr "AZIONE"
+
+#: mx-idesktool:65
+msgid "DESCRIPTION"
+msgstr "DESCRIZIONE"
+
+#: mx-idesktool:68
+msgid "Middle-Click Command"
+msgstr "Comando del tasto centrale del mouse"
+
+#: mx-idesktool:69
+msgid "Set a precise position for an icon"
+msgstr "Imposta una posizione precisa per un'icona"
+
+#: mx-idesktool:70
+msgid "Directly edit an icon file"
+msgstr "Modifica direttamente un file di un'icona"
+
+#: mx-idesktool:71
+msgid "Lock"
+msgstr "Blocca"
+
+#: mx-idesktool:72
+msgid "Permit/prevent icon movement"
+msgstr "Permetti/previeni il movimento di un'icona"
+
+#: mx-idesktool:73
+msgid "Right-Click Command"
+msgstr "Comando con pulsante destro"
+
+#: mx-idesktool:177 mx-idesktool:183
+msgid "Link Filename"
+msgstr "Collega il nome del file"
+
+#: mx-idesktool:178
+msgid "Enter Link Filename"
+msgstr "Digita il collegamento del nome del file"
+
+#: mx-idesktool:848
+msgid "Text Editing"
+msgstr "Modifica del testo"
+
+#: mx-idesktool:859
+msgid "Saving..."
+msgstr "Salvataggio..."
+
+#: mx-idesktool:866
+msgid "Discarding..."
+msgstr "Scartamento..."
