@@ -12,10 +12,10 @@ table Config
   FillStyle: FillHLine
   ClickDelay: 700
   #####BACKGROUND#####: 
-  Background.File: image.jpg
+  Background.File: 
   Background.Delay: 1
-  Background.Source: ~/.idesktop/icons
-  Background.Mode: Mirror
+  Background.Source: 
+  Background.Mode: Scale
   Background.Color: #C2CCFF
   #####SHADOW#####: 
   Shadow: true
