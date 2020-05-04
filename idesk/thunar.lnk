@@ -1,8 +1,0 @@
-table Icon
-  Caption: 
-  Icon: /usr/share/icons/Moka/48x48/apps/thunar.png
-  X: 100
-  Y: 360
-  Command: thunar
-end
-
