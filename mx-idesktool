@@ -1,7 +1,8 @@
 #! /bin/bash
 
 #mx-idesktool v1.6, released April 2020. 
-#A script by the MX Linux Dev Team, user Misko_2083 and others to configure the idesk app. Based on idesktool v1.36 released August 2004 by John Murray john@jmurray.id.au
+#A script by the MX Linux Dev Team, user Misko_2083 and others to configure the idesk app. \
+#Based on idesktool v1.36 released August 2004 by John Murray john@jmurray.id.au
 
 TEXTDOMAINDIR=/usr/share/locale
 export TEXTDOMAIN="mx-idesktool"
@@ -171,11 +172,11 @@ help: $USAGE_URL
 table Actions
   Lock: control right singleClk
   Reload: control left singleClk
-  Drag: right hold
-  EndDrag: right singleClk
+  Drag: left hold
+  EndDrag: left singleClk
   Execute[0]: left singleClk
   Execute[1]: middle singleClk
-  Execute[2]: right doubleClk
+  Execute[2]: right singleClk
 end" > "${HOME}/.ideskrc"
 }
 ################################################
