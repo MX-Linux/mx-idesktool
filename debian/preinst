@@ -1,0 +1,19 @@
+#!/bin/sh -e
+
+    	
+	## remove old lnk files
+    if [ -e "/etc/skel/.idesktop/firefox.lnk" ]; then
+		rm /etc/skel/.idesktop/firefox.lnk
+	fi
+	if [ -e "/etc/skel/.idesktop/fluxhelp.lnk" ]; then
+		rm /etc/skel/.idesktop/fluxhelp.lnk
+	fi
+	if [ -e "/etc/skel/.idesktop/thunar.lnk" ]; then
+		rm /etc/skel/.idesktop/thunar.lnk
+	fi
+	if [ -e "/etc/skel/.idesktop/thunderbird.lnk" ]; then
+		rm /etc/skel/.idesktop/thunderbird.lnk
+	fi
+
+
+#DEBHELPER#
