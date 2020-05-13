@@ -251,7 +251,7 @@ msgstr "Evää/estä kuvakkeen liikkuminen"
 
 #: mx-idesktool:73
 msgid "Right-Click Command"
-msgstr ""
+msgstr "Oikeanpuolen hiirennapin napsautuskäsky"
 
 #: mx-idesktool:177 mx-idesktool:183
 msgid "Link Filename"
