@@ -1,0 +1,15 @@
+
+# ideskmenu.template: ideskmenu template
+# system template:  /etc/ideskmenu/ideskmenu.template
+# user template  : $HOME/.idesktop/ideskmenu.template
+ 
+[begin] (Title)
+  [exec] (Run            ) { %C }
+  [exec] (iDesktool      ) { mx-idesktool $(basename "%F") }
+  [exec] (Edit           ) { xdg-open "%F" }
+  [exec] (Copy           ) { cd $(dirname "%F"); BN=$(basename "%F" .lnk); NF=$(echo $BN| sed -r 's/_(copy|new)(_[0-9]+)+//')_copy_$(date "+%y%m%d_%H%I%S").lnk; NX=$(grep -oP 'X: \K[0-9]+' "%F");NY=$(grep -oP 'Y: \K[0-9]+' "%F"); NX=$(($NX+36)); NY=$(($NY+36)); cp "%F" "$NF"; sed -i "s/X:.*/X: $NX/; s/Y:.*/Y: $NY/; s/$BN.lnk/$NF/g" "$NF"; pkill -u $USER -x idesk; ( idesk & ) >/dev/null 2>&1 }
+  [exec] (CaptionOnHover ) { grep  sq '^[[:space:]]*CaptionOnHover.*false' ~/.ideskrc && sed -i -r '/^[[:space:]]*CaptionOnHover/s/false/true/' ~/.ideskrc || sed -i -r '/^[[:space:]]*CaptionOnHover/s/true/false/' ~/.ideskrc; pkill -u $USER -x idesk; ( idesk & ) >/dev/null 2>&1 }
+  [exec] (Caption  On/Off) { grep -sq '#Caption:' "%F" && sed -i -r '/^([[:space:]]*)#(Caption:.*)/s//\1\2/' "%F" || sed -i -r '/^([[:space:]]*)(Caption:.*)/s//\1#\2/' "%F"; pkill -u $USER -x idesk; ( idesk & ) >/dev/null 2>&1 }
+  [exec] (IconSnap On/Off) { grep -sq 'IconSnap.*false' ~/.ideskrc && sed -i '/IconSnap/s/false/true/' ~/.ideskrc || sed -i '/IconSnap/s/true/false/' ~/.ideskrc; pkill -u $USER -x idesk; ( idesk & ) >/dev/null 2>&1 }
+  [exec] (Reload         ) { pkill -u $USER -x idesk; idesk }
+[end]
