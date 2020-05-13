@@ -764,10 +764,11 @@ if [ "${choice}" = "$OPEN"  ] && \
    rm -f "${currentlnkfile}"
    # fix mclick - replace "old" currentlinkfile with newlnkfile
    mclick="${mclick//$(basename "${currentlnkfile}")/$(basename "${newlnkfile}")}"
-else
-        currentxvalue=400
-        currentyvalue=500
 fi
+
+# set to "default" position if empty:
+:  ${currentxvalue:=400}
+:  ${currentyvalue:=500}
 
 touch "$newlnkfile"
 cat<< EOF > "$newlnkfile" 
@@ -802,7 +803,7 @@ choice="x"
 while [  "${choice// }" == "x" ]; do 
 
    choice=$($DIALOG --title "$TEXT5"                            \
-                    --width 400 --height 520 --center           \
+                    --width 440 --height 520 --center           \
                     --list                                      \
                     --hide-column=1    --no-headers=1           \
                     --column "$TEXT43" --column "$TEXT44"       \
@@ -894,7 +895,7 @@ choice="x"
 while [  "${choice// }" == "x" ]; do 
 
    choice=$($DIALOG --title "$TEXT5"                          \
-                    --width 400 --height 520 --center         \
+                    --width 440 --height 520 --center         \
                     --list                                    \
                     --hide-column=1    --no-headers=1         \
                     --column "$TEXT43" --column "$TEXT44"     \
