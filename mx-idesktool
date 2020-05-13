@@ -802,7 +802,7 @@ choice="x"
 while [  "${choice// }" == "x" ]; do 
 
    choice=$($DIALOG --title "$TEXT5"                            \
-                    --width 400 --height 440 --center           \
+                    --width 400 --height 520 --center           \
                     --list                                      \
                     --hide-column=1    --no-headers=1           \
                     --column "$TEXT43" --column "$TEXT44"       \
@@ -894,7 +894,7 @@ choice="x"
 while [  "${choice// }" == "x" ]; do 
 
    choice=$($DIALOG --title "$TEXT5"                          \
-                    --width 400 --height 500 --center         \
+                    --width 400 --height 520 --center         \
                     --list                                    \
                     --hide-column=1    --no-headers=1         \
                     --column "$TEXT43" --column "$TEXT44"     \
