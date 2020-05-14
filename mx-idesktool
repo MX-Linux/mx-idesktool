@@ -1028,7 +1028,7 @@ set_background_rotation()
 			--text=$"No rotation: Delay = 0" \
 			--text-align=center \
 			--form \
-			--field=$"Delay (mins)":NUM    "${delay}\!0..1440\!5\0" \
+			--field=$"Delay (mins)":NUM    "${delay}\!0..1440\!1\0" \
 			--field=$"Image folder"":MDIR" "$source"  \
 			--field=$"Image mode"":CB"     "$cb_mode" )"
 
