@@ -2,8 +2,11 @@
 
 # Autour : fehlix  ( fehlix@mxlinux.org )
 # First version: 2020.05
+#
+# 2020.05.14 - fixed unicode chars in filename
+#
 # Purpose: iDesk helper to enable right click menu
-#  
+#
 # ideskmenu - helper script to allow  right-click menu on idesk icons
 
 use strict;
@@ -20,7 +23,7 @@ my $offset = $iconsize / 2;
 my $elapsed = 300; # time elapsed in milliseconds
 my $since = time - $elapsed / 1000;
 
-usleep(50000); 
+usleep(10000); 
 my $ideskdir = "$ENV{HOME}/.idesktop";
 
 chdir $ideskdir  or die "Can't change dir:$!";
@@ -142,7 +145,7 @@ $template =~ s/Title/$title/;
 $template =~ s/%C/$command/g;
 $template =~ s/%F/$filepath/g;
 
-open(my $fh, '>:encoding(UTF-8)', $ideskmenu)  or die "Could not open file '$ideskmenu'";
+open(my $fh, '>', $ideskmenu)  or die "Could not open file '$ideskmenu'";
 print $fh $template;
 close $fh;
 
