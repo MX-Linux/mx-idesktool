@@ -1,3 +1,23 @@
+mx-idesktool (20.05.05) mx; urgency=medium
+
+  * fix unicode
+  * final for mx-flubox 2.1 series
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 14 May 2020 19:28:23 -0400
+
+mx-idesktool (20.05.04) mx; urgency=medium
+
+  * revise increment counter on background rotation 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 13 May 2020 20:47:02 -0400
+
+mx-idesktool (20.05.03) mx; urgency=medium
+
+  * updates to mx-idesktool dashboard applications
+  * updates to helper scripts 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 13 May 2020 19:19:39 -0400
+
 mx-idesktool (20.05.02) mx; urgency=medium
 
   * revised default lnk files 
