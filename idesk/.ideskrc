@@ -30,9 +30,9 @@ table Config
   ToolTip.CaptionOnHover: false
   ToolTip.CaptionPlacement: right
   #####SNAP#####: 
-  IconSnap: false
-  SnapWidth: 55
-  SnapHeight: 100
+  IconSnap: true
+  SnapWidth: 72
+  SnapHeight: 96
   SnapOrigin: BottomRight
   SnapShadow: false
   SnapShadowTrans: 200
@@ -40,7 +40,7 @@ end
 
 
 table Actions
-  Lock: 
+  Lock: control shift middle doubleClk
   Reload: control left singleClk
   Drag: left hold
   EndDrag: left singleClk

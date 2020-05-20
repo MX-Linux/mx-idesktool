@@ -1,75 +1,349 @@
 #!/bin/bash
 
-# toogle click actions
+# Autour : fehlix  ( fehlix@mxlinux.org )
+# First version: 2020.05
+# Purpose: iDesk helper to to switch between settings of iDesk runtime environment.
 
-singelClick_Actions="table Actions
-  Lock:       control right singleClk
-  Reload:     control left  singleClk
-  Drag:       left    hold
-  EndDrag:    left    singleClk
-  Execute[0]: left    singleClk
-  Execute[1]: middle  singleClk
-  Execute[2]: right   singleClk
-end"
+script=idesktoggle
 
-doubleClick_Actions="table Actions
-  Lock:       control right doubleClk
-  Reload:     control left singleClk
-  Drag:       right   hold
-  EndDrag:    right   singleClk
-  Execute[0]: left    singleClk
-  Execute[1]: middle  singleClk
-  Execute[2]: right   doubleClk
-end"
+usage() 
+{
 
-# systemClick_Actions="$(sed -n -e '/^table Actions[[:space:]]*$/,/^end/p' $IDESKRC_SYSTEM_DEFAULT)"
-# Check actions
-# idesktoolClick_Actions="$(sed -n -e '/end".*/s//end/' -e '/^table Actions[[:space:]]*$/,/^end/p' $(which mx-idesktool))"
-# currentActions="$(sed -n -e '/^table Actions[[:space:]]*$/,/^end/p' ~/.ideskrc)"
+cat <<USAGE
+   Script to switch between settings of iDesk runtime environment.
+   
+   Usage: 
+        $script Icon | Caption |  CaptionOnOver   [ on | off ] [icon.lnk files ...]
+        $script IconSnap [ on | off ] 
+        $script idesk    [ on | off ] 
+   
+   Examples
+   
+   Icon specific:
+   $script icon off         : to hide all icons 
+   $script icon on          : to show all icons 
+   $script icon             : to toggle all icons (switch on/off)
+    
+   $script icon off icon.lnk : to hide an icon
+   $script icon on  icon.lnk : to show an icon
+   $script icon     icon.lnk : to toggle an icon
+   
+   $script caption off      : to hide all captions
+   $script caption on       : to enable all captions
+   $script caption          : to toggle all caption (switch on/off)
+   $script caption icon.lnk : to toggle caption on an icon
 
-# check insert Command[12] of missing  
-# check insert Command[12] of missing
-for LNK in ~/.idesktop/*.lnk;
-do
-	if ! grep -sq -E 'Command(\[[12]\])' $LNK; then
-	   sed -i -e "s/Command:/Command[0]:/" \
-			  -e "/^end/i\ \ Command[1]:"  \
-	          -e "/^end/i\ \ Command[2]:" $LNK
-	fi
-done
+   Config for all icons:
+   $script CaptioOnHover    : to toggle caption on hover
+   $script IconSnap         : to toggle icon snap
+   
+   $script idesk on      : start idesk safely
+   $script idesk off     : stop idesk safely
+   $script idesk refresh : restart idesk safely
+   $script idesk         : toggle idesk on/off safely
+   
+USAGE
 
-if  grep -sq 'doubleClk' ~/.ideskrc; then
-	NewActions="$singelClick_Actions"
-	#sed -r -i.$(date '+%Y.%m.%d_%H%M%S').bak 
-	sed -i -r \
-	    -e '/^.*Command(\[[012]\])?:/s/mx-idesktool//g;' \
-	    -e '/^.*Command(\[[012]\])?:/s/idesk(run|menu|toggle)//g;' \
-	    -e '/^.*Command:([[:space:]]*)(.*)/s//  Command[0]: ideskrun \2/;' \
-	    -e '/^.*Command\[0\]:([[:space:]]*)(.*)/s//  Command[0]: ideskrun \2/;' \
-	    -e '/^.*Command\[1\]:([[:space:]]*)(.*)/s//  Command[1]: mx-idesktool \2/;' \
-	    -e '/^.*Command\[2\]:([[:space:]]*)(.*)/s//  Command[2]: ideskmenu \2/;' \
-	    -e 's/:[[:space:]]+/: /' \
-	     ~/.idesktop/*.lnk
+exit 1
+}
 
-	echo "singleClick Actions enabled"
-else
-	NewActions="$doubleClick_Actions"
+# to ignorr dot.lnk files not handled by idesk anyway
+# and to ignore 1pixel sized ideskpixel.lnk file
 
-#	sed -r -i.$(date '+%Y.%m.%d_%H%M%S').bak 
-	sed -i -r \
-	    -e '/^.*Command(\[[012]\])?:/s/mx-idesktool//g;' \
-	    -e '/^.*Command(\[[012]\])?:([[:space:]]*)(.*)/s/idesk(run|menu|toggle)//g;' \
-	    -e '/^.*Command\[1\]:([[:space:]]*)(.*)/s//  Command[1]: ideskmenu \2/;' \
-	    -e 's/:[[:space:]]+/: /' \
-		~/.idesktop/*.lnk
+export GLOBIGNORE=".*.lnk:ideskpixel.lnk";
 
-	echo "doubleClick Actions enabled"
+# 
+
+main()
+{
+# show usage if no argument given
+[ $# -eq 0 ] && usage
+
+action="${1,,}"  # turn to lower case
+
+action="${action%s}"  # # trimm trailing 's' : icons -> icon 
+
+shift
+
+case "$action" in
+    
+    icon|caption)  
+        case "$1" in
+               
+              off) shift; action_off "$action" "$@";  idesk_refresh 
+              ;;
+              on ) shift; action_on  "$action" "$@";  idesk_refresh
+              ;;
+              *  ) action_toggle "$action" "$@"; idesk_refresh
+              ;;
+        esac
+    ;;
+    captiononhover|iconsnap)  
+        case "$1" in
+              off|false) shift; config_off "$action"; idesk_refresh 
+              ;;
+              on|true  ) shift; config_on  "$action";  idesk_refresh
+              ;;
+              *        ) config_toggle "$action";  idesk_refresh
+              ;;
+        esac
+    ;;
+    idesk)  
+        case "$1" in
+               
+              off|stop        ) idesk_stop
+              ;;
+              on|start        ) idesk_start
+              ;;
+              refresh|restart ) idesk_refresh
+              ;;
+              *               ) idesk_toggle
+              ;;
+        esac
+    ;;
+esac
+   
+exit 1
+}
+
+config_off()
+{
+    # set config to false  
+    local E="$1"
+    [ -f ~/.ideskrc ] || return 1
+    sed -i -r -e '/^(\s*'$E':).*/Is//\1 false/' ~/.ideskrc
+  
+}
+
+config_on()
+{
+    # set config to true
+    local E="$1"
+    [ -f ~/.ideskrc ] || return 1
+
+    sed -i -r -e '/^(\s*'$E':).*/Is//\1 true/' ~/.ideskrc
+  
+}
+
+config_toggle()
+{
+    local E="$1"
+    [ -f ~/.ideskrc ] || return 1
+    # toggle config false/true
+    sed -i -r -e '/^\s*'$E':.*/I{ s/#.*//; /true/I{ s//false/; b; }; s/:.*/: true/; }' ~/.ideskrc
+   
+}
+
+action_off()
+{
+    local E="$1"
+    shift
+    
+    # check idesk-dir exists, else return
+    [ -d ~/.idesktop ] || return 1
+    cd ~/.idesktop
+    
+    if [ "$#" -eq 0 ]; then 
+       # action on all .lnk-files in ~/.idesktop
+       sed -i -r -e '/^\s*('$E':.*)/Is//  #\1/' *.lnk
+    else 
+        # aktion on given lnk-files 
+        for F in "$@"; do
+            L=$(basename "$F")
+            # ignore  ideskpixel.lnk
+            [ "$L" = "ideskpixel.lnk"   ] && continue
+            # ignore dot.lnk file,  none .lnk files or non existing
+            [   -z "${L%%.*}"    ] && continue
+            [ ! -z "${L##*.lnk}" ] && continue
+            [ ! -f "$L"          ] && continue
+            # hide action by putting a hash-'#' sign in front
+            sed -i -r -e '/^\s*('$E':.*)/Is//  #\1/' "$L"
+        done
+    fi
+   
+}
+
+action_on()
+{
+    local E="$1"
+    shift
+
+    # check idesk-dir exists, else return
+    [ -d ~/.idesktop ] || return 1
+    cd ~/.idesktop
+
+    if [ "$#" -eq 0 ]; then 
+       # action on all .lnk-files in ~/.idesktop
+       sed -i -r -e '/^\s*#('$E':.*)/Is//  \1/' *.lnk
+    else 
+        # aktion on given lnk-files 
+        for F in "$@"; do
+            L=$(basename "$F")
+            # ignore  ideskpixel.lnk
+            [ "$L" = "ideskpixel.lnk"   ] && continue
+            # ignore dot.lnk file,  none .lnk files or non existing
+            [   -z "${L%%.*}"    ] && continue
+            [ ! -z "${L##*.lnk}" ] && continue
+            [ ! -f "$L"          ] && continue
+            # unhide action by removing hash-'#' sign in front
+            sed -i -r -e '/^\s*#('$E':.*)/Is//  \1/'  "$L"
+        done
+    fi
+   
+}
+
+action_toggle()
+{
+    local E="$1"
+    shift
+    # remove spaces in action
+    E="${E// }"
+    # return if action is empty
+    [ -n "$E" ] || return
+    # check idesktop-dir exists, else return
+    [ -d ~/.idesktop ] || return 1
+    cd ~/.idesktop
+
+    if [ "$#" -eq 0 ]; then 
+        # action on all .lnk-files in ~/.idesktop - but ignore GLOBIGNORE
+        sed -i -r -e '/^\s*(#)?'$E':.*/I{ /^\s*#/{ s//  /; b; }; s/^(\s*)/  #/; }' *.lnk
+    else 
+        # aktion on given lnk-files 
+        for F in "$@"; do
+            L=$(basename "$F")
+            # ignore  ideskpixel.lnk
+            [ "$L" = "ideskpixel.lnk"   ] && continue
+            # ignore dot.lnk file,  none .lnk files or non existing
+            [   -z "${L%%.*}"    ] && continue
+            [ ! -z "${L##*.lnk}" ] && continue
+            [ ! -f "$L"          ] && continue
+            # hide or unhide action by insert/remove hash-'#' sign in front
+            sed -i -r -e '/^\s*(#)?'$E':.*/I{ /^\s*#/{ s//  /; b; }; s/^(\s*)/  #/; }' "$L"
+        done
+    fi
+   
+}
+
+# create a 1-pixel sized dummy help icon and idesk.lnk 
+# to allow idesk running
+
+ideskpixel()
+{
+
+[ -f ~/.idesktop/ideskpixel.lnk ] && return
+
+# make sure we have ~/.idesktop dir
+[ -d  ~/.idesktop ] || mkdir ~/.idesktop   
+
+if [ -f /etc/skel/.idesktop/ideskpixel.lnk ]  && \
+   [ -f /etc/skel/.idesktop/ideskpixel.png ]; then
+   
+   cp /etc/skel/.idesktop/ideskpixel.png  ~/.idesktop
+   cp /etc/skel/.idesktop/ideskpixel.lnk  ~/.idesktop
+  return
 fi
 
-# remove current actions
-# sed -i.$(date '+%Y.%m.%d_%H%M%S').bak -e '/^table Actions/,/^end/d'  ~/.ideskrc
-sed  -i -e '/^table Actions/,/^end/d'  ~/.ideskrc
+# ok we need to create pixel icon
+# check we have convert , else return
+#
+# create a transparent pixel
+if [ ! -f ~/.idesktop/ideskpixel.png ]; then
+  hash convert 2>/dev/null && \
+  convert -size 1x1 "xc:transparent" ~/.idesktop/ideskpixel.png
+fi
 
-echo "$NewActions" >>  ~/.ideskrc
-pkill -u $USER -x idesk; sleep 0.3;  ( idesk & disown) >/dev/null 2>&1
- 
+if [ ! -f ~/.idesktop/ideskpixel.lnk ]; then
+  
+cat<<IDESKPIXEL > ~/.idesktop/ideskpixel.lnk
+# idesk helper icon, which will allow to keep idesk running
+# if idesk background rotation is in use
+table Icon
+  Caption: 
+  Icon: ${HOME}/.idesktop/ideskpixel.png
+  X: 1
+  Y: 1
+  Command[0]: true
+  Command[1]: true
+  Command[2]: true
+end
+IDESKPIXEL
+
+fi
+}
+
+idesk_start()
+{
+    if [ $(pgrep -c -u $USER -x idesk) -gt 0 ]; then
+        pkill -u $USER -x idesk; 
+    fi
+    
+    ideskpixel
+    
+    sleep 0.1;  
+    
+    zero_icon_position_fix
+    
+    ( idesk & disown) >/dev/null 2>&1
+    
+    conky_refresh    
+}
+
+idesk_stop()
+{
+    if [ $(pgrep -c -u $USER -x idesk)  -gt 0 ]; then
+        pkill -u $USER -x idesk; 
+    fi
+    conky_refresh
+}
+
+idesk_refresh()
+{
+    if [ $(pgrep -c -u $USER -x idesk) -gt 0 ]; then
+        pkill -u $USER -x idesk; 
+        sleep 0.1;  
+    
+        ideskpixel
+    
+        zero_icon_position_fix
+    
+        ( idesk & disown) >/dev/null 2>&1
+    fi
+    conky_refresh
+    
+}
+
+idesk_toggle()
+{
+    if [ $(pgrep -c -u $USER -x idesk) -gt 0 ]; then
+        idesk_stop
+    else
+        idesk_start
+    fi
+}
+
+# reload conky if running
+conky_refresh()
+{
+    if [ $(pgrep -c -u $USER -x conky) -gt 0 ]; then
+        sleep 0.1;  
+        killall -SIGUSR1 -u $USER  conky
+    fi
+}
+
+# fix idesk-icons on pos 0:0 and move to 1:1
+# to avoide idesk to display them on the oposite side
+zero_icon_position_fix()
+{
+	local L
+	cd ~/.idesktop || return
+	
+	for L in $(grep -lE '^[[:blank:]]*[X]:[[:blank:]]*0[[:blank:]]*$' --exclude=ideskpixel.lnk  *.lnk); do 
+	    if grep -sq -E  '^[[:blank:]]*[Y]:[[:blank:]]*0[[:blank:]]*$' --exclude=ideskpixel.lnk "$L"; then 
+	       sed -i -r 's/^([[:blank:]]*[XY]:).*/\1 1/' "$L"; 
+	    fi;
+	done;
+}
+
+#-----------------
+main "$@"
+#-----------------
