@@ -1023,7 +1023,7 @@ set_background_rotation()
 	# echo "${!HASH[@]}"  ;echo "${HASH[@]@Q}"
 	
 	[ -n "${HASH[Delay]}"  ] && delay="${HASH[Delay]}"   && delay="${delay//[^0-9]}"
-	[ -n "${HASH[Mode]}"   ] && mode="${HASH[Mode]}"     && cb_mode="${cb_mode/$mode/^$mode}"
+	[ -n "${HASH[Mode]}"   ] && mode="${HASH[Mode]}"     && cb_mode="${cb_mode/${mode,,}/^${mode,,}}"
 	[ -n "${HASH[Source]}" ] && source="${HASH[Source]}"
 	
 	CFG="$($DIALOG --width=400 \
