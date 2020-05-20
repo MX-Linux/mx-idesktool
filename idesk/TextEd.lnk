@@ -1,10 +1,9 @@
 table Icon
   Caption: editor
   Icon: /usr/share/icons/Moka/48x48/apps/text-editor.png
-  X: 1790
-  Y: 350
+  X: 108
+  Y: 192
   Command[0]: ideskrun featherpad
-  Command[1]: mx-idesktool editor.lnk
+  Command[1]: mx-idesktool TextEd.lnk
   Command[2]: ideskmenu
 end
-

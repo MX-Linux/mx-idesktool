@@ -163,16 +163,16 @@ echo -e "table Config
   ToolTip.CaptionOnHover: false
   ToolTip.CaptionPlacement: right
   #####SNAP#####: 
-  IconSnap: false
+  IconSnap: true
   SnapWidth: 72
-  SnapHeight: 72
+  SnapHeight: 96
   SnapOrigin: BottomRight
   SnapShadow: false
   SnapShadowTrans: 200
 end
 
 table Actions
-  Lock: 
+  Lock: control shift middle doubleClk
   Reload: control left singleClk
   Drag: left hold
   EndDrag: left singleClk
@@ -367,7 +367,7 @@ echo "getting current values"
 #get the caption
     currentcaption=$(sed -rn '/^[[:space:]]*(#)?Caption:[[:space:]]*/{s///; s/[[:space:]]*$//;p}' "${currentlnkfile}")
 #get the icon
-    currenticon=$(sed -rn '/^[[:space:]]*Icon:[[:space:]]*/{s///; s/[[:space:]]*$//;p}' ${currentlnkfile})
+    currenticon=$(sed -rn '/^[[:space:]]*(#)?Icon:[[:space:]]*/{s///; s/[[:space:]]*$//;p}' ${currentlnkfile})
 #get the left click command
     command=$(sed -rn '/^[[:space:]]*(#)?Command(\[0\])?:[[:space:]]*/{s///; s/[[:space:]]*$//;p}' "${currentlnkfile}")
     echo "command is " $command
@@ -695,10 +695,13 @@ return 0
 
 refresh()
 {
-	killall idesk
+	#killall idesk
 
-	( idesk & disown ) 1>/dev/null 2>&1
-
+	#( idesk & disown ) 1>/dev/null 2>&1
+    
+    # restart idesk if running
+    idesktoggle idesk refresh
+    
 	argynope
 }
 
@@ -1036,7 +1039,9 @@ set_background_rotation()
 
 	# read cfg values
 	IFS='|' read -r new_delay new_source new_mode <<<$CFG
-    
+
+  new_mode="${new_mode,,}" 
+  new_mode="${new_mode^}"    
   # update ideskrc values
   sed -ri  \
 		-e '/^([[:space:]]*Background[.]Delay:).*/s%%\1 '"$new_delay"'%'    \
@@ -1091,7 +1096,6 @@ TMP_FILE=$(mktemp --tmpdir=${XDG_RUNTIME_DIR:-/tmp} editbox.txt.XXXXXXXX)
 IDESKRC="${HOME}/.ideskrc"
     
 $DIALOG --title="$EDITSTYLE" --width 500 --height 680 --center \
-        --show-uri  \
         --text-info \
         --editable < <( 
             sed -rn '/^table Config/,/^end/{

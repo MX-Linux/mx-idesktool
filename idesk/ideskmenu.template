@@ -1,0 +1,16 @@
+# ideskmenu.template: ideskmenu template
+# system template:  /etc/ideskmenu/ideskmenu.template
+# user template  : $HOME/.idesktop/ideskmenu.template
+
+[begin] (Title)
+  [exec] (Run            ) { %C }
+  [exec] (iDesktool      ) { mx-idesktool $(basename "%F") }
+  [exec] (Edit           ) { if which featherpad>/dev/null; then featherpad "%F" ; elif which geany >/dev/null; then geany "%F" 2>/dev/null; fi; }
+  [exec] (Clone          ) { cd $(dirname "%F"); BN=$(basename "%F" .lnk); NF=$(echo $BN| sed -r 's/_(copy|new)(_[0-9]+)+//')_copy_$(date "+%y%m%d_%H%I%S").lnk; NX=$(grep -oP 'X: \K[0-9]+' "%F");NY=$(grep -oP 'Y: \K[0-9]+' "%F"); NX=$(($NX+36)); NY=$(($NY+36)); cp "%F" "$NF"; sed -i "s/X:.*/X: $NX/; s/Y:.*/Y: $NY/; s/$BN.lnk/$NF/g" "$NF"; idesktoggle idesk refresh }
+  [exec] (Delete         ) { if test -f "%F" ; then  rm "%F" 2>/dev/null; fi; idesktoggle idesk refresh }
+  [exec] (CaptionOnHover ) { idesktoggle CaptionOnHover }
+  [exec] (Caption  On/Off) { idesktoggle Caption   "%F" }
+  [exec] (IconSnap On/Off) { idesktoggle IconSnap }
+  [exec] (Refresh        ) { fluxbox-remote restart; sleep 0.1; idesktoggle idesk refresh }
+  [exec] (Reload         ) { idesktoggle idesk refresh }
+[end]

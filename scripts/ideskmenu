@@ -32,7 +32,7 @@ my $cursor = { split /[:\s]/, uc(qx(xdotool getmouselocation)) } ;
 $cursor->{pos} = [ $cursor->{X}, $cursor->{Y} ];
 print Data::Dumper->Dump([\$cursor],[qw(cursor)]) if defined $debug;
 
-my @grep=qx( grep -d skip -H -E "[XY]:" *.lnk ); chomp(@grep);
+my @grep=qx( grep -d skip -H -E "[XY]:" --exclude=ideskpixel.lnk  *.lnk ); chomp(@grep);
 
 my @positions = pairmap {{
     my $h = {('file',(split (/\s*:\s*/, $a)),
@@ -106,22 +106,21 @@ my $hash = { file => $file, map {
             } grep {/:/} do { local (@ARGV ) = $file; <>} }; 
 
 print Data::Dumper->Dump([\$hash], [qw(hash)]) if defined $debug;
-        
+       
 my $template = << 'END_OF_TEMPLATE';
 [begin] (Title)
   [exec] (Run            ) { %C }
   [exec] (iDesktool      ) { mx-idesktool $(basename "%F") }
-  [exec] (Edit           ) { xdg-open "%F" }
-  [exec] (Copy           ) { cd $(dirname "%F"); BN=$(basename "%F" .lnk); NF=$(echo $BN| sed -r 's/_(copy|new)(_[0-9]+)+//')_copy_$(date "+%y%m%d_%H%I%S").lnk; NX=$(grep -oP 'X: \K[0-9]+' "%F");NY=$(grep -oP 'Y: \K[0-9]+' "%F"); NX=$(($NX+36)); NY=$(($NY+36)); cp "%F" "$NF"; sed -i "s/X:.*/X: $NX/; s/Y:.*/Y: $NY/; s/$BN.lnk/$NF/g" "$NF"; pkill -u $USER -x idesk; ( idesk & ) >/dev/null 2>&1 }
-  [exec] (CaptionOnHover ) { grep  sq '^[[:space:]]*CaptionOnHover.*false' ~/.ideskrc && sed -i -r '/^[[:space:]]*CaptionOnHover/s/false/true/' ~/.ideskrc || sed -i -r '/^[[:space:]]*CaptionOnHover/s/true/false/' ~/.ideskrc; pkill -u $USER -x idesk; ( idesk & ) >/dev/null 2>&1 }
-  [exec] (Caption  On/Off) { grep -sq '#Caption:' "%F" && sed -i -r '/^([[:space:]]*)#(Caption:.*)/s//\1\2/' "%F" || sed -i -r '/^([[:space:]]*)(Caption:.*)/s//\1#\2/' "%F"; pkill -u $USER -x idesk; ( idesk & ) >/dev/null 2>&1 }
-  [exec] (IconSnap On/Off) { grep -sq 'IconSnap.*false' ~/.ideskrc && sed -i '/IconSnap/s/false/true/' ~/.ideskrc || sed -i '/IconSnap/s/true/false/' ~/.ideskrc; pkill -u $USER -x idesk; ( idesk & ) >/dev/null 2>&1 }
-  [exec] (Reload         ) { pkill -u $USER -x idesk; idesk }
+  [exec] (Edit           ) { if which featherpad>/dev/null; then featherpad "%F" ; elif which geany >/dev/null; then geany "%F" 2>/dev/null; fi; }
+  [exec] (Clone          ) { cd $(dirname "%F"); BN=$(basename "%F" .lnk); NF=$(echo $BN| sed -r 's/_(copy|new)(_[0-9]+)+//')_copy_$(date "+%y%m%d_%H%I%S").lnk; NX=$(grep -oP 'X: \K[0-9]+' "%F");NY=$(grep -oP 'Y: \K[0-9]+' "%F"); NX=$(($NX+36)); NY=$(($NY+36)); cp "%F" "$NF"; sed -i "s/X:.*/X: $NX/; s/Y:.*/Y: $NY/; s/$BN.lnk/$NF/g" "$NF"; idesktoggle idesk refresh }
+  [exec] (Delete         ) { if test -f "%F" ; then  rm "%F" 2>/dev/null; fi; idesktoggle idesk refresh }
+  [exec] (CaptionOnHover ) { idesktoggle CaptionOnHover }
+  [exec] (Caption  On/Off) { idesktoggle Caption   "%F" }
+  [exec] (IconSnap On/Off) { idesktoggle IconSnap }
+  [exec] (Refresh        ) { fluxbox-remote restart; sleep 0.1; idesktoggle idesk refresh }
+  [exec] (Reload         ) { idesktoggle idesk refresh }
 [end]
 END_OF_TEMPLATE
-
-#  [exec] (Idesk Off)   {pkill -u $USER -x idesk}
-#  [exec] (iDeskToggle)   { idesktoggle  >/dev/null 2>&1 }
 
 my $ideskmenu_template = "BUILD_IN_TEMPLATE";
 
