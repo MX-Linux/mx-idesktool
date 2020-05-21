@@ -1,6 +1,7 @@
 mx-idesktool	usr/bin
 scripts/* /usr/bin
 idesk/*.lnk etc/skel/.idesktop
+idesk/ideskpixel.png etc/skel/.idesktop
 idesk/.ideskrc etc/skel/
 translations_script/mo/am/mx-idesktool.mo     /usr/share/locale/am/LC_MESSAGES
 translations_script/mo/ar/mx-idesktool.mo     /usr/share/locale/ar/LC_MESSAGES
