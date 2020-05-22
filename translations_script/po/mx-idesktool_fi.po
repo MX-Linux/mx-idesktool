@@ -4,18 +4,18 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
+# Oi Suomi On! <oisuomion@protonmail.com>, 2020
 # anticapitalista <anticapitalista@riseup.net>, 2020
 # En Kerro <inactive+ekeimaja@transifex.com>, 2020
-# Oi Suomi On! <oisuomion@protonmail.com>, 2020
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-26 18:03-0500\n"
+"POT-Creation-Date: 2020-05-15 17:05-0500\n"
 "PO-Revision-Date: 2020-03-26 13:48+0000\n"
-"Last-Translator: Oi Suomi On! <oisuomion@protonmail.com>, 2020\n"
+"Last-Translator: En Kerro <inactive+ekeimaja@transifex.com>, 2020\n"
 "Language-Team: Finnish (https://www.transifex.com/anticapitalista/teams/10162/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,15 +23,15 @@ msgstr ""
 "Language: fi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: mx-idesktool:9
+#: mx-idesktool:10
 msgid "ERROR: Yad not installed or not in path."
 msgstr "VIRHE: Yad ei ole asennettu tai ei polussa."
 
-#: mx-idesktool:10
+#: mx-idesktool:11
 msgid "Yad found. So far so good.."
 msgstr "Yad löytyi. Kaikki hyvin tähän asti..."
 
-#: mx-idesktool:11
+#: mx-idesktool:12
 msgid ""
 "ERROR: idesk not installed or not in path. Try "
 "http://sourceforge.net/projects/idesk/"
@@ -39,127 +39,119 @@ msgstr ""
 "VIRHE: idesk ei ole asennettu tai ei polussa. Kokeile "
 "http://sourceforge.net/projects/idesk/"
 
-#: mx-idesktool:12
+#: mx-idesktool:13
 msgid "idesk found - we're on a roll :)"
 msgstr "idesk löytyi - nyt on oikea meininki :)"
 
-#: mx-idesktool:13
+#: mx-idesktool:14
 msgid "Icon Management Tool"
 msgstr "Kuvakkeiden hallintatyökalu"
 
-#: mx-idesktool:14
+#: mx-idesktool:15
 msgid "Icon Caption:\\n(Leave blank for no caption)"
 msgstr "Kuvakkeen kuvateksti:\\n(jätä tyhjäksi jos et halua kuvatekstiä)"
 
-#: mx-idesktool:15
+#: mx-idesktool:16
 msgid "Back"
 msgstr "Takaisin"
 
-#: mx-idesktool:16
+#: mx-idesktool:17
 msgid "Cancel"
 msgstr "Peru"
 
-#: mx-idesktool:17
+#: mx-idesktool:18
 msgid "Next"
 msgstr "Seuraava"
 
-#: mx-idesktool:18
+#: mx-idesktool:19
 msgid "Caption"
 msgstr "Kuvateksti"
 
-#: mx-idesktool:19
-msgid ""
-"NOTE: The default middle-click command \\n\n"
-"   runs this configuration tool (recommended)."
-msgstr ""
-"HUOMAUTUS: vakiollinen keskinapsautuskäsky \\n\n"
-"    ajaa tämän asetustyökalun (suositeltu)."
-
-#: mx-idesktool:21 mx-idesktool:67
+#: mx-idesktool:27 mx-idesktool:73
 msgid "Left-Click Command:"
 msgstr "Vasemman hiirennapin napsautuksen käsky:"
 
-#: mx-idesktool:22
+#: mx-idesktool:28
 msgid "Middle-Click Command:"
 msgstr "Keskimmäisen hiirennapin napsautuksen käsky:"
 
-#: mx-idesktool:23
+#: mx-idesktool:29
 msgid "Current icon"
 msgstr "Tämänhetkinen kuvake"
 
-#: mx-idesktool:24
+#: mx-idesktool:30
 msgid "Oops!"
 msgstr "Hupsista!"
 
-#: mx-idesktool:25
+#: mx-idesktool:31
 msgid "Error: Icon Image File Not Found."
 msgstr "Virhe: kuvakkeen kuvatiedostoa ei löytynyt."
 
-#: mx-idesktool:26
+#: mx-idesktool:32
 msgid "Quit"
 msgstr "Lopeta"
 
-#: mx-idesktool:27
+#: mx-idesktool:33
 msgid "Error: Unknown Filetype. The icon should be a png image."
 msgstr "Virhe: tuntematon tiedostomuoto. Kuvakkeen tulee olla png-kuva."
 
-#: mx-idesktool:28
+#: mx-idesktool:34
 msgid "Please choose a file"
 msgstr "Valitse tiedosto"
 
-#: mx-idesktool:29
+#: mx-idesktool:35
 msgid "Error: You need to select a valid file"
 msgstr "Virhe: sinun pitää valita kelvollinen tiedosto"
 
-#: mx-idesktool:30
+#: mx-idesktool:36
 msgid "Finished!"
 msgstr "Valmista!"
 
-#: mx-idesktool:31
+#: mx-idesktool:37
 msgid "All done. Restarting idesk now..."
 msgstr "Kaikki on tehty. idesk uudelleenkäynnistetään nyt..."
 
-#: mx-idesktool:32 mx-idesktool:66
+#: mx-idesktool:38 mx-idesktool:72
 msgid "Choose a .png icon image"
 msgstr "Valitse .png muotoinen kuvakekuva"
 
-#: mx-idesktool:33
-msgid "View or Edit an Icon"
-msgstr "Katso tai mukauta kuvaketta"
+#: mx-idesktool:39
+msgid "View or edit an icon"
+msgstr ""
 
-#: mx-idesktool:34
-msgid "Remove an Icon"
-msgstr "Poista kuvake"
+#: mx-idesktool:40
+msgid "Remove an icon"
+msgstr ""
 
-#: mx-idesktool:35
-msgid "Add a New Icon"
-msgstr "Lisää uusi kuvake"
+#: mx-idesktool:41
+msgid "Add a new icon"
+msgstr ""
 
-#: mx-idesktool:36
-msgid "Reload the Desktop"
-msgstr "Uudelleenlataa työpöytä"
+#: mx-idesktool:42
+msgid "Reload the desktop"
+msgstr ""
 
-#: mx-idesktool:37
+#: mx-idesktool:43
 msgid "Edit iDesk's config file"
 msgstr "Muokkaa iDesk:in asetustiedostoa"
 
-#: mx-idesktool:38
-msgid "MX-idesktool Help"
-msgstr "MX-idesktool:in apu"
+#: mx-idesktool:44
+msgid "MX-idesktool documentation"
+msgstr ""
 
-#: mx-idesktool:39
+#: mx-idesktool:45
 msgid "USE: double-click entry to select a management action"
 msgstr "KÄYTÄ: tuplanapsauta merkintää valitaksesi hallinnointitoiminnon"
 
-#: mx-idesktool:40
+#: mx-idesktool:46
 msgid "iDesk Configuration"
 msgstr "iDesk:in asetukset"
 
-#: mx-idesktool:41
+#: mx-idesktool:47
 msgid "Config. file  found - excellent!"
 msgstr "Config. -asetustiedosto löytyi - erinomaista!"
 
-#: mx-idesktool:42
+#: mx-idesktool:48
 msgid ""
 "WARNING: No ideskrc file was found.\\nWould you like to have this "
 "file\\nadded now?"
@@ -167,15 +159,15 @@ msgstr ""
 "VAROITUS: ideskrc-tiedostoa ei löytynyt.\\nHaluatko lisätä tämän "
 "tiedoston\\n nyt?"
 
-#: mx-idesktool:43
+#: mx-idesktool:49
 msgid "No!"
 msgstr "En!"
 
-#: mx-idesktool:44
+#: mx-idesktool:50
 msgid "Yes!"
 msgstr "Kyllä!"
 
-#: mx-idesktool:45
+#: mx-idesktool:51
 msgid ""
 "\\tThe configuration file has been written. \\n\n"
 "                Drag any icons you create to the\n"
@@ -189,86 +181,126 @@ msgstr ""
 "            muistamaan istuntojen välillä  \\n\\n \n"
 "            Haluatko ajaa kuvakeopastusohjelman nyt?"
 
-#: mx-idesktool:56
+#: mx-idesktool:62
 msgid "Open"
 msgstr "Avaa"
 
-#: mx-idesktool:57
+#: mx-idesktool:63
 msgid "Delete"
 msgstr "Poista"
 
-#: mx-idesktool:58
+#: mx-idesktool:64
 msgid "Create"
 msgstr "Luo"
 
-#: mx-idesktool:59
+#: mx-idesktool:65
 msgid "Locate"
 msgstr "Paikanna"
 
-#: mx-idesktool:60
+#: mx-idesktool:66
 msgid "Refresh"
 msgstr "Virkistä"
 
-#: mx-idesktool:61
+#: mx-idesktool:67
 msgid "Configure"
 msgstr "Muokkaa"
 
-#: mx-idesktool:62
+#: mx-idesktool:68
 msgid "Write"
 msgstr "Kirjoita"
 
-#: mx-idesktool:63
+#: mx-idesktool:69
 msgid "Help"
 msgstr "Ohje"
 
-#: mx-idesktool:64
+#: mx-idesktool:70
 msgid "ACTION"
 msgstr "TOIMINTA"
 
-#: mx-idesktool:65
+#: mx-idesktool:71
 msgid "DESCRIPTION"
 msgstr "KUVAUS"
 
-#: mx-idesktool:68
+#: mx-idesktool:74
 msgid "Middle-Click Command"
 msgstr "Keskimmäisen hiirennapin napsautuksen käsky"
 
-#: mx-idesktool:69
+#: mx-idesktool:75
 msgid "Set a precise position for an icon"
 msgstr "Aseta kuvakkeen tarkka asema"
 
-#: mx-idesktool:70
+#: mx-idesktool:76
 msgid "Directly edit an icon file"
 msgstr "Mukauta kuvaketiedostoa suoraan"
 
-#: mx-idesktool:71
+#: mx-idesktool:77
 msgid "Lock"
 msgstr "Lukitse"
 
-#: mx-idesktool:72
-msgid "Permit/prevent icon movement"
-msgstr "Evää/estä kuvakkeen liikkuminen"
+#: mx-idesktool:78
+msgid "Lock/unlock icons"
+msgstr ""
 
-#: mx-idesktool:73
+#: mx-idesktool:79
 msgid "Right-Click Command"
 msgstr "Oikeanpuolen hiirennapin napsautuskäsky"
 
-#: mx-idesktool:177 mx-idesktool:183
+#: mx-idesktool:81
+msgid "Config"
+msgstr ""
+
+#: mx-idesktool:82
+msgid "Icon"
+msgstr "Kuvake"
+
+#: mx-idesktool:83
+msgid "Desktop"
+msgstr "Työpöytä"
+
+#: mx-idesktool:85
+msgid "View or edit icon style"
+msgstr ""
+
+#: mx-idesktool:86
+msgid "View or edit mouse actions"
+msgstr ""
+
+#: mx-idesktool:202 mx-idesktool:208
 msgid "Link Filename"
 msgstr "Linkitä tiedoston nimi"
 
-#: mx-idesktool:178
+#: mx-idesktool:203
 msgid "Enter Link Filename"
 msgstr "Syötä linkki-tiedosto nimi"
 
-#: mx-idesktool:848
-msgid "Text Editing"
-msgstr "Tekstinmuokkaus"
+#: mx-idesktool:818 mx-idesktool:910 mx-idesktool:1027
+msgid "Set background rotation"
+msgstr ""
 
-#: mx-idesktool:859
+#: mx-idesktool:1028
+msgid "No rotation: Delay = 0"
+msgstr ""
+
+#: mx-idesktool:1031
+msgid "Delay (mins)"
+msgstr ""
+
+#: mx-idesktool:1032
+msgid "Image folder"
+msgstr ""
+
+#: mx-idesktool:1033
+msgid "Image mode"
+msgstr ""
+
+#: mx-idesktool:1070 mx-idesktool:1106 mx-idesktool:1210
 msgid "Saving..."
 msgstr "Tallentaa..."
 
-#: mx-idesktool:866
+#: mx-idesktool:1195
+msgid "Text Editing"
+msgstr "Tekstinmuokkaus"
+
+#: mx-idesktool:1217
 msgid "Discarding..."
 msgstr "Hylätään..."

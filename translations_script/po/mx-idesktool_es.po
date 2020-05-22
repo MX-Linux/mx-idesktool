@@ -4,19 +4,20 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# anticapitalista <anticapitalista@riseup.net>, 2020
-# Roberto Saravia <saravia.jroberto@gmail.com>, 2020
 # Geoff Gigg <geoffgigg@hotmail.com>, 2020
 # German Lancheros <glancheros2015@gmail.com>, 2020
+# anticapitalista <anticapitalista@riseup.net>, 2020
+# Roberto Saravia <saravia.jroberto@gmail.com>, 2020
+# Roy Avrett <avrett@cs.fsu.edu>, 2020
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-26 18:03-0500\n"
+"POT-Creation-Date: 2020-05-15 17:05-0500\n"
 "PO-Revision-Date: 2020-03-26 13:48+0000\n"
-"Last-Translator: German Lancheros <glancheros2015@gmail.com>, 2020\n"
+"Last-Translator: Roy Avrett <avrett@cs.fsu.edu>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/anticapitalista/teams/10162/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,15 +25,15 @@ msgstr ""
 "Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: mx-idesktool:9
+#: mx-idesktool:10
 msgid "ERROR: Yad not installed or not in path."
 msgstr "ERROR: Yad no instalado o no en ruta."
 
-#: mx-idesktool:10
+#: mx-idesktool:11
 msgid "Yad found. So far so good.."
 msgstr "Yad encontrado. Hasta ahora todo bien..."
 
-#: mx-idesktool:11
+#: mx-idesktool:12
 msgid ""
 "ERROR: idesk not installed or not in path. Try "
 "http://sourceforge.net/projects/idesk/"
@@ -40,128 +41,120 @@ msgstr ""
 "ERROR: idesk no instalado o no en ruta. Pruebe "
 "http://sourceforge.net/projects/idesk/"
 
-#: mx-idesktool:12
+#: mx-idesktool:13
 msgid "idesk found - we're on a roll :)"
 msgstr "idesk encontrado - estamos en racha :)"
 
-#: mx-idesktool:13
+#: mx-idesktool:14
 msgid "Icon Management Tool"
 msgstr "Herramienta de gestión de iconos"
 
-#: mx-idesktool:14
+#: mx-idesktool:15
 msgid "Icon Caption:\\n(Leave blank for no caption)"
 msgstr "Subtítulo de icono:\\n(Deje en blanco para que no haya subtítulos)"
 
-#: mx-idesktool:15
+#: mx-idesktool:16
 msgid "Back"
 msgstr "Volver"
 
-#: mx-idesktool:16
+#: mx-idesktool:17
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: mx-idesktool:17
+#: mx-idesktool:18
 msgid "Next"
 msgstr "Siguiente"
 
-#: mx-idesktool:18
+#: mx-idesktool:19
 msgid "Caption"
 msgstr "Subtítulo"
 
-#: mx-idesktool:19
-msgid ""
-"NOTE: The default middle-click command \\n\n"
-"   runs this configuration tool (recommended)."
-msgstr ""
-"NOTA: El comando predeterminado de clic medio \\n\n"
-"ejecuta esta herramienta de configuración (recomendada)."
-
-#: mx-idesktool:21 mx-idesktool:67
+#: mx-idesktool:27 mx-idesktool:73
 msgid "Left-Click Command:"
 msgstr "Comando de clic izquierdo:"
 
-#: mx-idesktool:22
+#: mx-idesktool:28
 msgid "Middle-Click Command:"
 msgstr "Comando Clic-Medio"
 
-#: mx-idesktool:23
+#: mx-idesktool:29
 msgid "Current icon"
 msgstr "Icono actual"
 
-#: mx-idesktool:24
+#: mx-idesktool:30
 msgid "Oops!"
 msgstr "¡Uy!"
 
-#: mx-idesktool:25
+#: mx-idesktool:31
 msgid "Error: Icon Image File Not Found."
 msgstr "Error: No se encuentra el archivo de imagen de icono."
 
-#: mx-idesktool:26
+#: mx-idesktool:32
 msgid "Quit"
 msgstr "Salir"
 
-#: mx-idesktool:27
+#: mx-idesktool:33
 msgid "Error: Unknown Filetype. The icon should be a png image."
 msgstr "Error: Tipo de archivo desconocido. El icono debe ser una imagen .png"
 
-#: mx-idesktool:28
+#: mx-idesktool:34
 msgid "Please choose a file"
 msgstr "Por favor, elija un archivo"
 
-#: mx-idesktool:29
+#: mx-idesktool:35
 msgid "Error: You need to select a valid file"
 msgstr "Error: Necesita seleccionar un archivo válido"
 
-#: mx-idesktool:30
+#: mx-idesktool:36
 msgid "Finished!"
 msgstr "¡Finalizado!"
 
-#: mx-idesktool:31
+#: mx-idesktool:37
 msgid "All done. Restarting idesk now..."
 msgstr "Ya está hecho. Reiniciando idesk ahora..."
 
-#: mx-idesktool:32 mx-idesktool:66
+#: mx-idesktool:38 mx-idesktool:72
 msgid "Choose a .png icon image"
 msgstr "Elija una imagen de icono .png"
 
-#: mx-idesktool:33
-msgid "View or Edit an Icon"
-msgstr "Ver o editar un icono"
+#: mx-idesktool:39
+msgid "View or edit an icon"
+msgstr ""
 
-#: mx-idesktool:34
-msgid "Remove an Icon"
-msgstr "Eliminar un icono"
+#: mx-idesktool:40
+msgid "Remove an icon"
+msgstr ""
 
-#: mx-idesktool:35
-msgid "Add a New Icon"
-msgstr "Adicionar un Nuevo Icono"
+#: mx-idesktool:41
+msgid "Add a new icon"
+msgstr ""
 
-#: mx-idesktool:36
-msgid "Reload the Desktop"
-msgstr "Recargar el escritorio"
+#: mx-idesktool:42
+msgid "Reload the desktop"
+msgstr ""
 
-#: mx-idesktool:37
+#: mx-idesktool:43
 msgid "Edit iDesk's config file"
 msgstr "Editar el archivo de configuración de iDesk"
 
-#: mx-idesktool:38
-msgid "MX-idesktool Help"
-msgstr "Ayuda de MX-idesktool"
+#: mx-idesktool:44
+msgid "MX-idesktool documentation"
+msgstr "documentación de MX-idesktool"
 
-#: mx-idesktool:39
+#: mx-idesktool:45
 msgid "USE: double-click entry to select a management action"
 msgstr ""
 "USO: haga doble clic en la entrada para seleccionar una acción de gestión"
 
-#: mx-idesktool:40
+#: mx-idesktool:46
 msgid "iDesk Configuration"
 msgstr "Configuración de iDesk"
 
-#: mx-idesktool:41
+#: mx-idesktool:47
 msgid "Config. file  found - excellent!"
 msgstr "Archivo de configuración encontrado - ¡excelente!"
 
-#: mx-idesktool:42
+#: mx-idesktool:48
 msgid ""
 "WARNING: No ideskrc file was found.\\nWould you like to have this "
 "file\\nadded now?"
@@ -169,15 +162,15 @@ msgstr ""
 "ADVERTENCIA: No se encontró ningún archivo ideskrc.\\n¿Le gustaría tener "
 "este archivo\\nañadido ahora?"
 
-#: mx-idesktool:43
+#: mx-idesktool:49
 msgid "No!"
 msgstr "¡No!"
 
-#: mx-idesktool:44
+#: mx-idesktool:50
 msgid "Yes!"
 msgstr "¡Si!"
 
-#: mx-idesktool:45
+#: mx-idesktool:51
 msgid ""
 "\\tThe configuration file has been written. \\n\n"
 "                Drag any icons you create to the\n"
@@ -191,86 +184,126 @@ msgstr ""
 "serán recordados entre sesiones \\n\\n \n"
 "¿Desea ejecutar el asistente de iconos ahora?"
 
-#: mx-idesktool:56
+#: mx-idesktool:62
 msgid "Open"
 msgstr "Abrir"
 
-#: mx-idesktool:57
+#: mx-idesktool:63
 msgid "Delete"
 msgstr "Borrar"
 
-#: mx-idesktool:58
+#: mx-idesktool:64
 msgid "Create"
 msgstr "Crear"
 
-#: mx-idesktool:59
+#: mx-idesktool:65
 msgid "Locate"
 msgstr "Localizar"
 
-#: mx-idesktool:60
+#: mx-idesktool:66
 msgid "Refresh"
 msgstr "Refrescar"
 
-#: mx-idesktool:61
+#: mx-idesktool:67
 msgid "Configure"
 msgstr "Configurar"
 
-#: mx-idesktool:62
+#: mx-idesktool:68
 msgid "Write"
 msgstr "Escribir"
 
-#: mx-idesktool:63
+#: mx-idesktool:69
 msgid "Help"
 msgstr "Ayuda"
 
-#: mx-idesktool:64
+#: mx-idesktool:70
 msgid "ACTION"
 msgstr "ACCIÓN"
 
-#: mx-idesktool:65
+#: mx-idesktool:71
 msgid "DESCRIPTION"
 msgstr "DESCRIPCIÓN"
 
-#: mx-idesktool:68
+#: mx-idesktool:74
 msgid "Middle-Click Command"
 msgstr "Clic-Medio Comando"
 
-#: mx-idesktool:69
+#: mx-idesktool:75
 msgid "Set a precise position for an icon"
 msgstr "Establecer una posición precisa para un icono"
 
-#: mx-idesktool:70
+#: mx-idesktool:76
 msgid "Directly edit an icon file"
 msgstr "Editar directamente un archivo de iconos"
 
-#: mx-idesktool:71
+#: mx-idesktool:77
 msgid "Lock"
 msgstr "Bloquear"
 
-#: mx-idesktool:72
-msgid "Permit/prevent icon movement"
-msgstr "Permitir/prevenir el movimiento del icono"
+#: mx-idesktool:78
+msgid "Lock/unlock icons"
+msgstr ""
 
-#: mx-idesktool:73
+#: mx-idesktool:79
 msgid "Right-Click Command"
 msgstr "Comando de clic derecho"
 
-#: mx-idesktool:177 mx-idesktool:183
+#: mx-idesktool:81
+msgid "Config"
+msgstr "Configurar"
+
+#: mx-idesktool:82
+msgid "Icon"
+msgstr "Ícono"
+
+#: mx-idesktool:83
+msgid "Desktop"
+msgstr "Escritorio"
+
+#: mx-idesktool:85
+msgid "View or edit icon style"
+msgstr ""
+
+#: mx-idesktool:86
+msgid "View or edit mouse actions"
+msgstr ""
+
+#: mx-idesktool:202 mx-idesktool:208
 msgid "Link Filename"
 msgstr "Enlace Nombre de archivo"
 
-#: mx-idesktool:178
+#: mx-idesktool:203
 msgid "Enter Link Filename"
 msgstr "Introduzca nombre del archivo de enlace"
 
-#: mx-idesktool:848
-msgid "Text Editing"
-msgstr "Edición de texto"
+#: mx-idesktool:818 mx-idesktool:910 mx-idesktool:1027
+msgid "Set background rotation"
+msgstr ""
 
-#: mx-idesktool:859
+#: mx-idesktool:1028
+msgid "No rotation: Delay = 0"
+msgstr "Sin rotación: Retraso = 0 "
+
+#: mx-idesktool:1031
+msgid "Delay (mins)"
+msgstr "Retraso (min.)"
+
+#: mx-idesktool:1032
+msgid "Image folder"
+msgstr "Carpeta de imágenes"
+
+#: mx-idesktool:1033
+msgid "Image mode"
+msgstr "Modo de imagen"
+
+#: mx-idesktool:1070 mx-idesktool:1106 mx-idesktool:1210
 msgid "Saving..."
 msgstr "Salvar..."
 
-#: mx-idesktool:866
+#: mx-idesktool:1195
+msgid "Text Editing"
+msgstr "Edición de texto"
+
+#: mx-idesktool:1217
 msgid "Discarding..."
 msgstr "Descartar... "
