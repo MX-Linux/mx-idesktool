@@ -31,13 +31,12 @@ table Config
   ToolTip.CaptionPlacement: right
   #####SNAP#####: 
   IconSnap: true
-  SnapWidth: 72
-  SnapHeight: 96
+  SnapWidth: 96
+  SnapHeight: 72
   SnapOrigin: BottomRight
   SnapShadow: false
   SnapShadowTrans: 200
 end
-
 
 table Actions
   Lock: control shift middle doubleClk
@@ -48,3 +47,4 @@ table Actions
   Execute[1]: middle singleClk
   Execute[2]: right singleClk
 end
+
