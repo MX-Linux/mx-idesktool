@@ -131,6 +131,9 @@ DIALOG="yad --center --window-icon=/usr/share/icons/mxflux.png"
 ############Declare some Functions#############
 writeconf()
 {
+if [ -f /etc/skel/.ideskrc ]; then
+     cp /etc/skel/.ideskrc "${HOME}"/.ideskrc
+else
 echo -e "table Config
   #####CAPTION#####: 
   FontName: sans
@@ -164,8 +167,8 @@ echo -e "table Config
   ToolTip.CaptionPlacement: right
   #####SNAP#####: 
   IconSnap: true
-  SnapWidth: 72
-  SnapHeight: 96
+  SnapWidth: 96
+  SnapHeight: 72
   SnapOrigin: BottomRight
   SnapShadow: false
   SnapShadowTrans: 200
@@ -181,6 +184,8 @@ table Actions
   Execute[2]: right singleClk
 end
 " > "${HOME}/.ideskrc"
+fi
+
 }
 ################################################
 ################################################
