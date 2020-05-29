@@ -30,7 +30,7 @@ table Config
   ToolTip.CaptionOnHover: false
   ToolTip.CaptionPlacement: right
   #####SNAP#####: 
-  IconSnap: true
+  IconSnap: false
   SnapWidth: 96
   SnapHeight: 72
   SnapOrigin: BottomRight
