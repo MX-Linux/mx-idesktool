@@ -1,3 +1,9 @@
+mx-idesktool (20.05.07) mx; urgency=medium
+
+  * ideskrc tweaks
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 29 May 2020 17:28:44 -0400
+
 mx-idesktool (20.05.06) mx; urgency=medium
 
   * misc. fixes 
