@@ -33,7 +33,7 @@ table Config
   IconSnap: false
   SnapWidth: 96
   SnapHeight: 72
-  SnapOrigin: BottomRight
+  SnapOrigin: TopLeft
   SnapShadow: false
   SnapShadowTrans: 200
 end
