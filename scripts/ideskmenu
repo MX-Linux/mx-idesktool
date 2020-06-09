@@ -23,7 +23,7 @@ my $offset = $iconsize / 2;
 my $elapsed = 300; # time elapsed in milliseconds
 my $since = time - $elapsed / 1000;
 
-usleep(10000); 
+usleep(5000); 
 my $ideskdir = "$ENV{HOME}/.idesktop";
 
 chdir $ideskdir  or die "Can't change dir:$!";
@@ -151,6 +151,6 @@ close $fh;
 print "ideskmenu: $ideskmenu\n" if defined $debug;
 system("cat  $ideskmenu")     if defined $debug;
 
-my $exec = "fluxbox-remote 'custommenu $ideskmenu'; rm $ideskmenu";
+my $exec = "fluxbox-remote 'custommenu $ideskmenu'; sleep 0.2; rm $ideskmenu";
 print "exec( $exec )" if $debug;
 exec( $exec )
