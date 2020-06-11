@@ -823,7 +823,7 @@ while [  "${choice// }" == "x" ]; do
                     "$CREATE"     "   ""$TEXT26"                \
                     "x"           "<b><big>$SCREEN</big></b>"   \
                     "$POSITION"   "   ""$TEXT48"                \
-                    "iconsnap"  "   "$"Set icon snap" \
+                    "iconsnap"  "   "$"Set icons to snap" \
                     "rotation"  "   "$"Set background rotation" \
                     "$LOCK"       "   ""$LOCK_TEXT"             \
                     "$REFRESH"    "   ""$TEXT27"                \
@@ -916,7 +916,7 @@ while [  "${choice// }" == "x" ]; do
                     "$CREATE"     "   ""$TEXT26"              \
                     "x"           "<b><big>$SCREEN</big></b>" \
                     "$POSITION"   "   ""$TEXT48"              \
-                    "iconsnap"  "   "$"Set icon snap" \
+                    "iconsnap"  "   "$"Set icons to snap" \
                     "rotation"  "   "$"Set background rotation" \
                     "$LOCK"       "   ""$LOCK_TEXT"           \
                     "$REFRESH"    "   ""$TEXT27"              \
