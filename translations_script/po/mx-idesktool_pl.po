@@ -6,6 +6,7 @@
 # Translators:
 # Geoff Gigg <geoffgigg@hotmail.com>, 2020
 # anticapitalista <anticapitalista@riseup.net>, 2020
+# Marcin Karpezo <marcin@karpezo.pl>, 2020
 # MX Linux Polska <mxlinuxpl@gmail.com>, 2020
 # 
 #, fuzzy
@@ -13,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-15 17:05-0500\n"
+"POT-Creation-Date: 2020-06-12 18:23-0500\n"
 "PO-Revision-Date: 2020-03-26 13:48+0000\n"
 "Last-Translator: MX Linux Polska <mxlinuxpl@gmail.com>, 2020\n"
 "Language-Team: Polish (https://www.transifex.com/anticapitalista/teams/10162/pl/)\n"
@@ -73,7 +74,7 @@ msgstr "Polecenie dla kliknięcia lewym przyciskiem:"
 
 #: mx-idesktool:28
 msgid "Middle-Click Command:"
-msgstr ""
+msgstr "Polecenie dla kliknięcia środkowym przyciskiem:"
 
 #: mx-idesktool:29
 msgid "Current icon"
@@ -81,7 +82,7 @@ msgstr "Aktualna ikona"
 
 #: mx-idesktool:30
 msgid "Oops!"
-msgstr "Oops!"
+msgstr "Uups!"
 
 #: mx-idesktool:31
 msgid "Error: Icon Image File Not Found."
@@ -117,19 +118,19 @@ msgstr "Wybierz obraz ikony .png"
 
 #: mx-idesktool:39
 msgid "View or edit an icon"
-msgstr ""
+msgstr "Wyświetl lub edytuj ikonę"
 
 #: mx-idesktool:40
 msgid "Remove an icon"
-msgstr ""
+msgstr "Usuń ikonę"
 
 #: mx-idesktool:41
 msgid "Add a new icon"
-msgstr ""
+msgstr "Dodaj nową ikonę"
 
 #: mx-idesktool:42
 msgid "Reload the desktop"
-msgstr ""
+msgstr "Załaduj pulpit ponownie"
 
 #: mx-idesktool:43
 msgid "Edit iDesk's config file"
@@ -137,7 +138,7 @@ msgstr "Edytuj plik konfiguracyjny iDesk"
 
 #: mx-idesktool:44
 msgid "MX-idesktool documentation"
-msgstr ""
+msgstr "Dokumentacja MX-idesktool"
 
 #: mx-idesktool:45
 msgid "USE: double-click entry to select a management action"
@@ -191,11 +192,11 @@ msgstr "Usuń"
 
 #: mx-idesktool:64
 msgid "Create"
-msgstr ""
+msgstr "Utwórz"
 
 #: mx-idesktool:65
 msgid "Locate"
-msgstr ""
+msgstr "Znajdź"
 
 #: mx-idesktool:66
 msgid "Refresh"
@@ -207,7 +208,7 @@ msgstr "Skonfiguruj"
 
 #: mx-idesktool:68
 msgid "Write"
-msgstr ""
+msgstr "Zapisz"
 
 #: mx-idesktool:69
 msgid "Help"
@@ -223,23 +224,23 @@ msgstr "OPIS"
 
 #: mx-idesktool:74
 msgid "Middle-Click Command"
-msgstr ""
+msgstr "Polecenie dla kliknięcia środkowym przyciskiem"
 
 #: mx-idesktool:75
 msgid "Set a precise position for an icon"
-msgstr ""
+msgstr "Ustaw dokładną pozycję ikony"
 
 #: mx-idesktool:76
 msgid "Directly edit an icon file"
-msgstr ""
+msgstr "Bezpośrednio edytuj plik ikony"
 
 #: mx-idesktool:77
 msgid "Lock"
-msgstr ""
+msgstr "Zablokuj"
 
 #: mx-idesktool:78
 msgid "Lock/unlock icons"
-msgstr ""
+msgstr "Zablokuj/odblokuj ikony"
 
 #: mx-idesktool:79
 msgid "Right-Click Command"
@@ -247,7 +248,7 @@ msgstr "Polecenie dla kliknięcia prawym przyciskiem"
 
 #: mx-idesktool:81
 msgid "Config"
-msgstr ""
+msgstr "Konfiguracja"
 
 #: mx-idesktool:82
 msgid "Icon"
@@ -259,48 +260,80 @@ msgstr "Pulpit"
 
 #: mx-idesktool:85
 msgid "View or edit icon style"
-msgstr ""
+msgstr "Wyświetl lub edytuj styl ikony"
 
 #: mx-idesktool:86
 msgid "View or edit mouse actions"
-msgstr ""
+msgstr "Wyświetl lub edytuj działania myszy"
 
-#: mx-idesktool:202 mx-idesktool:208
+#: mx-idesktool:207 mx-idesktool:213
 msgid "Link Filename"
-msgstr ""
+msgstr "Nazwa skrótu"
 
-#: mx-idesktool:203
+#: mx-idesktool:208
 msgid "Enter Link Filename"
-msgstr ""
+msgstr "Wpisz nazwę dla skrótu"
 
-#: mx-idesktool:818 mx-idesktool:910 mx-idesktool:1027
+#: mx-idesktool:826 mx-idesktool:919
+msgid "Set icons to snap"
+msgstr "Ustaw ikony do przypięcia"
+
+#: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
 msgid "Set background rotation"
+msgstr "Ustaw rotację (zmianę) tła"
+
+#: mx-idesktool:1022 mx-idesktool:1023
+msgid "off"
+msgstr "wyłącz"
+
+#: mx-idesktool:1022 mx-idesktool:1023
+msgid "on"
 msgstr ""
 
-#: mx-idesktool:1028
+#: mx-idesktool:1043
+msgid "Snap icons"
+msgstr "Przypnij ikony"
+
+#: mx-idesktool:1044
+msgid "USE: place icon in the middle\\nof a rectangle"
+msgstr "UŻYCIE: umieść ikonę na środku\\nprostokąta"
+
+#: mx-idesktool:1049
+msgid "Status"
+msgstr "Status"
+
+#: mx-idesktool:1050
+msgid "Width"
+msgstr "Szerokość"
+
+#: mx-idesktool:1051
+msgid "Height"
+msgstr "Wysokość"
+
+#: mx-idesktool:1093
 msgid "No rotation: Delay = 0"
-msgstr ""
+msgstr "Brak rotacji: Opóźnienie = 0"
 
-#: mx-idesktool:1031
+#: mx-idesktool:1096
 msgid "Delay (mins)"
-msgstr ""
+msgstr "Opóźnienie (minuty)"
 
-#: mx-idesktool:1032
+#: mx-idesktool:1097
 msgid "Image folder"
-msgstr ""
+msgstr "Folder obrazów"
 
-#: mx-idesktool:1033
+#: mx-idesktool:1098
 msgid "Image mode"
-msgstr ""
+msgstr "Tryb obrazu"
 
-#: mx-idesktool:1070 mx-idesktool:1106 mx-idesktool:1210
+#: mx-idesktool:1137 mx-idesktool:1172 mx-idesktool:1276
 msgid "Saving..."
-msgstr ""
+msgstr "Zapisywanie..."
 
-#: mx-idesktool:1195
+#: mx-idesktool:1261
 msgid "Text Editing"
-msgstr ""
+msgstr "Edycja tekstu"
 
-#: mx-idesktool:1217
+#: mx-idesktool:1283
 msgid "Discarding..."
-msgstr ""
+msgstr "Odrzucanie..."

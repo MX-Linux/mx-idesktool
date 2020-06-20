@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-15 17:05-0500\n"
+"POT-Creation-Date: 2020-06-12 18:23-0500\n"
 "PO-Revision-Date: 2020-03-26 13:48+0000\n"
 "Last-Translator: Davide Carli <dede.carli.drums@gmail.com>, 2020\n"
 "Language-Team: Italian (https://www.transifex.com/anticapitalista/teams/10162/it/)\n"
@@ -26,7 +26,7 @@ msgstr ""
 
 #: mx-idesktool:10
 msgid "ERROR: Yad not installed or not in path."
-msgstr "ERROR: Yad non installato o non corretto il collegamento ad esso."
+msgstr "ERRORE: Yad non installato o non corretto il collegamento ad esso."
 
 #: mx-idesktool:11
 msgid "Yad found. So far so good.."
@@ -37,12 +37,12 @@ msgid ""
 "ERROR: idesk not installed or not in path. Try "
 "http://sourceforge.net/projects/idesk/"
 msgstr ""
-"ERROR: idesk non installato o non corretto il collegamento ad esso. Prova "
+"ERRORE: idesk non installato o non corretto il collegamento ad esso. Prova "
 "http://sourceforge.net/projects/idesk/"
 
 #: mx-idesktool:13
 msgid "idesk found - we're on a roll :)"
-msgstr "idesk trovato - butta bene :)"
+msgstr "idesk trovato - stiamo andando bene :)"
 
 #: mx-idesktool:14
 msgid "Icon Management Tool"
@@ -131,7 +131,7 @@ msgstr "Aggiungi una nuova icona"
 
 #: mx-idesktool:42
 msgid "Reload the desktop"
-msgstr "Ricarica la scrivania"
+msgstr "Ricarica il desktop"
 
 #: mx-idesktool:43
 msgid "Edit iDesk's config file"
@@ -151,7 +151,7 @@ msgstr "Configurazione di iDesk"
 
 #: mx-idesktool:47
 msgid "Config. file  found - excellent!"
-msgstr "File config. trovato - eccellente!"
+msgstr "File config. trovato - ottimo!"
 
 #: mx-idesktool:48
 msgid ""
@@ -267,42 +267,74 @@ msgstr "Visualizza o modifica lo stile dell'icona"
 msgid "View or edit mouse actions"
 msgstr "Visualizza o modifica le azioni del mouse"
 
-#: mx-idesktool:202 mx-idesktool:208
+#: mx-idesktool:207 mx-idesktool:213
 msgid "Link Filename"
 msgstr "Collega il nome del file"
 
-#: mx-idesktool:203
+#: mx-idesktool:208
 msgid "Enter Link Filename"
 msgstr "Digita il collegamento del nome del file"
 
-#: mx-idesktool:818 mx-idesktool:910 mx-idesktool:1027
+#: mx-idesktool:826 mx-idesktool:919
+msgid "Set icons to snap"
+msgstr "Imposta le icone per scattare"
+
+#: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
 msgid "Set background rotation"
 msgstr "Imposta la rotazione dello sfondo"
 
-#: mx-idesktool:1028
+#: mx-idesktool:1022 mx-idesktool:1023
+msgid "off"
+msgstr "off"
+
+#: mx-idesktool:1022 mx-idesktool:1023
+msgid "on"
+msgstr "acceso"
+
+#: mx-idesktool:1043
+msgid "Snap icons"
+msgstr "Scatta icone"
+
+#: mx-idesktool:1044
+msgid "USE: place icon in the middle\\nof a rectangle"
+msgstr "USO: posiziona l'icona al centro di un rettangolo"
+
+#: mx-idesktool:1049
+msgid "Status"
+msgstr "Stato"
+
+#: mx-idesktool:1050
+msgid "Width"
+msgstr "Larghezza"
+
+#: mx-idesktool:1051
+msgid "Height"
+msgstr "Altezza"
+
+#: mx-idesktool:1093
 msgid "No rotation: Delay = 0"
 msgstr "Nessuna rotazione: Ritardo=0"
 
-#: mx-idesktool:1031
+#: mx-idesktool:1096
 msgid "Delay (mins)"
 msgstr "Ritardo (min)"
 
-#: mx-idesktool:1032
+#: mx-idesktool:1097
 msgid "Image folder"
 msgstr "Cartella immagini"
 
-#: mx-idesktool:1033
+#: mx-idesktool:1098
 msgid "Image mode"
 msgstr "Modalità immagine"
 
-#: mx-idesktool:1070 mx-idesktool:1106 mx-idesktool:1210
+#: mx-idesktool:1137 mx-idesktool:1172 mx-idesktool:1276
 msgid "Saving..."
 msgstr "Salvataggio..."
 
-#: mx-idesktool:1195
+#: mx-idesktool:1261
 msgid "Text Editing"
 msgstr "Modifica del testo"
 
-#: mx-idesktool:1217
+#: mx-idesktool:1283
 msgid "Discarding..."
-msgstr "Scartamento..."
+msgstr "Scartare..."

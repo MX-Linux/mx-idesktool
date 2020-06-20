@@ -5,19 +5,20 @@
 # 
 # Translators:
 # Geoff Gigg <geoffgigg@hotmail.com>, 2020
-# German Lancheros <glancheros2015@gmail.com>, 2020
 # anticapitalista <anticapitalista@riseup.net>, 2020
-# Roberto Saravia <saravia.jroberto@gmail.com>, 2020
 # Roy Avrett <avrett@cs.fsu.edu>, 2020
+# Richard  Holt <richard.holt@gmail.com>, 2020
+# Roberto Saravia <saravia.jroberto@gmail.com>, 2020
+# German Lancheros <glancheros2015@gmail.com>, 2020
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-15 17:05-0500\n"
+"POT-Creation-Date: 2020-06-12 18:23-0500\n"
 "PO-Revision-Date: 2020-03-26 13:48+0000\n"
-"Last-Translator: Roy Avrett <avrett@cs.fsu.edu>, 2020\n"
+"Last-Translator: German Lancheros <glancheros2015@gmail.com>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/anticapitalista/teams/10162/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -119,19 +120,19 @@ msgstr "Elija una imagen de icono .png"
 
 #: mx-idesktool:39
 msgid "View or edit an icon"
-msgstr ""
+msgstr "Ver o editar un icono"
 
 #: mx-idesktool:40
 msgid "Remove an icon"
-msgstr ""
+msgstr "Eliminar un icono"
 
 #: mx-idesktool:41
 msgid "Add a new icon"
-msgstr ""
+msgstr "Adicionar un nuevo icono"
 
 #: mx-idesktool:42
 msgid "Reload the desktop"
-msgstr ""
+msgstr "Recargue el escritorio"
 
 #: mx-idesktool:43
 msgid "Edit iDesk's config file"
@@ -242,7 +243,7 @@ msgstr "Bloquear"
 
 #: mx-idesktool:78
 msgid "Lock/unlock icons"
-msgstr ""
+msgstr "Bloquear/desbloquear iconos"
 
 #: mx-idesktool:79
 msgid "Right-Click Command"
@@ -262,48 +263,80 @@ msgstr "Escritorio"
 
 #: mx-idesktool:85
 msgid "View or edit icon style"
-msgstr ""
+msgstr "Ver o editar estilo de iconos"
 
 #: mx-idesktool:86
 msgid "View or edit mouse actions"
-msgstr ""
+msgstr "Ver o editar las acciones del ratón"
 
-#: mx-idesktool:202 mx-idesktool:208
+#: mx-idesktool:207 mx-idesktool:213
 msgid "Link Filename"
 msgstr "Enlace Nombre de archivo"
 
-#: mx-idesktool:203
+#: mx-idesktool:208
 msgid "Enter Link Filename"
 msgstr "Introduzca nombre del archivo de enlace"
 
-#: mx-idesktool:818 mx-idesktool:910 mx-idesktool:1027
-msgid "Set background rotation"
-msgstr ""
+#: mx-idesktool:826 mx-idesktool:919
+msgid "Set icons to snap"
+msgstr "Establecer íconos para ajustar"
 
-#: mx-idesktool:1028
+#: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
+msgid "Set background rotation"
+msgstr "Establecer la rotación del fondo"
+
+#: mx-idesktool:1022 mx-idesktool:1023
+msgid "off"
+msgstr "apagado"
+
+#: mx-idesktool:1022 mx-idesktool:1023
+msgid "on"
+msgstr "encendido"
+
+#: mx-idesktool:1043
+msgid "Snap icons"
+msgstr "Ajustar iconos"
+
+#: mx-idesktool:1044
+msgid "USE: place icon in the middle\\nof a rectangle"
+msgstr "USO: coloca el ícono en el medio\\nde un rectángulo"
+
+#: mx-idesktool:1049
+msgid "Status"
+msgstr "Estado"
+
+#: mx-idesktool:1050
+msgid "Width"
+msgstr "Ancho"
+
+#: mx-idesktool:1051
+msgid "Height"
+msgstr "Altura"
+
+#: mx-idesktool:1093
 msgid "No rotation: Delay = 0"
 msgstr "Sin rotación: Retraso = 0 "
 
-#: mx-idesktool:1031
+#: mx-idesktool:1096
 msgid "Delay (mins)"
 msgstr "Retraso (min.)"
 
-#: mx-idesktool:1032
+#: mx-idesktool:1097
 msgid "Image folder"
 msgstr "Carpeta de imágenes"
 
-#: mx-idesktool:1033
+#: mx-idesktool:1098
 msgid "Image mode"
 msgstr "Modo de imagen"
 
-#: mx-idesktool:1070 mx-idesktool:1106 mx-idesktool:1210
+#: mx-idesktool:1137 mx-idesktool:1172 mx-idesktool:1276
 msgid "Saving..."
 msgstr "Salvar..."
 
-#: mx-idesktool:1195
+#: mx-idesktool:1261
 msgid "Text Editing"
 msgstr "Edición de texto"
 
-#: mx-idesktool:1217
+#: mx-idesktool:1283
 msgid "Discarding..."
 msgstr "Descartar... "

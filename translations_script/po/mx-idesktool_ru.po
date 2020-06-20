@@ -5,8 +5,9 @@
 # 
 # Translators:
 # Geoff Gigg <geoffgigg@hotmail.com>, 2020
-# Vladimir O <vldoduv@yandex.ru>, 2020
 # anticapitalista <anticapitalista@riseup.net>, 2020
+# Vladimir O <vldoduv@yandex.ru>, 2020
+# worktowork <worktowork@ya.ru>, 2020
 # Вячеслав Волошин <vol_vel@mail.ru>, 2020
 # 
 #, fuzzy
@@ -14,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-15 17:05-0500\n"
+"POT-Creation-Date: 2020-06-12 18:23-0500\n"
 "PO-Revision-Date: 2020-03-26 13:48+0000\n"
 "Last-Translator: Вячеслав Волошин <vol_vel@mail.ru>, 2020\n"
 "Language-Team: Russian (https://www.transifex.com/anticapitalista/teams/10162/ru/)\n"
@@ -118,19 +119,19 @@ msgstr "Выберите .png изображение для значка"
 
 #: mx-idesktool:39
 msgid "View or edit an icon"
-msgstr ""
+msgstr "Просмотреть или изменить Значок"
 
 #: mx-idesktool:40
 msgid "Remove an icon"
-msgstr ""
+msgstr "Удалить значок"
 
 #: mx-idesktool:41
 msgid "Add a new icon"
-msgstr ""
+msgstr "Добавить новый значок"
 
 #: mx-idesktool:42
 msgid "Reload the desktop"
-msgstr ""
+msgstr "Перезагрузить рабочий стол"
 
 #: mx-idesktool:43
 msgid "Edit iDesk's config file"
@@ -138,7 +139,7 @@ msgstr "Редактировать файл конфигурации iDesk"
 
 #: mx-idesktool:44
 msgid "MX-idesktool documentation"
-msgstr ""
+msgstr "Документация MX-idesktool"
 
 #: mx-idesktool:45
 msgid "USE: double-click entry to select a management action"
@@ -239,7 +240,7 @@ msgstr "Заблокировать"
 
 #: mx-idesktool:78
 msgid "Lock/unlock icons"
-msgstr ""
+msgstr "Блокировать/разблокировать значки"
 
 #: mx-idesktool:79
 msgid "Right-Click Command"
@@ -247,7 +248,7 @@ msgstr "Команда при клике правой кнопкой"
 
 #: mx-idesktool:81
 msgid "Config"
-msgstr ""
+msgstr "Конфигурация"
 
 #: mx-idesktool:82
 msgid "Icon"
@@ -259,48 +260,80 @@ msgstr "Рабочий стол"
 
 #: mx-idesktool:85
 msgid "View or edit icon style"
-msgstr ""
+msgstr "Просмотреть или изменить стиль значка"
 
 #: mx-idesktool:86
 msgid "View or edit mouse actions"
-msgstr ""
+msgstr "Просмотреть или изменить действия мыши"
 
-#: mx-idesktool:202 mx-idesktool:208
+#: mx-idesktool:207 mx-idesktool:213
 msgid "Link Filename"
 msgstr "Имя файла для ссылки"
 
-#: mx-idesktool:203
+#: mx-idesktool:208
 msgid "Enter Link Filename"
 msgstr "Введите имя файла"
 
-#: mx-idesktool:818 mx-idesktool:910 mx-idesktool:1027
+#: mx-idesktool:826 mx-idesktool:919
+msgid "Set icons to snap"
+msgstr ""
+
+#: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
 msgid "Set background rotation"
+msgstr "Задать поворот фона"
+
+#: mx-idesktool:1022 mx-idesktool:1023
+msgid "off"
+msgstr "выкл."
+
+#: mx-idesktool:1022 mx-idesktool:1023
+msgid "on"
 msgstr ""
 
-#: mx-idesktool:1028
+#: mx-idesktool:1043
+msgid "Snap icons"
+msgstr ""
+
+#: mx-idesktool:1044
+msgid "USE: place icon in the middle\\nof a rectangle"
+msgstr ""
+
+#: mx-idesktool:1049
+msgid "Status"
+msgstr "Статус"
+
+#: mx-idesktool:1050
+msgid "Width"
+msgstr ""
+
+#: mx-idesktool:1051
+msgid "Height"
+msgstr ""
+
+#: mx-idesktool:1093
 msgid "No rotation: Delay = 0"
-msgstr ""
+msgstr "Без поворота: Задержка = 0"
 
-#: mx-idesktool:1031
+#: mx-idesktool:1096
 msgid "Delay (mins)"
-msgstr ""
+msgstr "Задержка (минуты)"
 
-#: mx-idesktool:1032
+#: mx-idesktool:1097
 msgid "Image folder"
-msgstr ""
+msgstr "Папка с изображениями"
 
-#: mx-idesktool:1033
+#: mx-idesktool:1098
 msgid "Image mode"
-msgstr ""
+msgstr "Режим изображения"
 
-#: mx-idesktool:1070 mx-idesktool:1106 mx-idesktool:1210
+#: mx-idesktool:1137 mx-idesktool:1172 mx-idesktool:1276
 msgid "Saving..."
 msgstr "Сохранение..."
 
-#: mx-idesktool:1195
+#: mx-idesktool:1261
 msgid "Text Editing"
 msgstr "Редактирование текста"
 
-#: mx-idesktool:1217
+#: mx-idesktool:1283
 msgid "Discarding..."
 msgstr "Отмена..."

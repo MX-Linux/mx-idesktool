@@ -5,6 +5,7 @@
 # 
 # Translators:
 # anticapitalista <anticapitalista@riseup.net>, 2020
+# Ivan <personal@live.hk>, 2020
 # Wang Hsiang Wei <irene.wang.250@gmail.com>, 2020
 # 
 #, fuzzy
@@ -12,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-15 17:05-0500\n"
+"POT-Creation-Date: 2020-06-12 18:23-0500\n"
 "PO-Revision-Date: 2020-03-26 13:48+0000\n"
 "Last-Translator: Wang Hsiang Wei <irene.wang.250@gmail.com>, 2020\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/anticapitalista/teams/10162/zh_TW/)\n"
@@ -28,7 +29,7 @@ msgstr ""
 
 #: mx-idesktool:11
 msgid "Yad found. So far so good.."
-msgstr ""
+msgstr "Yad找到了。到目前為止，一切都很好.."
 
 #: mx-idesktool:12
 msgid ""
@@ -38,15 +39,15 @@ msgstr ""
 
 #: mx-idesktool:13
 msgid "idesk found - we're on a roll :)"
-msgstr ""
+msgstr "idesk找到了-我們正在努力:)"
 
 #: mx-idesktool:14
 msgid "Icon Management Tool"
-msgstr ""
+msgstr "圖標管理工具"
 
 #: mx-idesktool:15
 msgid "Icon Caption:\\n(Leave blank for no caption)"
-msgstr ""
+msgstr "圖標標題：（保留空白，不顯示標題）"
 
 #: mx-idesktool:16
 msgid "Back"
@@ -62,27 +63,27 @@ msgstr "下一個"
 
 #: mx-idesktool:19
 msgid "Caption"
-msgstr ""
+msgstr "標題"
 
 #: mx-idesktool:27 mx-idesktool:73
 msgid "Left-Click Command:"
-msgstr ""
+msgstr "左鍵命令："
 
 #: mx-idesktool:28
 msgid "Middle-Click Command:"
-msgstr ""
+msgstr "中鍵命令："
 
 #: mx-idesktool:29
 msgid "Current icon"
-msgstr ""
+msgstr "當前圖標"
 
 #: mx-idesktool:30
 msgid "Oops!"
-msgstr ""
+msgstr "糟糕！"
 
 #: mx-idesktool:31
 msgid "Error: Icon Image File Not Found."
-msgstr ""
+msgstr "錯誤：找不到圖標圖像文件。"
 
 #: mx-idesktool:32
 msgid "Quit"
@@ -102,19 +103,19 @@ msgstr ""
 
 #: mx-idesktool:36
 msgid "Finished!"
-msgstr ""
+msgstr "完畢！"
 
 #: mx-idesktool:37
 msgid "All done. Restarting idesk now..."
-msgstr ""
+msgstr "全做完了。立即重啟idesk ..."
 
 #: mx-idesktool:38 mx-idesktool:72
 msgid "Choose a .png icon image"
-msgstr ""
+msgstr "選擇一個.png圖標圖像"
 
 #: mx-idesktool:39
 msgid "View or edit an icon"
-msgstr ""
+msgstr "查看或編輯圖標"
 
 #: mx-idesktool:40
 msgid "Remove an icon"
@@ -122,7 +123,7 @@ msgstr ""
 
 #: mx-idesktool:41
 msgid "Add a new icon"
-msgstr ""
+msgstr "添加一個新圖標"
 
 #: mx-idesktool:42
 msgid "Reload the desktop"
@@ -255,42 +256,74 @@ msgstr ""
 msgid "View or edit mouse actions"
 msgstr ""
 
-#: mx-idesktool:202 mx-idesktool:208
+#: mx-idesktool:207 mx-idesktool:213
 msgid "Link Filename"
 msgstr ""
 
-#: mx-idesktool:203
+#: mx-idesktool:208
 msgid "Enter Link Filename"
 msgstr ""
 
-#: mx-idesktool:818 mx-idesktool:910 mx-idesktool:1027
+#: mx-idesktool:826 mx-idesktool:919
+msgid "Set icons to snap"
+msgstr ""
+
+#: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
 msgid "Set background rotation"
 msgstr ""
 
-#: mx-idesktool:1028
+#: mx-idesktool:1022 mx-idesktool:1023
+msgid "off"
+msgstr "關閉"
+
+#: mx-idesktool:1022 mx-idesktool:1023
+msgid "on"
+msgstr ""
+
+#: mx-idesktool:1043
+msgid "Snap icons"
+msgstr ""
+
+#: mx-idesktool:1044
+msgid "USE: place icon in the middle\\nof a rectangle"
+msgstr ""
+
+#: mx-idesktool:1049
+msgid "Status"
+msgstr "狀態"
+
+#: mx-idesktool:1050
+msgid "Width"
+msgstr ""
+
+#: mx-idesktool:1051
+msgid "Height"
+msgstr ""
+
+#: mx-idesktool:1093
 msgid "No rotation: Delay = 0"
 msgstr ""
 
-#: mx-idesktool:1031
+#: mx-idesktool:1096
 msgid "Delay (mins)"
 msgstr ""
 
-#: mx-idesktool:1032
+#: mx-idesktool:1097
 msgid "Image folder"
 msgstr ""
 
-#: mx-idesktool:1033
+#: mx-idesktool:1098
 msgid "Image mode"
 msgstr ""
 
-#: mx-idesktool:1070 mx-idesktool:1106 mx-idesktool:1210
+#: mx-idesktool:1137 mx-idesktool:1172 mx-idesktool:1276
 msgid "Saving..."
 msgstr ""
 
-#: mx-idesktool:1195
+#: mx-idesktool:1261
 msgid "Text Editing"
 msgstr ""
 
-#: mx-idesktool:1217
+#: mx-idesktool:1283
 msgid "Discarding..."
 msgstr ""

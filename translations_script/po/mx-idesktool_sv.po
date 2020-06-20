@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-15 17:05-0500\n"
+"POT-Creation-Date: 2020-06-12 18:23-0500\n"
 "PO-Revision-Date: 2020-03-26 13:48+0000\n"
 "Last-Translator: Henry Oquist <henryoquist@comhem.se>, 2020\n"
 "Language-Team: Swedish (https://www.transifex.com/anticapitalista/teams/10162/sv/)\n"
@@ -264,42 +264,74 @@ msgstr "Titta på eller redigera ikon-stil"
 msgid "View or edit mouse actions"
 msgstr "Titta på eller redigera musaktiviteter"
 
-#: mx-idesktool:202 mx-idesktool:208
+#: mx-idesktool:207 mx-idesktool:213
 msgid "Link Filename"
 msgstr "Länk Filnamn"
 
-#: mx-idesktool:203
+#: mx-idesktool:208
 msgid "Enter Link Filename"
 msgstr "Skriv in Länk Filnamn"
 
-#: mx-idesktool:818 mx-idesktool:910 mx-idesktool:1027
+#: mx-idesktool:826 mx-idesktool:919
+msgid "Set icons to snap"
+msgstr "Ställ in ikonerna på att fästa"
+
+#: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
 msgid "Set background rotation"
 msgstr "Välj bakgrundsrotation"
 
-#: mx-idesktool:1028
+#: mx-idesktool:1022 mx-idesktool:1023
+msgid "off"
+msgstr "av"
+
+#: mx-idesktool:1022 mx-idesktool:1023
+msgid "on"
+msgstr "på"
+
+#: mx-idesktool:1043
+msgid "Snap icons"
+msgstr "Fäst ikoner"
+
+#: mx-idesktool:1044
+msgid "USE: place icon in the middle\\nof a rectangle"
+msgstr "ANVÄNDNING: Placera ikon i mitten\\nav en rektangel"
+
+#: mx-idesktool:1049
+msgid "Status"
+msgstr "Status"
+
+#: mx-idesktool:1050
+msgid "Width"
+msgstr "Bredd"
+
+#: mx-idesktool:1051
+msgid "Height"
+msgstr "Höjd"
+
+#: mx-idesktool:1093
 msgid "No rotation: Delay = 0"
 msgstr "Ingen rotation: Fördröjning = 0"
 
-#: mx-idesktool:1031
+#: mx-idesktool:1096
 msgid "Delay (mins)"
 msgstr "Fördröjning (min s)"
 
-#: mx-idesktool:1032
+#: mx-idesktool:1097
 msgid "Image folder"
 msgstr "Bildkatalog"
 
-#: mx-idesktool:1033
+#: mx-idesktool:1098
 msgid "Image mode"
 msgstr "Bildläge"
 
-#: mx-idesktool:1070 mx-idesktool:1106 mx-idesktool:1210
+#: mx-idesktool:1137 mx-idesktool:1172 mx-idesktool:1276
 msgid "Saving..."
 msgstr "Spar..."
 
-#: mx-idesktool:1195
+#: mx-idesktool:1261
 msgid "Text Editing"
 msgstr "Textredigering"
 
-#: mx-idesktool:1217
+#: mx-idesktool:1283
 msgid "Discarding..."
 msgstr "Tar bort..."

@@ -5,20 +5,21 @@
 # 
 # Translators:
 # anticapitalista <anticapitalista@riseup.net>, 2020
-# Vinzenz Vietzke <vinz@vinzv.de>, 2020
 # Michael Petersen <mikel-debian@online.de>, 2020
-# Taiwanoca <taiwanoca@gmail.com>, 2020
 # Jerry Bond, 2020
-# Feh Ler <feh.ler@t-online.de>, 2020
+# fehlix, 2020
+# Vinzenz Vietzke <vinz@vinzv.de>, 2020
+# Taiwanoca <taiwanoca@gmail.com>, 2020
+# wahnsinn, 2020
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-15 17:05-0500\n"
+"POT-Creation-Date: 2020-06-12 18:23-0500\n"
 "PO-Revision-Date: 2020-03-26 13:48+0000\n"
-"Last-Translator: Feh Ler <feh.ler@t-online.de>, 2020\n"
+"Last-Translator: wahnsinn, 2020\n"
 "Language-Team: German (https://www.transifex.com/anticapitalista/teams/10162/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -270,42 +271,74 @@ msgstr "Anschauen oder Editieren der Icon Einstellungen"
 msgid "View or edit mouse actions"
 msgstr "Anschauen oder Editieren der Maus Aktionen"
 
-#: mx-idesktool:202 mx-idesktool:208
+#: mx-idesktool:207 mx-idesktool:213
 msgid "Link Filename"
 msgstr "Name der Lnk-Datei"
 
-#: mx-idesktool:203
+#: mx-idesktool:208
 msgid "Enter Link Filename"
 msgstr "Lnk-Dateiname eingeben "
 
-#: mx-idesktool:818 mx-idesktool:910 mx-idesktool:1027
+#: mx-idesktool:826 mx-idesktool:919
+msgid "Set icons to snap"
+msgstr "Symbole auf Snap einstellen"
+
+#: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
 msgid "Set background rotation"
 msgstr "Hintergrund-Rotation einstellen"
 
-#: mx-idesktool:1028
+#: mx-idesktool:1022 mx-idesktool:1023
+msgid "off"
+msgstr "Aus"
+
+#: mx-idesktool:1022 mx-idesktool:1023
+msgid "on"
+msgstr ""
+
+#: mx-idesktool:1043
+msgid "Snap icons"
+msgstr ""
+
+#: mx-idesktool:1044
+msgid "USE: place icon in the middle\\nof a rectangle"
+msgstr ""
+
+#: mx-idesktool:1049
+msgid "Status"
+msgstr "Status"
+
+#: mx-idesktool:1050
+msgid "Width"
+msgstr "Breite"
+
+#: mx-idesktool:1051
+msgid "Height"
+msgstr "Höhe"
+
+#: mx-idesktool:1093
 msgid "No rotation: Delay = 0"
 msgstr "Keine Rotation: Anzeigedauer=0"
 
-#: mx-idesktool:1031
+#: mx-idesktool:1096
 msgid "Delay (mins)"
 msgstr "Anzeigedauer (Minuten)"
 
-#: mx-idesktool:1032
+#: mx-idesktool:1097
 msgid "Image folder"
 msgstr "Bild-Verzeichnis"
 
-#: mx-idesktool:1033
+#: mx-idesktool:1098
 msgid "Image mode"
 msgstr "Bild Modus "
 
-#: mx-idesktool:1070 mx-idesktool:1106 mx-idesktool:1210
+#: mx-idesktool:1137 mx-idesktool:1172 mx-idesktool:1276
 msgid "Saving..."
 msgstr "Speichern..."
 
-#: mx-idesktool:1195
+#: mx-idesktool:1261
 msgid "Text Editing"
 msgstr "Text-editieren"
 
-#: mx-idesktool:1217
+#: mx-idesktool:1283
 msgid "Discarding..."
 msgstr "Verwerfe..."

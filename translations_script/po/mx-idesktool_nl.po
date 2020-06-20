@@ -5,6 +5,7 @@
 # 
 # Translators:
 # anticapitalista <anticapitalista@riseup.net>, 2020
+# ko <ko.bros@gmail.com>, 2020
 # Eadwine Rose, 2020
 # 
 #, fuzzy
@@ -12,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-15 17:05-0500\n"
+"POT-Creation-Date: 2020-06-12 18:23-0500\n"
 "PO-Revision-Date: 2020-03-26 13:48+0000\n"
 "Last-Translator: Eadwine Rose, 2020\n"
 "Language-Team: Dutch (https://www.transifex.com/anticapitalista/teams/10162/nl/)\n"
@@ -264,42 +265,74 @@ msgstr "Icoon stijl bekijken of bewerken"
 msgid "View or edit mouse actions"
 msgstr "Muis acties bekijken of bewerken"
 
-#: mx-idesktool:202 mx-idesktool:208
+#: mx-idesktool:207 mx-idesktool:213
 msgid "Link Filename"
 msgstr "Link Bestandsnaam"
 
-#: mx-idesktool:203
+#: mx-idesktool:208
 msgid "Enter Link Filename"
 msgstr "Voer Link Bestandsnaam In"
 
-#: mx-idesktool:818 mx-idesktool:910 mx-idesktool:1027
+#: mx-idesktool:826 mx-idesktool:919
+msgid "Set icons to snap"
+msgstr "Stel iconen in om te klikken"
+
+#: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
 msgid "Set background rotation"
 msgstr "Stel achtergrondrotatie in"
 
-#: mx-idesktool:1028
+#: mx-idesktool:1022 mx-idesktool:1023
+msgid "off"
+msgstr "uit"
+
+#: mx-idesktool:1022 mx-idesktool:1023
+msgid "on"
+msgstr "aan"
+
+#: mx-idesktool:1043
+msgid "Snap icons"
+msgstr "Klik iconen"
+
+#: mx-idesktool:1044
+msgid "USE: place icon in the middle\\nof a rectangle"
+msgstr "GEBRUIKEN: plaats icoon in het midden van\\neen rechthoek"
+
+#: mx-idesktool:1049
+msgid "Status"
+msgstr "Status"
+
+#: mx-idesktool:1050
+msgid "Width"
+msgstr "Breedte"
+
+#: mx-idesktool:1051
+msgid "Height"
+msgstr "Hoogte"
+
+#: mx-idesktool:1093
 msgid "No rotation: Delay = 0"
 msgstr "Geen rotatie: Vertraging = 0"
 
-#: mx-idesktool:1031
+#: mx-idesktool:1096
 msgid "Delay (mins)"
 msgstr "Vertraging (min)"
 
-#: mx-idesktool:1032
+#: mx-idesktool:1097
 msgid "Image folder"
 msgstr "Afbeelding map"
 
-#: mx-idesktool:1033
+#: mx-idesktool:1098
 msgid "Image mode"
 msgstr "Afbeelding modus"
 
-#: mx-idesktool:1070 mx-idesktool:1106 mx-idesktool:1210
+#: mx-idesktool:1137 mx-idesktool:1172 mx-idesktool:1276
 msgid "Saving..."
 msgstr "Opslaan..."
 
-#: mx-idesktool:1195
+#: mx-idesktool:1261
 msgid "Text Editing"
 msgstr "Teskt Aanpassing"
 
-#: mx-idesktool:1217
+#: mx-idesktool:1283
 msgid "Discarding..."
 msgstr "Weggooien..."
