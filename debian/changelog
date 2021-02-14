@@ -1,3 +1,9 @@
+mx-idesktool (21.02.01) mx; urgency=medium
+
+  * add mx-idesktool desktop file 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 13 Feb 2021 20:05:37 -0500
+
 mx-idesktool (20.06.01) mx; urgency=medium
 
   * updated translations 
