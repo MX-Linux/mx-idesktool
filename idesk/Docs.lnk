@@ -1,6 +1,6 @@
 table Icon
   Caption: 2x Help
-  Icon: /usr/share/icons/Moka/48x48/apps/wine-help.png
+  Icon: /usr/share/icons/mxfb-help.png
   X: 72
   Y: 60
   Command[0]: ideskrun thunar /usr/share/mxflux/help
