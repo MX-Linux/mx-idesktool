@@ -1,3 +1,10 @@
+mx-idesktool (21.02.01+nmu1) UNRELEASED; urgency=medium
+
+  * Non-maintainer upload.
+  * Added Video.lnk
+
+ -- Jerry Bond <jb@X1Cmx>  Thu, 29 Jul 2021 08:52:09 -0400
+
 mx-idesktool (21.02.01) mx; urgency=medium
 
   * add mx-idesktool desktop file 
