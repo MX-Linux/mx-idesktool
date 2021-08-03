@@ -1,9 +1,0 @@
-table Icon
-Caption: Videos
-  Icon: /usr/share/icons/Moka/48x48/apps/vlc.png
-  X: 100
-  Y: 160
-  Command[0]: ideskrun sensible-browser https://bit.ly/2Sm1PJl
-  Command[1]: mx-idesktool Videos.lnk
-  Command[2]: ideskmenu
-end
