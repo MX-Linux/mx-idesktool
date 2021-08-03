@@ -1,9 +1,0 @@
-table Icon
-  Caption: Videos
-  Icon: /usr/share/icons/gnome/48x48/apps/web-browser.png
-  X: 122
-  Y: 60
-  Command[0]: ideskrun sensible-browser https://bit.ly/2Sm1PJl
-  Command[1]: mx-idesktool Videos.lnk
-  Command[2]: ideskmenu
-end
