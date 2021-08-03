@@ -1,9 +1,13 @@
-mx-idesktool (21.02.01+nmu1) UNRELEASED; urgency=medium
+mx-idesktool (21.07.01) mx; urgency=medium
 
+  [ Jerry Bond ]
   * Non-maintainer upload.
   * Added Video.lnk
 
- -- Jerry Bond <jb@X1Cmx>  Thu, 29 Jul 2021 08:52:09 -0400
+  [ Dolphin Oracle ]
+  * bump changelog 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 29 Jul 2021 21:21:19 -0400
 
 mx-idesktool (21.02.01) mx; urgency=medium
 
