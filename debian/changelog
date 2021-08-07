@@ -1,3 +1,10 @@
+mx-idesktool (21.08.01) mx; urgency=medium
+
+  * misc. updates to default files
+  * remove lnk files
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 06 Aug 2021 20:17:54 -0400
+
 mx-idesktool (21.07.01) mx; urgency=medium
 
   [ Jerry Bond ]
