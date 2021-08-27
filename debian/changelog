@@ -1,3 +1,10 @@
+mx-idesktool (21.08.01+nmu1) UNRELEASED; urgency=medium
+
+  * Non-maintainer upload.
+  * changed captions to visible
+
+ -- Jerry Bond <jb@X1Cmx>  Fri, 27 Aug 2021 08:55:10 -0400
+
 mx-idesktool (21.08.01) mx; urgency=medium
 
   * misc. updates to default files
