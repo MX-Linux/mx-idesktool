@@ -1,9 +1,10 @@
-mx-idesktool (21.08.01+nmu1) UNRELEASED; urgency=medium
+mx-idesktool (21.09.01) mx; urgency=medium
 
   * Non-maintainer upload.
   * changed captions to visible
+  * ready for Beta2
 
- -- Jerry Bond <jb@X1Cmx>  Fri, 27 Aug 2021 08:55:10 -0400
+ -- Jerry Bond <jb@X1Cmx>  Wed, 01 Sep 2021 17:45:02 -0400
 
 mx-idesktool (21.08.01) mx; urgency=medium
 
