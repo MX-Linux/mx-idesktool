@@ -7,7 +7,7 @@ Standards-Version: 3.9.4
 Homepage: https://mxlinux.org
 
 Package: mx-idesktool
-Depends: idesk moka-icon-theme
+Depends: idesk
 Conflicts: mx-fluxbox (<20.02.03)
 Architecture: all
 Description: mx-idesktool
