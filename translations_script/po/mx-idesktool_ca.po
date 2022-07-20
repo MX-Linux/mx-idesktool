@@ -293,7 +293,7 @@ msgstr "Desplaça icones"
 
 #: mx-idesktool:1044
 msgid "USE: place icon in the middle\\nof a rectangle"
-msgstr ""
+msgstr "ÚS: poseu la icona al mig\\nd'un rectangle"
 
 #: mx-idesktool:1049
 msgid "Status"
@@ -301,11 +301,11 @@ msgstr "Estat "
 
 #: mx-idesktool:1050
 msgid "Width"
-msgstr ""
+msgstr "Amplada"
 
 #: mx-idesktool:1051
 msgid "Height"
-msgstr ""
+msgstr "Altura"
 
 #: mx-idesktool:1093
 msgid "No rotation: Delay = 0"

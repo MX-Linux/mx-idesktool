@@ -1,0 +1,332 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-12 18:23-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+
+#: mx-idesktool:10
+msgid "ERROR: Yad not installed or not in path."
+msgstr "ERROR: Yad not installed or not in path."
+
+#: mx-idesktool:11
+msgid "Yad found. So far so good.."
+msgstr "Yad found. So far so good.."
+
+#: mx-idesktool:12
+msgid ""
+"ERROR: idesk not installed or not in path. Try "
+"http://sourceforge.net/projects/idesk/"
+msgstr ""
+"ERROR: idesk not installed or not in path. Try "
+"http://sourceforge.net/projects/idesk/"
+
+#: mx-idesktool:13
+msgid "idesk found - we're on a roll :)"
+msgstr "idesk found - we're on a roll :)"
+
+#: mx-idesktool:14
+msgid "Icon Management Tool"
+msgstr "Icon Management Tool"
+
+#: mx-idesktool:15
+msgid "Icon Caption:\\n(Leave blank for no caption)"
+msgstr "Icon Caption:\\n(Leave blank for no caption)"
+
+#: mx-idesktool:16
+msgid "Back"
+msgstr "Back"
+
+#: mx-idesktool:17
+msgid "Cancel"
+msgstr "Cancel"
+
+#: mx-idesktool:18
+msgid "Next"
+msgstr "Next"
+
+#: mx-idesktool:19
+msgid "Caption"
+msgstr "Caption"
+
+#: mx-idesktool:27 mx-idesktool:73
+msgid "Left-Click Command:"
+msgstr "Left-Click Command:"
+
+#: mx-idesktool:28
+msgid "Middle-Click Command:"
+msgstr "Middle-Click Command:"
+
+#: mx-idesktool:29
+msgid "Current icon"
+msgstr "Current icon"
+
+#: mx-idesktool:30
+msgid "Oops!"
+msgstr "Oops!"
+
+#: mx-idesktool:31
+msgid "Error: Icon Image File Not Found."
+msgstr "Error: Icon Image File Not Found."
+
+#: mx-idesktool:32
+msgid "Quit"
+msgstr "Quit"
+
+#: mx-idesktool:33
+msgid "Error: Unknown Filetype. The icon should be a png image."
+msgstr "Error: Unknown Filetype. The icon should be a png image."
+
+#: mx-idesktool:34
+msgid "Please choose a file"
+msgstr "Please choose a file"
+
+#: mx-idesktool:35
+msgid "Error: You need to select a valid file"
+msgstr "Error: You need to select a valid file"
+
+#: mx-idesktool:36
+msgid "Finished!"
+msgstr "Finished!"
+
+#: mx-idesktool:37
+msgid "All done. Restarting idesk now..."
+msgstr "All done. Restarting idesk now..."
+
+#: mx-idesktool:38 mx-idesktool:72
+msgid "Choose a .png icon image"
+msgstr "Choose a .png icon image"
+
+#: mx-idesktool:39
+msgid "View or edit an icon"
+msgstr "View or edit an icon"
+
+#: mx-idesktool:40
+msgid "Remove an icon"
+msgstr "Remove an icon"
+
+#: mx-idesktool:41
+msgid "Add a new icon"
+msgstr "Add a new icon"
+
+#: mx-idesktool:42
+msgid "Reload the desktop"
+msgstr "Reload the desktop"
+
+#: mx-idesktool:43
+msgid "Edit iDesk's config file"
+msgstr "Edit iDesk's config file"
+
+#: mx-idesktool:44
+msgid "MX-idesktool documentation"
+msgstr "MX-idesktool documentation"
+
+#: mx-idesktool:45
+msgid "USE: double-click entry to select a management action"
+msgstr "USE: double-click entry to select a management action"
+
+#: mx-idesktool:46
+msgid "iDesk Configuration"
+msgstr "iDesk Configuration"
+
+#: mx-idesktool:47
+msgid "Config. file  found - excellent!"
+msgstr "Config. file  found - excellent!"
+
+#: mx-idesktool:48
+msgid ""
+"WARNING: No ideskrc file was found.\\nWould you like to have this "
+"file\\nadded now?"
+msgstr ""
+"WARNING: No ideskrc file was found.\\nWould you like to have this "
+"file\\nadded now?"
+
+#: mx-idesktool:49
+msgid "No!"
+msgstr "No!"
+
+#: mx-idesktool:50
+msgid "Yes!"
+msgstr "Yes!"
+
+#: mx-idesktool:51
+msgid ""
+"\\tThe configuration file has been written. \\n\n"
+"                Drag any icons you create to the\n"
+"                desired locations and they will\n"
+"                be remembered between sessions \\n\\n \n"
+"                Would you like to run the icon wizard now?"
+msgstr ""
+"\\tThe configuration file has been written. \\n\n"
+"                Drag any icons you create to the\n"
+"                desired locations and they will\n"
+"                be remembered between sessions \\n\\n \n"
+"                Would you like to run the icon wizard now?"
+
+#: mx-idesktool:62
+msgid "Open"
+msgstr "Open"
+
+#: mx-idesktool:63
+msgid "Delete"
+msgstr "Delete"
+
+#: mx-idesktool:64
+msgid "Create"
+msgstr "Create"
+
+#: mx-idesktool:65
+msgid "Locate"
+msgstr "Locate"
+
+#: mx-idesktool:66
+msgid "Refresh"
+msgstr "Refresh"
+
+#: mx-idesktool:67
+msgid "Configure"
+msgstr "Configure"
+
+#: mx-idesktool:68
+msgid "Write"
+msgstr "Write"
+
+#: mx-idesktool:69
+msgid "Help"
+msgstr "Help"
+
+#: mx-idesktool:70
+msgid "ACTION"
+msgstr "ACTION"
+
+#: mx-idesktool:71
+msgid "DESCRIPTION"
+msgstr "DESCRIPTION"
+
+#: mx-idesktool:74
+msgid "Middle-Click Command"
+msgstr "Middle-Click Command"
+
+#: mx-idesktool:75
+msgid "Set a precise position for an icon"
+msgstr "Set a precise position for an icon"
+
+#: mx-idesktool:76
+msgid "Directly edit an icon file"
+msgstr "Directly edit an icon file"
+
+#: mx-idesktool:77
+msgid "Lock"
+msgstr "Lock"
+
+#: mx-idesktool:78
+msgid "Lock/unlock icons"
+msgstr "Lock/unlock icons"
+
+#: mx-idesktool:79
+msgid "Right-Click Command"
+msgstr "Right-Click Command"
+
+#: mx-idesktool:81
+msgid "Config"
+msgstr "Config"
+
+#: mx-idesktool:82
+msgid "Icon"
+msgstr "Icon"
+
+#: mx-idesktool:83
+msgid "Desktop"
+msgstr "Desktop"
+
+#: mx-idesktool:85
+msgid "View or edit icon style"
+msgstr "View or edit icon style"
+
+#: mx-idesktool:86
+msgid "View or edit mouse actions"
+msgstr "View or edit mouse actions"
+
+#: mx-idesktool:207 mx-idesktool:213
+msgid "Link Filename"
+msgstr "Link Filename"
+
+#: mx-idesktool:208
+msgid "Enter Link Filename"
+msgstr "Enter Link Filename"
+
+#: mx-idesktool:826 mx-idesktool:919
+msgid "Set icons to snap"
+msgstr "Set icons to snap"
+
+#: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
+msgid "Set background rotation"
+msgstr "Set background rotation"
+
+#: mx-idesktool:1022 mx-idesktool:1023
+msgid "off"
+msgstr "off"
+
+#: mx-idesktool:1022 mx-idesktool:1023
+msgid "on"
+msgstr "on"
+
+#: mx-idesktool:1043
+msgid "Snap icons"
+msgstr "Snap icons"
+
+#: mx-idesktool:1044
+msgid "USE: place icon in the middle\\nof a rectangle"
+msgstr "USE: place icon in the middle\\nof a rectangle"
+
+#: mx-idesktool:1049
+msgid "Status"
+msgstr "Status"
+
+#: mx-idesktool:1050
+msgid "Width"
+msgstr "Width"
+
+#: mx-idesktool:1051
+msgid "Height"
+msgstr "Height"
+
+#: mx-idesktool:1093
+msgid "No rotation: Delay = 0"
+msgstr "No rotation: Delay = 0"
+
+#: mx-idesktool:1096
+msgid "Delay (mins)"
+msgstr "Delay (mins)"
+
+#: mx-idesktool:1097
+msgid "Image folder"
+msgstr "Image folder"
+
+#: mx-idesktool:1098
+msgid "Image mode"
+msgstr "Image mode"
+
+#: mx-idesktool:1137 mx-idesktool:1172 mx-idesktool:1276
+msgid "Saving..."
+msgstr "Saving..."
+
+#: mx-idesktool:1261
+msgid "Text Editing"
+msgstr "Text Editing"
+
+#: mx-idesktool:1283
+msgid "Discarding..."
+msgstr "Discarding..."

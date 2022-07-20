@@ -5,7 +5,7 @@
 # 
 # Translators:
 # James Bowlin <BitJam@gmail.com>, 2020
-# Panwar108 <caspian7pena@gmail.com>, 2020
+# Panwar108 <caspian7pena@gmail.com>, 2021
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-12 18:23-0500\n"
 "PO-Revision-Date: 2020-03-26 13:48+0000\n"
-"Last-Translator: Panwar108 <caspian7pena@gmail.com>, 2020\n"
+"Last-Translator: Panwar108 <caspian7pena@gmail.com>, 2021\n"
 "Language-Team: Hindi (https://www.transifex.com/anticapitalista/teams/10162/hi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,33 +24,35 @@ msgstr ""
 
 #: mx-idesktool:10
 msgid "ERROR: Yad not installed or not in path."
-msgstr ""
+msgstr "त्रुटि : Yad इंस्टॉल नहीं है या फिर फोल्डर पथ अनुपलब्ध है।"
 
 #: mx-idesktool:11
 msgid "Yad found. So far so good.."
-msgstr ""
+msgstr "Yad प्राप्ति सफल.."
 
 #: mx-idesktool:12
 msgid ""
 "ERROR: idesk not installed or not in path. Try "
 "http://sourceforge.net/projects/idesk/"
 msgstr ""
+"त्रुटि : आई-डेस्क इंस्टॉल नहीं है या फिर फोल्डर पथ अनुपलब्ध है। "
+"http://sourceforge.net/projects/idesk/ भी देखें"
 
 #: mx-idesktool:13
 msgid "idesk found - we're on a roll :)"
-msgstr ""
+msgstr "आई-डेस्क प्राप्ति सफल :)"
 
 #: mx-idesktool:14
 msgid "Icon Management Tool"
-msgstr ""
+msgstr "आइकन प्रबंधन साधन"
 
 #: mx-idesktool:15
 msgid "Icon Caption:\\n(Leave blank for no caption)"
-msgstr ""
+msgstr "आइकन अनुशीर्षक :\\n (अनुशीर्षक निष्क्रिय हेतु रिक्त रहने दें) "
 
 #: mx-idesktool:16
 msgid "Back"
-msgstr ""
+msgstr "वापस"
 
 #: mx-idesktool:17
 msgid "Cancel"
@@ -58,67 +60,67 @@ msgstr "रद्द करें"
 
 #: mx-idesktool:18
 msgid "Next"
-msgstr ""
+msgstr "आगामी"
 
 #: mx-idesktool:19
 msgid "Caption"
-msgstr ""
+msgstr "अनुशीर्षक"
 
 #: mx-idesktool:27 mx-idesktool:73
 msgid "Left-Click Command:"
-msgstr ""
+msgstr "बायां-क्लिक कमांड :"
 
 #: mx-idesktool:28
 msgid "Middle-Click Command:"
-msgstr ""
+msgstr "मध्य-क्लिक कमांड :"
 
 #: mx-idesktool:29
 msgid "Current icon"
-msgstr ""
+msgstr "वर्तमान आइकन"
 
 #: mx-idesktool:30
 msgid "Oops!"
-msgstr ""
+msgstr "ओह हो!"
 
 #: mx-idesktool:31
 msgid "Error: Icon Image File Not Found."
-msgstr ""
+msgstr "त्रुटि : आइकन चित्र फाइल प्राप्ति विफल।"
 
 #: mx-idesktool:32
 msgid "Quit"
-msgstr "छोड़ें"
+msgstr "बंद करें"
 
 #: mx-idesktool:33
 msgid "Error: Unknown Filetype. The icon should be a png image."
-msgstr ""
+msgstr "त्रुटि : अज्ञात फाइल प्रकार। आइकन का प्रकार पीएनजी होना चाहिए।"
 
 #: mx-idesktool:34
 msgid "Please choose a file"
-msgstr ""
+msgstr "कृपया फाइल चुनें"
 
 #: mx-idesktool:35
 msgid "Error: You need to select a valid file"
-msgstr ""
+msgstr "त्रुटि : मान्य फाइल चयन आवश्यक है"
 
 #: mx-idesktool:36
 msgid "Finished!"
-msgstr ""
+msgstr "पूर्ण!"
 
 #: mx-idesktool:37
 msgid "All done. Restarting idesk now..."
-msgstr ""
+msgstr "प्रक्रिया पूर्ण। अब आई-डेस्क पुनः आरंभ होगा..."
 
 #: mx-idesktool:38 mx-idesktool:72
 msgid "Choose a .png icon image"
-msgstr ""
+msgstr ".png आइकन फाइल चुनें"
 
 #: mx-idesktool:39
 msgid "View or edit an icon"
-msgstr ""
+msgstr "आइकन प्रदर्शन या संपादन"
 
 #: mx-idesktool:40
 msgid "Remove an icon"
-msgstr ""
+msgstr "आइकन हटाएँ"
 
 #: mx-idesktool:41
 msgid "Add a new icon"
@@ -126,41 +128,43 @@ msgstr "नया आइकन जोड़ें"
 
 #: mx-idesktool:42
 msgid "Reload the desktop"
-msgstr "डेक्सटॉप पुनः लोड करें"
+msgstr "डेस्कटॉप पुनः लोड करें"
 
 #: mx-idesktool:43
 msgid "Edit iDesk's config file"
-msgstr ""
+msgstr "आई-डेस्क विन्यास फाइल संपादन"
 
 #: mx-idesktool:44
 msgid "MX-idesktool documentation"
-msgstr ""
+msgstr "एमएक्स आई-डेस्क प्रलेखन"
 
 #: mx-idesktool:45
 msgid "USE: double-click entry to select a management action"
-msgstr ""
+msgstr "उपयोग : प्रबंधन कार्य चयन हेतु प्रविष्टि पर द्वि-क्लिक करें"
 
 #: mx-idesktool:46
 msgid "iDesk Configuration"
-msgstr ""
+msgstr "आई-डेस्क विन्यास"
 
 #: mx-idesktool:47
 msgid "Config. file  found - excellent!"
-msgstr ""
+msgstr "विन्यास फाइल प्राप्ति सफल!"
 
 #: mx-idesktool:48
 msgid ""
 "WARNING: No ideskrc file was found.\\nWould you like to have this "
 "file\\nadded now?"
 msgstr ""
+"चेतावनी : ideskrc फाइल प्राप्ति विफल।\\n क्या आप अब यह फाइल\\nजोड़ना चाहते "
+"हैं?"
 
 #: mx-idesktool:49
 msgid "No!"
-msgstr ""
+msgstr "नहीं!"
 
 #: mx-idesktool:50
 msgid "Yes!"
-msgstr ""
+msgstr "हाँ!"
 
 #: mx-idesktool:51
 msgid ""
@@ -170,34 +174,39 @@ msgid ""
 "                be remembered between sessions \\n\\n \n"
 "                Would you like to run the icon wizard now?"
 msgstr ""
+"\\tविन्यास फाइल राइट करना सफल। \\n\n"
+"                बनाए गए आइकन इच्छित स्थानों पर\n"
+"                माउस द्वारा ड्रैग करें एवं वे सभी सत्रों\n"
+"                में उपयोग हेतु स्मरण रखें जाएँगे \\n\\n \n"
+"                क्या आप आइकन प्रोग्राम अभी निष्पादित करना चाहते हैं?"
 
 #: mx-idesktool:62
 msgid "Open"
-msgstr ""
+msgstr "खोलें"
 
 #: mx-idesktool:63
 msgid "Delete"
-msgstr ""
+msgstr "हटाएँ"
 
 #: mx-idesktool:64
 msgid "Create"
-msgstr ""
+msgstr "बनाएँ"
 
 #: mx-idesktool:65
 msgid "Locate"
-msgstr ""
+msgstr "खोजें"
 
 #: mx-idesktool:66
 msgid "Refresh"
-msgstr ""
+msgstr "रिफ्रेश"
 
 #: mx-idesktool:67
 msgid "Configure"
-msgstr ""
+msgstr "विन्यास"
 
 #: mx-idesktool:68
 msgid "Write"
-msgstr ""
+msgstr "राइट"
 
 #: mx-idesktool:69
 msgid "Help"
@@ -205,35 +214,35 @@ msgstr "सहायता"
 
 #: mx-idesktool:70
 msgid "ACTION"
-msgstr ""
+msgstr "कार्य"
 
 #: mx-idesktool:71
 msgid "DESCRIPTION"
-msgstr ""
+msgstr "विवरण"
 
 #: mx-idesktool:74
 msgid "Middle-Click Command"
-msgstr ""
+msgstr "मध्य-क्लिक कमांड"
 
 #: mx-idesktool:75
 msgid "Set a precise position for an icon"
-msgstr ""
+msgstr "आइकन हेतु सटीक स्थान निर्दिष्ट करें"
 
 #: mx-idesktool:76
 msgid "Directly edit an icon file"
-msgstr ""
+msgstr "आइकन फाइल संपादित करें"
 
 #: mx-idesktool:77
 msgid "Lock"
-msgstr ""
+msgstr "लॉक"
 
 #: mx-idesktool:78
 msgid "Lock/unlock icons"
-msgstr ""
+msgstr "आइकन लॉक/अनलॉक"
 
 #: mx-idesktool:79
 msgid "Right-Click Command"
-msgstr ""
+msgstr "दायां-क्लिक कमांड"
 
 #: mx-idesktool:81
 msgid "Config"
@@ -249,27 +258,27 @@ msgstr "डेस्कटॉप"
 
 #: mx-idesktool:85
 msgid "View or edit icon style"
-msgstr ""
+msgstr "आइकन शैली देखें या संपादित करें"
 
 #: mx-idesktool:86
 msgid "View or edit mouse actions"
-msgstr ""
+msgstr "माउस कार्य देखें या संपादित करें"
 
 #: mx-idesktool:207 mx-idesktool:213
 msgid "Link Filename"
-msgstr ""
+msgstr "लिंक का फाइल नाम"
 
 #: mx-idesktool:208
 msgid "Enter Link Filename"
-msgstr ""
+msgstr "लिंक का फाइल नाम दर्ज करें"
 
 #: mx-idesktool:826 mx-idesktool:919
 msgid "Set icons to snap"
-msgstr ""
+msgstr "विंडो अनुरूप आइकन सेट करें"
 
 #: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
 msgid "Set background rotation"
-msgstr ""
+msgstr "बैकग्राउंड आवर्तन सेट करें"
 
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "off"
@@ -281,11 +290,11 @@ msgstr "चालू"
 
 #: mx-idesktool:1043
 msgid "Snap icons"
-msgstr ""
+msgstr "विंडो अनुरूप आइकन"
 
 #: mx-idesktool:1044
 msgid "USE: place icon in the middle\\nof a rectangle"
-msgstr ""
+msgstr "उपयोग : आइकन को आयत के मध्य स्थित करें "
 
 #: mx-idesktool:1049
 msgid "Status"
@@ -293,36 +302,36 @@ msgstr "स्थिति"
 
 #: mx-idesktool:1050
 msgid "Width"
-msgstr ""
+msgstr "चौड़ाई"
 
 #: mx-idesktool:1051
 msgid "Height"
-msgstr ""
+msgstr "ऊँचाई"
 
 #: mx-idesktool:1093
 msgid "No rotation: Delay = 0"
-msgstr ""
+msgstr "आवर्तन निष्क्रिय : विलंब = 0"
 
 #: mx-idesktool:1096
 msgid "Delay (mins)"
-msgstr ""
+msgstr "विलंब (मिनट में)"
 
 #: mx-idesktool:1097
 msgid "Image folder"
-msgstr ""
+msgstr "चित्र फोल्डर"
 
 #: mx-idesktool:1098
 msgid "Image mode"
-msgstr ""
+msgstr "चित्र मोड"
 
 #: mx-idesktool:1137 mx-idesktool:1172 mx-idesktool:1276
 msgid "Saving..."
-msgstr ""
+msgstr "संचय जारी..."
 
 #: mx-idesktool:1261
 msgid "Text Editing"
-msgstr ""
+msgstr "टेक्स्ट संपादन"
 
 #: mx-idesktool:1283
 msgid "Discarding..."
-msgstr ""
+msgstr "निरस्त करना जारी..."

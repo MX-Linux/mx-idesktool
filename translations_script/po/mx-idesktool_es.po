@@ -6,7 +6,7 @@
 # Translators:
 # Geoff Gigg <geoffgigg@hotmail.com>, 2020
 # anticapitalista <anticapitalista@riseup.net>, 2020
-# Roy Avrett <avrett@cs.fsu.edu>, 2020
+# Roy Avrett <rjavrett@gmail.com>, 2020
 # Richard  Holt <richard.holt@gmail.com>, 2020
 # Roberto Saravia <saravia.jroberto@gmail.com>, 2020
 # German Lancheros <glancheros2015@gmail.com>, 2020
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: mx-idesktool:10
 msgid "ERROR: Yad not installed or not in path."

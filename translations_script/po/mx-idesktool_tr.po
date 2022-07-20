@@ -6,9 +6,10 @@
 # Translators:
 # anticapitalista <anticapitalista@riseup.net>, 2020
 # Geoff Gigg <geoffgigg@hotmail.com>, 2020
-# Caner Başaran <basaran.caner@protonmail.com>, 2020
-# mahmut özcan <mahmutozcan@protonmail.com>, 2020
+# Caner Başaran <basaran.caner@gmail.com>, 2020
 # e0360fc3c0afcd70e5aed1cfc885bac6, 2020
+# mahmut özcan <mahmutozcan@protonmail.com>, 2021
+# Mehmet Akif 9oglu, 2022
 # 
 #, fuzzy
 msgid ""
@@ -17,7 +18,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-12 18:23-0500\n"
 "PO-Revision-Date: 2020-03-26 13:48+0000\n"
-"Last-Translator: e0360fc3c0afcd70e5aed1cfc885bac6, 2020\n"
+"Last-Translator: Mehmet Akif 9oglu, 2022\n"
 "Language-Team: Turkish (https://www.transifex.com/anticapitalista/teams/10162/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -119,19 +120,19 @@ msgstr "Bir .png simge resmi seçin"
 
 #: mx-idesktool:39
 msgid "View or edit an icon"
-msgstr ""
+msgstr "Bir simgeyi görüntüle veya düzenle"
 
 #: mx-idesktool:40
 msgid "Remove an icon"
-msgstr ""
+msgstr "Bir simgeyi kaldırma"
 
 #: mx-idesktool:41
 msgid "Add a new icon"
-msgstr ""
+msgstr "Yeni bir simge ekleme"
 
 #: mx-idesktool:42
 msgid "Reload the desktop"
-msgstr ""
+msgstr "Masaüstünü yeniden yükle"
 
 #: mx-idesktool:43
 msgid "Edit iDesk's config file"
@@ -139,7 +140,7 @@ msgstr "iDesk yapılandırma dosyasını düzenle"
 
 #: mx-idesktool:44
 msgid "MX-idesktool documentation"
-msgstr ""
+msgstr "MX-idesktool belgeleme"
 
 #: mx-idesktool:45
 msgid "USE: double-click entry to select a management action"
@@ -177,6 +178,10 @@ msgid ""
 "                be remembered between sessions \\n\\n \n"
 "                Would you like to run the icon wizard now?"
 msgstr ""
+"\\tYapılandırma dosyası yazılmıştır.  \\n\n"
+"Oluşturduğunuz simgeleri istediğiniz konumlara sürükleyin,\n"
+" bunlar oturumlar arasında hatırlanacaklardır.\\n\\n \n"
+"Simge sihirbazını şimdi çalıştırmak ister misiniz?"
 
 #: mx-idesktool:62
 msgid "Open"
@@ -236,15 +241,15 @@ msgstr "Kilit"
 
 #: mx-idesktool:78
 msgid "Lock/unlock icons"
-msgstr ""
+msgstr "Simgeleri kilitle/kilidi aç"
 
 #: mx-idesktool:79
 msgid "Right-Click Command"
-msgstr ""
+msgstr "Sağ Tıklama Komutu"
 
 #: mx-idesktool:81
 msgid "Config"
-msgstr ""
+msgstr "Yapılandırma"
 
 #: mx-idesktool:82
 msgid "Icon"
@@ -256,11 +261,11 @@ msgstr "Masaüstü"
 
 #: mx-idesktool:85
 msgid "View or edit icon style"
-msgstr ""
+msgstr "Simge biçemini görüntüle veya düzenle"
 
 #: mx-idesktool:86
 msgid "View or edit mouse actions"
-msgstr ""
+msgstr "Fare eylemlerini görüntüleme veya düzenleme"
 
 #: mx-idesktool:207 mx-idesktool:213
 msgid "Link Filename"
@@ -272,11 +277,11 @@ msgstr "Bağlantı Dosya Adını Girin"
 
 #: mx-idesktool:826 mx-idesktool:919
 msgid "Set icons to snap"
-msgstr ""
+msgstr "Simgeleri tutturmaya ayarla"
 
 #: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
 msgid "Set background rotation"
-msgstr ""
+msgstr "Arka plan değişimini ayarla"
 
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "off"
@@ -284,15 +289,15 @@ msgstr "kapalı"
 
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "on"
-msgstr ""
+msgstr "Açma"
 
 #: mx-idesktool:1043
 msgid "Snap icons"
-msgstr ""
+msgstr "Simgeleri tutttur"
 
 #: mx-idesktool:1044
 msgid "USE: place icon in the middle\\nof a rectangle"
-msgstr ""
+msgstr "KULLANIM: simgeyi dikdörtgenin ortasına yerleştir"
 
 #: mx-idesktool:1049
 msgid "Status"
@@ -300,27 +305,27 @@ msgstr "Durum"
 
 #: mx-idesktool:1050
 msgid "Width"
-msgstr ""
+msgstr "Genişlik"
 
 #: mx-idesktool:1051
 msgid "Height"
-msgstr ""
+msgstr "Yükseklik"
 
 #: mx-idesktool:1093
 msgid "No rotation: Delay = 0"
-msgstr ""
+msgstr "Değişme yok: Gecikme = 0"
 
 #: mx-idesktool:1096
 msgid "Delay (mins)"
-msgstr ""
+msgstr "Gecikme (dakika)"
 
 #: mx-idesktool:1097
 msgid "Image folder"
-msgstr ""
+msgstr "Resim klasörü"
 
 #: mx-idesktool:1098
 msgid "Image mode"
-msgstr ""
+msgstr "Resim kipi"
 
 #: mx-idesktool:1137 mx-idesktool:1172 mx-idesktool:1276
 msgid "Saving..."

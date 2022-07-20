@@ -7,8 +7,8 @@
 # Geoff Gigg <geoffgigg@hotmail.com>, 2020
 # anticapitalista <anticapitalista@riseup.net>, 2020
 # Vladimir O <vldoduv@yandex.ru>, 2020
-# worktowork <worktowork@ya.ru>, 2020
 # Вячеслав Волошин <vol_vel@mail.ru>, 2020
+# Andrei Stepanov, 2022
 # 
 #, fuzzy
 msgid ""
@@ -17,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-12 18:23-0500\n"
 "PO-Revision-Date: 2020-03-26 13:48+0000\n"
-"Last-Translator: Вячеслав Волошин <vol_vel@mail.ru>, 2020\n"
+"Last-Translator: Andrei Stepanov, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/anticapitalista/teams/10162/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -178,9 +178,9 @@ msgid ""
 msgstr ""
 "\\tКонфигурационный файл записан. \\n\n"
 "Перетащите любые создаваемые вами значки\n"
-"в нужные позиции - они будут запомнены\n"
-"между сессиями \\n\\n\n"
-"Хотите сейчас запустить Мастер значков?"
+"в нужные позиции, они будут запомнены\n"
+"между сеансами \\n\\n\n"
+"Хотите сейчас запустить мастер значков?"
 
 #: mx-idesktool:62
 msgid "Open"
@@ -276,7 +276,7 @@ msgstr "Введите имя файла"
 
 #: mx-idesktool:826 mx-idesktool:919
 msgid "Set icons to snap"
-msgstr ""
+msgstr "Установить значки в snap"
 
 #: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
 msgid "Set background rotation"
@@ -284,19 +284,21 @@ msgstr "Задать поворот фона"
 
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "off"
-msgstr "выкл."
+msgstr "откл."
 
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "on"
-msgstr ""
+msgstr "в"
 
 #: mx-idesktool:1043
 msgid "Snap icons"
-msgstr ""
+msgstr "Значки snap"
 
 #: mx-idesktool:1044
 msgid "USE: place icon in the middle\\nof a rectangle"
 msgstr ""
+"ИСПОЛЬЗОВАНИЕ: поместите значок\\n\n"
+"в середину прямоугольника"
 
 #: mx-idesktool:1049
 msgid "Status"
@@ -304,11 +306,11 @@ msgstr "Статус"
 
 #: mx-idesktool:1050
 msgid "Width"
-msgstr ""
+msgstr "Ширина"
 
 #: mx-idesktool:1051
 msgid "Height"
-msgstr ""
+msgstr "Высота"
 
 #: mx-idesktool:1093
 msgid "No rotation: Delay = 0"

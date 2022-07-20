@@ -8,7 +8,7 @@
 # James Bowlin <BitJam@gmail.com>, 2020
 # Geoff Gigg <geoffgigg@hotmail.com>, 2020
 # night1ynx <night1ynxd@gmail.com>, 2020
-# ふうせん Fu-sen. | BALLOON a.k.a. Fu-sen., 2020
+# BALLOON | FU-SEN, 2020
 # Transifex Bot <>, 2020
 # Green, 2020
 # 

@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pt\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: mx-idesktool:10
 msgid "ERROR: Yad not installed or not in path."
@@ -73,7 +73,7 @@ msgstr "Comando do clique-esquerdo:"
 
 #: mx-idesktool:28
 msgid "Middle-Click Command:"
-msgstr "Comando do clique-direito:"
+msgstr "Comando do clique-central:"
 
 #: mx-idesktool:29
 msgid "Current icon"
@@ -129,7 +129,7 @@ msgstr "Adicionar um novo ícone"
 
 #: mx-idesktool:42
 msgid "Reload the desktop"
-msgstr "Recarregar o ambiente de trabalho"
+msgstr "Recarregar a Área de Trabalho"
 
 #: mx-idesktool:43
 msgid "Edit iDesk's config file"
@@ -137,7 +137,7 @@ msgstr "Editar o ficheiro de configuração do iDesk"
 
 #: mx-idesktool:44
 msgid "MX-idesktool documentation"
-msgstr "Documentação do MX-idesktool"
+msgstr "Documentação da Ferramenta de gestão de ícones"
 
 #: mx-idesktool:45
 msgid "USE: double-click entry to select a management action"
@@ -224,7 +224,7 @@ msgstr "DESCRIÇÃO"
 
 #: mx-idesktool:74
 msgid "Middle-Click Command"
-msgstr "Comando do clique-central:"
+msgstr "Comando do clique-central"
 
 #: mx-idesktool:75
 msgid "Set a precise position for an icon"
@@ -256,7 +256,7 @@ msgstr "Ícone"
 
 #: mx-idesktool:83
 msgid "Desktop"
-msgstr "Ambiente Trab"
+msgstr "Área de Trabalho"
 
 #: mx-idesktool:85
 msgid "View or edit icon style"
@@ -276,7 +276,7 @@ msgstr "Introduzir o nomedeficheiro da ligação"
 
 #: mx-idesktool:826 mx-idesktool:919
 msgid "Set icons to snap"
-msgstr ""
+msgstr "Definir o posicionamento dos ícones para 'grelha'"
 
 #: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
 msgid "Set background rotation"
@@ -292,11 +292,11 @@ msgstr "ligado"
 
 #: mx-idesktool:1043
 msgid "Snap icons"
-msgstr ""
+msgstr "Ícones em grelha"
 
 #: mx-idesktool:1044
 msgid "USE: place icon in the middle\\nof a rectangle"
-msgstr "USO: colocar ícone no meio\\nde um rectângulo"
+msgstr "USO: colocar ícone no centro\\nde um rectângulo"
 
 #: mx-idesktool:1049
 msgid "Status"

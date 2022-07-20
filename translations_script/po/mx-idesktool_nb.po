@@ -6,7 +6,7 @@
 # Translators:
 # James Bowlin <BitJam@gmail.com>, 2020
 # anticapitalista <anticapitalista@riseup.net>, 2020
-# Kjell Cato Heskjestad <cato@heskjestad.xyz>, 2020
+# heskjestad <cato@heskjestad.xyz>, 2020
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-12 18:23-0500\n"
 "PO-Revision-Date: 2020-03-26 13:48+0000\n"
-"Last-Translator: Kjell Cato Heskjestad <cato@heskjestad.xyz>, 2020\n"
+"Last-Translator: heskjestad <cato@heskjestad.xyz>, 2020\n"
 "Language-Team: Norwegian Bokmål (https://www.transifex.com/anticapitalista/teams/10162/nb/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,29 +25,31 @@ msgstr ""
 
 #: mx-idesktool:10
 msgid "ERROR: Yad not installed or not in path."
-msgstr ""
+msgstr "FEIL: Yad er ikke installert, eller stien mangler i PATH."
 
 #: mx-idesktool:11
 msgid "Yad found. So far so good.."
-msgstr ""
+msgstr "Fant yad. Fortsetter …"
 
 #: mx-idesktool:12
 msgid ""
 "ERROR: idesk not installed or not in path. Try "
 "http://sourceforge.net/projects/idesk/"
 msgstr ""
+"FEIL: idesk er ikke installert, eller stien mangler i PATH. Besøk "
+"http://sourceforge.net/projects/idesk/"
 
 #: mx-idesktool:13
 msgid "idesk found - we're on a roll :)"
-msgstr ""
+msgstr "Fant idesk – fortsetter …"
 
 #: mx-idesktool:14
 msgid "Icon Management Tool"
-msgstr ""
+msgstr "Verktøy for ikonbehandling"
 
 #: mx-idesktool:15
 msgid "Icon Caption:\\n(Leave blank for no caption)"
-msgstr ""
+msgstr "Ikontekst:\\n(La være tom for blank)"
 
 #: mx-idesktool:16
 msgid "Back"
@@ -63,27 +65,27 @@ msgstr "Neste"
 
 #: mx-idesktool:19
 msgid "Caption"
-msgstr ""
+msgstr "Tekst"
 
 #: mx-idesktool:27 mx-idesktool:73
 msgid "Left-Click Command:"
-msgstr ""
+msgstr "Kommando for venstreklikk:"
 
 #: mx-idesktool:28
 msgid "Middle-Click Command:"
-msgstr ""
+msgstr "Kommando for midt-klikk:"
 
 #: mx-idesktool:29
 msgid "Current icon"
-msgstr ""
+msgstr "Gjeldende ikon"
 
 #: mx-idesktool:30
 msgid "Oops!"
-msgstr ""
+msgstr "Uffda!"
 
 #: mx-idesktool:31
 msgid "Error: Icon Image File Not Found."
-msgstr ""
+msgstr "Feil: Fant ikke ikonets bildefil"
 
 #: mx-idesktool:32
 msgid "Quit"
@@ -91,77 +93,77 @@ msgstr "Avslutt"
 
 #: mx-idesktool:33
 msgid "Error: Unknown Filetype. The icon should be a png image."
-msgstr ""
+msgstr "Feil: Ukjent filtype. Ikonet må være et PNG-bilde."
 
 #: mx-idesktool:34
 msgid "Please choose a file"
-msgstr ""
+msgstr "Velg en fil"
 
 #: mx-idesktool:35
 msgid "Error: You need to select a valid file"
-msgstr ""
+msgstr "Feil: Velg en gyldig fil"
 
 #: mx-idesktool:36
 msgid "Finished!"
-msgstr ""
+msgstr "Fullført"
 
 #: mx-idesktool:37
 msgid "All done. Restarting idesk now..."
-msgstr ""
+msgstr "Ferdig. Omstarter idesk …"
 
 #: mx-idesktool:38 mx-idesktool:72
 msgid "Choose a .png icon image"
-msgstr ""
+msgstr "Velg et PNG-bilde til ikonet"
 
 #: mx-idesktool:39
 msgid "View or edit an icon"
-msgstr ""
+msgstr "Vis eller rediger et ikon"
 
 #: mx-idesktool:40
 msgid "Remove an icon"
-msgstr ""
+msgstr "Fjern et ikon"
 
 #: mx-idesktool:41
 msgid "Add a new icon"
-msgstr ""
+msgstr "Legg til nytt ikon"
 
 #: mx-idesktool:42
 msgid "Reload the desktop"
-msgstr ""
+msgstr "Last inn skrivebordet på nytt"
 
 #: mx-idesktool:43
 msgid "Edit iDesk's config file"
-msgstr ""
+msgstr "Rediger oppsettsfila til iDesk"
 
 #: mx-idesktool:44
 msgid "MX-idesktool documentation"
-msgstr ""
+msgstr "Hjelpetekst til MX-idesktool"
 
 #: mx-idesktool:45
 msgid "USE: double-click entry to select a management action"
-msgstr ""
+msgstr "BRUK: Dobbelklikk oppføringen for å velge handling"
 
 #: mx-idesktool:46
 msgid "iDesk Configuration"
-msgstr ""
+msgstr "Oppsett av iDesk"
 
 #: mx-idesktool:47
 msgid "Config. file  found - excellent!"
-msgstr ""
+msgstr "Fant oppsettsfil."
 
 #: mx-idesktool:48
 msgid ""
 "WARNING: No ideskrc file was found.\\nWould you like to have this "
 "file\\nadded now?"
-msgstr ""
+msgstr "ADVARSEL: Fant ikke fila ideskrc.\\nVil du legge til\\ndenne fila nå?"
 
 #: mx-idesktool:49
 msgid "No!"
-msgstr ""
+msgstr "Nei"
 
 #: mx-idesktool:50
 msgid "Yes!"
-msgstr ""
+msgstr "Ja"
 
 #: mx-idesktool:51
 msgid ""
@@ -171,6 +173,10 @@ msgid ""
 "                be remembered between sessions \\n\\n \n"
 "                Would you like to run the icon wizard now?"
 msgstr ""
+"\\tSkrev oppsettsfil \\n\n"
+"                Dra ikonene du har laget til ønsket\n"
+"                plassering, som huskes mellom øktene.\\n\\n\n"
+"                Vil du kjøre ikon-veiviseren nå?"
 
 #: mx-idesktool:62
 msgid "Open"
@@ -178,27 +184,27 @@ msgstr "Åpne"
 
 #: mx-idesktool:63
 msgid "Delete"
-msgstr ""
+msgstr "Slett"
 
 #: mx-idesktool:64
 msgid "Create"
-msgstr ""
+msgstr "Opprett"
 
 #: mx-idesktool:65
 msgid "Locate"
-msgstr ""
+msgstr "Finn"
 
 #: mx-idesktool:66
 msgid "Refresh"
-msgstr ""
+msgstr "Oppdater"
 
 #: mx-idesktool:67
 msgid "Configure"
-msgstr ""
+msgstr "Oppsett"
 
 #: mx-idesktool:68
 msgid "Write"
-msgstr ""
+msgstr "Skriv"
 
 #: mx-idesktool:69
 msgid "Help"
@@ -206,43 +212,43 @@ msgstr "Hjelp"
 
 #: mx-idesktool:70
 msgid "ACTION"
-msgstr ""
+msgstr "HANDLING"
 
 #: mx-idesktool:71
 msgid "DESCRIPTION"
-msgstr ""
+msgstr "BESKRIVELSE"
 
 #: mx-idesktool:74
 msgid "Middle-Click Command"
-msgstr ""
+msgstr "Kommando for midt-klikk"
 
 #: mx-idesktool:75
 msgid "Set a precise position for an icon"
-msgstr ""
+msgstr "Velg nøyaktig ikonplassering"
 
 #: mx-idesktool:76
 msgid "Directly edit an icon file"
-msgstr ""
+msgstr "Rediger en ikonfil direkte"
 
 #: mx-idesktool:77
 msgid "Lock"
-msgstr ""
+msgstr "Lås"
 
 #: mx-idesktool:78
 msgid "Lock/unlock icons"
-msgstr ""
+msgstr "Lås/lås opp ikoner"
 
 #: mx-idesktool:79
 msgid "Right-Click Command"
-msgstr ""
+msgstr "Kommando for høyreklikk"
 
 #: mx-idesktool:81
 msgid "Config"
-msgstr ""
+msgstr "Oppsett"
 
 #: mx-idesktool:82
 msgid "Icon"
-msgstr ""
+msgstr "Ikon"
 
 #: mx-idesktool:83
 msgid "Desktop"
@@ -250,27 +256,27 @@ msgstr "Skrivebord"
 
 #: mx-idesktool:85
 msgid "View or edit icon style"
-msgstr ""
+msgstr "Vis eller rediger ikonstil"
 
 #: mx-idesktool:86
 msgid "View or edit mouse actions"
-msgstr ""
+msgstr "Vis eller rediger musehandlinger"
 
 #: mx-idesktool:207 mx-idesktool:213
 msgid "Link Filename"
-msgstr ""
+msgstr "Koble filnavn"
 
 #: mx-idesktool:208
 msgid "Enter Link Filename"
-msgstr ""
+msgstr "Angi koblet filnavn"
 
 #: mx-idesktool:826 mx-idesktool:919
 msgid "Set icons to snap"
-msgstr ""
+msgstr "Velg ikoner som skal festes"
 
 #: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
 msgid "Set background rotation"
-msgstr ""
+msgstr "Velg bakgrunnsrotasjon"
 
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "off"
@@ -278,52 +284,52 @@ msgstr "av"
 
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "on"
-msgstr ""
+msgstr "på"
 
 #: mx-idesktool:1043
 msgid "Snap icons"
-msgstr ""
+msgstr "Fest ikoner"
 
 #: mx-idesktool:1044
 msgid "USE: place icon in the middle\\nof a rectangle"
-msgstr ""
+msgstr "BRUK: Plasser ikon i midten\\nav et rektangel"
 
 #: mx-idesktool:1049
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: mx-idesktool:1050
 msgid "Width"
-msgstr ""
+msgstr "Bredde"
 
 #: mx-idesktool:1051
 msgid "Height"
-msgstr ""
+msgstr "Høyde"
 
 #: mx-idesktool:1093
 msgid "No rotation: Delay = 0"
-msgstr ""
+msgstr "Ingen rotasjon: Forsinkelse = 0"
 
 #: mx-idesktool:1096
 msgid "Delay (mins)"
-msgstr ""
+msgstr "Forsinkelse (min.)"
 
 #: mx-idesktool:1097
 msgid "Image folder"
-msgstr ""
+msgstr "Bildemappe"
 
 #: mx-idesktool:1098
 msgid "Image mode"
-msgstr ""
+msgstr "Bildemodus"
 
 #: mx-idesktool:1137 mx-idesktool:1172 mx-idesktool:1276
 msgid "Saving..."
-msgstr ""
+msgstr "Lagrer …"
 
 #: mx-idesktool:1261
 msgid "Text Editing"
-msgstr ""
+msgstr "Tekstredigering"
 
 #: mx-idesktool:1283
 msgid "Discarding..."
-msgstr ""
+msgstr "Forkaster …"

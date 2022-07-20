@@ -275,7 +275,7 @@ msgstr "Vnesite ime povezane datoteke"
 
 #: mx-idesktool:826 mx-idesktool:919
 msgid "Set icons to snap"
-msgstr ""
+msgstr "Nastavi položaj ikon na mrežo"
 
 #: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
 msgid "Set background rotation"
@@ -287,15 +287,15 @@ msgstr "izklopljeno"
 
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "on"
-msgstr ""
+msgstr "vklopljeno"
 
 #: mx-idesktool:1043
 msgid "Snap icons"
-msgstr ""
+msgstr "Mreža za položaj ikon"
 
 #: mx-idesktool:1044
 msgid "USE: place icon in the middle\\nof a rectangle"
-msgstr ""
+msgstr "RABA: postavi ikono na sredino\\npravokotnika"
 
 #: mx-idesktool:1049
 msgid "Status"
@@ -303,11 +303,11 @@ msgstr "Status"
 
 #: mx-idesktool:1050
 msgid "Width"
-msgstr ""
+msgstr "Širina"
 
 #: mx-idesktool:1051
 msgid "Height"
-msgstr ""
+msgstr "Višina"
 
 #: mx-idesktool:1093
 msgid "No rotation: Delay = 0"
@@ -319,7 +319,7 @@ msgstr "Zamik (minut)"
 
 #: mx-idesktool:1097
 msgid "Image folder"
-msgstr "Imenik slik"
+msgstr "Slikovna mapa"
 
 #: mx-idesktool:1098
 msgid "Image mode"

@@ -5,9 +5,10 @@
 # 
 # Translators:
 # anticapitalista <anticapitalista@riseup.net>, 2020
-# Geoff Gigg <geoffgigg@hotmail.com>, 2020
 # sombreros <sebastiendebierre@gmail.com>, 2020
+# Geoff Gigg <geoffgigg@hotmail.com>, 2020
 # cyril cottet <cyrilusber2001@yahoo.fr>, 2020
+# Wallon Wallon, 2021
 # 
 #, fuzzy
 msgid ""
@@ -16,13 +17,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-12 18:23-0500\n"
 "PO-Revision-Date: 2020-03-26 13:48+0000\n"
-"Last-Translator: cyril cottet <cyrilusber2001@yahoo.fr>, 2020\n"
+"Last-Translator: Wallon Wallon, 2021\n"
 "Language-Team: French (https://www.transifex.com/anticapitalista/teams/10162/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: mx-idesktool:10
 msgid "ERROR: Yad not installed or not in path."
@@ -276,7 +277,7 @@ msgstr "Entrer le nom de fichier du lien"
 
 #: mx-idesktool:826 mx-idesktool:919
 msgid "Set icons to snap"
-msgstr ""
+msgstr "Régler les icônes pour qu'elles s'enclenchent"
 
 #: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
 msgid "Set background rotation"
@@ -284,19 +285,19 @@ msgstr "Définir une rotation de l'arrière-plan"
 
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "off"
-msgstr "off"
+msgstr "arrêt"
 
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "on"
-msgstr ""
+msgstr "marche"
 
 #: mx-idesktool:1043
 msgid "Snap icons"
-msgstr ""
+msgstr "Icônes d'instantané"
 
 #: mx-idesktool:1044
 msgid "USE: place icon in the middle\\nof a rectangle"
-msgstr ""
+msgstr "MODE D'EMPLOI : placez l'icône au centre\\nd'un rectangle"
 
 #: mx-idesktool:1049
 msgid "Status"

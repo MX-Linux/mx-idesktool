@@ -117,19 +117,19 @@ msgstr "Valitse .png muotoinen kuvakekuva"
 
 #: mx-idesktool:39
 msgid "View or edit an icon"
-msgstr ""
+msgstr "Näytä tai muokkaa kuvaketta"
 
 #: mx-idesktool:40
 msgid "Remove an icon"
-msgstr ""
+msgstr "Poista kuvake"
 
 #: mx-idesktool:41
 msgid "Add a new icon"
-msgstr ""
+msgstr "Lisää uusi kuvake"
 
 #: mx-idesktool:42
 msgid "Reload the desktop"
-msgstr ""
+msgstr "Työpöydän uudelleenlataus"
 
 #: mx-idesktool:43
 msgid "Edit iDesk's config file"
@@ -137,7 +137,7 @@ msgstr "Muokkaa iDesk:in asetustiedostoa"
 
 #: mx-idesktool:44
 msgid "MX-idesktool documentation"
-msgstr ""
+msgstr "MX-idesktool:in dokumentaatio"
 
 #: mx-idesktool:45
 msgid "USE: double-click entry to select a management action"
@@ -239,7 +239,7 @@ msgstr "Lukitse"
 
 #: mx-idesktool:78
 msgid "Lock/unlock icons"
-msgstr ""
+msgstr "Lukitse/vapauta kuvakkeet"
 
 #: mx-idesktool:79
 msgid "Right-Click Command"
@@ -247,7 +247,7 @@ msgstr "Oikeanpuolen hiirennapin napsautuskäsky"
 
 #: mx-idesktool:81
 msgid "Config"
-msgstr ""
+msgstr "Asetukset"
 
 #: mx-idesktool:82
 msgid "Icon"
@@ -259,11 +259,11 @@ msgstr "Työpöytä"
 
 #: mx-idesktool:85
 msgid "View or edit icon style"
-msgstr ""
+msgstr "Näytä tai muokkaa kuvakkeen tyyliä"
 
 #: mx-idesktool:86
 msgid "View or edit mouse actions"
-msgstr ""
+msgstr "Näytä tai muokkaa hiiren toimintoja"
 
 #: mx-idesktool:207 mx-idesktool:213
 msgid "Link Filename"
@@ -275,11 +275,11 @@ msgstr "Syötä linkki-tiedosto nimi"
 
 #: mx-idesktool:826 mx-idesktool:919
 msgid "Set icons to snap"
-msgstr ""
+msgstr "Aseta kuvakkeet snap:ille"
 
 #: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
 msgid "Set background rotation"
-msgstr ""
+msgstr "Aseta taustakuvan kääntyminen"
 
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "off"
@@ -287,15 +287,15 @@ msgstr "pois"
 
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "on"
-msgstr ""
+msgstr "päällä"
 
 #: mx-idesktool:1043
 msgid "Snap icons"
-msgstr ""
+msgstr "Snap-kuvakkeet"
 
 #: mx-idesktool:1044
 msgid "USE: place icon in the middle\\nof a rectangle"
-msgstr ""
+msgstr "KÄYTTÖ: aseta kuva keskelle\\nof suorakulmioon"
 
 #: mx-idesktool:1049
 msgid "Status"
@@ -303,27 +303,27 @@ msgstr "TIla"
 
 #: mx-idesktool:1050
 msgid "Width"
-msgstr ""
+msgstr "Leveys"
 
 #: mx-idesktool:1051
 msgid "Height"
-msgstr ""
+msgstr "Korkeus"
 
 #: mx-idesktool:1093
 msgid "No rotation: Delay = 0"
-msgstr ""
+msgstr "Ei kiertoa: viive = 0"
 
 #: mx-idesktool:1096
 msgid "Delay (mins)"
-msgstr ""
+msgstr "Viive (minuutteina)"
 
 #: mx-idesktool:1097
 msgid "Image folder"
-msgstr ""
+msgstr "Kuvakansio"
 
 #: mx-idesktool:1098
 msgid "Image mode"
-msgstr ""
+msgstr "Kuvatila"
 
 #: mx-idesktool:1137 mx-idesktool:1172 mx-idesktool:1276
 msgid "Saving..."
