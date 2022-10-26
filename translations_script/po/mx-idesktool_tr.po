@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-12 18:23-0500\n"
+"POT-Creation-Date: 2022-07-19 23:15-0400\n"
 "PO-Revision-Date: 2020-03-26 13:48+0000\n"
 "Last-Translator: Mehmet Akif 9oglu, 2022\n"
 "Language-Team: Turkish (https://www.transifex.com/anticapitalista/teams/10162/tr/)\n"
@@ -26,33 +26,17 @@ msgstr ""
 "Language: tr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: mx-idesktool:10
-msgid "ERROR: Yad not installed or not in path."
-msgstr "HATA: Yad kurulu değil veya yolu yok."
+#: mx-idesktool:70
+msgid "ACTION"
+msgstr "EYLEM"
 
-#: mx-idesktool:11
-msgid "Yad found. So far so good.."
-msgstr "Yad bulundu. Şimdiye kadar iyi..."
+#: mx-idesktool:41
+msgid "Add a new icon"
+msgstr "Yeni bir simge ekleme"
 
-#: mx-idesktool:12
-msgid ""
-"ERROR: idesk not installed or not in path. Try "
-"http://sourceforge.net/projects/idesk/"
-msgstr ""
-"HATA: idesk kurulu değil veya yolu yok. "
-"http://sourceforge.net/projects/idesk/ adresini deneyin"
-
-#: mx-idesktool:13
-msgid "idesk found - we're on a roll :)"
-msgstr "idesk bulundu - sevinç turu atıyoruz :)"
-
-#: mx-idesktool:14
-msgid "Icon Management Tool"
-msgstr "Simge Yönetim Aracı"
-
-#: mx-idesktool:15
-msgid "Icon Caption:\\n(Leave blank for no caption)"
-msgstr "Simge Altyazısı:\\n(Resim yazısı için boş bırakın)"
+#: mx-idesktool:37
+msgid "All done. Restarting idesk now..."
+msgstr "Hepsi tamam. Idesk şimdi yeniden başlatılıyor ..."
 
 #: mx-idesktool:16
 msgid "Back"
@@ -62,45 +46,86 @@ msgstr "Geri"
 msgid "Cancel"
 msgstr "İptal"
 
-#: mx-idesktool:18
-msgid "Next"
-msgstr "Sonraki"
-
 #: mx-idesktool:19
 msgid "Caption"
 msgstr "Altyazı"
 
-#: mx-idesktool:27 mx-idesktool:73
-msgid "Left-Click Command:"
-msgstr "Sol Tıklama Komutu:"
+#: mx-idesktool:38 mx-idesktool:72
+msgid "Choose a .png icon image"
+msgstr "Bir .png simge resmi seçin"
 
-#: mx-idesktool:28
-msgid "Middle-Click Command:"
-msgstr "Orta Düğme Tıklama Komutu:"
+#: mx-idesktool:81
+msgid "Config"
+msgstr "Yapılandırma"
+
+#: mx-idesktool:47
+msgid "Config. file  found - excellent!"
+msgstr "Config. dosyası bulundu - mükemmel!"
+
+#: mx-idesktool:67
+msgid "Configure"
+msgstr "Yapılandır"
+
+#: mx-idesktool:64
+msgid "Create"
+msgstr "Oluştur"
 
 #: mx-idesktool:29
 msgid "Current icon"
 msgstr "Mevcut simge"
 
-#: mx-idesktool:30
-msgid "Oops!"
-msgstr "Eyvah!"
+#: mx-idesktool:71
+msgid "DESCRIPTION"
+msgstr "AÇIKLAMA"
+
+#: mx-idesktool:1096
+msgid "Delay (mins)"
+msgstr "Gecikme (dakika)"
+
+#: mx-idesktool:63
+msgid "Delete"
+msgstr "Sil"
+
+#: mx-idesktool:83
+msgid "Desktop"
+msgstr "Masaüstü"
+
+#: mx-idesktool:76
+msgid "Directly edit an icon file"
+msgstr "Bir simge dosyasını doğrudan düzenleme"
+
+#. Cancel button, Window Close, etc
+#: mx-idesktool:1283
+msgid "Discarding..."
+msgstr "Çöpe Atılıyor..."
+
+#: mx-idesktool:10
+msgid "ERROR: Yad not installed or not in path."
+msgstr "HATA: Yad kurulu değil veya yolu yok."
+
+#: mx-idesktool:12
+msgid ""
+"ERROR: idesk not installed or not in path. Try "
+"http://sourceforge.net/projects/idesk/"
+msgstr ""
+"HATA: idesk kurulu değil veya yolu yok. "
+"http://sourceforge.net/projects/idesk/ adresini deneyin"
+
+#: mx-idesktool:43
+msgid "Edit iDesk's config file"
+msgstr "iDesk yapılandırma dosyasını düzenle"
+
+#: mx-idesktool:208
+msgid "Enter Link Filename"
+msgstr "Bağlantı Dosya Adını Girin"
 
 #: mx-idesktool:31
 msgid "Error: Icon Image File Not Found."
 msgstr "Hata: Simge Resim Dosyası Bulunamadı."
 
-#: mx-idesktool:32
-msgid "Quit"
-msgstr "Vazgeç"
-
 #: mx-idesktool:33
 msgid "Error: Unknown Filetype. The icon should be a png image."
 msgstr "Hata: Bilinmeyen Dosya Türü. Simge bir png resmi olmalı."
-
-#: mx-idesktool:34
-msgid "Please choose a file"
-msgstr "Lütfen bir dosya seçin"
 
 #: mx-idesktool:35
 msgid "Error: You need to select a valid file"
@@ -110,49 +135,164 @@ msgstr "Hata: Geçerli bir dosya seçmeniz gerekir"
 msgid "Finished!"
 msgstr "Tamamlandı!"
 
-#: mx-idesktool:37
-msgid "All done. Restarting idesk now..."
-msgstr "Hepsi tamam. Idesk şimdi yeniden başlatılıyor ..."
+#: mx-idesktool:1051
+msgid "Height"
+msgstr "Yükseklik"
 
-#: mx-idesktool:38 mx-idesktool:72
-msgid "Choose a .png icon image"
-msgstr "Bir .png simge resmi seçin"
+#: mx-idesktool:69
+msgid "Help"
+msgstr "Yardım"
 
-#: mx-idesktool:39
-msgid "View or edit an icon"
-msgstr "Bir simgeyi görüntüle veya düzenle"
+#: mx-idesktool:82
+msgid "Icon"
+msgstr "Simge"
 
-#: mx-idesktool:40
-msgid "Remove an icon"
-msgstr "Bir simgeyi kaldırma"
+#: mx-idesktool:15
+msgid "Icon Caption:\\n(Leave blank for no caption)"
+msgstr "Simge Altyazısı:\\n(Resim yazısı için boş bırakın)"
 
-#: mx-idesktool:41
-msgid "Add a new icon"
-msgstr "Yeni bir simge ekleme"
+#: mx-idesktool:14
+msgid "Icon Management Tool"
+msgstr "Simge Yönetim Aracı"
 
-#: mx-idesktool:42
-msgid "Reload the desktop"
-msgstr "Masaüstünü yeniden yükle"
+#: mx-idesktool:1097
+msgid "Image folder"
+msgstr "Resim klasörü"
 
-#: mx-idesktool:43
-msgid "Edit iDesk's config file"
-msgstr "iDesk yapılandırma dosyasını düzenle"
+#: mx-idesktool:1098
+msgid "Image mode"
+msgstr "Resim kipi"
+
+#: mx-idesktool:27 mx-idesktool:73
+msgid "Left-Click Command:"
+msgstr "Sol Tıklama Komutu:"
+
+#: mx-idesktool:207 mx-idesktool:213
+msgid "Link Filename"
+msgstr "Bağlantı Dosya Adı"
+
+#: mx-idesktool:65
+msgid "Locate"
+msgstr "Konumlandır"
+
+#: mx-idesktool:77
+msgid "Lock"
+msgstr "Kilit"
+
+#: mx-idesktool:78
+msgid "Lock/unlock icons"
+msgstr "Simgeleri kilitle/kilidi aç"
 
 #: mx-idesktool:44
 msgid "MX-idesktool documentation"
 msgstr "MX-idesktool belgeleme"
 
+#: mx-idesktool:74
+msgid "Middle-Click Command"
+msgstr "Orta Düğme Tıklama Komutu"
+
+#: mx-idesktool:28
+msgid "Middle-Click Command:"
+msgstr "Orta Düğme Tıklama Komutu:"
+
+#: mx-idesktool:18
+msgid "Next"
+msgstr "Sonraki"
+
+#: mx-idesktool:1093
+msgid "No rotation: Delay = 0"
+msgstr "Değişme yok: Gecikme = 0"
+
+#: mx-idesktool:49
+msgid "No!"
+msgstr "Hayır!"
+
+#: mx-idesktool:30
+msgid "Oops!"
+msgstr "Eyvah!"
+
+#. TEXT37=$"Open"
+#. TEXT38=$"Delete"
+#. TEXT39=$"Open"
+#. TEXT40=$"Refresh"
+#. TEXT41=$"Configure"
+#. CAS=$"Help"
+#: mx-idesktool:62
+msgid "Open"
+msgstr "Aç"
+
+#: mx-idesktool:34
+msgid "Please choose a file"
+msgstr "Lütfen bir dosya seçin"
+
+#: mx-idesktool:32
+msgid "Quit"
+msgstr "Vazgeç"
+
+#: mx-idesktool:66
+msgid "Refresh"
+msgstr "Yenile"
+
+#: mx-idesktool:42
+msgid "Reload the desktop"
+msgstr "Masaüstünü yeniden yükle"
+
+#: mx-idesktool:40
+msgid "Remove an icon"
+msgstr "Bir simgeyi kaldırma"
+
+#: mx-idesktool:79
+msgid "Right-Click Command"
+msgstr "Sağ Tıklama Komutu"
+
+#. OK button
+#: mx-idesktool:1137 mx-idesktool:1172 mx-idesktool:1276
+msgid "Saving..."
+msgstr "Kaydediliyor..."
+
+#: mx-idesktool:75
+msgid "Set a precise position for an icon"
+msgstr "Bir simge için kesin bir konum ayarlama"
+
+#: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
+msgid "Set background rotation"
+msgstr "Arka plan değişimini ayarla"
+
+#: mx-idesktool:826 mx-idesktool:919
+msgid "Set icons to snap"
+msgstr "Simgeleri tutturmaya ayarla"
+
+#: mx-idesktool:1043
+msgid "Snap icons"
+msgstr "Simgeleri tutttur"
+
+#: mx-idesktool:1049
+msgid "Status"
+msgstr "Durum"
+
+#: mx-idesktool:1261
+msgid "Text Editing"
+msgstr "Metin Düzenleme"
+
 #: mx-idesktool:45
 msgid "USE: double-click entry to select a management action"
 msgstr "KULLANIM: bir yönetim eylemi seçmek için girişi çift tıklayın"
 
-#: mx-idesktool:46
-msgid "iDesk Configuration"
-msgstr "iDesk Yapılandırma"
+#: mx-idesktool:1044
+msgid "USE: place icon in the middle\\nof a rectangle"
+msgstr "KULLANIM: simgeyi dikdörtgenin ortasına yerleştir"
 
-#: mx-idesktool:47
-msgid "Config. file  found - excellent!"
-msgstr "Config. dosyası bulundu - mükemmel!"
+#: mx-idesktool:39
+msgid "View or edit an icon"
+msgstr "Bir simgeyi görüntüle veya düzenle"
+
+#: mx-idesktool:85
+msgid "View or edit icon style"
+msgstr "Simge biçemini görüntüle veya düzenle"
+
+#: mx-idesktool:86
+msgid "View or edit mouse actions"
+msgstr "Fare eylemlerini görüntüleme veya düzenleme"
 
 #: mx-idesktool:48
 msgid ""
@@ -162,9 +302,17 @@ msgstr ""
 "UYARI: Bulunan bir ideskrc dosyası yok. Bu dosyanın şimdi eklenmesini ister "
 "misiniz?"
 
-#: mx-idesktool:49
-msgid "No!"
-msgstr "Hayır!"
+#: mx-idesktool:1050
+msgid "Width"
+msgstr "Genişlik"
+
+#: mx-idesktool:68
+msgid "Write"
+msgstr "Yaz"
+
+#: mx-idesktool:11
+msgid "Yad found. So far so good.."
+msgstr "Yad bulundu. Şimdiye kadar iyi..."
 
 #: mx-idesktool:50
 msgid "Yes!"
@@ -183,105 +331,13 @@ msgstr ""
 " bunlar oturumlar arasında hatırlanacaklardır.\\n\\n \n"
 "Simge sihirbazını şimdi çalıştırmak ister misiniz?"
 
-#: mx-idesktool:62
-msgid "Open"
-msgstr "Aç"
+#: mx-idesktool:46
+msgid "iDesk Configuration"
+msgstr "iDesk Yapılandırma"
 
-#: mx-idesktool:63
-msgid "Delete"
-msgstr "Sil"
-
-#: mx-idesktool:64
-msgid "Create"
-msgstr "Oluştur"
-
-#: mx-idesktool:65
-msgid "Locate"
-msgstr "Konumlandır"
-
-#: mx-idesktool:66
-msgid "Refresh"
-msgstr "Yenile"
-
-#: mx-idesktool:67
-msgid "Configure"
-msgstr "Yapılandır"
-
-#: mx-idesktool:68
-msgid "Write"
-msgstr "Yaz"
-
-#: mx-idesktool:69
-msgid "Help"
-msgstr "Yardım"
-
-#: mx-idesktool:70
-msgid "ACTION"
-msgstr "EYLEM"
-
-#: mx-idesktool:71
-msgid "DESCRIPTION"
-msgstr "AÇIKLAMA"
-
-#: mx-idesktool:74
-msgid "Middle-Click Command"
-msgstr "Orta Düğme Tıklama Komutu"
-
-#: mx-idesktool:75
-msgid "Set a precise position for an icon"
-msgstr "Bir simge için kesin bir konum ayarlama"
-
-#: mx-idesktool:76
-msgid "Directly edit an icon file"
-msgstr "Bir simge dosyasını doğrudan düzenleme"
-
-#: mx-idesktool:77
-msgid "Lock"
-msgstr "Kilit"
-
-#: mx-idesktool:78
-msgid "Lock/unlock icons"
-msgstr "Simgeleri kilitle/kilidi aç"
-
-#: mx-idesktool:79
-msgid "Right-Click Command"
-msgstr "Sağ Tıklama Komutu"
-
-#: mx-idesktool:81
-msgid "Config"
-msgstr "Yapılandırma"
-
-#: mx-idesktool:82
-msgid "Icon"
-msgstr "Simge"
-
-#: mx-idesktool:83
-msgid "Desktop"
-msgstr "Masaüstü"
-
-#: mx-idesktool:85
-msgid "View or edit icon style"
-msgstr "Simge biçemini görüntüle veya düzenle"
-
-#: mx-idesktool:86
-msgid "View or edit mouse actions"
-msgstr "Fare eylemlerini görüntüleme veya düzenleme"
-
-#: mx-idesktool:207 mx-idesktool:213
-msgid "Link Filename"
-msgstr "Bağlantı Dosya Adı"
-
-#: mx-idesktool:208
-msgid "Enter Link Filename"
-msgstr "Bağlantı Dosya Adını Girin"
-
-#: mx-idesktool:826 mx-idesktool:919
-msgid "Set icons to snap"
-msgstr "Simgeleri tutturmaya ayarla"
-
-#: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
-msgid "Set background rotation"
-msgstr "Arka plan değişimini ayarla"
+#: mx-idesktool:13
+msgid "idesk found - we're on a roll :)"
+msgstr "idesk bulundu - sevinç turu atıyoruz :)"
 
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "off"
@@ -290,51 +346,3 @@ msgstr "kapalı"
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "on"
 msgstr "Açma"
-
-#: mx-idesktool:1043
-msgid "Snap icons"
-msgstr "Simgeleri tutttur"
-
-#: mx-idesktool:1044
-msgid "USE: place icon in the middle\\nof a rectangle"
-msgstr "KULLANIM: simgeyi dikdörtgenin ortasına yerleştir"
-
-#: mx-idesktool:1049
-msgid "Status"
-msgstr "Durum"
-
-#: mx-idesktool:1050
-msgid "Width"
-msgstr "Genişlik"
-
-#: mx-idesktool:1051
-msgid "Height"
-msgstr "Yükseklik"
-
-#: mx-idesktool:1093
-msgid "No rotation: Delay = 0"
-msgstr "Değişme yok: Gecikme = 0"
-
-#: mx-idesktool:1096
-msgid "Delay (mins)"
-msgstr "Gecikme (dakika)"
-
-#: mx-idesktool:1097
-msgid "Image folder"
-msgstr "Resim klasörü"
-
-#: mx-idesktool:1098
-msgid "Image mode"
-msgstr "Resim kipi"
-
-#: mx-idesktool:1137 mx-idesktool:1172 mx-idesktool:1276
-msgid "Saving..."
-msgstr "Kaydediliyor..."
-
-#: mx-idesktool:1261
-msgid "Text Editing"
-msgstr "Metin Düzenleme"
-
-#: mx-idesktool:1283
-msgid "Discarding..."
-msgstr "Çöpe Atılıyor..."

@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-12 18:23-0500\n"
+"POT-Creation-Date: 2022-07-19 23:15-0400\n"
 "PO-Revision-Date: 2020-03-26 13:48+0000\n"
 "Last-Translator: Arnold Marko <arnold.marko@gmail.com>, 2020\n"
 "Language-Team: Slovenian (https://www.transifex.com/anticapitalista/teams/10162/sl/)\n"
@@ -23,33 +23,17 @@ msgstr ""
 "Language: sl\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
 
-#: mx-idesktool:10
-msgid "ERROR: Yad not installed or not in path."
-msgstr "NAPAKA: Yad ni nameščen oziroma ni v poti"
+#: mx-idesktool:70
+msgid "ACTION"
+msgstr "AKCIJA"
 
-#: mx-idesktool:11
-msgid "Yad found. So far so good.."
-msgstr "Yad je nameščen. Za zdaj je vse v redu."
+#: mx-idesktool:41
+msgid "Add a new icon"
+msgstr "Dodaj novo ikono"
 
-#: mx-idesktool:12
-msgid ""
-"ERROR: idesk not installed or not in path. Try "
-"http://sourceforge.net/projects/idesk/"
-msgstr ""
-"NAPAKA: idesk ni nameščen oziroma ni v poti. Poskusite "
-"http://sourceforge.net/projects/idesk/"
-
-#: mx-idesktool:13
-msgid "idesk found - we're on a roll :)"
-msgstr "idesk je bil najde - stvari se premikajo :)"
-
-#: mx-idesktool:14
-msgid "Icon Management Tool"
-msgstr "Orodje za upravljanje ikon"
-
-#: mx-idesktool:15
-msgid "Icon Caption:\\n(Leave blank for no caption)"
-msgstr "Oznaka ikone:\\n(Pusti prazno, če je brez oznake)"
+#: mx-idesktool:37
+msgid "All done. Restarting idesk now..."
+msgstr "Opravljeno. Idesk se ponovno zaganja..."
 
 #: mx-idesktool:16
 msgid "Back"
@@ -59,45 +43,86 @@ msgstr "Nazaj"
 msgid "Cancel"
 msgstr "Prekliči"
 
-#: mx-idesktool:18
-msgid "Next"
-msgstr "Naslednji"
-
 #: mx-idesktool:19
 msgid "Caption"
 msgstr "Oznaka"
 
-#: mx-idesktool:27 mx-idesktool:73
-msgid "Left-Click Command:"
-msgstr "Ukaz ob levem kliku:"
+#: mx-idesktool:38 mx-idesktool:72
+msgid "Choose a .png icon image"
+msgstr "Izberi .png sliko ikone"
 
-#: mx-idesktool:28
-msgid "Middle-Click Command:"
-msgstr "Ukaz ob srednjem kliku:"
+#: mx-idesktool:81
+msgid "Config"
+msgstr "Konfiguracija"
+
+#: mx-idesktool:47
+msgid "Config. file  found - excellent!"
+msgstr "Nastavitvena datoteka je bila najdena - odlično!"
+
+#: mx-idesktool:67
+msgid "Configure"
+msgstr "Nastavi"
+
+#: mx-idesktool:64
+msgid "Create"
+msgstr "Ustvari"
 
 #: mx-idesktool:29
 msgid "Current icon"
 msgstr "Trenutna ikona"
 
-#: mx-idesktool:30
-msgid "Oops!"
-msgstr "Ups!"
+#: mx-idesktool:71
+msgid "DESCRIPTION"
+msgstr "OPIS"
+
+#: mx-idesktool:1096
+msgid "Delay (mins)"
+msgstr "Zamik (minut)"
+
+#: mx-idesktool:63
+msgid "Delete"
+msgstr "Izbriši"
+
+#: mx-idesktool:83
+msgid "Desktop"
+msgstr "Namizje"
+
+#: mx-idesktool:76
+msgid "Directly edit an icon file"
+msgstr "Neposredno urejanje datoteke ikone"
+
+#. Cancel button, Window Close, etc
+#: mx-idesktool:1283
+msgid "Discarding..."
+msgstr "Opuščanje..."
+
+#: mx-idesktool:10
+msgid "ERROR: Yad not installed or not in path."
+msgstr "NAPAKA: Yad ni nameščen oziroma ni v poti"
+
+#: mx-idesktool:12
+msgid ""
+"ERROR: idesk not installed or not in path. Try "
+"http://sourceforge.net/projects/idesk/"
+msgstr ""
+"NAPAKA: idesk ni nameščen oziroma ni v poti. Poskusite "
+"http://sourceforge.net/projects/idesk/"
+
+#: mx-idesktool:43
+msgid "Edit iDesk's config file"
+msgstr "Urejanje nastavitvene datoteke za iDesk"
+
+#: mx-idesktool:208
+msgid "Enter Link Filename"
+msgstr "Vnesite ime povezane datoteke"
 
 #: mx-idesktool:31
 msgid "Error: Icon Image File Not Found."
 msgstr "Napaka: datoteka s sliko ikone ni bila najdena."
 
-#: mx-idesktool:32
-msgid "Quit"
-msgstr "Končaj"
-
 #: mx-idesktool:33
 msgid "Error: Unknown Filetype. The icon should be a png image."
 msgstr "Napaka: neznana vrsta datoteke. Ikona bi morala biti png slika"
-
-#: mx-idesktool:34
-msgid "Please choose a file"
-msgstr "Izberite datoteko"
 
 #: mx-idesktool:35
 msgid "Error: You need to select a valid file"
@@ -107,49 +132,164 @@ msgstr "Napaka: Izberite ustrezno datoteko"
 msgid "Finished!"
 msgstr "Končano!"
 
-#: mx-idesktool:37
-msgid "All done. Restarting idesk now..."
-msgstr "Opravljeno. Idesk se ponovno zaganja..."
+#: mx-idesktool:1051
+msgid "Height"
+msgstr "Višina"
 
-#: mx-idesktool:38 mx-idesktool:72
-msgid "Choose a .png icon image"
-msgstr "Izberi .png sliko ikone"
+#: mx-idesktool:69
+msgid "Help"
+msgstr "Pomoč"
 
-#: mx-idesktool:39
-msgid "View or edit an icon"
-msgstr "Prikaži ali uredi ikono"
+#: mx-idesktool:82
+msgid "Icon"
+msgstr "Ikona"
 
-#: mx-idesktool:40
-msgid "Remove an icon"
-msgstr "Odstrani ikono"
+#: mx-idesktool:15
+msgid "Icon Caption:\\n(Leave blank for no caption)"
+msgstr "Oznaka ikone:\\n(Pusti prazno, če je brez oznake)"
 
-#: mx-idesktool:41
-msgid "Add a new icon"
-msgstr "Dodaj novo ikono"
+#: mx-idesktool:14
+msgid "Icon Management Tool"
+msgstr "Orodje za upravljanje ikon"
 
-#: mx-idesktool:42
-msgid "Reload the desktop"
-msgstr "Ponovno naloži namizje"
+#: mx-idesktool:1097
+msgid "Image folder"
+msgstr "Slikovna mapa"
 
-#: mx-idesktool:43
-msgid "Edit iDesk's config file"
-msgstr "Urejanje nastavitvene datoteke za iDesk"
+#: mx-idesktool:1098
+msgid "Image mode"
+msgstr "Slikovni način"
+
+#: mx-idesktool:27 mx-idesktool:73
+msgid "Left-Click Command:"
+msgstr "Ukaz ob levem kliku:"
+
+#: mx-idesktool:207 mx-idesktool:213
+msgid "Link Filename"
+msgstr "Poveži z imenom datoteke"
+
+#: mx-idesktool:65
+msgid "Locate"
+msgstr "Lociraj"
+
+#: mx-idesktool:77
+msgid "Lock"
+msgstr "Zakleni"
+
+#: mx-idesktool:78
+msgid "Lock/unlock icons"
+msgstr "Zakleni/odkleni ikone"
 
 #: mx-idesktool:44
 msgid "MX-idesktool documentation"
 msgstr "Dokumentacija za MX-ideskorodje"
 
+#: mx-idesktool:74
+msgid "Middle-Click Command"
+msgstr "Ukaz ob srednjem kliku"
+
+#: mx-idesktool:28
+msgid "Middle-Click Command:"
+msgstr "Ukaz ob srednjem kliku:"
+
+#: mx-idesktool:18
+msgid "Next"
+msgstr "Naslednji"
+
+#: mx-idesktool:1093
+msgid "No rotation: Delay = 0"
+msgstr "Brez menjav: zamik = 0"
+
+#: mx-idesktool:49
+msgid "No!"
+msgstr "Ne!"
+
+#: mx-idesktool:30
+msgid "Oops!"
+msgstr "Ups!"
+
+#. TEXT37=$"Open"
+#. TEXT38=$"Delete"
+#. TEXT39=$"Open"
+#. TEXT40=$"Refresh"
+#. TEXT41=$"Configure"
+#. CAS=$"Help"
+#: mx-idesktool:62
+msgid "Open"
+msgstr "Odpri"
+
+#: mx-idesktool:34
+msgid "Please choose a file"
+msgstr "Izberite datoteko"
+
+#: mx-idesktool:32
+msgid "Quit"
+msgstr "Končaj"
+
+#: mx-idesktool:66
+msgid "Refresh"
+msgstr "Osveži"
+
+#: mx-idesktool:42
+msgid "Reload the desktop"
+msgstr "Ponovno naloži namizje"
+
+#: mx-idesktool:40
+msgid "Remove an icon"
+msgstr "Odstrani ikono"
+
+#: mx-idesktool:79
+msgid "Right-Click Command"
+msgstr "Desni-klik ukaz"
+
+#. OK button
+#: mx-idesktool:1137 mx-idesktool:1172 mx-idesktool:1276
+msgid "Saving..."
+msgstr "Shranjevanje"
+
+#: mx-idesktool:75
+msgid "Set a precise position for an icon"
+msgstr "Določite natančni položaj ikone"
+
+#: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
+msgid "Set background rotation"
+msgstr "Nastavi menjavo ozadja"
+
+#: mx-idesktool:826 mx-idesktool:919
+msgid "Set icons to snap"
+msgstr "Nastavi položaj ikon na mrežo"
+
+#: mx-idesktool:1043
+msgid "Snap icons"
+msgstr "Mreža za položaj ikon"
+
+#: mx-idesktool:1049
+msgid "Status"
+msgstr "Status"
+
+#: mx-idesktool:1261
+msgid "Text Editing"
+msgstr "urejanje teksta"
+
 #: mx-idesktool:45
 msgid "USE: double-click entry to select a management action"
 msgstr "UPORABA: dvojno kliknite na vnos, da izberete dejanje"
 
-#: mx-idesktool:46
-msgid "iDesk Configuration"
-msgstr "iDesk Nastavitve"
+#: mx-idesktool:1044
+msgid "USE: place icon in the middle\\nof a rectangle"
+msgstr "RABA: postavi ikono na sredino\\npravokotnika"
 
-#: mx-idesktool:47
-msgid "Config. file  found - excellent!"
-msgstr "Nastavitvena datoteka je bila najdena - odlično!"
+#: mx-idesktool:39
+msgid "View or edit an icon"
+msgstr "Prikaži ali uredi ikono"
+
+#: mx-idesktool:85
+msgid "View or edit icon style"
+msgstr "Prikaži ali uredi slog ikone"
+
+#: mx-idesktool:86
+msgid "View or edit mouse actions"
+msgstr "Prikaži ali uredi akcijo miške"
 
 #: mx-idesktool:48
 msgid ""
@@ -159,9 +299,17 @@ msgstr ""
 "OPOZORILO: ideskrc datoteka ni bila najdena.\\nBi radi zdaj dodali\\nto "
 "datoteko?"
 
-#: mx-idesktool:49
-msgid "No!"
-msgstr "Ne!"
+#: mx-idesktool:1050
+msgid "Width"
+msgstr "Širina"
+
+#: mx-idesktool:68
+msgid "Write"
+msgstr "Zapiši"
+
+#: mx-idesktool:11
+msgid "Yad found. So far so good.."
+msgstr "Yad je nameščen. Za zdaj je vse v redu."
 
 #: mx-idesktool:50
 msgid "Yes!"
@@ -181,105 +329,13 @@ msgstr ""
 "                se bo shranilo med seansami \\n\\n \n"
 "                Bi radi zdaj zagnali čarovnika za ikone?"
 
-#: mx-idesktool:62
-msgid "Open"
-msgstr "Odpri"
+#: mx-idesktool:46
+msgid "iDesk Configuration"
+msgstr "iDesk Nastavitve"
 
-#: mx-idesktool:63
-msgid "Delete"
-msgstr "Izbriši"
-
-#: mx-idesktool:64
-msgid "Create"
-msgstr "Ustvari"
-
-#: mx-idesktool:65
-msgid "Locate"
-msgstr "Lociraj"
-
-#: mx-idesktool:66
-msgid "Refresh"
-msgstr "Osveži"
-
-#: mx-idesktool:67
-msgid "Configure"
-msgstr "Nastavi"
-
-#: mx-idesktool:68
-msgid "Write"
-msgstr "Zapiši"
-
-#: mx-idesktool:69
-msgid "Help"
-msgstr "Pomoč"
-
-#: mx-idesktool:70
-msgid "ACTION"
-msgstr "AKCIJA"
-
-#: mx-idesktool:71
-msgid "DESCRIPTION"
-msgstr "OPIS"
-
-#: mx-idesktool:74
-msgid "Middle-Click Command"
-msgstr "Ukaz ob srednjem kliku"
-
-#: mx-idesktool:75
-msgid "Set a precise position for an icon"
-msgstr "Določite natančni položaj ikone"
-
-#: mx-idesktool:76
-msgid "Directly edit an icon file"
-msgstr "Neposredno urejanje datoteke ikone"
-
-#: mx-idesktool:77
-msgid "Lock"
-msgstr "Zakleni"
-
-#: mx-idesktool:78
-msgid "Lock/unlock icons"
-msgstr "Zakleni/odkleni ikone"
-
-#: mx-idesktool:79
-msgid "Right-Click Command"
-msgstr "Desni-klik ukaz"
-
-#: mx-idesktool:81
-msgid "Config"
-msgstr "Konfiguracija"
-
-#: mx-idesktool:82
-msgid "Icon"
-msgstr "Ikona"
-
-#: mx-idesktool:83
-msgid "Desktop"
-msgstr "Namizje"
-
-#: mx-idesktool:85
-msgid "View or edit icon style"
-msgstr "Prikaži ali uredi slog ikone"
-
-#: mx-idesktool:86
-msgid "View or edit mouse actions"
-msgstr "Prikaži ali uredi akcijo miške"
-
-#: mx-idesktool:207 mx-idesktool:213
-msgid "Link Filename"
-msgstr "Poveži z imenom datoteke"
-
-#: mx-idesktool:208
-msgid "Enter Link Filename"
-msgstr "Vnesite ime povezane datoteke"
-
-#: mx-idesktool:826 mx-idesktool:919
-msgid "Set icons to snap"
-msgstr "Nastavi položaj ikon na mrežo"
-
-#: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
-msgid "Set background rotation"
-msgstr "Nastavi menjavo ozadja"
+#: mx-idesktool:13
+msgid "idesk found - we're on a roll :)"
+msgstr "idesk je bil najde - stvari se premikajo :)"
 
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "off"
@@ -288,51 +344,3 @@ msgstr "izklopljeno"
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "on"
 msgstr "vklopljeno"
-
-#: mx-idesktool:1043
-msgid "Snap icons"
-msgstr "Mreža za položaj ikon"
-
-#: mx-idesktool:1044
-msgid "USE: place icon in the middle\\nof a rectangle"
-msgstr "RABA: postavi ikono na sredino\\npravokotnika"
-
-#: mx-idesktool:1049
-msgid "Status"
-msgstr "Status"
-
-#: mx-idesktool:1050
-msgid "Width"
-msgstr "Širina"
-
-#: mx-idesktool:1051
-msgid "Height"
-msgstr "Višina"
-
-#: mx-idesktool:1093
-msgid "No rotation: Delay = 0"
-msgstr "Brez menjav: zamik = 0"
-
-#: mx-idesktool:1096
-msgid "Delay (mins)"
-msgstr "Zamik (minut)"
-
-#: mx-idesktool:1097
-msgid "Image folder"
-msgstr "Slikovna mapa"
-
-#: mx-idesktool:1098
-msgid "Image mode"
-msgstr "Slikovni način"
-
-#: mx-idesktool:1137 mx-idesktool:1172 mx-idesktool:1276
-msgid "Saving..."
-msgstr "Shranjevanje"
-
-#: mx-idesktool:1261
-msgid "Text Editing"
-msgstr "urejanje teksta"
-
-#: mx-idesktool:1283
-msgid "Discarding..."
-msgstr "Opuščanje..."

@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-12 18:23-0500\n"
+"POT-Creation-Date: 2022-07-19 23:15-0400\n"
 "PO-Revision-Date: 2020-03-26 13:48+0000\n"
 "Last-Translator: Oi Suomi On! <oisuomion@protonmail.com>, 2020\n"
 "Language-Team: Finnish (https://www.transifex.com/anticapitalista/teams/10162/fi/)\n"
@@ -23,33 +23,17 @@ msgstr ""
 "Language: fi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: mx-idesktool:10
-msgid "ERROR: Yad not installed or not in path."
-msgstr "VIRHE: Yad ei ole asennettu tai ei polussa."
+#: mx-idesktool:70
+msgid "ACTION"
+msgstr "TOIMINTA"
 
-#: mx-idesktool:11
-msgid "Yad found. So far so good.."
-msgstr "Yad löytyi. Kaikki hyvin tähän asti..."
+#: mx-idesktool:41
+msgid "Add a new icon"
+msgstr "Lisää uusi kuvake"
 
-#: mx-idesktool:12
-msgid ""
-"ERROR: idesk not installed or not in path. Try "
-"http://sourceforge.net/projects/idesk/"
-msgstr ""
-"VIRHE: idesk ei ole asennettu tai ei polussa. Kokeile "
-"http://sourceforge.net/projects/idesk/"
-
-#: mx-idesktool:13
-msgid "idesk found - we're on a roll :)"
-msgstr "idesk löytyi - nyt on oikea meininki :)"
-
-#: mx-idesktool:14
-msgid "Icon Management Tool"
-msgstr "Kuvakkeiden hallintatyökalu"
-
-#: mx-idesktool:15
-msgid "Icon Caption:\\n(Leave blank for no caption)"
-msgstr "Kuvakkeen kuvateksti:\\n(jätä tyhjäksi jos et halua kuvatekstiä)"
+#: mx-idesktool:37
+msgid "All done. Restarting idesk now..."
+msgstr "Kaikki on tehty. idesk uudelleenkäynnistetään nyt..."
 
 #: mx-idesktool:16
 msgid "Back"
@@ -59,45 +43,86 @@ msgstr "Takaisin"
 msgid "Cancel"
 msgstr "Peru"
 
-#: mx-idesktool:18
-msgid "Next"
-msgstr "Seuraava"
-
 #: mx-idesktool:19
 msgid "Caption"
 msgstr "Kuvateksti"
 
-#: mx-idesktool:27 mx-idesktool:73
-msgid "Left-Click Command:"
-msgstr "Vasemman hiirennapin napsautuksen käsky:"
+#: mx-idesktool:38 mx-idesktool:72
+msgid "Choose a .png icon image"
+msgstr "Valitse .png muotoinen kuvakekuva"
 
-#: mx-idesktool:28
-msgid "Middle-Click Command:"
-msgstr "Keskimmäisen hiirennapin napsautuksen käsky:"
+#: mx-idesktool:81
+msgid "Config"
+msgstr "Asetukset"
+
+#: mx-idesktool:47
+msgid "Config. file  found - excellent!"
+msgstr "Config. -asetustiedosto löytyi - erinomaista!"
+
+#: mx-idesktool:67
+msgid "Configure"
+msgstr "Muokkaa"
+
+#: mx-idesktool:64
+msgid "Create"
+msgstr "Luo"
 
 #: mx-idesktool:29
 msgid "Current icon"
 msgstr "Tämänhetkinen kuvake"
 
-#: mx-idesktool:30
-msgid "Oops!"
-msgstr "Hupsista!"
+#: mx-idesktool:71
+msgid "DESCRIPTION"
+msgstr "KUVAUS"
+
+#: mx-idesktool:1096
+msgid "Delay (mins)"
+msgstr "Viive (minuutteina)"
+
+#: mx-idesktool:63
+msgid "Delete"
+msgstr "Poista"
+
+#: mx-idesktool:83
+msgid "Desktop"
+msgstr "Työpöytä"
+
+#: mx-idesktool:76
+msgid "Directly edit an icon file"
+msgstr "Mukauta kuvaketiedostoa suoraan"
+
+#. Cancel button, Window Close, etc
+#: mx-idesktool:1283
+msgid "Discarding..."
+msgstr "Hylätään..."
+
+#: mx-idesktool:10
+msgid "ERROR: Yad not installed or not in path."
+msgstr "VIRHE: Yad ei ole asennettu tai ei polussa."
+
+#: mx-idesktool:12
+msgid ""
+"ERROR: idesk not installed or not in path. Try "
+"http://sourceforge.net/projects/idesk/"
+msgstr ""
+"VIRHE: idesk ei ole asennettu tai ei polussa. Kokeile "
+"http://sourceforge.net/projects/idesk/"
+
+#: mx-idesktool:43
+msgid "Edit iDesk's config file"
+msgstr "Muokkaa iDesk:in asetustiedostoa"
+
+#: mx-idesktool:208
+msgid "Enter Link Filename"
+msgstr "Syötä linkki-tiedosto nimi"
 
 #: mx-idesktool:31
 msgid "Error: Icon Image File Not Found."
 msgstr "Virhe: kuvakkeen kuvatiedostoa ei löytynyt."
 
-#: mx-idesktool:32
-msgid "Quit"
-msgstr "Lopeta"
-
 #: mx-idesktool:33
 msgid "Error: Unknown Filetype. The icon should be a png image."
 msgstr "Virhe: tuntematon tiedostomuoto. Kuvakkeen tulee olla png-kuva."
-
-#: mx-idesktool:34
-msgid "Please choose a file"
-msgstr "Valitse tiedosto"
 
 #: mx-idesktool:35
 msgid "Error: You need to select a valid file"
@@ -107,49 +132,164 @@ msgstr "Virhe: sinun pitää valita kelvollinen tiedosto"
 msgid "Finished!"
 msgstr "Valmista!"
 
-#: mx-idesktool:37
-msgid "All done. Restarting idesk now..."
-msgstr "Kaikki on tehty. idesk uudelleenkäynnistetään nyt..."
+#: mx-idesktool:1051
+msgid "Height"
+msgstr "Korkeus"
 
-#: mx-idesktool:38 mx-idesktool:72
-msgid "Choose a .png icon image"
-msgstr "Valitse .png muotoinen kuvakekuva"
+#: mx-idesktool:69
+msgid "Help"
+msgstr "Ohje"
 
-#: mx-idesktool:39
-msgid "View or edit an icon"
-msgstr "Näytä tai muokkaa kuvaketta"
+#: mx-idesktool:82
+msgid "Icon"
+msgstr "Kuvake"
 
-#: mx-idesktool:40
-msgid "Remove an icon"
-msgstr "Poista kuvake"
+#: mx-idesktool:15
+msgid "Icon Caption:\\n(Leave blank for no caption)"
+msgstr "Kuvakkeen kuvateksti:\\n(jätä tyhjäksi jos et halua kuvatekstiä)"
 
-#: mx-idesktool:41
-msgid "Add a new icon"
-msgstr "Lisää uusi kuvake"
+#: mx-idesktool:14
+msgid "Icon Management Tool"
+msgstr "Kuvakkeiden hallintatyökalu"
 
-#: mx-idesktool:42
-msgid "Reload the desktop"
-msgstr "Työpöydän uudelleenlataus"
+#: mx-idesktool:1097
+msgid "Image folder"
+msgstr "Kuvakansio"
 
-#: mx-idesktool:43
-msgid "Edit iDesk's config file"
-msgstr "Muokkaa iDesk:in asetustiedostoa"
+#: mx-idesktool:1098
+msgid "Image mode"
+msgstr "Kuvatila"
+
+#: mx-idesktool:27 mx-idesktool:73
+msgid "Left-Click Command:"
+msgstr "Vasemman hiirennapin napsautuksen käsky:"
+
+#: mx-idesktool:207 mx-idesktool:213
+msgid "Link Filename"
+msgstr "Linkitä tiedoston nimi"
+
+#: mx-idesktool:65
+msgid "Locate"
+msgstr "Paikanna"
+
+#: mx-idesktool:77
+msgid "Lock"
+msgstr "Lukitse"
+
+#: mx-idesktool:78
+msgid "Lock/unlock icons"
+msgstr "Lukitse/vapauta kuvakkeet"
 
 #: mx-idesktool:44
 msgid "MX-idesktool documentation"
 msgstr "MX-idesktool:in dokumentaatio"
 
+#: mx-idesktool:74
+msgid "Middle-Click Command"
+msgstr "Keskimmäisen hiirennapin napsautuksen käsky"
+
+#: mx-idesktool:28
+msgid "Middle-Click Command:"
+msgstr "Keskimmäisen hiirennapin napsautuksen käsky:"
+
+#: mx-idesktool:18
+msgid "Next"
+msgstr "Seuraava"
+
+#: mx-idesktool:1093
+msgid "No rotation: Delay = 0"
+msgstr "Ei kiertoa: viive = 0"
+
+#: mx-idesktool:49
+msgid "No!"
+msgstr "En!"
+
+#: mx-idesktool:30
+msgid "Oops!"
+msgstr "Hupsista!"
+
+#. TEXT37=$"Open"
+#. TEXT38=$"Delete"
+#. TEXT39=$"Open"
+#. TEXT40=$"Refresh"
+#. TEXT41=$"Configure"
+#. CAS=$"Help"
+#: mx-idesktool:62
+msgid "Open"
+msgstr "Avaa"
+
+#: mx-idesktool:34
+msgid "Please choose a file"
+msgstr "Valitse tiedosto"
+
+#: mx-idesktool:32
+msgid "Quit"
+msgstr "Lopeta"
+
+#: mx-idesktool:66
+msgid "Refresh"
+msgstr "Virkistä"
+
+#: mx-idesktool:42
+msgid "Reload the desktop"
+msgstr "Työpöydän uudelleenlataus"
+
+#: mx-idesktool:40
+msgid "Remove an icon"
+msgstr "Poista kuvake"
+
+#: mx-idesktool:79
+msgid "Right-Click Command"
+msgstr "Oikeanpuolen hiirennapin napsautuskäsky"
+
+#. OK button
+#: mx-idesktool:1137 mx-idesktool:1172 mx-idesktool:1276
+msgid "Saving..."
+msgstr "Tallentaa..."
+
+#: mx-idesktool:75
+msgid "Set a precise position for an icon"
+msgstr "Aseta kuvakkeen tarkka asema"
+
+#: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
+msgid "Set background rotation"
+msgstr "Aseta taustakuvan kääntyminen"
+
+#: mx-idesktool:826 mx-idesktool:919
+msgid "Set icons to snap"
+msgstr "Aseta kuvakkeet snap:ille"
+
+#: mx-idesktool:1043
+msgid "Snap icons"
+msgstr "Snap-kuvakkeet"
+
+#: mx-idesktool:1049
+msgid "Status"
+msgstr "TIla"
+
+#: mx-idesktool:1261
+msgid "Text Editing"
+msgstr "Tekstinmuokkaus"
+
 #: mx-idesktool:45
 msgid "USE: double-click entry to select a management action"
 msgstr "KÄYTÄ: tuplanapsauta merkintää valitaksesi hallinnointitoiminnon"
 
-#: mx-idesktool:46
-msgid "iDesk Configuration"
-msgstr "iDesk:in asetukset"
+#: mx-idesktool:1044
+msgid "USE: place icon in the middle\\nof a rectangle"
+msgstr "KÄYTTÖ: aseta kuva keskelle\\nof suorakulmioon"
 
-#: mx-idesktool:47
-msgid "Config. file  found - excellent!"
-msgstr "Config. -asetustiedosto löytyi - erinomaista!"
+#: mx-idesktool:39
+msgid "View or edit an icon"
+msgstr "Näytä tai muokkaa kuvaketta"
+
+#: mx-idesktool:85
+msgid "View or edit icon style"
+msgstr "Näytä tai muokkaa kuvakkeen tyyliä"
+
+#: mx-idesktool:86
+msgid "View or edit mouse actions"
+msgstr "Näytä tai muokkaa hiiren toimintoja"
 
 #: mx-idesktool:48
 msgid ""
@@ -159,9 +299,17 @@ msgstr ""
 "VAROITUS: ideskrc-tiedostoa ei löytynyt.\\nHaluatko lisätä tämän "
 "tiedoston\\n nyt?"
 
-#: mx-idesktool:49
-msgid "No!"
-msgstr "En!"
+#: mx-idesktool:1050
+msgid "Width"
+msgstr "Leveys"
+
+#: mx-idesktool:68
+msgid "Write"
+msgstr "Kirjoita"
+
+#: mx-idesktool:11
+msgid "Yad found. So far so good.."
+msgstr "Yad löytyi. Kaikki hyvin tähän asti..."
 
 #: mx-idesktool:50
 msgid "Yes!"
@@ -181,105 +329,13 @@ msgstr ""
 "            muistamaan istuntojen välillä  \\n\\n \n"
 "            Haluatko ajaa kuvakeopastusohjelman nyt?"
 
-#: mx-idesktool:62
-msgid "Open"
-msgstr "Avaa"
+#: mx-idesktool:46
+msgid "iDesk Configuration"
+msgstr "iDesk:in asetukset"
 
-#: mx-idesktool:63
-msgid "Delete"
-msgstr "Poista"
-
-#: mx-idesktool:64
-msgid "Create"
-msgstr "Luo"
-
-#: mx-idesktool:65
-msgid "Locate"
-msgstr "Paikanna"
-
-#: mx-idesktool:66
-msgid "Refresh"
-msgstr "Virkistä"
-
-#: mx-idesktool:67
-msgid "Configure"
-msgstr "Muokkaa"
-
-#: mx-idesktool:68
-msgid "Write"
-msgstr "Kirjoita"
-
-#: mx-idesktool:69
-msgid "Help"
-msgstr "Ohje"
-
-#: mx-idesktool:70
-msgid "ACTION"
-msgstr "TOIMINTA"
-
-#: mx-idesktool:71
-msgid "DESCRIPTION"
-msgstr "KUVAUS"
-
-#: mx-idesktool:74
-msgid "Middle-Click Command"
-msgstr "Keskimmäisen hiirennapin napsautuksen käsky"
-
-#: mx-idesktool:75
-msgid "Set a precise position for an icon"
-msgstr "Aseta kuvakkeen tarkka asema"
-
-#: mx-idesktool:76
-msgid "Directly edit an icon file"
-msgstr "Mukauta kuvaketiedostoa suoraan"
-
-#: mx-idesktool:77
-msgid "Lock"
-msgstr "Lukitse"
-
-#: mx-idesktool:78
-msgid "Lock/unlock icons"
-msgstr "Lukitse/vapauta kuvakkeet"
-
-#: mx-idesktool:79
-msgid "Right-Click Command"
-msgstr "Oikeanpuolen hiirennapin napsautuskäsky"
-
-#: mx-idesktool:81
-msgid "Config"
-msgstr "Asetukset"
-
-#: mx-idesktool:82
-msgid "Icon"
-msgstr "Kuvake"
-
-#: mx-idesktool:83
-msgid "Desktop"
-msgstr "Työpöytä"
-
-#: mx-idesktool:85
-msgid "View or edit icon style"
-msgstr "Näytä tai muokkaa kuvakkeen tyyliä"
-
-#: mx-idesktool:86
-msgid "View or edit mouse actions"
-msgstr "Näytä tai muokkaa hiiren toimintoja"
-
-#: mx-idesktool:207 mx-idesktool:213
-msgid "Link Filename"
-msgstr "Linkitä tiedoston nimi"
-
-#: mx-idesktool:208
-msgid "Enter Link Filename"
-msgstr "Syötä linkki-tiedosto nimi"
-
-#: mx-idesktool:826 mx-idesktool:919
-msgid "Set icons to snap"
-msgstr "Aseta kuvakkeet snap:ille"
-
-#: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
-msgid "Set background rotation"
-msgstr "Aseta taustakuvan kääntyminen"
+#: mx-idesktool:13
+msgid "idesk found - we're on a roll :)"
+msgstr "idesk löytyi - nyt on oikea meininki :)"
 
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "off"
@@ -288,51 +344,3 @@ msgstr "pois"
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "on"
 msgstr "päällä"
-
-#: mx-idesktool:1043
-msgid "Snap icons"
-msgstr "Snap-kuvakkeet"
-
-#: mx-idesktool:1044
-msgid "USE: place icon in the middle\\nof a rectangle"
-msgstr "KÄYTTÖ: aseta kuva keskelle\\nof suorakulmioon"
-
-#: mx-idesktool:1049
-msgid "Status"
-msgstr "TIla"
-
-#: mx-idesktool:1050
-msgid "Width"
-msgstr "Leveys"
-
-#: mx-idesktool:1051
-msgid "Height"
-msgstr "Korkeus"
-
-#: mx-idesktool:1093
-msgid "No rotation: Delay = 0"
-msgstr "Ei kiertoa: viive = 0"
-
-#: mx-idesktool:1096
-msgid "Delay (mins)"
-msgstr "Viive (minuutteina)"
-
-#: mx-idesktool:1097
-msgid "Image folder"
-msgstr "Kuvakansio"
-
-#: mx-idesktool:1098
-msgid "Image mode"
-msgstr "Kuvatila"
-
-#: mx-idesktool:1137 mx-idesktool:1172 mx-idesktool:1276
-msgid "Saving..."
-msgstr "Tallentaa..."
-
-#: mx-idesktool:1261
-msgid "Text Editing"
-msgstr "Tekstinmuokkaus"
-
-#: mx-idesktool:1283
-msgid "Discarding..."
-msgstr "Hylätään..."

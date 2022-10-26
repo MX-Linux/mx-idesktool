@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-12 18:23-0500\n"
+"POT-Creation-Date: 2022-07-19 23:15-0400\n"
 "PO-Revision-Date: 2020-03-26 13:48+0000\n"
 "Last-Translator: Green, 2020\n"
 "Language-Team: Japanese (https://www.transifex.com/anticapitalista/teams/10162/ja/)\n"
@@ -27,33 +27,17 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: mx-idesktool:10
-msgid "ERROR: Yad not installed or not in path."
-msgstr "エラー: Yad がインストールされていないか、パスにありません。"
+#: mx-idesktool:70
+msgid "ACTION"
+msgstr "アクション"
 
-#: mx-idesktool:11
-msgid "Yad found. So far so good.."
-msgstr "Yad が見つかろました。今のところ順調です..."
+#: mx-idesktool:41
+msgid "Add a new icon"
+msgstr "新しいアイコンを追加"
 
-#: mx-idesktool:12
-msgid ""
-"ERROR: idesk not installed or not in path. Try "
-"http://sourceforge.net/projects/idesk/"
-msgstr ""
-"エラー:idesk がインストールされていないか、パスにありません。http://sourceforge.net/projects/idesk/ "
-"を試してください。"
-
-#: mx-idesktool:13
-msgid "idesk found - we're on a roll :)"
-msgstr "idesk が見つかりました - 順調です :)"
-
-#: mx-idesktool:14
-msgid "Icon Management Tool"
-msgstr "アイコン管理ツール"
-
-#: mx-idesktool:15
-msgid "Icon Caption:\\n(Leave blank for no caption)"
-msgstr "アイコンのキャプション:\\n（キャプションがない場合は空欄にしてください）"
+#: mx-idesktool:37
+msgid "All done. Restarting idesk now..."
+msgstr "全て完了。今、ideskを再起動しています..."
 
 #: mx-idesktool:16
 msgid "Back"
@@ -63,45 +47,86 @@ msgstr "戻る"
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: mx-idesktool:18
-msgid "Next"
-msgstr "次へ"
-
 #: mx-idesktool:19
 msgid "Caption"
 msgstr "キャプション"
 
-#: mx-idesktool:27 mx-idesktool:73
-msgid "Left-Click Command:"
-msgstr "左クリックのコマンド："
+#: mx-idesktool:38 mx-idesktool:72
+msgid "Choose a .png icon image"
+msgstr ".pngアイコンの画像を選択します"
 
-#: mx-idesktool:28
-msgid "Middle-Click Command:"
-msgstr "中クリックコマンド："
+#: mx-idesktool:81
+msgid "Config"
+msgstr "設定"
+
+#: mx-idesktool:47
+msgid "Config. file  found - excellent!"
+msgstr "Config. ファイル発見 - すばらしい！"
+
+#: mx-idesktool:67
+msgid "Configure"
+msgstr "設定"
+
+#: mx-idesktool:64
+msgid "Create"
+msgstr "作成"
 
 #: mx-idesktool:29
 msgid "Current icon"
 msgstr "現在のアイコン"
 
-#: mx-idesktool:30
-msgid "Oops!"
-msgstr "しまった！"
+#: mx-idesktool:71
+msgid "DESCRIPTION"
+msgstr "ディスクリプション"
+
+#: mx-idesktool:1096
+msgid "Delay (mins)"
+msgstr "遅延 (分)"
+
+#: mx-idesktool:63
+msgid "Delete"
+msgstr "削除"
+
+#: mx-idesktool:83
+msgid "Desktop"
+msgstr "デスクトップ"
+
+#: mx-idesktool:76
+msgid "Directly edit an icon file"
+msgstr "アイコンファイルを直接編集"
+
+#. Cancel button, Window Close, etc
+#: mx-idesktool:1283
+msgid "Discarding..."
+msgstr "廃棄中..."
+
+#: mx-idesktool:10
+msgid "ERROR: Yad not installed or not in path."
+msgstr "エラー: Yad がインストールされていないか、パスにありません。"
+
+#: mx-idesktool:12
+msgid ""
+"ERROR: idesk not installed or not in path. Try "
+"http://sourceforge.net/projects/idesk/"
+msgstr ""
+"エラー:idesk がインストールされていないか、パスにありません。http://sourceforge.net/projects/idesk/ "
+"を試してください。"
+
+#: mx-idesktool:43
+msgid "Edit iDesk's config file"
+msgstr "iDesk 設定ファイの編集e"
+
+#: mx-idesktool:208
+msgid "Enter Link Filename"
+msgstr "リンク先のファイル名を入力"
 
 #: mx-idesktool:31
 msgid "Error: Icon Image File Not Found."
 msgstr "エラー：アイコンの画像ファイルが見つかりません。"
 
-#: mx-idesktool:32
-msgid "Quit"
-msgstr "終了"
-
 #: mx-idesktool:33
 msgid "Error: Unknown Filetype. The icon should be a png image."
 msgstr "エラー：不明なファイルタイプです。アイコンは png 形式でなくてはなりません。"
-
-#: mx-idesktool:34
-msgid "Please choose a file"
-msgstr "ファイルを選択してください"
 
 #: mx-idesktool:35
 msgid "Error: You need to select a valid file"
@@ -111,49 +136,164 @@ msgstr "エラー：有効なファイルを選択する必要があります"
 msgid "Finished!"
 msgstr "完了！"
 
-#: mx-idesktool:37
-msgid "All done. Restarting idesk now..."
-msgstr "全て完了。今、ideskを再起動しています..."
+#: mx-idesktool:1051
+msgid "Height"
+msgstr "高さ"
 
-#: mx-idesktool:38 mx-idesktool:72
-msgid "Choose a .png icon image"
-msgstr ".pngアイコンの画像を選択します"
+#: mx-idesktool:69
+msgid "Help"
+msgstr "ヘルプ"
 
-#: mx-idesktool:39
-msgid "View or edit an icon"
-msgstr "アイコンの表示または編集"
+#: mx-idesktool:82
+msgid "Icon"
+msgstr "アイコン"
 
-#: mx-idesktool:40
-msgid "Remove an icon"
-msgstr "アイコンの削除"
+#: mx-idesktool:15
+msgid "Icon Caption:\\n(Leave blank for no caption)"
+msgstr "アイコンのキャプション:\\n（キャプションがない場合は空欄にしてください）"
 
-#: mx-idesktool:41
-msgid "Add a new icon"
-msgstr "新しいアイコンを追加"
+#: mx-idesktool:14
+msgid "Icon Management Tool"
+msgstr "アイコン管理ツール"
 
-#: mx-idesktool:42
-msgid "Reload the desktop"
-msgstr "デスクトップの再読み込み"
+#: mx-idesktool:1097
+msgid "Image folder"
+msgstr "画像フォルダ"
 
-#: mx-idesktool:43
-msgid "Edit iDesk's config file"
-msgstr "iDesk 設定ファイの編集e"
+#: mx-idesktool:1098
+msgid "Image mode"
+msgstr "画像モード"
+
+#: mx-idesktool:27 mx-idesktool:73
+msgid "Left-Click Command:"
+msgstr "左クリックのコマンド："
+
+#: mx-idesktool:207 mx-idesktool:213
+msgid "Link Filename"
+msgstr "リンク先のファイル名"
+
+#: mx-idesktool:65
+msgid "Locate"
+msgstr "位置を指定"
+
+#: mx-idesktool:77
+msgid "Lock"
+msgstr "ロック"
+
+#: mx-idesktool:78
+msgid "Lock/unlock icons"
+msgstr "アイコンのロック/ロック解除"
 
 #: mx-idesktool:44
 msgid "MX-idesktool documentation"
 msgstr "MX-idesktool のドキュメント"
 
+#: mx-idesktool:74
+msgid "Middle-Click Command"
+msgstr "中クリックのコマンド"
+
+#: mx-idesktool:28
+msgid "Middle-Click Command:"
+msgstr "中クリックコマンド："
+
+#: mx-idesktool:18
+msgid "Next"
+msgstr "次へ"
+
+#: mx-idesktool:1093
+msgid "No rotation: Delay = 0"
+msgstr "回転しない：遅延 = 0"
+
+#: mx-idesktool:49
+msgid "No!"
+msgstr "はい！"
+
+#: mx-idesktool:30
+msgid "Oops!"
+msgstr "しまった！"
+
+#. TEXT37=$"Open"
+#. TEXT38=$"Delete"
+#. TEXT39=$"Open"
+#. TEXT40=$"Refresh"
+#. TEXT41=$"Configure"
+#. CAS=$"Help"
+#: mx-idesktool:62
+msgid "Open"
+msgstr "開く"
+
+#: mx-idesktool:34
+msgid "Please choose a file"
+msgstr "ファイルを選択してください"
+
+#: mx-idesktool:32
+msgid "Quit"
+msgstr "終了"
+
+#: mx-idesktool:66
+msgid "Refresh"
+msgstr "リフレッシュ"
+
+#: mx-idesktool:42
+msgid "Reload the desktop"
+msgstr "デスクトップの再読み込み"
+
+#: mx-idesktool:40
+msgid "Remove an icon"
+msgstr "アイコンの削除"
+
+#: mx-idesktool:79
+msgid "Right-Click Command"
+msgstr "右クリックのコマンド"
+
+#. OK button
+#: mx-idesktool:1137 mx-idesktool:1172 mx-idesktool:1276
+msgid "Saving..."
+msgstr "保存中..."
+
+#: mx-idesktool:75
+msgid "Set a precise position for an icon"
+msgstr "アイコンの正確な位置を設定"
+
+#: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
+msgid "Set background rotation"
+msgstr "背景の回転を設定"
+
+#: mx-idesktool:826 mx-idesktool:919
+msgid "Set icons to snap"
+msgstr "スナップするアイコンを設定"
+
+#: mx-idesktool:1043
+msgid "Snap icons"
+msgstr "アイコンのスナップを撮ります"
+
+#: mx-idesktool:1049
+msgid "Status"
+msgstr "ステータス"
+
+#: mx-idesktool:1261
+msgid "Text Editing"
+msgstr "テキストの編集"
+
 #: mx-idesktool:45
 msgid "USE: double-click entry to select a management action"
 msgstr "DesktopUSEのリロード：ダブルクリックして管理アクションを選択"
 
-#: mx-idesktool:46
-msgid "iDesk Configuration"
-msgstr "iDesk の設定"
+#: mx-idesktool:1044
+msgid "USE: place icon in the middle\\nof a rectangle"
+msgstr "使い方: アイコンを長方形の \\n 真ん中に置きます"
 
-#: mx-idesktool:47
-msgid "Config. file  found - excellent!"
-msgstr "Config. ファイル発見 - すばらしい！"
+#: mx-idesktool:39
+msgid "View or edit an icon"
+msgstr "アイコンの表示または編集"
+
+#: mx-idesktool:85
+msgid "View or edit icon style"
+msgstr "アイコンのスタイルを表示または編集"
+
+#: mx-idesktool:86
+msgid "View or edit mouse actions"
+msgstr "マウスのアクションを表示または編集"
 
 #: mx-idesktool:48
 msgid ""
@@ -161,9 +301,17 @@ msgid ""
 "file\\nadded now?"
 msgstr "警告：ideskrcファイルが見つかりません。\\n今すぐこのファイルを追加しますか？"
 
-#: mx-idesktool:49
-msgid "No!"
-msgstr "はい！"
+#: mx-idesktool:1050
+msgid "Width"
+msgstr "横幅"
+
+#: mx-idesktool:68
+msgid "Write"
+msgstr "書き込み"
+
+#: mx-idesktool:11
+msgid "Yad found. So far so good.."
+msgstr "Yad が見つかろました。今のところ順調です..."
 
 #: mx-idesktool:50
 msgid "Yes!"
@@ -179,105 +327,13 @@ msgid ""
 msgstr ""
 "\\t設定ファイルが書き込まれました。\\n作成したアイコンを任意の場所にドラッグすると、セッション間で記憶されます。\\n\\n今すぐアイコンウィザードを実行しますか？"
 
-#: mx-idesktool:62
-msgid "Open"
-msgstr "開く"
+#: mx-idesktool:46
+msgid "iDesk Configuration"
+msgstr "iDesk の設定"
 
-#: mx-idesktool:63
-msgid "Delete"
-msgstr "削除"
-
-#: mx-idesktool:64
-msgid "Create"
-msgstr "作成"
-
-#: mx-idesktool:65
-msgid "Locate"
-msgstr "位置を指定"
-
-#: mx-idesktool:66
-msgid "Refresh"
-msgstr "リフレッシュ"
-
-#: mx-idesktool:67
-msgid "Configure"
-msgstr "設定"
-
-#: mx-idesktool:68
-msgid "Write"
-msgstr "書き込み"
-
-#: mx-idesktool:69
-msgid "Help"
-msgstr "ヘルプ"
-
-#: mx-idesktool:70
-msgid "ACTION"
-msgstr "アクション"
-
-#: mx-idesktool:71
-msgid "DESCRIPTION"
-msgstr "ディスクリプション"
-
-#: mx-idesktool:74
-msgid "Middle-Click Command"
-msgstr "中クリックのコマンド"
-
-#: mx-idesktool:75
-msgid "Set a precise position for an icon"
-msgstr "アイコンの正確な位置を設定"
-
-#: mx-idesktool:76
-msgid "Directly edit an icon file"
-msgstr "アイコンファイルを直接編集"
-
-#: mx-idesktool:77
-msgid "Lock"
-msgstr "ロック"
-
-#: mx-idesktool:78
-msgid "Lock/unlock icons"
-msgstr "アイコンのロック/ロック解除"
-
-#: mx-idesktool:79
-msgid "Right-Click Command"
-msgstr "右クリックのコマンド"
-
-#: mx-idesktool:81
-msgid "Config"
-msgstr "設定"
-
-#: mx-idesktool:82
-msgid "Icon"
-msgstr "アイコン"
-
-#: mx-idesktool:83
-msgid "Desktop"
-msgstr "デスクトップ"
-
-#: mx-idesktool:85
-msgid "View or edit icon style"
-msgstr "アイコンのスタイルを表示または編集"
-
-#: mx-idesktool:86
-msgid "View or edit mouse actions"
-msgstr "マウスのアクションを表示または編集"
-
-#: mx-idesktool:207 mx-idesktool:213
-msgid "Link Filename"
-msgstr "リンク先のファイル名"
-
-#: mx-idesktool:208
-msgid "Enter Link Filename"
-msgstr "リンク先のファイル名を入力"
-
-#: mx-idesktool:826 mx-idesktool:919
-msgid "Set icons to snap"
-msgstr "スナップするアイコンを設定"
-
-#: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
-msgid "Set background rotation"
-msgstr "背景の回転を設定"
+#: mx-idesktool:13
+msgid "idesk found - we're on a roll :)"
+msgstr "idesk が見つかりました - 順調です :)"
 
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "off"
@@ -286,51 +342,3 @@ msgstr "オフ"
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "on"
 msgstr "オン"
-
-#: mx-idesktool:1043
-msgid "Snap icons"
-msgstr "アイコンのスナップを撮ります"
-
-#: mx-idesktool:1044
-msgid "USE: place icon in the middle\\nof a rectangle"
-msgstr "使い方: アイコンを長方形の \\n 真ん中に置きます"
-
-#: mx-idesktool:1049
-msgid "Status"
-msgstr "ステータス"
-
-#: mx-idesktool:1050
-msgid "Width"
-msgstr "横幅"
-
-#: mx-idesktool:1051
-msgid "Height"
-msgstr "高さ"
-
-#: mx-idesktool:1093
-msgid "No rotation: Delay = 0"
-msgstr "回転しない：遅延 = 0"
-
-#: mx-idesktool:1096
-msgid "Delay (mins)"
-msgstr "遅延 (分)"
-
-#: mx-idesktool:1097
-msgid "Image folder"
-msgstr "画像フォルダ"
-
-#: mx-idesktool:1098
-msgid "Image mode"
-msgstr "画像モード"
-
-#: mx-idesktool:1137 mx-idesktool:1172 mx-idesktool:1276
-msgid "Saving..."
-msgstr "保存中..."
-
-#: mx-idesktool:1261
-msgid "Text Editing"
-msgstr "テキストの編集"
-
-#: mx-idesktool:1283
-msgid "Discarding..."
-msgstr "廃棄中..."

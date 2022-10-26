@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-12 18:23-0500\n"
+"POT-Creation-Date: 2022-07-19 23:15-0400\n"
 "PO-Revision-Date: 2020-03-26 13:48+0000\n"
 "Last-Translator: anticapitalista <anticapitalista@riseup.net>, 2020\n"
 "Language-Team: Greek (https://www.transifex.com/anticapitalista/teams/10162/el/)\n"
@@ -22,33 +22,17 @@ msgstr ""
 "Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: mx-idesktool:10
-msgid "ERROR: Yad not installed or not in path."
-msgstr "Σφάλμα: Το Yad δεν είναι εγκατεστημένο ή δεν βρίσκεται στη διαδρομή."
+#: mx-idesktool:70
+msgid "ACTION"
+msgstr "ΔΡΑΣΗ"
 
-#: mx-idesktool:11
-msgid "Yad found. So far so good.."
-msgstr "Το Yad βρήκε."
+#: mx-idesktool:41
+msgid "Add a new icon"
+msgstr "Προσθέστε ένα νέο εικονίδιο"
 
-#: mx-idesktool:12
-msgid ""
-"ERROR: idesk not installed or not in path. Try "
-"http://sourceforge.net/projects/idesk/"
-msgstr ""
-"Σφάλμα: Το idesk δεν είναι εγκατεστημένο ή δεν βρίσκεται στη διαδρομή. "
-"Δοκιμάστε http://sourceforge.net/projects/idesk/"
-
-#: mx-idesktool:13
-msgid "idesk found - we're on a roll :)"
-msgstr "idesk βρήκε"
-
-#: mx-idesktool:14
-msgid "Icon Management Tool"
-msgstr "Εργαλείο διαχείρισης εικονιδίων"
-
-#: mx-idesktool:15
-msgid "Icon Caption:\\n(Leave blank for no caption)"
-msgstr "Ετικέτα εικονιδίου: (Αφήστε κενό για μη λεζάντα)"
+#: mx-idesktool:37
+msgid "All done. Restarting idesk now..."
+msgstr "Ολοκληρώθηκε. Επανεκκίνηση idesk τώρα ..."
 
 #: mx-idesktool:16
 msgid "Back"
@@ -58,46 +42,87 @@ msgstr "Πίσω"
 msgid "Cancel"
 msgstr "Ακύρωση"
 
-#: mx-idesktool:18
-msgid "Next"
-msgstr "Επόμενο"
-
 #: mx-idesktool:19
 msgid "Caption"
 msgstr "Λεζάντα"
 
-#: mx-idesktool:27 mx-idesktool:73
-msgid "Left-Click Command:"
-msgstr "Εντολή αριστερού κλικ:"
+#: mx-idesktool:38 mx-idesktool:72
+msgid "Choose a .png icon image"
+msgstr "Επιλέξτε εικονίδιο .png"
 
-#: mx-idesktool:28
-msgid "Middle-Click Command:"
-msgstr "Εντολή μεσαίου κλικ:"
+#: mx-idesktool:81
+msgid "Config"
+msgstr "Διαμόρφωση"
+
+#: mx-idesktool:47
+msgid "Config. file  found - excellent!"
+msgstr "Το αρχείο διαμόρφωσης βρέθηκε"
+
+#: mx-idesktool:67
+msgid "Configure"
+msgstr "Ρύθμιση "
+
+#: mx-idesktool:64
+msgid "Create"
+msgstr "Δημιουργία"
 
 #: mx-idesktool:29
 msgid "Current icon"
 msgstr "Τρέχον εικονίδιο"
 
-#: mx-idesktool:30
-msgid "Oops!"
-msgstr "Ωχ!"
+#: mx-idesktool:71
+msgid "DESCRIPTION"
+msgstr "ΠΕΡΙΓΡΑΦΗ"
+
+#: mx-idesktool:1096
+msgid "Delay (mins)"
+msgstr "Καθυστέρηση (λεπτά)"
+
+#: mx-idesktool:63
+msgid "Delete"
+msgstr "Διαγραφή"
+
+#: mx-idesktool:83
+msgid "Desktop"
+msgstr "Επιφάνεια εργασίας"
+
+#: mx-idesktool:76
+msgid "Directly edit an icon file"
+msgstr "Απευθείας επεξεργασία ενός αρχείου εικονιδίων"
+
+#. Cancel button, Window Close, etc
+#: mx-idesktool:1283
+msgid "Discarding..."
+msgstr "Απόρριψη ..."
+
+#: mx-idesktool:10
+msgid "ERROR: Yad not installed or not in path."
+msgstr "Σφάλμα: Το Yad δεν είναι εγκατεστημένο ή δεν βρίσκεται στη διαδρομή."
+
+#: mx-idesktool:12
+msgid ""
+"ERROR: idesk not installed or not in path. Try "
+"http://sourceforge.net/projects/idesk/"
+msgstr ""
+"Σφάλμα: Το idesk δεν είναι εγκατεστημένο ή δεν βρίσκεται στη διαδρομή. "
+"Δοκιμάστε http://sourceforge.net/projects/idesk/"
+
+#: mx-idesktool:43
+msgid "Edit iDesk's config file"
+msgstr "Επεξεργαστείτε το αρχείο ρυθμίσεων του iDesk"
+
+#: mx-idesktool:208
+msgid "Enter Link Filename"
+msgstr "Εισαγάγετε το όνομα αρχείου σύνδεσης"
 
 #: mx-idesktool:31
 msgid "Error: Icon Image File Not Found."
 msgstr "Σφάλμα: Το αρχείο εικόνας εικονιδίου δεν βρέθηκε."
 
-#: mx-idesktool:32
-msgid "Quit"
-msgstr "Έξοδος "
-
 #: mx-idesktool:33
 msgid "Error: Unknown Filetype. The icon should be a png image."
 msgstr ""
 "Σφάλμα: Άγνωστος τύπος αρχείου. Το εικονίδιο πρέπει να είναι εικόνα png."
-
-#: mx-idesktool:34
-msgid "Please choose a file"
-msgstr "Επιλέξτε ένα αρχείο"
 
 #: mx-idesktool:35
 msgid "Error: You need to select a valid file"
@@ -107,37 +132,144 @@ msgstr "Σφάλμα: Πρέπει να επιλέξετε ένα έγκυρο �
 msgid "Finished!"
 msgstr "Ολοκληρώθηκε!"
 
-#: mx-idesktool:37
-msgid "All done. Restarting idesk now..."
-msgstr "Ολοκληρώθηκε. Επανεκκίνηση idesk τώρα ..."
+#: mx-idesktool:1051
+msgid "Height"
+msgstr "Υψος"
 
-#: mx-idesktool:38 mx-idesktool:72
-msgid "Choose a .png icon image"
-msgstr "Επιλέξτε εικονίδιο .png"
+#: mx-idesktool:69
+msgid "Help"
+msgstr "Βοήθεια"
 
-#: mx-idesktool:39
-msgid "View or edit an icon"
-msgstr "Προβολή ή επεξεργασία ενός εικονιδίου"
+#: mx-idesktool:82
+msgid "Icon"
+msgstr "Εικονίδιο"
 
-#: mx-idesktool:40
-msgid "Remove an icon"
-msgstr "Αφαιρέστε ένα εικονίδιο"
+#: mx-idesktool:15
+msgid "Icon Caption:\\n(Leave blank for no caption)"
+msgstr "Ετικέτα εικονιδίου: (Αφήστε κενό για μη λεζάντα)"
 
-#: mx-idesktool:41
-msgid "Add a new icon"
-msgstr "Προσθέστε ένα νέο εικονίδιο"
+#: mx-idesktool:14
+msgid "Icon Management Tool"
+msgstr "Εργαλείο διαχείρισης εικονιδίων"
+
+#: mx-idesktool:1097
+msgid "Image folder"
+msgstr "Φάκελος εικόνας"
+
+#: mx-idesktool:1098
+msgid "Image mode"
+msgstr "Τρόπος εικόνα"
+
+#: mx-idesktool:27 mx-idesktool:73
+msgid "Left-Click Command:"
+msgstr "Εντολή αριστερού κλικ:"
+
+#: mx-idesktool:207 mx-idesktool:213
+msgid "Link Filename"
+msgstr "Link Όνομα αρχείου"
+
+#: mx-idesktool:65
+msgid "Locate"
+msgstr "Ανακάλυψη"
+
+#: mx-idesktool:77
+msgid "Lock"
+msgstr "Κλείδωμα"
+
+#: mx-idesktool:78
+msgid "Lock/unlock icons"
+msgstr "Κλείδωμα/ξεκλείδωμα εικονιδίων"
+
+#: mx-idesktool:44
+msgid "MX-idesktool documentation"
+msgstr "Τεκμηρίωση MX-idesktool"
+
+#: mx-idesktool:74
+msgid "Middle-Click Command"
+msgstr "Εντολή μεσαίου κλικ"
+
+#: mx-idesktool:28
+msgid "Middle-Click Command:"
+msgstr "Εντολή μεσαίου κλικ:"
+
+#: mx-idesktool:18
+msgid "Next"
+msgstr "Επόμενο"
+
+#: mx-idesktool:1093
+msgid "No rotation: Delay = 0"
+msgstr "Χωρίς περιστροφή: Delay = 0"
+
+#: mx-idesktool:49
+msgid "No!"
+msgstr "Όχι!"
+
+#: mx-idesktool:30
+msgid "Oops!"
+msgstr "Ωχ!"
+
+#. TEXT37=$"Open"
+#. TEXT38=$"Delete"
+#. TEXT39=$"Open"
+#. TEXT40=$"Refresh"
+#. TEXT41=$"Configure"
+#. CAS=$"Help"
+#: mx-idesktool:62
+msgid "Open"
+msgstr "Άνοιγμα"
+
+#: mx-idesktool:34
+msgid "Please choose a file"
+msgstr "Επιλέξτε ένα αρχείο"
+
+#: mx-idesktool:32
+msgid "Quit"
+msgstr "Έξοδος "
+
+#: mx-idesktool:66
+msgid "Refresh"
+msgstr "Ανανέωση "
 
 #: mx-idesktool:42
 msgid "Reload the desktop"
 msgstr "Επαναφορτίστε την επιφάνεια εργασίας"
 
-#: mx-idesktool:43
-msgid "Edit iDesk's config file"
-msgstr "Επεξεργαστείτε το αρχείο ρυθμίσεων του iDesk"
+#: mx-idesktool:40
+msgid "Remove an icon"
+msgstr "Αφαιρέστε ένα εικονίδιο"
 
-#: mx-idesktool:44
-msgid "MX-idesktool documentation"
-msgstr "Τεκμηρίωση MX-idesktool"
+#: mx-idesktool:79
+msgid "Right-Click Command"
+msgstr "Εντολή δεξί κλικ"
+
+#. OK button
+#: mx-idesktool:1137 mx-idesktool:1172 mx-idesktool:1276
+msgid "Saving..."
+msgstr "Αποθήκευση ...."
+
+#: mx-idesktool:75
+msgid "Set a precise position for an icon"
+msgstr "Ορίστε μια ακριβή θέση για ένα εικονίδιο"
+
+#: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
+msgid "Set background rotation"
+msgstr "Ορισμός περιστροφής φόντου"
+
+#: mx-idesktool:826 mx-idesktool:919
+msgid "Set icons to snap"
+msgstr "Ορίστε εικονίδια για λήψη"
+
+#: mx-idesktool:1043
+msgid "Snap icons"
+msgstr "Τραβήξτε τα εικονίδια"
+
+#: mx-idesktool:1049
+msgid "Status"
+msgstr "Κατάσταση"
+
+#: mx-idesktool:1261
+msgid "Text Editing"
+msgstr "Επεξεργασία κειμένου"
 
 #: mx-idesktool:45
 msgid "USE: double-click entry to select a management action"
@@ -145,13 +277,23 @@ msgstr ""
 "ΧΡΗΣΗ: κάντε διπλό κλικ στην καταχώρηση για να επιλέξετε μια ενέργεια "
 "διαχείρισης"
 
-#: mx-idesktool:46
-msgid "iDesk Configuration"
-msgstr "Διαμόρφωση iDesk"
+#: mx-idesktool:1044
+msgid "USE: place icon in the middle\\nof a rectangle"
+msgstr ""
+"ΧΡΗΣΗ: τοποθετήστε το εικονίδιο στη μέση\n"
+"ενός ορθογωνίου"
 
-#: mx-idesktool:47
-msgid "Config. file  found - excellent!"
-msgstr "Το αρχείο διαμόρφωσης βρέθηκε"
+#: mx-idesktool:39
+msgid "View or edit an icon"
+msgstr "Προβολή ή επεξεργασία ενός εικονιδίου"
+
+#: mx-idesktool:85
+msgid "View or edit icon style"
+msgstr "Προβολή ή επεξεργασία στυλ εικονιδίου"
+
+#: mx-idesktool:86
+msgid "View or edit mouse actions"
+msgstr "Προβολή ή επεξεργασία ενεργειών ποντικιού"
 
 #: mx-idesktool:48
 msgid ""
@@ -161,9 +303,17 @@ msgstr ""
 "ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Δεν βρέθηκε αρχείο ideskrc. \n"
 "Θα θέλατε να προσθέσετε τώρα αυτό το αρχείο;"
 
-#: mx-idesktool:49
-msgid "No!"
-msgstr "Όχι!"
+#: mx-idesktool:1050
+msgid "Width"
+msgstr "Πλάτος"
+
+#: mx-idesktool:68
+msgid "Write"
+msgstr "Εγγραφή"
+
+#: mx-idesktool:11
+msgid "Yad found. So far so good.."
+msgstr "Το Yad βρήκε."
 
 #: mx-idesktool:50
 msgid "Yes!"
@@ -182,105 +332,13 @@ msgstr ""
 "και θα τα θυμάστε ανάμεσα στις περιόδους σύνδεσης. \n"
 "Θέλετε να εκτελέσετε τώρα τον οδηγό εικονιδίων;"
 
-#: mx-idesktool:62
-msgid "Open"
-msgstr "Άνοιγμα"
+#: mx-idesktool:46
+msgid "iDesk Configuration"
+msgstr "Διαμόρφωση iDesk"
 
-#: mx-idesktool:63
-msgid "Delete"
-msgstr "Διαγραφή"
-
-#: mx-idesktool:64
-msgid "Create"
-msgstr "Δημιουργία"
-
-#: mx-idesktool:65
-msgid "Locate"
-msgstr "Ανακάλυψη"
-
-#: mx-idesktool:66
-msgid "Refresh"
-msgstr "Ανανέωση "
-
-#: mx-idesktool:67
-msgid "Configure"
-msgstr "Ρύθμιση "
-
-#: mx-idesktool:68
-msgid "Write"
-msgstr "Εγγραφή"
-
-#: mx-idesktool:69
-msgid "Help"
-msgstr "Βοήθεια"
-
-#: mx-idesktool:70
-msgid "ACTION"
-msgstr "ΔΡΑΣΗ"
-
-#: mx-idesktool:71
-msgid "DESCRIPTION"
-msgstr "ΠΕΡΙΓΡΑΦΗ"
-
-#: mx-idesktool:74
-msgid "Middle-Click Command"
-msgstr "Εντολή μεσαίου κλικ"
-
-#: mx-idesktool:75
-msgid "Set a precise position for an icon"
-msgstr "Ορίστε μια ακριβή θέση για ένα εικονίδιο"
-
-#: mx-idesktool:76
-msgid "Directly edit an icon file"
-msgstr "Απευθείας επεξεργασία ενός αρχείου εικονιδίων"
-
-#: mx-idesktool:77
-msgid "Lock"
-msgstr "Κλείδωμα"
-
-#: mx-idesktool:78
-msgid "Lock/unlock icons"
-msgstr "Κλείδωμα/ξεκλείδωμα εικονιδίων"
-
-#: mx-idesktool:79
-msgid "Right-Click Command"
-msgstr "Εντολή δεξί κλικ"
-
-#: mx-idesktool:81
-msgid "Config"
-msgstr "Διαμόρφωση"
-
-#: mx-idesktool:82
-msgid "Icon"
-msgstr "Εικονίδιο"
-
-#: mx-idesktool:83
-msgid "Desktop"
-msgstr "Επιφάνεια εργασίας"
-
-#: mx-idesktool:85
-msgid "View or edit icon style"
-msgstr "Προβολή ή επεξεργασία στυλ εικονιδίου"
-
-#: mx-idesktool:86
-msgid "View or edit mouse actions"
-msgstr "Προβολή ή επεξεργασία ενεργειών ποντικιού"
-
-#: mx-idesktool:207 mx-idesktool:213
-msgid "Link Filename"
-msgstr "Link Όνομα αρχείου"
-
-#: mx-idesktool:208
-msgid "Enter Link Filename"
-msgstr "Εισαγάγετε το όνομα αρχείου σύνδεσης"
-
-#: mx-idesktool:826 mx-idesktool:919
-msgid "Set icons to snap"
-msgstr "Ορίστε εικονίδια για λήψη"
-
-#: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
-msgid "Set background rotation"
-msgstr "Ορισμός περιστροφής φόντου"
+#: mx-idesktool:13
+msgid "idesk found - we're on a roll :)"
+msgstr "idesk βρήκε"
 
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "off"
@@ -289,53 +347,3 @@ msgstr "off"
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "on"
 msgstr "ενεργοποιημένο"
-
-#: mx-idesktool:1043
-msgid "Snap icons"
-msgstr "Τραβήξτε τα εικονίδια"
-
-#: mx-idesktool:1044
-msgid "USE: place icon in the middle\\nof a rectangle"
-msgstr ""
-"ΧΡΗΣΗ: τοποθετήστε το εικονίδιο στη μέση\n"
-"ενός ορθογωνίου"
-
-#: mx-idesktool:1049
-msgid "Status"
-msgstr "Κατάσταση"
-
-#: mx-idesktool:1050
-msgid "Width"
-msgstr "Πλάτος"
-
-#: mx-idesktool:1051
-msgid "Height"
-msgstr "Υψος"
-
-#: mx-idesktool:1093
-msgid "No rotation: Delay = 0"
-msgstr "Χωρίς περιστροφή: Delay = 0"
-
-#: mx-idesktool:1096
-msgid "Delay (mins)"
-msgstr "Καθυστέρηση (λεπτά)"
-
-#: mx-idesktool:1097
-msgid "Image folder"
-msgstr "Φάκελος εικόνας"
-
-#: mx-idesktool:1098
-msgid "Image mode"
-msgstr "Τρόπος εικόνα"
-
-#: mx-idesktool:1137 mx-idesktool:1172 mx-idesktool:1276
-msgid "Saving..."
-msgstr "Αποθήκευση ...."
-
-#: mx-idesktool:1261
-msgid "Text Editing"
-msgstr "Επεξεργασία κειμένου"
-
-#: mx-idesktool:1283
-msgid "Discarding..."
-msgstr "Απόρριψη ..."
