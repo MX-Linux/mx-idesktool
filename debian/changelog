@@ -2,7 +2,7 @@ mx-idesktool (23.06.01mx23) mx; urgency=medium
 
   [ Jerry ]
   * Non-maintainer upload.
-  * Initiating dev phase for idesk 0.7.5
+  * Initiating dev phase for idesk 0.7.8
 
   [ Dolphin Oracle ]
   * use new mx-idesktool, archive old one.
