@@ -2,12 +2,12 @@ Source: mx-idesktool
 Section: system
 Priority: optional
 Maintainer: dolphinoracle <dolphinoracle@gmail.com>
-Build-Depends: debhelper (>= 9.20120115)
+Build-Depends: debhelper (>= 10)
 Standards-Version: 3.9.4
 Homepage: https://mxlinux.org
 
 Package: mx-idesktool
-Depends: idesk
+Depends: idesk (>=0.7.8)
 Conflicts: mx-fluxbox (<20.02.03)
 Architecture: all
 Description: mx-idesktool
