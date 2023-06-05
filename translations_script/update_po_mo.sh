@@ -4,7 +4,7 @@
 
 RESOURCE="mx-idesktool"
 
-lang="am ar bg ca cs da de el es et eu fa fi fr he_IL hi hr hu id is it ja kk ko lt mk mr nb nl pl pt ro ru sk sl sq sr sv tr uk zh_CN zh_TW"
+lang="am ar bg bn ca cs da de el es et eu fa fi fr he_IL hi hr hu id is it ja kk ko lt mk mr nb nl pl pt pt_BR  ro ru sk sl sq sr sv tr uk vi zh_CN zh_TW"
 
 make_po()
 {
