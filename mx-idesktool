@@ -1,9 +1,10 @@
 #! /bin/bash
 
-#mx-idesktool v1.7, released May 2020. 
+#mx-idesktool v1.8, released June 2023 
+#Includes ability (if idesk 0.7.8 or later is installed) to use icons other than *.png. 
 #A script by the MX Linux Dev Team, user Misko_2083 and others to configure the idesk app. \
 #Based on idesktool v1.36 released August 2004 by John Murray john@jmurray.id.au
-
+ 
 TEXTDOMAINDIR=/usr/share/locale
 export TEXTDOMAIN="mx-idesktool"
 
@@ -30,12 +31,12 @@ TEXT14=$"Current icon"
 TEXT15=$"Oops!"
 TEXT16=$"Error: Icon Image File Not Found."
 TEXT17=$"Quit"
-TEXT18=$"Error: Unknown Filetype. The icon should be a png image."
+TEXT18=$"Error: Unknown Filetype. Use Type xpm or svg or png."
 TEXT19=$"Please choose a file"
 TEXT20=$"Error: You need to select a valid file"
 TEXT21=$"Finished!" 
-TEXT22=$"All done. Restarting idesk now..."
-TEXT23=$"Choose a .png icon image"
+TEXT22=$" All done. Restarting idesk now..."
+TEXT23=$"Choose icon"
 TEXT24=$"View or edit an icon"
 TEXT25=$"Remove an icon"
 TEXT26=$"Add a new icon"
@@ -69,7 +70,7 @@ WRITE=$"Write"
 HELP=$"Help"
 TEXT43=$"ACTION"
 TEXT44=$"DESCRIPTION"
-TEXT45=$"Choose a .png icon image"
+TEXT45=$"Choose icon"
 TEXT46=$"Left-Click Command:"
 TEXT47=$"Middle-Click Command"
 TEXT48=$"Set a precise position for an icon"
@@ -123,7 +124,7 @@ fi
 argu="$1"
 
 #set this icon directory because it has most available
-icondir=/usr/share/icons/Moka/48x48/apps/
+icondir=/usr/share/icons/Papirus-Light/48x48/apps/
 
 DIALOG="yad --center --window-icon=/usr/share/icons/mxflux.png"
 
@@ -388,7 +389,7 @@ echo "getting current values"
     currentxvalue=$( sed -rn '/^[[:space:]]*X:[[:space:]]*/{s///; s/[[:space:]]*$//;p}' "${currentlnkfile}" )
 #get the Y value
     currentyvalue=$( sed -rn '/^[[:space:]]*Y:[[:space:]]*/{s///; s/[[:space:]]*$//;p}' "${currentlnkfile}" )
-
+     
 echo "got current values"
 #modifycaption
 
@@ -498,17 +499,17 @@ if [ "$comefrom" = "modif" ]; then
 else
         iconplaceholder="${icondir}"
 fi
-echo "current icon is " "${iconplaceholder}"
+#echo "current icon is " "${iconplaceholder}"
 
 cd "${iconplaceholder%/*}"
 
 icon="$($DIALOG --title="Commands" \
-                --width=500 --height=500 --center \
+                --width=600 --height=500 --center \
                 --button="$TEXT7":3 --button="$TEXT8":1 \
                 --button="$TEXT9":0 --title "$TEXT23" \
                 --text="$TEXT14": \
                 --file-selection "${iconplaceholder}" \
-                --file-filter="png | *.png *.PNG" \
+                --file-filter="png, svg | *.png *.PNG *.svg *.xpm" \
                 --filename="${iconplaceholder}")"
 
 retval=$?
@@ -551,7 +552,7 @@ else
         esac
 fi
 
-iconcheck="$(echo "${icon}" | grep -i "\.png")"
+iconcheck="$(echo "${icon}")"
 
 if [ "${iconcheck}" = "$icon" ]; then
         writefile
@@ -783,6 +784,8 @@ cat<< EOF > "$newlnkfile"
 table Icon
 Caption: ${caption}
   Icon: ${icon}
+  Width: 48
+  Height: 48
   X: ${currentxvalue}
   Y: ${currentyvalue}
   Command[0]: ${command}
@@ -1018,7 +1021,7 @@ esac
 set_icon_snap()
 {
 	local conf="$HOME/.ideskrc"
-    local snap width hight
+    local snap width height
 	local status=$"off"'!'$"on"
     declare -A status_tr=( [false]=$"off"  [true]=$"on"  [$"off"]="false"  [$"on"]="true" )
 	eval declare -A HASH=( $(sed -nr '/^[[:space:]]*(IconSnap|SnapWidth|SnapHeight):[[:space:]]*(.*)[[:space:]]*$/{ s//[\1]="\2"/p}' ~/.ideskrc ) )
