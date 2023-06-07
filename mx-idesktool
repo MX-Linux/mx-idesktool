@@ -507,8 +507,8 @@ icon="$($DIALOG --title="Commands" \
                 --width=600 --height=500 --center \
                 --button="$TEXT7":3 --button="$TEXT8":1 \
                 --button="$TEXT9":0 --title "$TEXT23" \
-                --text="$TEXT14": \
-                --file-selection "${iconplaceholder}" \
+                --text="$TEXT19": \
+                --file-selection="${iconplaceholder}" \
                 --file-filter="png, svg | *.png *.PNG *.svg *.xpm" \
                 --filename="${iconplaceholder}")"
 
@@ -552,7 +552,7 @@ else
         esac
 fi
 
-iconcheck="$(echo "${icon}")"
+iconcheck="$(echo "${icon}"|gawk '/\.svg|\.png|\.PNG|\.xpm/')"
 
 if [ "${iconcheck}" = "$icon" ]; then
         writefile
