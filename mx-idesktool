@@ -1,7 +1,7 @@
 #! /bin/bash
 
-#mx-idesktool v1.8, released June 2023 
-#Includes ability (if idesk 0.7.8 or later is installed) to use icons other than *.png. 
+#mx-idesktool v2.0, released June 2023 
+#Includes ability (if idesk 0.7.8 or later is installed) to use icons other than *.png. Patched to convert *.svg to *.png on the fly to solve color inversion 
 #A script by the MX Linux Dev Team, user Misko_2083 and others to configure the idesk app. \
 #Based on idesktool v1.36 released August 2004 by John Murray john@jmurray.id.au
  
@@ -124,7 +124,7 @@ fi
 argu="$1"
 
 #set this icon directory because it has most available
-icondir=/usr/share/icons/Papirus-Light/48x48/apps/
+icondir=/usr/share/icons/Papirus/48x48/apps/
 
 DIALOG="yad --center --window-icon=/usr/share/icons/mxflux.png"
 
@@ -515,6 +515,21 @@ icon="$($DIALOG --title="Commands" \
 retval=$?
 
 icon="$(echo "${icon}"  | cut -d '|' -f 2)"
+
+if [[ $icon == *.svg ]]; then
+
+    if [ ! -d  ~/.icons/idesk ]; then
+        mkdir -p ~/.icons/idesk
+    fi
+
+    icon_pngname="$(basename "${icon}" | sed -e "s/\.svg/\.png/")"
+    icon_pngname=~/.icons/idesk/$icon_pngname
+
+    rsvg-convert -w 48 -h 48 $icon -o $icon_pngname
+
+    icon=$icon_pngname
+
+fi
 
 case ${retval} in
         0) iconvalidate

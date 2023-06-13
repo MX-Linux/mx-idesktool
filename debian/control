@@ -7,7 +7,7 @@ Standards-Version: 3.9.4
 Homepage: https://mxlinux.org
 
 Package: mx-idesktool
-Depends: idesk (>=0.7.8)
+Depends: idesk (>=0.7.8), librsvg2-bin
 Conflicts: mx-fluxbox (<20.02.03)
 Architecture: all
 Description: mx-idesktool
