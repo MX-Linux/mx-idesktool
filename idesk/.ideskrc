@@ -2,7 +2,7 @@ table Config
   #####CAPTION#####: 
   FontName: sans
   FontSize: 11
-  FontColor: green
+  FontColor: #DCE6EF
   Bold: false
   CaptionOnHover: false
   CaptionPlacement: bottom
@@ -19,7 +19,7 @@ table Config
   Background.Color: #C2CCFF
   #####SHADOW#####: 
   Shadow: true
-  ShadowColor: #000000
+  ShadowColor: #29353B
   ShadowX: 1
   ShadowY: 2
   #####TOOLTIP#####: 
