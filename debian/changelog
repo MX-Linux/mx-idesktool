@@ -1,3 +1,9 @@
+mx-idesktool (23.07.13mx23) mx; urgency=medium
+
+  * changed font color for icon captions
+
+ -- Jerry <jb@mx>  Thu, 13 Jul 2023 08:57:58 -0400
+
 mx-idesktool (23.06.13mx23) mx; urgency=medium
 
   * Non-maintainer upload
