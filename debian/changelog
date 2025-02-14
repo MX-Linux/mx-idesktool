@@ -1,3 +1,10 @@
+mx-idesktool (23.07.13mx23+nmu1) UNRELEASED; urgency=medium
+
+  * Non-maintainer upload.
+  * add category X-MXFB-Tools
+
+ -- Jerry <devs@mx>  Fri, 14 Feb 2025 16:28:23 -0500
+
 mx-idesktool (23.07.13mx23) mx; urgency=medium
 
   * changed font color for icon captions
