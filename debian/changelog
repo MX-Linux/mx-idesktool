@@ -1,7 +1,10 @@
-mx-idesktool (23.07.13mx23+nmu1) UNRELEASED; urgency=medium
+mx-idesktool (25.02.01mx23) mx; urgency=medium
 
-  * Non-maintainer upload.
+  [ Jerry ]
   * add category X-MXFB-Tools
+
+  [ Dolphin Oracle ]
+  * update translatoins
 
  -- Jerry <devs@mx>  Fri, 14 Feb 2025 16:28:23 -0500
 
