@@ -8,7 +8,7 @@
 # 4b61b50f1d27a10dffa9133609e84002, 2020
 # cmenemrs <cmenemrs@gmail.com>, 2020
 # José Vieira <jvieira33@sapo.pt>, 2020
-# marcelo cripe <marcelocripe@gmail.com>, 2021
+# marcelo cripe <marcelocripe@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -17,8 +17,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-19 23:15-0400\n"
 "PO-Revision-Date: 2020-03-26 13:48+0000\n"
-"Last-Translator: marcelo cripe <marcelocripe@gmail.com>, 2021\n"
-"Language-Team: Portuguese (Brazil) (https://www.transifex.com/anticapitalista/teams/10162/pt_BR/)\n"
+"Last-Translator: marcelo cripe <marcelocripe@gmail.com>, 2023\n"
+"Language-Team: Portuguese (Brazil) (https://app.transifex.com/anticapitalista/teams/10162/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -260,7 +260,7 @@ msgstr "Definir a rotação do fundo"
 
 #: mx-idesktool:826 mx-idesktool:919
 msgid "Set icons to snap"
-msgstr "Definir o posicionamento dos ícones para 'encaixar'"
+msgstr "Definir o posicionamento dos ícones para ‘encaixar’"
 
 #: mx-idesktool:1043
 msgid "Snap icons"

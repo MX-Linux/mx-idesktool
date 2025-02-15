@@ -5,7 +5,7 @@
 # 
 # Translators:
 # anticapitalista <anticapitalista@riseup.net>, 2020
-# joyinko <joyinko@azet.sk>, 2021
+# joyinko <joyinko@azet.sk>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -14,8 +14,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-19 23:15-0400\n"
 "PO-Revision-Date: 2020-03-26 13:48+0000\n"
-"Last-Translator: joyinko <joyinko@azet.sk>, 2021\n"
-"Language-Team: Czech (https://www.transifex.com/anticapitalista/teams/10162/cs/)\n"
+"Last-Translator: joyinko <joyinko@azet.sk>, 2023\n"
+"Language-Team: Czech (https://app.transifex.com/anticapitalista/teams/10162/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,15 +24,15 @@ msgstr ""
 
 #: mx-idesktool:70
 msgid "ACTION"
-msgstr ""
+msgstr "AKCE"
 
 #: mx-idesktool:41
 msgid "Add a new icon"
-msgstr ""
+msgstr "Přidat novou ikonu"
 
 #: mx-idesktool:37
 msgid "All done. Restarting idesk now..."
-msgstr ""
+msgstr "Vše hotovo. Restartuje se idesk..."
 
 #: mx-idesktool:16
 msgid "Back"
@@ -48,19 +48,19 @@ msgstr ""
 
 #: mx-idesktool:38 mx-idesktool:72
 msgid "Choose a .png icon image"
-msgstr ""
+msgstr "Vybrat obraz ikony . png"
 
 #: mx-idesktool:81
 msgid "Config"
-msgstr ""
+msgstr "Config"
 
 #: mx-idesktool:47
 msgid "Config. file  found - excellent!"
-msgstr ""
+msgstr "Config. file  nalezen - excellent!"
 
 #: mx-idesktool:67
 msgid "Configure"
-msgstr ""
+msgstr "Nastavit"
 
 #: mx-idesktool:64
 msgid "Create"
@@ -68,15 +68,15 @@ msgstr "Vytvořit "
 
 #: mx-idesktool:29
 msgid "Current icon"
-msgstr ""
+msgstr "Aktuální ikona"
 
 #: mx-idesktool:71
 msgid "DESCRIPTION"
-msgstr ""
+msgstr "POPIS"
 
 #: mx-idesktool:1096
 msgid "Delay (mins)"
-msgstr ""
+msgstr "Posun (minuty)"
 
 #: mx-idesktool:63
 msgid "Delete"
@@ -88,26 +88,28 @@ msgstr "Pracovní plocha"
 
 #: mx-idesktool:76
 msgid "Directly edit an icon file"
-msgstr ""
+msgstr "Rovnou editovat soubor ikony"
 
 #. Cancel button, Window Close, etc
 #: mx-idesktool:1283
 msgid "Discarding..."
-msgstr ""
+msgstr "Rušení..."
 
 #: mx-idesktool:10
 msgid "ERROR: Yad not installed or not in path."
-msgstr ""
+msgstr "CHYBA: Yad není nainstalován nebo neznámá cesta."
 
 #: mx-idesktool:12
 msgid ""
 "ERROR: idesk not installed or not in path. Try "
 "http://sourceforge.net/projects/idesk/"
 msgstr ""
+"CHYBA: idesk není nainstalován nebo neznámá cesta.\n"
+"Zkuste http://sourceforge.net/projects/idesk/"
 
 #: mx-idesktool:43
 msgid "Edit iDesk's config file"
-msgstr ""
+msgstr "Upravit konfiguraci idesk-u"
 
 #: mx-idesktool:208
 msgid "Enter Link Filename"
@@ -115,19 +117,19 @@ msgstr ""
 
 #: mx-idesktool:31
 msgid "Error: Icon Image File Not Found."
-msgstr ""
+msgstr "Chyba: Obrázek ikony nebyl nalezen."
 
 #: mx-idesktool:33
 msgid "Error: Unknown Filetype. The icon should be a png image."
-msgstr ""
+msgstr "Chyba: Neznámý formát souboru. Ikona musí být obrázek png."
 
 #: mx-idesktool:35
 msgid "Error: You need to select a valid file"
-msgstr ""
+msgstr "Chyba: Musíte vybrat platný soubor"
 
 #: mx-idesktool:36
 msgid "Finished!"
-msgstr ""
+msgstr "Dokončeno!"
 
 #: mx-idesktool:1051
 msgid "Height"
@@ -147,11 +149,11 @@ msgstr ""
 
 #: mx-idesktool:14
 msgid "Icon Management Tool"
-msgstr ""
+msgstr "Nástroj pro správu ikon"
 
 #: mx-idesktool:1097
 msgid "Image folder"
-msgstr ""
+msgstr "Složka s obrázky"
 
 #: mx-idesktool:1098
 msgid "Image mode"
@@ -159,7 +161,7 @@ msgstr ""
 
 #: mx-idesktool:27 mx-idesktool:73
 msgid "Left-Click Command:"
-msgstr ""
+msgstr "Přikaz pro levé tlačítko myši:"
 
 #: mx-idesktool:207 mx-idesktool:213
 msgid "Link Filename"
@@ -171,23 +173,23 @@ msgstr ""
 
 #: mx-idesktool:77
 msgid "Lock"
-msgstr ""
+msgstr "Uzamknout"
 
 #: mx-idesktool:78
 msgid "Lock/unlock icons"
-msgstr ""
+msgstr "Uzamknout/odemknout ikony"
 
 #: mx-idesktool:44
 msgid "MX-idesktool documentation"
-msgstr ""
+msgstr "MX-idesktool dokumentace"
 
 #: mx-idesktool:74
 msgid "Middle-Click Command"
-msgstr ""
+msgstr "Přikaz pro střední tlačítko myši"
 
 #: mx-idesktool:28
 msgid "Middle-Click Command:"
-msgstr ""
+msgstr "Přikaz pro střední tlačítko myši:"
 
 #: mx-idesktool:18
 msgid "Next"
@@ -199,11 +201,11 @@ msgstr ""
 
 #: mx-idesktool:49
 msgid "No!"
-msgstr ""
+msgstr "Ne!"
 
 #: mx-idesktool:30
 msgid "Oops!"
-msgstr ""
+msgstr "Oops!"
 
 #. TEXT37=$"Open"
 #. TEXT38=$"Delete"
@@ -217,7 +219,7 @@ msgstr "Otevřít"
 
 #: mx-idesktool:34
 msgid "Please choose a file"
-msgstr ""
+msgstr "Prosím vyberte soubor"
 
 #: mx-idesktool:32
 msgid "Quit"
@@ -225,32 +227,32 @@ msgstr "Konec"
 
 #: mx-idesktool:66
 msgid "Refresh"
-msgstr ""
+msgstr "Obnovit"
 
 #: mx-idesktool:42
 msgid "Reload the desktop"
-msgstr ""
+msgstr "Obnovit plochu"
 
 #: mx-idesktool:40
 msgid "Remove an icon"
-msgstr ""
+msgstr "Odebrat ikonu"
 
 #: mx-idesktool:79
 msgid "Right-Click Command"
-msgstr ""
+msgstr "Přikaz pro pravé tlačítko myši"
 
 #. OK button
 #: mx-idesktool:1137 mx-idesktool:1172 mx-idesktool:1276
 msgid "Saving..."
-msgstr ""
+msgstr "Ukládání..."
 
 #: mx-idesktool:75
 msgid "Set a precise position for an icon"
-msgstr ""
+msgstr "Nastavit přesnou polohu ikony"
 
 #: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
 msgid "Set background rotation"
-msgstr ""
+msgstr "Nastavit natoćení pozadí"
 
 #: mx-idesktool:826 mx-idesktool:919
 msgid "Set icons to snap"
@@ -266,7 +268,7 @@ msgstr "Stav"
 
 #: mx-idesktool:1261
 msgid "Text Editing"
-msgstr ""
+msgstr "Editace textu"
 
 #: mx-idesktool:45
 msgid "USE: double-click entry to select a management action"
@@ -278,21 +280,21 @@ msgstr ""
 
 #: mx-idesktool:39
 msgid "View or edit an icon"
-msgstr ""
+msgstr "Prohlížet nebo upravit ikonu"
 
 #: mx-idesktool:85
 msgid "View or edit icon style"
-msgstr ""
+msgstr "Prohlížet nebo upravit styl"
 
 #: mx-idesktool:86
 msgid "View or edit mouse actions"
-msgstr ""
+msgstr "Prohlížet nebo upravit nastavení akcí pod tlačítky myši."
 
 #: mx-idesktool:48
 msgid ""
 "WARNING: No ideskrc file was found.\\nWould you like to have this "
 "file\\nadded now?"
-msgstr ""
+msgstr "POZOR: Nebyl nelezen žádny soubor ideskrc.\\nPřejete si soubor přidat?"
 
 #: mx-idesktool:1050
 msgid "Width"
@@ -300,15 +302,15 @@ msgstr "Šířka"
 
 #: mx-idesktool:68
 msgid "Write"
-msgstr ""
+msgstr "Zapsat"
 
 #: mx-idesktool:11
 msgid "Yad found. So far so good.."
-msgstr ""
+msgstr "Yad nalezen. Zatím dobrý..."
 
 #: mx-idesktool:50
 msgid "Yes!"
-msgstr ""
+msgstr "Yes!"
 
 #: mx-idesktool:51
 msgid ""
@@ -318,14 +320,19 @@ msgid ""
 "                be remembered between sessions \\n\\n \n"
 "                Would you like to run the icon wizard now?"
 msgstr ""
+"\\tKonfigurační soubor byl vytvořen. \\n\n"
+"                Přetáhněte kteroukoliv ikonu, kterou \n"
+"                vytvoříte na místo, kde ji chcete mít\n"
+"                pozice ikony zůstane zachována \\n\\n \n"
+"                Přejete si teď spustit průvodce ikonami?"
 
 #: mx-idesktool:46
 msgid "iDesk Configuration"
-msgstr ""
+msgstr "iDesk Nastavení"
 
 #: mx-idesktool:13
 msgid "idesk found - we're on a roll :)"
-msgstr ""
+msgstr "idesk nalezen - to se nám ale daří :)"
 
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "off"
@@ -333,4 +340,4 @@ msgstr "vypnuto"
 
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "on"
-msgstr ""
+msgstr "zapnuto"

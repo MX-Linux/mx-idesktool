@@ -8,6 +8,7 @@
 # Tamas Szarvas <szarvy@gmail.com>, 2020
 # anticapitalista <anticapitalista@riseup.net>, 2020
 # Gabor Drot <gdrot@yahoo.com>, 2020
+# Kempelen <antixhu@netengine.hu>, 2022
 # 
 #, fuzzy
 msgid ""
@@ -16,8 +17,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-19 23:15-0400\n"
 "PO-Revision-Date: 2020-03-26 13:48+0000\n"
-"Last-Translator: Gabor Drot <gdrot@yahoo.com>, 2020\n"
-"Language-Team: Hungarian (https://www.transifex.com/anticapitalista/teams/10162/hu/)\n"
+"Last-Translator: Kempelen <antixhu@netengine.hu>, 2022\n"
+"Language-Team: Hungarian (https://app.transifex.com/anticapitalista/teams/10162/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -26,15 +27,15 @@ msgstr ""
 
 #: mx-idesktool:70
 msgid "ACTION"
-msgstr ""
+msgstr "MŰVELET"
 
 #: mx-idesktool:41
 msgid "Add a new icon"
-msgstr ""
+msgstr "Új ikon hozzáadása"
 
 #: mx-idesktool:37
 msgid "All done. Restarting idesk now..."
-msgstr ""
+msgstr "Minden kész. Az idesk újraindítása..."
 
 #: mx-idesktool:16
 msgid "Back"
@@ -46,43 +47,43 @@ msgstr "Mégsem"
 
 #: mx-idesktool:19
 msgid "Caption"
-msgstr ""
+msgstr "Felirat"
 
 #: mx-idesktool:38 mx-idesktool:72
 msgid "Choose a .png icon image"
-msgstr ""
+msgstr "Válasszon egy .png ikon képet"
 
 #: mx-idesktool:81
 msgid "Config"
-msgstr ""
+msgstr "Beállítások"
 
 #: mx-idesktool:47
 msgid "Config. file  found - excellent!"
-msgstr ""
+msgstr "Beállítási fájl megtalálva - nagyszerű!"
 
 #: mx-idesktool:67
 msgid "Configure"
-msgstr ""
+msgstr "Beállítás"
 
 #: mx-idesktool:64
 msgid "Create"
-msgstr ""
+msgstr "Létrehozás"
 
 #: mx-idesktool:29
 msgid "Current icon"
-msgstr ""
+msgstr "Jelenlegi ikon"
 
 #: mx-idesktool:71
 msgid "DESCRIPTION"
-msgstr ""
+msgstr "LEÍRÁS"
 
 #: mx-idesktool:1096
 msgid "Delay (mins)"
-msgstr ""
+msgstr "Késleltetés (perc)"
 
 #: mx-idesktool:63
 msgid "Delete"
-msgstr ""
+msgstr "Törlés"
 
 #: mx-idesktool:83
 msgid "Desktop"
@@ -90,50 +91,52 @@ msgstr "Asztal"
 
 #: mx-idesktool:76
 msgid "Directly edit an icon file"
-msgstr ""
+msgstr "Ikonfájl közvetlen szerkesztése"
 
 #. Cancel button, Window Close, etc
 #: mx-idesktool:1283
 msgid "Discarding..."
-msgstr ""
+msgstr "Elvetés..."
 
 #: mx-idesktool:10
 msgid "ERROR: Yad not installed or not in path."
-msgstr ""
+msgstr "HIBA: A yad nincs telepítve vagy nincs az útvonalban."
 
 #: mx-idesktool:12
 msgid ""
 "ERROR: idesk not installed or not in path. Try "
 "http://sourceforge.net/projects/idesk/"
 msgstr ""
+"HIBA: Az idesk nincs telepítve vagy nincs az útvonalban. Próbálja ezt: "
+"http://sourceforge.net/projects/idesk/"
 
 #: mx-idesktool:43
 msgid "Edit iDesk's config file"
-msgstr ""
+msgstr "Az iDesk beállítási fájljának szerkesztése"
 
 #: mx-idesktool:208
 msgid "Enter Link Filename"
-msgstr ""
+msgstr "Adja meg a parancsikon fájlnevét"
 
 #: mx-idesktool:31
 msgid "Error: Icon Image File Not Found."
-msgstr ""
+msgstr "Hiba: Az ikon képfájl nem található."
 
 #: mx-idesktool:33
 msgid "Error: Unknown Filetype. The icon should be a png image."
-msgstr ""
+msgstr "Hiba: ismeretlen fájltípus. Az ikonnak PNG képfájlnak kell lennie."
 
 #: mx-idesktool:35
 msgid "Error: You need to select a valid file"
-msgstr ""
+msgstr "Hiba: Egy érvényes fájlt kell választania"
 
 #: mx-idesktool:36
 msgid "Finished!"
-msgstr ""
+msgstr "Befejezve!"
 
 #: mx-idesktool:1051
 msgid "Height"
-msgstr ""
+msgstr "Magasság"
 
 #: mx-idesktool:69
 msgid "Help"
@@ -141,55 +144,55 @@ msgstr "Súgó"
 
 #: mx-idesktool:82
 msgid "Icon"
-msgstr ""
+msgstr "Ikon"
 
 #: mx-idesktool:15
 msgid "Icon Caption:\\n(Leave blank for no caption)"
-msgstr ""
+msgstr "Ikon felirat:\\n(Hagyja üresen, ha nem szükséges felirat)"
 
 #: mx-idesktool:14
 msgid "Icon Management Tool"
-msgstr ""
+msgstr "Ikonkezelő eszköz"
 
 #: mx-idesktool:1097
 msgid "Image folder"
-msgstr ""
+msgstr "Kép mappa"
 
 #: mx-idesktool:1098
 msgid "Image mode"
-msgstr ""
+msgstr "Kép mód"
 
 #: mx-idesktool:27 mx-idesktool:73
 msgid "Left-Click Command:"
-msgstr ""
+msgstr "Bal-gomb parancs:"
 
 #: mx-idesktool:207 mx-idesktool:213
 msgid "Link Filename"
-msgstr ""
+msgstr "Parancsikon fájlnév"
 
 #: mx-idesktool:65
 msgid "Locate"
-msgstr ""
+msgstr "Elhelyezés"
 
 #: mx-idesktool:77
 msgid "Lock"
-msgstr ""
+msgstr "Zárolás"
 
 #: mx-idesktool:78
 msgid "Lock/unlock icons"
-msgstr ""
+msgstr "Ikonok zárolása vagy feloldása"
 
 #: mx-idesktool:44
 msgid "MX-idesktool documentation"
-msgstr ""
+msgstr "MX-idesktool dokumentáció"
 
 #: mx-idesktool:74
 msgid "Middle-Click Command"
-msgstr ""
+msgstr "Középső-gomb parancs"
 
 #: mx-idesktool:28
 msgid "Middle-Click Command:"
-msgstr ""
+msgstr "Középső-gomb parancs:"
 
 #: mx-idesktool:18
 msgid "Next"
@@ -197,15 +200,15 @@ msgstr "Következő"
 
 #: mx-idesktool:1093
 msgid "No rotation: Delay = 0"
-msgstr ""
+msgstr "Nincs váltogatás: Késleltetés = 0"
 
 #: mx-idesktool:49
 msgid "No!"
-msgstr ""
+msgstr "Nem!"
 
 #: mx-idesktool:30
 msgid "Oops!"
-msgstr ""
+msgstr "Hoppá!"
 
 #. TEXT37=$"Open"
 #. TEXT38=$"Delete"
@@ -219,7 +222,7 @@ msgstr "Megnyitás"
 
 #: mx-idesktool:34
 msgid "Please choose a file"
-msgstr ""
+msgstr "Válasszon egy fájlt"
 
 #: mx-idesktool:32
 msgid "Quit"
@@ -227,90 +230,92 @@ msgstr "Kilépés"
 
 #: mx-idesktool:66
 msgid "Refresh"
-msgstr ""
+msgstr "Frissítés"
 
 #: mx-idesktool:42
 msgid "Reload the desktop"
-msgstr ""
+msgstr "Az asztal újratöltése"
 
 #: mx-idesktool:40
 msgid "Remove an icon"
-msgstr ""
+msgstr "Ikon eltávolítása"
 
 #: mx-idesktool:79
 msgid "Right-Click Command"
-msgstr ""
+msgstr "Jobb-gomb parancs"
 
 #. OK button
 #: mx-idesktool:1137 mx-idesktool:1172 mx-idesktool:1276
 msgid "Saving..."
-msgstr ""
+msgstr "Mentés..."
 
 #: mx-idesktool:75
 msgid "Set a precise position for an icon"
-msgstr ""
+msgstr "Ikon pontos pozíciójának beállítása"
 
 #: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
 msgid "Set background rotation"
-msgstr ""
+msgstr "Háttér váltogatás beállítása"
 
 #: mx-idesktool:826 mx-idesktool:919
 msgid "Set icons to snap"
-msgstr ""
+msgstr "Ikonok rácsra igazítása"
 
 #: mx-idesktool:1043
 msgid "Snap icons"
-msgstr ""
+msgstr "Rácsra igazítás"
 
 #: mx-idesktool:1049
 msgid "Status"
-msgstr ""
+msgstr "Állapot"
 
 #: mx-idesktool:1261
 msgid "Text Editing"
-msgstr ""
+msgstr "Szöveg szerkesztés"
 
 #: mx-idesktool:45
 msgid "USE: double-click entry to select a management action"
-msgstr ""
+msgstr "HASZNÁLATA: dupla kattintással válaszon kezelési műveletet"
 
 #: mx-idesktool:1044
 msgid "USE: place icon in the middle\\nof a rectangle"
-msgstr ""
+msgstr "HASZNÁLATA: egy téglalap közepén\\nhelyezi el az ikont"
 
 #: mx-idesktool:39
 msgid "View or edit an icon"
-msgstr ""
+msgstr "Ikon megjelenítése vagy szerkesztése"
 
 #: mx-idesktool:85
 msgid "View or edit icon style"
-msgstr ""
+msgstr "Ikon stílusának megjelenítése vagy szerkesztése"
 
 #: mx-idesktool:86
 msgid "View or edit mouse actions"
-msgstr ""
+msgstr "Egérműveletek megjelenítése vagy szerkesztése"
 
 #: mx-idesktool:48
 msgid ""
 "WARNING: No ideskrc file was found.\\nWould you like to have this "
 "file\\nadded now?"
 msgstr ""
+"FIGYELEM: Nem található ideskrc fájl.\\nSzeretné, hogy ez a fájl "
+"most\\nhozzáadásra kerüljön?"
 
 #: mx-idesktool:1050
 msgid "Width"
-msgstr ""
+msgstr "Szélesség"
 
 #: mx-idesktool:68
 msgid "Write"
-msgstr ""
+msgstr "Írás"
 
 #: mx-idesktool:11
 msgid "Yad found. So far so good.."
-msgstr ""
+msgstr "Yad megtalálható. Eddig jó..."
 
 #: mx-idesktool:50
 msgid "Yes!"
-msgstr ""
+msgstr "Igen!"
 
 #: mx-idesktool:51
 msgid ""
@@ -320,14 +325,19 @@ msgid ""
 "                be remembered between sessions \\n\\n \n"
 "                Would you like to run the icon wizard now?"
 msgstr ""
+"\\tA beállítási fájl kiírásra került. \\n\n"
+"    Húzza a létrehozott ikonokat a\n"
+"    kívánt helyekre, és azok a munkamenetek\n"
+"    között is megmaradnak \\n\\n \n"
+"    Szeretné most futtatni az ikonvarázslót?"
 
 #: mx-idesktool:46
 msgid "iDesk Configuration"
-msgstr ""
+msgstr "iDesk beállítások"
 
 #: mx-idesktool:13
 msgid "idesk found - we're on a roll :)"
-msgstr ""
+msgstr "idesk megtalálható - minden rendben :)"
 
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "off"
@@ -335,4 +345,4 @@ msgstr "ki"
 
 #: mx-idesktool:1022 mx-idesktool:1023
 msgid "on"
-msgstr ""
+msgstr "be"

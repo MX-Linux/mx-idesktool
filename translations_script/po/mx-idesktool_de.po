@@ -12,6 +12,7 @@
 # Taiwanoca <taiwanoca@gmail.com>, 2020
 # wahnsinn, 2020
 # Dennis N, 2020
+# aer, 2024
 # 
 #, fuzzy
 msgid ""
@@ -20,8 +21,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-19 23:15-0400\n"
 "PO-Revision-Date: 2020-03-26 13:48+0000\n"
-"Last-Translator: Dennis N, 2020\n"
-"Language-Team: German (https://www.transifex.com/anticapitalista/teams/10162/de/)\n"
+"Last-Translator: aer, 2024\n"
+"Language-Team: German (https://app.transifex.com/anticapitalista/teams/10162/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -34,7 +35,7 @@ msgstr "AKTION"
 
 #: mx-idesktool:41
 msgid "Add a new icon"
-msgstr "Icon hinzufügen"
+msgstr "Symbol hinzufügen"
 
 #: mx-idesktool:37
 msgid "All done. Restarting idesk now..."
@@ -90,11 +91,11 @@ msgstr "Löschen"
 
 #: mx-idesktool:83
 msgid "Desktop"
-msgstr "Desktop"
+msgstr "Arbeitsoberfläche"
 
 #: mx-idesktool:76
 msgid "Directly edit an icon file"
-msgstr "Icon direkt editieren"
+msgstr "Symbol direkt bearbeiten"
 
 #. Cancel button, Window Close, etc
 #: mx-idesktool:1283
@@ -163,7 +164,7 @@ msgstr "Bild-Verzeichnis"
 
 #: mx-idesktool:1098
 msgid "Image mode"
-msgstr "Bild Modus "
+msgstr "Abbildmodus "
 
 #: mx-idesktool:27 mx-idesktool:73
 msgid "Left-Click Command:"
@@ -237,11 +238,11 @@ msgstr "Aktualisieren"
 
 #: mx-idesktool:42
 msgid "Reload the desktop"
-msgstr "Desktop neu laden."
+msgstr "Arbeitsoberfläche neu laden"
 
 #: mx-idesktool:40
 msgid "Remove an icon"
-msgstr "Icon löschen"
+msgstr "Symbol löschen"
 
 #: mx-idesktool:79
 msgid "Right-Click Command"
@@ -254,7 +255,7 @@ msgstr "Speichern..."
 
 #: mx-idesktool:75
 msgid "Set a precise position for an icon"
-msgstr "Icon genau positionieren"
+msgstr "Symbol genau positionieren"
 
 #: mx-idesktool:827 mx-idesktool:920 mx-idesktool:1092
 msgid "Set background rotation"
@@ -274,7 +275,7 @@ msgstr "Status"
 
 #: mx-idesktool:1261
 msgid "Text Editing"
-msgstr "Text-editieren"
+msgstr "Text bearbeiten"
 
 #: mx-idesktool:45
 msgid "USE: double-click entry to select a management action"
@@ -288,15 +289,15 @@ msgstr "VERWENDUNG: Symbol in die Mitte eines\\nRechtecks setzen"
 
 #: mx-idesktool:39
 msgid "View or edit an icon"
-msgstr "Icon anzeigen oder editieren"
+msgstr "Symbol anzeigen oder bearbeiten"
 
 #: mx-idesktool:85
 msgid "View or edit icon style"
-msgstr "Anschauen oder Editieren der Icon Einstellungen"
+msgstr "Symbol-Einstellungen anzeigen oder bearbeiten"
 
 #: mx-idesktool:86
 msgid "View or edit mouse actions"
-msgstr "Anschauen oder Editieren der Maus Aktionen"
+msgstr "Maus-Aktionen anzeigen oder bearbeiten"
 
 #: mx-idesktool:48
 msgid ""
@@ -331,7 +332,7 @@ msgid ""
 "                Would you like to run the icon wizard now?"
 msgstr ""
 "\\tDie Konfigurationsdatei wurde geschrieben. \\n\n"
-"                Ziehe alle erstellten Symbole an die\n"
+"                Ziehen Sie alle erstellten Symbole an die\n"
 "                gewünschten Stellen und sie werden\n"
 "                zwischen den Sitzungen gespeichert \\n\\n \n"
 "                Den Symbolassistenten jetzt ausführen?"
