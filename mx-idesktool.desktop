@@ -98,6 +98,6 @@ Exec=mx-idesktool
 Terminal=false
 Type=Application
 Icon=/usr/share/icons/Papirus/24x24/apps/icons.svg
-OnlyShowIn=FLUXBOX;
+OnlyShowIn=fluxbox;
 Categories=System;X-MXFB-Tools;
 NoDisplay=false
