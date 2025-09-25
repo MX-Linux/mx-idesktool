@@ -508,7 +508,7 @@ icon="$($DIALOG --title="Commands" \
                 --button="$TEXT7":3 --button="$TEXT8":1 \
                 --button="$TEXT9":0 --title "$TEXT23" \
                 --text="$TEXT19": \
-                --file-selection="${iconplaceholder}" \
+                --file="${iconplaceholder}" \
                 --file-filter="png, svg | *.png *.PNG *.svg *.xpm" \
                 --filename="${iconplaceholder}")"
 
@@ -623,7 +623,7 @@ cd "${HOME}/.idesktop"
 currentlnkfile="$($DIALOG --width 500 --height 500 --center \
                           --button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
                           --title="$TEXT19"  \
-                          --file-selection --file-filter="lnk | *.lnk")"
+                          --file --file-filter="lnk | *.lnk")"
 retval=$?
 
 case $retval in
@@ -677,7 +677,7 @@ while true ; do
                             --button="$TEXT7":3         \
                             --button="$TEXT8":1         \
                             --button="$TEXT9":0         \
-                            --file-selection            \
+                            --file                      \
                             --file-filter="lnk | *.lnk" )
   [ $? -ne 0 ] && return 1
    #fileselectedyet=yes
@@ -1261,7 +1261,7 @@ if [ -z "$CFG_FILE" ] || [ ! -f "$CFG_FILE" ]; then
 	CFG_FILE="$($DIALOG --width 500 --height 500 --center \
 	                    --button="$TEXT7":3 --button="$TEXT8":1 --button="$TEXT9":0 \
 	                    --title="$TEXT19"  \
-	                    --file-selection --file-filter="lnk | *.lnk")"
+	                    --file --file-filter="lnk | *.lnk")"
 	
 	STS=$?
 	if [ $STS = 0 ] && [ ! -f "${CFG_FILE}" ]; then
