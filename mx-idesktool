@@ -834,7 +834,7 @@ while [  "${choice// }" == "x" ]; do
                     --hide-column=1    --no-headers=1           \
                     --column "$TEXT43" --column "$TEXT44"       \
                     --text "$TEXT30"                            \
-                    --button="$TEXT17":1                        \
+                    --button="$TEXT17":2                        \
                     "x"           "<b><big>$ICON</big></b>"     \
                     "$OPEN"       "   ""$TEXT24"                \
                     "$DELETE"     "   ""$TEXT25"                \
@@ -853,8 +853,9 @@ while [  "${choice// }" == "x" ]; do
                     "$HELP"       "   ""$TEXT29" 2>/dev/null    )
    retval=$?
 
-  [ $retval -ne 0 ] && exit 1 
-
+ # removing this check as it returns a non-zero exit code when Quit is used, which is a valid use
+  # check is evaluated below anyway
+  # [ $retval -ne 0 ] && exit 1 
    echo $retval $choice
 
    choice="${choice%%|*}"
@@ -901,8 +902,10 @@ while [  "${choice// }" == "x" ]; do
                   ;;
              esac
              ;;
-          *)      exit
-                  ;;
+          2) exit 0
+          ;;
+          *) exit $retval
+          ;;
   esac
   choice="x"
 
@@ -927,7 +930,7 @@ while [  "${choice// }" == "x" ]; do
                     --hide-column=1    --no-headers=1         \
                     --column "$TEXT43" --column "$TEXT44"     \
                     --text "$TEXT30"                          \
-                    --button="$TEXT17":1                      \
+                    --button="$TEXT17":2                      \
                     "x"           "<b><big>$ICON</big></b>"   \
                     "$OPEN"       "   ""$TEXT24"              \
                     "$DELETE"     "   ""$TEXT25"              \
@@ -946,7 +949,9 @@ while [  "${choice// }" == "x" ]; do
                     "$HELP"       "   ""$TEXT29" 2>/dev/null  )
   
   retval=$?
-  [ $retval -ne 0 ] && exit 1 
+  # removing this check as it returns a non-zero exit code when Quit is used, which is a valid use
+  # check is evaluated below anyway
+  # [ $retval -ne 0 ] && exit 1 
 
   choice="${choice%%|*}"
 
@@ -997,7 +1002,9 @@ while [  "${choice// }" == "x" ]; do
 
              esac
              ;;
-          *) exit
+			2) exit 0
+          ;;
+          *) exit $retval
           ;;
   esac
 
