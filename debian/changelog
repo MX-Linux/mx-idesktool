@@ -1,3 +1,9 @@
+mx-idesktool (26.06.01) mx; urgency=medium
+
+  * fix non-zero exit code when quit is selected
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 16 Jun 2026 23:17:03 -0400
+
 mx-idesktool (25.09.02) mx; urgency=medium
 
   * adjustment to YAD file dialog options
